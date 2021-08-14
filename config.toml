@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = ""
+baseURL = "https://pharmaverse.org"
 title = "pharmaverse"
 theme = "godocs-1"
 # google analytics
