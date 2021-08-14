@@ -1,0 +1,6 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<div class="mt-4">
+  <div class="badge {{ .Get 0 | lower}}">{{ .Get 0 | title }}</div>
+  {{ .Inner | markdownify }}
+</div>

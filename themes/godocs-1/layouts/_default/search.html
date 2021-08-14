@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="mb-5 font-weight-medium">{{ i18n "search_result" }}
+          <span class="text-primary">
+            <script>
+              var str = (window.location.search).substr(3);
+              var result = str.replace("+", " ");
+              document.write(result);
+            </script>
+          </span>
+        </h2>
+        <div class="p-5 shadow rounded">
+          <div id="search-results"></div>
+          <script id="search-result-template" type="text/x-js-template">
+            <div class="py-4 search-item" id="summary-${key}">
+            <a class="h4" href="${link}">${title}</a>
+            <p>${snippet}</p>
+          </div>
+        </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{ end }}

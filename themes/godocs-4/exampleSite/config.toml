@@ -1,0 +1,236 @@
+######################## default configuration ####################
+baseURL = "https://demo.gethugothemes.com/godocs-hugo/style-4/"
+title = "Hugo documentation theme"
+theme = "godocs-4"
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+# disable language
+disableLanguages = [] # desable language from here
+
+# hugo outputs
+[outputs]
+home = [ "HTML", "JSON"]
+
+# render unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+############################# Plugins ##############################
+
+# CSS Plugin
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/search/auto-complete.css"
+[[params.plugins.css]]
+link = "plugins/featherlight/featherlight.min.css"
+
+
+# JS Plugin
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
+attributes = "crossorigin='anonymous' defer='defer' data-search-pseudo-elements"
+[[params.plugins.js]]
+link = "plugins/masonry/masonry.min.js"
+[[params.plugins.js]]
+link = "plugins/featherlight/featherlight.min.js"
+[[params.plugins.js]]
+link = "plugins/clipboard/clipboard.min.js"
+[[params.plugins.js]]
+link = "plugins/search/auto-complete.js"
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+[[params.plugins.js]]
+link = "plugins/search/lunr.min.js"
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+[[params.plugins.js]]
+link = "plugins/search/search-page.js"
+
+# site variables
+[params.variables]
+# Color Variables
+primary_color = "#FF0043"
+text_color = "#333"
+text_color_dark = "#222"
+text_color_light = "#999"
+body_color = "#fff"
+border_color = "#E2E2E2"
+black = "#000"
+white = "#fff"
+light = "#FBFBFB"
+
+# Font Variables
+primary_font = "Montserrat:wght@300;400;500;600;700;800"
+primary_font_type = "sans-serif" # [serif/sans-serif]
+secondary_font = ""
+secondary_font_type = "" # [serif/sans-serif]
+icon_font = "Font Awesome 5 Free"
+
+
+#################### default parameters ################################
+[params]
+# meta description
+author = "Themefisher"
+description = "This is meta description"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+# feedback form action
+feedback_form_action = "#" # contact form works with https://formspree.io
+
+# logo
+[params.logo]
+main = "images/logo.png"
+favicon = "images/favicon.png"
+main_site_link = "https://examplesite.org"
+logo_icon = "images/logo-icon.png"
+site_logo = "images/site-logo.png"
+docs_logo = "images/docs-logo.png"
+
+# Preloader
+[params.preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
+
+# Navigation button
+[[params.nav_button]]
+style = "outline" # available style: solid, outline
+label = "changelog"
+link = "changelog"
+
+[[params.nav_button]]
+style = "solid" # available style: solid, outline
+label = "contact"
+link = "contact"
+
+
+############################# social site ########################
+[[params.social]]
+title = "facebook"
+icon = "fab fa-facebook" # fontawesome icon : https://fontawesome.com/icons
+link = "#"
+
+[[params.social]]
+title = "twitter"
+icon = "fab fa-twitter" # fontawesome icon : https://fontawesome.com/icons
+link = "#"
+
+[[params.social]]
+title = "github"
+icon = "fab fa-github" # fontawesome icon : https://fontawesome.com/icons
+link = "#"
+
+[[params.social]]
+title = "linkedin"
+icon = "fab fa-linkedin" # fontawesome icon : https://fontawesome.com/icons
+link = "#"
+
+
+################################### English language #####################################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+weight = 1
+# copyright
+copyright = "Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"
+
+# banner
+[Languages.en.banner]
+title = "Documentation Theme By Themefisher Team"
+subtitle = "Lorem ipsum dolor amet, consetetur sadiffspscing elitr, diam nonumy invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua At."
+image = "images/banner.jpg"
+
+# feedback
+[Languages.en.feedback]
+title = "Did you find this doc useful?"
+content = "Your feedback helps us improve our docs."
+positive_placeholder = "What did you like about this doc?"
+negative_placeholder = "What can we improve in this doc?"
+
+# call to action
+[Languages.en.call_to_action]
+enable = true
+title = "Still Didn't Find Your Answer?"
+image = "images/cta-illustration.jpg"
+content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br> nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+
+  # call to action button
+  [Languages.en.call_to_action.button]
+  enable = "true"
+  label = "Submit a ticket"
+  link = "contact"
+
+
+############## English navigation ###############
+[[Languages.en.menu.footer]]
+name = "Changelog"
+url = "changelog"
+weight = 1
+
+[[Languages.en.menu.footer]]
+name = "Contact"
+url = "contact"
+weight = 2
+
+[[Languages.en.menu.footer]]
+name = "Github"
+url = "https://github.com/themefisher/"
+weight = 3
+
+
+################################### French language #####################################
+[Languages.fr]
+languageName = "Fr"
+languageCode = "fr-fr"
+weight = 2
+# copyright
+copyright = "Conçu par [Themefisher](https://themefisher.com) & développé par [Gethugothemes](https://gethugothemes.com)"
+
+# banner
+[Languages.fr.banner]
+title = "Thème de documentation par l'équipe Themefisher"
+subtitle = "Lorem ipsum dolor amet, consetetur sadiffspscing elitr, diam nonumy invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua At."
+image = "images/banner.jpg"
+
+# feedback
+[Languages.fr.feedback]
+title = "Avez-vous trouvé ce document utile?"
+content = "Vos commentaires nous aident à améliorer nos documents."
+positive_placeholder = "Qu'avez-vous aimé dans ce document?"
+negative_placeholder = "Que pouvons-nous améliorer dans ce document?"
+
+# call to action
+[Languages.fr.call_to_action]
+enable = true
+title = "Vous n'avez toujours pas trouvé votre réponse?"
+image = "images/cta-illustration.jpg"
+content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br> nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+
+  # call to action button
+  [Languages.fr.call_to_action.button]
+  enable = "true"
+  label = "Soumettre un ticket"
+  link = "contact"
+
+
+############## French navigation ###############
+[[Languages.fr.menu.footer]]
+name = "Changelog"
+url = "changelog"
+weight = 1
+
+[[Languages.fr.menu.footer]]
+name = "Contact"
+url = "contact"
+weight = 2
+
+[[Languages.fr.menu.footer]]
+name = "Github"
+url = "https://github.com/themefisher/"
+weight = 3

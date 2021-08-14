@@ -1,0 +1,83 @@
+.navigation {
+  transition: .2s ease;
+  background: $white;
+  border-bottom: 1px solid $border-color;
+
+  @include desktop {
+    .form-inline {
+      width: 100%;
+
+      input {
+        width: 100%;
+      }
+    }
+    &.pull-top{
+      top: -50px;
+    }
+    .navbar{
+      padding-bottom: 0;
+    }
+  }
+}
+
+.nav-item {
+  margin: 0;
+  font-weight: 500;
+
+  .nav-link {
+    text-transform: capitalize;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $text-color-dark;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 20px;
+  font-size: 15px;
+
+  @include desktop {
+    padding: 10px;
+    display: block;
+  }
+}
+
+#select-language {
+  border: 1px solid $border-color;
+  background: transparent;
+}
+
+.search-wrapper {
+  position: relative;
+
+  .form-control {
+    height: 46px;
+    border: 0;
+    outline: 0;
+    @extend .shadow;
+
+    &::placeholder {
+      color: $text-color-light;
+      font-size: 15px;
+    }
+
+    &.active.focus-visible {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $primary-color;
+    background: $white;
+  }
+}

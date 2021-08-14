@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="p-5 shadow rounded content">
+          <h1>{{ .Title }}</h1>
+          <p>{{.Params.Description}}</p>
+          <div class="mt-5">{{ .Content }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

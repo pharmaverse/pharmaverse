@@ -1,0 +1,10 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<div class="col-md-6 mb-4">
+  <div class="card card-lg">
+    <div class="card-body">
+      <h3 class="card-title h5">{{ .Get 0 | markdownify }}</h3>
+      <p class="card-text content">{{ .Inner | markdownify }}</p>
+    </div>
+  </div>
+</div>

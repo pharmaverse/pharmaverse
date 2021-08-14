@@ -1,0 +1,132 @@
+{{ "<!-- details page -->" | safeHTML }}
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 d-none d-md-block">
+        <ul class="sidenav pt-4 pr-4 border-right border-default">
+          {{ $currentNode := . }}
+          {{range .Site.Home.Sections.ByWeight}}
+          <!-- not render any single page, like contact page. -->
+          {{ $numberOfMainPages := len .Pages }}
+          {{ if eq $numberOfMainPages 0 }}
+          {{ else }}
+          <!-- /not render any single page, like contact page. -->
+          {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode}}
+          {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <div class="px-lg-5 px-4 pt-5">
+          <h2 class="mb-4 font-weight-medium">{{ .Title }}</h2>
+          {{ if .Content }}
+          <div class="content" data-spy="scroll" data-target="#TableOfContents" data-offset="20">{{.Content}}</div>
+          {{ else }}
+          <div class="page-list">
+            {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode }}
+          </div>
+          {{ end }}
+          <nav class="pagination">
+            <!-- Next prev page -->
+            {{ $currentNode := . }}
+            {{ template "menu-nextprev" dict "menu" .Site.Home "currentnode" $currentNode }}
+            {{ define "menu-nextprev" }}
+            {{$currentNode := .currentnode }}
+            {{ if ne .menu.Params.hidden true}}
+            {{if hasPrefix $currentNode.Permalink .menu.Permalink }}
+            {{ $currentNode.Scratch.Set "NextPageOK" "OK" }}
+            {{ $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") }}
+            {{else}}
+            {{if eq ($currentNode.Scratch.Get "NextPageOK") "OK"}}
+            {{ $currentNode.Scratch.Set "NextPageOK" nil }}
+            {{ $currentNode.Scratch.Set "nextPage" .menu }}
+            {{end}}
+            {{end}}
+            {{ $currentNode.Scratch.Set "prevPageTmp" .menu }}
+
+            {{ $currentNode.Scratch.Set "pages" .menu.Pages }}
+            {{ $pages := ($currentNode.Scratch.Get "pages") }}
+
+            {{ range $pages.ByWeight  }}
+            {{ template "menu-nextprev" dict "menu" . "currentnode" $currentNode }}
+            {{end}}
+            {{ end }}
+            {{ end }}
+
+            {{with ($.Scratch.Get "prevPage")}}
+            <a class="nav nav-prev" href="{{.Permalink }}"><i class="fas fa-chevron-left mr-2"></i>
+              <span class="d-none d-md-block">{{.Title}}</span></a>
+            {{end}}
+            {{with ($.Scratch.Get "nextPage")}}
+            <a class="nav nav-next" href="{{.Permalink }}"> <span class="d-none d-md-block">{{.Title}}</span><i
+                class="fas fa-chevron-right ml-2"></i></a>
+            {{end}}
+          </nav>
+        </div>
+      </div>
+      {{ if .Site.Params.table_of_content }}
+      <div class="col-lg-2 d-none d-lg-block">
+        {{ .TableOfContents }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /details page -->" | safeHTML }}
+
+<!-- templates -->
+{{ define "section-tree-nav" }}
+{{ $showvisitedlinks := .showvisitedlinks }}
+{{ $currentNode := .currentnode }}
+{{with .sect}}
+{{safeHTML .Params.head}}
+{{ $fileUniqueID := "" }}
+{{ with .File }}{{ $fileUniqueID = .UniqueID }}{{ end }}
+{{ $currentNodeFileUniqueID := "" }}
+{{ with $currentNode.File }}{{ $currentNodeFileUniqueID = .UniqueID }}{{ end }}
+<li data-nav-id="{{.Permalink}}" title="{{.Title}}"
+  class="sidelist {{if .IsAncestor $currentNode }}parent{{end}} {{if eq $fileUniqueID $currentNodeFileUniqueID}}active{{end}}">
+  <a href="{{.Permalink}}">{{.Title }}</a>
+  {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
+  {{ if ne $numberOfPages 0 }}
+  <ul>
+    {{ $currentNode.Scratch.Set "pages" .Pages }}
+    {{ if .Sections}}
+    {{ $currentNode.Scratch.Set "pages" (.Pages | union .Sections) }}
+    {{end}}
+    {{ $pages := ($currentNode.Scratch.Get "pages") }}
+
+    {{ range $pages.ByWeight }}
+    {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode }}
+    {{end}}
+  </ul>
+</li>
+{{ end }}
+{{ end }}
+{{ end }}
+
+
+<!-- call to action -->
+{{ if .Site.Params.call_to_action.enable }}
+{{ with .Site.Params.call_to_action }}
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4 text-center d-lg-block d-none">
+        <img src="{{ .image| absURL }}" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-8 text-lg-left text-center">
+        <h2 class="mb-3">{{ .title | markdownify }}</h2>
+        <p>{{ .content | markdownify }}</p>
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .link | absLangURL }}" class="btn btn-primary">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /call to action -->

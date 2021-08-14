@@ -1,0 +1,29 @@
+- id: search
+  translation: Chercher
+
+- id: search_placeholder
+  translation: Cherche ici ...
+
+- id: topics
+  translation: Parcourez vos sujets
+
+- id: first_name
+  translation: Prénom
+
+- id: last_name
+  translation: Nom de famille
+
+- id: email
+  translation: Email
+
+- id: contact_reason
+  translation: Raison du contact
+
+- id: write_message
+  translation: Commencez à écrire à partir d'ici
+
+- id: send
+  translation: Envoyer
+
+- id: search_result
+  translation: Résultat de recherche pour

@@ -1,0 +1,65 @@
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="sticky-top navigation {{if .IsHome}}home-nav{{end}}">
+  <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent justify-content-between">
+      <div class="logo-wrapper order-1 mobile-view">
+        {{ if site.Params.logo.site_logo }}
+        <a class="site-logo" target="_blank" href="{{site.Params.logo.main_site_link | safeURL}}?ref=docs"><img class="icon"
+            src="{{if site.Params.logo.logo_icon}}{{site.Params.logo.logo_icon | absURL}}{{else}}{{ site.Params.logo.site_logo | absURL }}{{end}}">{{if site.Params.logo.logo_icon}}<img
+            class="site" src="{{site.Params.logo.site_logo | absURL}}">{{end}}</a>
+        {{ end }}
+        <span class="logo-devider"></span>
+        <a class="docs-logo" href="{{ .Site.BaseURL | relLangURL }}"><img class="docs"
+            src="{{if site.Params.logo.docs_logo}}{{site.Params.logo.docs_logo | absURL}}{{else}}{{ site.Params.logo.main | absURL }}{{end}}"
+            alt="{{ site.Title }}"></a>
+      </div>
+
+      {{if not .IsHome }}
+      <form class="form-inline search-wrapper order-3 order-lg-2" name="search-form" action="{{ `search` | relLangURL }}" onsubmit="return validateForm()">
+        <input id="search-by" name="s" type="search" class="form-control" placeholder="{{ i18n `search_placeholder`}}">
+        <button class="border-0 bg-white" type="submit" style="cursor:pointer"><i class="fas fa-search"></i></button>
+      </form>
+      {{ end }}
+
+      <script>
+        function validateForm() {
+          var x = document.forms["search-form"]["s"].value;
+          if (x == "") {
+            alert("Search Keyword is Empty!");
+            return false;
+          }
+        }
+      </script>
+      
+      <div class="d-flex order-2 order-lg-3 mobile-view">
+        <!-- Language List -->
+        {{ if .IsTranslated }}
+        <select class="language-selector" onchange="location = this.value;">
+          {{ $siteLanguages := .Site.Languages}}
+          {{ $pageLang := .Page.Lang}}
+          {{ range .Page.AllTranslations }}
+          {{ $translation := .}}
+          {{ range $siteLanguages }}
+          {{ if eq $translation.Lang .Lang }}
+          {{ $selected := false }}
+          {{ if eq $pageLang .Lang}}
+          <option value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
+          {{ else }}
+          <option value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </select>
+        {{ end }}
+        <!-- nav buttons -->
+        {{ range $i, $e:= site.Params.nav_button }}
+        <a href="{{ .link | absLangURL }}"
+          class="btn btn-sm {{if eq .style `outline`}}btn-outline-primary{{else}}btn-primary{{end}} {{if and $i (gt $i 0)}}ml-3{{end}}">{{ .label }}</a>
+        {{ end }}
+      </div>
+    </nav>
+  </div>
+</header>
+{{ "<!-- /navigation -->" | safeHTML }}

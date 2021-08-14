@@ -1,0 +1,23 @@
+// site variables
+{{ with site.Params.variables }}
+$primary-color: {{.primary_color}};
+$text-color: {{.text_color}};
+$text-color-dark: {{.text_color_dark}};
+$text-color-light: {{.text_color_light}};
+$body-color: {{.body_color}};
+$border-color: {{.border_color}};
+$black: {{.black}};
+$white: {{.white}};
+$light: {{.light}};
+
+$font-primary: '{{ replaceRE ":wght@[0-9;]+" "" .primary_font }}', {{.primary_font_type}};
+$font-secondary: '{{ replaceRE ":wght@[0-9;]+" "" .secondary_font }}', {{.secondary_font_type}};
+$icon-font: '{{.icon_font}}';
+{{ end }}
+
+@import 'mixins';
+@import 'typography';
+@import 'buttons';
+@import 'common';
+@import 'templates/navigation.scss';
+@import 'templates/main.scss';

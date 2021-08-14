@@ -1,0 +1,11 @@
+[{{ range $index, $page := .Site.Pages }}
+{{- if ne $page.Type "json" -}}
+{{- if and $index (gt $index 0) -}},{{- end }}
+  {
+    "url": "{{ $page.Permalink }}",
+    "title": "{{ htmlEscape $page.Title}}",
+    "description": "{{ htmlEscape .Description}}",
+    "content": {{$page.Plain | jsonify}}
+  }
+{{- end -}}
+{{- end -}}]

@@ -1,0 +1,97 @@
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="sticky-top navigation">
+  <div class="container-fluid">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
+        {{ if .Site.Params.logo }}
+        <img class="img-fluid" src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}">
+        {{ else }}
+        {{ .Site.Title }}
+        {{ end }}</a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="fas fa-bars h4 text-dark"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav mr-auto align-items-center">
+          {{ range site.Menus.main }}
+          {{ if .HasChildren }}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+              {{ .Name }}
+            </a>
+            <div class="dropdown-menu">
+              {{ range .Children }}
+              <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+              {{ end }}
+            </div>
+          </li>
+          {{ else }}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+          <li class="nav-link">
+            <!-- Language List -->
+            {{ if .IsTranslated }}
+            <select class="nav-item" id="select-language" onchange="location = this.value;">
+              {{ $siteLanguages := site.Languages}}
+              {{ $pageLang := .Page.Lang}}
+              {{ range .Page.AllTranslations }}
+              {{ $translation := .}}
+              {{ range $siteLanguages }}
+              {{ if eq $translation.Lang .Lang }}
+              {{ $selected := false }}
+              {{ if eq $pageLang .Lang}}
+              <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
+              </option>
+              {{ else }}
+              <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+              {{ end }}
+              {{ end }}
+              {{ end }}
+              {{ end }}
+            </select>
+            {{ end }}
+          </li>
+        </ul>
+
+        <!-- for mobile -->
+        <div class="d-lg-none d-block">
+          {{ range site.Params.nav_button }}
+          <a href="{{ .link | absLangURL }}"
+            class="btn btn-sm {{if eq .style `outline`}}btn-outline-primary{{else}}btn-primary{{end}} ml-lg-4">{{ .label }}</a>
+          {{ end }}
+        </div>
+        <!-- /for mobile -->
+      </div>
+
+      <form class="form-inline search-wrapper my-3" name="search-form" action="{{ `search` | relLangURL }}" onsubmit="return validateForm()">
+        <input id="search-by" name="s" type="search" class="form-control w-100" placeholder="{{ i18n `search_placeholder`}}">
+        <button class="border-0 bg-white" type="submit" style="cursor:pointer"><i class="fas fa-search mr-1"></i></button>
+      </form>
+
+      <script>
+        function validateForm() {
+          var x = document.forms["search-form"]["s"].value;
+          if (x == "") {
+            alert("Search Keyword is Empty!");
+            return false;
+          }
+        }
+      </script>
+
+      <!-- for desktop -->
+      <div class="d-lg-flex d-none">
+        {{ range site.Params.nav_button }}
+        <a href="{{ .link | absLangURL }}"
+          class="btn btn-sm {{if eq .style `outline`}}btn-outline-primary{{else}}btn-primary{{end}} ml-lg-4">{{ .label }}</a>
+        {{ end }}
+      </div>
+      <!-- /for desktop -->
+    </nav>
+  </div>
+</header>
+{{ "<!-- /navigation -->" | safeHTML }}
