@@ -1,0 +1,20 @@
+
+      <svg class="svg-template" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <defs>
+          <clipPath id="hexagonal-mask">
+              <polygon points="50 0, 95 25, 95 75, 50 100, 5 75, 5 25" />
+          </clipPath>
+        </defs>
+      </svg>
+  
+      <ul class="honeycomb">
+      {{ range .Site.Data.packages }}
+      <li>
+          <svg width="300" height="300" viewBox="0 0 100 100" >
+          <a href={{ .repolink }} >
+            <image clip-path="url(#hexagonal-mask)" height="100%" width="100%" xlink:href= {{.hex}}>
+            </a>
+        </svg>
+      </li>
+      {{ end }}
+      </ul>
