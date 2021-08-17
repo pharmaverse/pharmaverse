@@ -1,0 +1,30 @@
+<ul>
+    <h3>Executive</h3>
+    {{ range .exec }}
+        <li>{{ . }}</li>
+    {{ end }}
+</ul>
+<ul>
+    <h3>End to end WG</h3>
+    {{ range .wge2e }}
+        <li>{{ . }}</li>
+    {{ end }}
+</ul>
+<ul>
+    <h3>Data Engineering WG</h3>
+    {{ range .wgdata }}
+        <li>{{ . }}</li>
+    {{ end }}
+</ul>
+<ul>
+    <h3>TLG and interactive tools WG</h3>
+    {{ range .wgtlg }}
+        <li>{{ . }}</li>
+    {{ end }}
+</ul>
+<ul>
+    <h3>Technology, templates and website WG</h3>
+    {{ range .wgtech }}
+        <li>{{ . }}</li>
+    {{ end }}
+</ul>
