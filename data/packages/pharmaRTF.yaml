@@ -1,0 +1,7 @@
+name: pharmaRTF
+repolink: https://github.com/atorus-research/pharmaRTF
+docs: https://cran.r-project.org/web/packages/pharmaRTF/index.html 
+hex: /images/hex/hex-pharmaRTF.png 
+task: TLG-reporting
+developer: Roche 
+details: Create and display complex tables with R
