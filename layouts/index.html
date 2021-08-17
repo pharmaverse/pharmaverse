@@ -22,67 +22,16 @@
   </div>
 </section>
 
+
 <!-- hex -->
 <section class="section pb-0">
   <div class="container">
   <div class="row-full">
-    <svg class="svg-template" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1">
-      <defs>
-        <clipPath id="hexagonal-mask">
-            <polygon points="50 0, 95 25, 95 75, 50 100, 5 75, 5 25" />
-        </clipPath>
-      </defs>
-    </svg>
-
-    <ul class="honeycomb">
-    <li>
-        <svg width="300" height="300" viewBox="0 0 100 100" >
-        <a href="https://github.com/r-lib/covr">
-          <image clip-path="url(#hexagonal-mask)" height="100%" width="100%" xlink:href="https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/covr.png"/>
-          </a>
-      </svg>
-    </li>
-    <li>
-        <svg width="300" height="300" viewBox="0 0 100 100" >
-        <a href="https://github.com/r-lib/covr">
-          <image clip-path="url(#hexagonal-mask)" height="100%" width="100%" xlink:href="https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/dbplyr.png"/>
-          </a>
-      </svg>
-    </li>
-    <li>
-        <svg width="300" height="300" viewBox="0 0 100 100" >
-        <a href="https://github.com/r-lib/covr">
-          <image clip-path="url(#hexagonal-mask)" height="100%" width="100%" xlink:href="https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/pins.png"/>
-          </a>
-      </svg>
-    </li>
-    <li>
-        <svg width="300" height="300" viewBox="0 0 100 100" >
-        <a href="https://github.com/r-lib/covr">
-          <image clip-path="url(#hexagonal-mask)" height="100%" width="100%" xlink:href="https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/devtools.png"/>
-          </a>
-      </svg>
-    </li>
-    <li>
-        <svg width="300" height="300" viewBox="0 0 100 100" >
-        <a href="https://github.com/r-lib/covr">
-          <image clip-path="url(#hexagonal-mask)" height="100%" width="100%" xlink:href="https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/bookdown.png"/>
-          </a>
-      </svg>
-    </li>
-    <li>
-        <svg width="300" height="300" viewBox="0 0 100 100" >
-        <a href="https://github.com/r-lib/covr">
-          <image clip-path="url(#hexagonal-mask)" height="100%" width="100%" xlink:href="https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/feather.png"/>
-          </a>
-      </svg>
-    </li>
-    </ul>
+    {{ partial "hex.html" . }}
   </div>
   </div>
 </section>
-
-<!-- /topics -->
+<!-- hex -->
 
 <!-- topics -->
 <section class="section pb-0">
@@ -153,7 +102,7 @@
     <p>Just an example - made up categories and allocations of people.</p>
     <div class="row">
       <div class="col-lg-12 col-sm-12 mb-4">
-      {{ range $.Site.Data }}
+      {{ range $.Site.Data.people }}
         {{ partial "contributors.html" . }}
       {{ end }}
       </div>
