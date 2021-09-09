@@ -7,7 +7,7 @@ description: "Ways in which you could contribute to the pharmaverse - for new or
 type : "docs"
 ---
 
-Our [pharmaverse charter] (https://pharmaverse.org/charter/) shares the 3 possible contribution levels of Individual contributor, Package co-lead, or Council representative. 
+Our [pharmaverse charter](https://pharmaverse.org/charter/) shares the 3 possible contribution levels of Individual contributor, Package co-lead, or Council representative. 
 Here is more detailed guidance on each:
 
 ### Individual Contributor
