@@ -7,7 +7,7 @@ description: "Pharmaverse charter covering our high level objective and scope, a
 type : "docs"
 ---
 
-# Objective
+### Objective
 
 The objective of pharmaverse is to bring together a collection of pharmaceutical industry representatives to agree on a curated and opinionated subset of open-source software packages and codebases, which would be based on the R language and those that we believe are the most suitable for the industry to adopt in order to deliver the clinical data pipeline. If suitable tools do not already exist within the open-source ecosystem, these gaps can be identified. Then via collective collaboration (around development and testing), new solutions may be developed with the aim to reduce duplication of efforts and gain increased harmonization to the way we work across the industry.
 
@@ -19,7 +19,7 @@ The benefits would be as follows:
 *	Better enablement of our medicines to reach patients and society faster through the pooling of skills and talents and accelerating how the industry generates insights from patients’ data - and to do this in a more sustainable way
 *	Attraction of the next generation of great software developers and data scientists to Pharma and providing increased transparency of our industry 
 
-# Scope
+### Scope
 
 The initial focus of pharmaverse is on the journey from CRF through to submission for clinical trial analysis reporting via R packages. We intend to provide a pathway to share efforts to build open-source codebases, to identify and rectify gaps in available tools, and then collaboratively build and maintain any additional codebases that complete this end-to-end workflow. This could include, for example, solutions covering SDTM mapping, ADaM derivations, TLG production, and supporting tools to enable eSub. It also could include utility packages that may help this dataflow in any way, such as diffdf, which performs data frame comparisons in a way similar to PROC COMPARE is SAS®. 
 
@@ -34,7 +34,7 @@ The aim will not be to agree on cross-industry implementations of CDISC standard
 
 The pharmaverse environment should be easily locatable and accessible via a single site. Some packages will already exist on CRAN or GitHub, whereas others are either in ongoing development or brand-new packages that will come from future pharmaverse collaborations. For the already open-source released packages, we could collate and explain clear use cases for clinical trial reporting. Some may cover similar purposes (e.g. there are numerous offerings for TLGs) so we should attempt to share the differences and unique merits to help a company or user choose which packages or tools they might adopt.
 
-# Contributions
+### Contributions
 
 There are different levels of commitment companies and individuals can make towards pharmaverse, as detailed below:
 
@@ -48,7 +48,7 @@ For the pharmaverse council, we will enact this with members from a collection o
 
 The added benefits of contributing to pharmaverse range from an individual having the opportunity to share their code wider and make new connections across the industry, through to a company getting early awareness and access to prototyping and influencing future solutions.
 
-# Development
+### Development
 
 Contributing to pharmaverse is open to all organizations working within the clinical trial analysis pipeline, creating relevant code. An inclusive model will be used to help identify gaps and, from this endorsement, active participation on individual codebase gaps (like the admiral project) are on an opt-in basis, i.e. just because a company contributes to certain pharmaverse projects it doesn’t mean you have to contribute to all. 
 
@@ -66,7 +66,7 @@ There should be no specific tie to any company-specific statistical computing en
 
 Dependency packages to install will be determined by the team and will be clearly documented. When using these, no source code should be copied and other packages shouldn’t be bundled into releases, as we prefer all pharmaverse packages to target permissive licensing (preferably MIT). 
 
-# Risks & Testing
+### Risks & Testing
 
 Each respective company should decide whether legal contracts are required, if a decision is made to not initiate development open source and in the public domain. Any company involved should be free to decide to withdraw from any pharmaverse collaboration at any stage.
 
@@ -76,17 +76,17 @@ Liability for the reliability of the pharmaverse environment remains with the us
 
 For any co-development effort, there should be no need to access any other company’s systems and no individual company patient-level data should be shared. 
 
-# Governance & Maintenance
+### Governance & Maintenance
 
 The pharmaverse recommendation is for the control of the master branch of any package repo to be limited to a small number of “Package co-leads”, preferably from different companies, that have a shared need to invest in a common solution. Each respective development team is ultimately responsible for planning the ongoing maintenance strategy, but representatives to support this could come in from other companies, such as those involved in testing. Feedback or pull requests could come from any “Individual contributor”.
 
 If you imagine the case of a codebase (as opposed to a single package), then a similar model to Wikipedia could be imagined, where numerous representatives from across companies each take responsibility to “garden” a domain and ensure any user contributions are appropriate to be accepted into the codebase.
 
-# Communications 
+### Communications 
 
 Each development team will agree a cadence for their own releases and specific targeted communications. The steering committee should then supplement this with an aligned method of regularly communicating iterations of the pharmaverse environment out to the industry, as well as the wider community of Open Pharma aligned projects.
 
-# Timing
+### Timing
 
 The timing of starting to initiate the pharmaverse should happen as early as possible after agreeing to the charter, as there are already components out there in open-source releases that could benefit from being collated as part of this. We already start to see a proliferation of different packages solving very similar problems, so the earlier we can promote this spirit of early collaboration, the more effort we can save. We can then subsequently use new releases, such as admiral planned for the end of 2021, to help further raise awareness of the pharmaverse and to start to embed this into the psyche of all industry programmers - which will require many years of reinforcement.
 
