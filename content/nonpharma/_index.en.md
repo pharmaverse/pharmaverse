@@ -7,11 +7,19 @@ description: "Packages that are key to the pharmaverse, but transcend e2e clinic
 type : "docs"
 ---
 
-### Non-pharma specific packages
+This list covers the wider purpose R packages that we have found most useful and those that most commonly form dependencies to the pharma-specific packages.
 
-Add tidyverse, diffdf etc and common package dependencies
+### Non Pharma-specific packages
+
+<img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133089154-88763b10-8052-42fa-a65d-e6edcda5d858.png"> **tidyverse** - an opinionated collection of R packages designed for data science 
+
+**diffdf** - Functions for comparing two data.frames against each other
+
+More to be added...
+
+<hr>
 
 ### Statistical packages
 
-Add
+To be added...
 
