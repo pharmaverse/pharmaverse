@@ -9,13 +9,19 @@ type : "docs"
 
 This list encapsulates all the R packages we have found that fall under the scope of usage for e2e clinical reporting in pharma. Over time the pharmaverse council will endeavour to curate this into an “opinionated” stack. 
 
+<hr>
+
 ### SDTM
 
 <img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133067114-65f89b9c-be77-4a85-8d78-bd6229c24921.png"> _**Oak** - SDTM mapping algorithms via R functions <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
 
+<hr>
+
 ### ADaM
 
 <img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133069864-04bb3c21-2fcb-40f3-83ff-c15f9365afe6.png"> _**Admiral** (ADaM In R Asset Library) - Modular framework to generate ADaM via R functions relying on community contributions <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
+
+<hr>
 
 ### TLG
 
@@ -30,9 +36,15 @@ This list encapsulates all the R packages we have found that fall under the scop
 
 #### Orchestration
 
+<hr>
+
 ### Interactive Display
 
+<hr>
+
 ### eSub
+
+<hr>
 
 ### Validation
 
