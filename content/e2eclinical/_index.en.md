@@ -77,7 +77,7 @@ _**teal** - Framework developed that leverages the R Shiny package to scale deve
 
 **valtools** - Validation framework for R packages used in clinical research and drug development
 
-_**covtracer** - Automated tracing of code coverage via a network of test execution, linking tests to code & code to documentation_
+_**covtracer** - Automated tracing of code coverage via a network of test execution, linking tests to code & code to documentation <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2022>_
 
 
 
