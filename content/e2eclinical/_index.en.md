@@ -27,7 +27,7 @@ This list encapsulates all the R packages we have found that fall under the scop
 
 #### Execution
 
-<img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133070865-b5451863-8fe9-47db-970b-2d4b6fc91380.png"> **Tplyr** - Simplifies the data manipulation necessary to create clinical reports
+<img width="80" height="90" src="https://raw.githubusercontent.com/atorus-research/Tplyr/master/man/figures/logo.png"> **Tplyr** - Simplifies the data manipulation necessary to create clinical reports
 
 <img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133070970-d908707d-0bfc-4e88-a8da-b12b4015024a.png"> **PharmaRTF** - Enhanced RTF wrapper for use with existing R tables packages
 
@@ -41,7 +41,7 @@ _**chevron** - Holds TLG template standards to feed into other tabulation packag
 
 #### Orchestration
 
-<To be added>
+_To be added..._
     
 <hr>
 
@@ -53,7 +53,31 @@ _**teal** - Framework developed that leverages the R Shiny package to scale deve
 
 ### eSub
 
+<img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133087030-77a3cb51-2fb4-49c5-ad16-b58f39f36df4.png"> **Xportr** - Serves as a single tool to create SAS transport files and perform pharma specific dataset level validation checks 
+
+<img width="80" height="90" src="https://raw.githubusercontent.com/Merck/pkglite/master/man/figures/logo.png"> **pkglite** - To represent and exchange R package source code as text files, e.g. readable code
+
+<hr>
+
+### Metadata
+
+<img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133087425-8d4355a3-19ab-477d-949c-36d515555f60.png"> **metacore** - Provides an interface to read in various metadata sources and store in a standardized object 
+
+<hr>
+
+### General
+
+<img width="80" height="90" src="https://atorus-research.github.io/timber/reference/figures/logo.png"> **timber** - Generates an execution log to support reproducibility and traceability of an R script
+
 <hr>
 
 ### Validation
+
+**riskmetric** - Facilities for assessing R packages against a number of metrics to help quantify their robustness
+
+**valtools** - Validation framework for R packages used in clinical research and drug development
+
+_**covtracer** - Automated tracing of code coverage via a network of test execution, linking tests to code & code to documentation_
+
+
 
