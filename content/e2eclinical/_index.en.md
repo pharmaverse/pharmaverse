@@ -31,15 +31,24 @@ This list encapsulates all the R packages we have found that fall under the scop
 
 <img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133070970-d908707d-0bfc-4e88-a8da-b12b4015024a.png"> **PharmaRTF** - Enhanced RTF wrapper for use with existing R tables packages
 
+<img width="80" height="90" src=/images/hex/rtables.png> **rtables** - A framework for declaring complex multi-level tabulations and then applying them to data
 
 #### Templates
 
+_**tern** - Layers analytics from descriptive summaries to more complex statistics on top of the foundational table layouts, analytic and content controls <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
+
+_**chevron** - Holds TLG template standards to feed into other tabulation packages <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
+
 #### Orchestration
 
+<To be added>
+    
 <hr>
 
 ### Interactive Display
 
+_**teal** - Framework developed that leverages the R Shiny package to scale development of our shiny apps <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
+    
 <hr>
 
 ### eSub
