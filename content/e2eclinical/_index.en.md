@@ -9,6 +9,8 @@ type : "docs"
 
 This list encapsulates all the R packages we have found that fall under the scope of usage for e2e clinical reporting in pharma. Over time the pharmaverse council will endeavour to curate this into an “opinionated” stack. 
 
+_**If you have a package that you feel fits within the scope of the pharmaverse then please reach out to any of our council reps.**_
+
 <hr>
 
 ### SDTM
