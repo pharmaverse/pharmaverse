@@ -13,6 +13,8 @@ This list covers the wider purpose R packages that we have found most useful and
 
 <img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133089154-88763b10-8052-42fa-a65d-e6edcda5d858.png"> **tidyverse** - an opinionated collection of R packages designed for data science 
 
+<img width="80" height="90" src="https://raw.githubusercontent.com/openpharma/visR/master/man/figures/logo.png"> **visR** - a package to wrap functionality for plots, tables and diagrams adhering to graphical principles 
+
 **diffdf** - Functions for comparing two data.frames against each other
 
 More to be added...
