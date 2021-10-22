@@ -71,6 +71,8 @@ _**teal** - Framework developed that leverages the R Shiny package to scale deve
 
 <img width="80" height="90" src="https://atorus-research.github.io/timber/reference/figures/logo.png"> **timber** - Generates an execution log to support reproducibility and traceability of an R script
 
+<img width="80" height="90" src=/images/hex/hex-synthetic.cdisc.data.png> **synthetic.cdisc.data** - Generates synthetic CDISC data
+
 <hr>
 
 ### Validation
