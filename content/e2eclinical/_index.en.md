@@ -79,7 +79,7 @@ _To be added..._
 
 **riskmetric** - Facilities for assessing R packages against a number of metrics to help quantify their robustness
 
-**valtools** - Validation framework for R packages used in clinical research and drug development
+<img width="80" height="90" src="https://raw.githubusercontent.com/phuse-org/valtools/master/man/figures/logo.png"> **valtools** - Validation framework for R packages used in clinical research and drug development
 
 <img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/covtracer.png"> _**covtracer** - Automated tracing of code coverage via a network of test execution, linking tests to code & code to documentation <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2022>_
 
