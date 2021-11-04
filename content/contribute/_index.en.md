@@ -28,7 +28,7 @@ The responsibilities of package co-leads (both for new or existing packages) inc
 * Deciding the strategy for the package, such as scope, contribution model, testing, governance, maintenance and communication planning - for each of these points there exists high level guidance and pharmaverse recommendations within our charter
 
 For new package collaborations, beyond our charter we also offer the following to help you get started:
-* A [collaboration contract template](https://github.com/pharmaverse/pharmaverse/blob/main/content/contribute/Pharmaverse%20Collaborative%20Agreement%20(template).docx) - as you see there our recommendation is to target permissive licensing (such as [MIT](https://opensource.org/licenses/MIT)), but this is only a template and all decisions need to be considered with the respective legal groups of the companies involved
+* A [collaboration contract template](https://github.com/pharmaverse/pharmaverse/blob/main/content/contribute/Pharmaverse%20Collaborative%20Agreement%20(template).docx) - as you see there our recommendation is to target permissive licensing (such as [MIT](https://opensource.org/licenses/MIT) or [Apache 2.0](https://opensource.org/licenses/Apache-2.0)), but this is only a template and all decisions need to be considered with the respective legal groups of the companies involved
 * Example contribution guidelines and programming style guide _(Add Link later)_
 * R package validation strategy _(Add Link later)_
 
