@@ -33,13 +33,13 @@ _**If you have a package that you feel fits within the scope of the pharmaverse 
 
 <img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133070970-d908707d-0bfc-4e88-a8da-b12b4015024a.png"> **PharmaRTF** - Enhanced RTF wrapper for use with existing R tables packages
 
-<img width="80" height="90" src=https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/rtables.png> **rtables** - A framework for declaring complex multi-level tabulations and then applying them to data
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/rtables.png"> **rtables** - A framework for declaring complex multi-level tabulations and then applying them to data
 
 #### Templates
 
-<img width="80" height="90" src=https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/tern.png> _**tern** - Layers analytics from descriptive summaries to more complex statistics on top of the foundational table layouts, analytic and content controls <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/tern.png"> _**tern** - Layers analytics from descriptive summaries to more complex statistics on top of the foundational table layouts, analytic and content controls <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
 
-<img width="80" height="90" src=https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/chevron.png> _**chevron** - Holds TLG template standards to feed into other tabulation packages <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/chevron.png"> _**chevron** - Holds TLG template standards to feed into other tabulation packages <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
 
 #### Orchestration
 
@@ -49,7 +49,7 @@ _To be added..._
 
 ### Interactive Display
 
-<img width="80" height="90" src=https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/teal.png> _**teal** - Framework developed that leverages the R Shiny package to scale development of our shiny apps <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/teal.png"> _**teal** - Framework developed that leverages the R Shiny package to scale development of our shiny apps <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
     
 <hr>
 
@@ -71,7 +71,7 @@ _To be added..._
 
 <img width="80" height="90" src="https://atorus-research.github.io/timber/reference/figures/logo.png"> **timber** - Generates an execution log to support reproducibility and traceability of an R script
 
-<img width="80" height="90" src=https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/synthetic.cdisc.data.png> **synthetic.cdisc.data** - Generates synthetic CDISC data
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/synthetic.cdisc.data.png"> **synthetic.cdisc.data** - Generates synthetic CDISC data
 
 <hr>
 
@@ -81,7 +81,7 @@ _To be added..._
 
 **valtools** - Validation framework for R packages used in clinical research and drug development
 
-<img width="80" height="90" src=https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/covtracer.png> _**covtracer** - Automated tracing of code coverage via a network of test execution, linking tests to code & code to documentation <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2022>_
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/covtracer.png"> _**covtracer** - Automated tracing of code coverage via a network of test execution, linking tests to code & code to documentation <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2022>_
 
 
 
