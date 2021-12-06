@@ -1,17 +1,14 @@
 exec:
-- Mike Stackhouse (Atorus)
-- Michael Rimler (GSK)
-- Sumesh Kalappurakal (Janssen)
-- Ross Farrugia (Roche)
+- Mike Stackhouse (Atorus) - mike.stackhouse@atorusresearch.com
+- Michael Rimler (GSK) - michael.s.rimler@gsk.com 
+- Sumesh Kalappurakal (Janssen/J&J) - skalappu@its.jnj.com
+- Ross Farrugia (Roche) - ross.farrugia@roche.com
 wgtech:
 - Michael Rimler (GSK)
-- James Black (Roche)
+- James Black (Roche) - james.black.jb2@roche.com
 wgtlg:
-- Michael Rimler (GSK)
-- Tad (Roche)
+- Mike Stackhouse (Atorus)
+- Tad Lewandowski (Roche) - tadeusz.lewandowski@roche.com 
 wgdata:
 - Michael Rimler (GSK)
-- Ross Farrugia (Roche)
-wge2e:
-- Sumesh Kalappurakal (Janssen)
-- Mike Stackhouse (Atorus)
+- Ross Farrugia (Roche) 
