@@ -1,7 +1,7 @@
 name: rtables
 repolink: https://github.com/Roche/rtables
 docs: https://roche.github.io/rtables/
-hex: /images/hex/rtables.png 
+hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/rtables.png
 task: TLG-reporting
 developer: Roche 
 details: Create and display complex tables with R
