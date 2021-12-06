@@ -131,9 +131,9 @@ copyright = "pharmaverse - add some relevant footer stuff"
 
 # banner
 [Languages.en.banner]
-title = "pharmaverse DRAFT"
+title = "pharmaverse"
 subtitle = "A curated, opinionated, pharma stack of open source R packages to enable clinical reporting (from CRF to eSubmission) backed by a community of passionate individuals and organisations committed to co-creating efficiency in our mission to improve health."
-image = "images/banner.jpg"
+image = "images/banner.png"
 
 # call to action
 [Languages.en.call_to_action]
