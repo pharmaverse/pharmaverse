@@ -45,7 +45,7 @@ _**If you have a package that you feel fits within the scope of the pharmaverse 
 
 <hr>
 
-### General
+### Utilities
 
 <img width="80" height="90" src="https://atorus-research.github.io/timber/reference/figures/logo.png"> **timber** - Generates an execution log to support reproducibility and traceability of an R script
 
