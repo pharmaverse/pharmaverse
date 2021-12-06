@@ -37,17 +37,9 @@ There are different solutions already available, but during R/Pharma there was a
 
 <img width="80" height="90" src="https://raw.githubusercontent.com/tidyverse/ggplot2/main/man/figures/logo.png"> **ggplot2** - An implementation of the Grammar of Graphics in R
 
-**grDevices** - 
-
-**grid** - 
-
-**gridExtra** -
-
-**gtable** -
-
-**viridisLite** - 
-
 <img width="80" height="90" src="https://raw.githubusercontent.com/openpharma/visR/master/man/figures/logo.png"> **visR** - a package to wrap functionality for plots, tables and diagrams adhering to graphical principles 
+
+<img width="80" height="90" src="https://raw.githubusercontent.com/sjmgarnier/viridisLite/master/man/figures/logo.png"> **viridisLite** - Colorblind-Friendly Color Maps for R
 
 <hr>
 
@@ -57,15 +49,11 @@ There are different solutions already available, but during R/Pharma there was a
 
 **diffdf** - Functions for comparing two data.frames against each other
 
-**rlang** -
+<img width="80" height="90" src="https://user-images.githubusercontent.com/r-lib/rlang/main/man/figures/logo.png"> **rlang** - Low-level API for programming with R
 
-**scales** -
+**lintr** - Static code analysis for R that checks adherence to a given style, syntax errors and possible semantic issues
 
-**labeling** -
-
-**lintr** -
-
-**renv** -
+<img width="80" height="90" src="https://user-images.githubusercontent.com/rstudio/renv/main/man/figures/logo.svg"> **renv** - Helps you create reproducible environments for your R projects 
 
 <hr>
 
