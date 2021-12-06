@@ -59,21 +59,21 @@ There are different solutions already available, but during R/Pharma there was a
 
 ### Statistical packages
 
-**stats** -
+**stats** - Base R package with a lot of functionality useful for design and analysis of clinical trials
 
-**survival** -
+**survival** - Core survival analysis routines
 
-**car** -
+**car** - R companion to applied regression
 
-**emmeans** -
+**emmeans** - Estimated marginal means, aka least-squares means
 
-**lme4** -
+**lme4** - Fit linear and generalized linear mixed-effects models
 
-**lmerTest** -
+**lmerTest** - Tests in linear mixed effects models
 
-**broom** -
+**broom** - takes the messy output of built-in functions in R and turns them into tidy tibbles
 
-**VGAM** - 
+**VGAM** - Vector generalized linear and additive models
 
 It is also worth attracting attention here to the wider CRAN task views across several pertinent topics, such as:
 
