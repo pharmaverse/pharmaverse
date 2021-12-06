@@ -57,9 +57,9 @@ _**If you have a package that you feel fits within the scope of the pharmaverse 
 
 **riskmetric** - Facilities for assessing R packages against a number of metrics to help quantify their robustness
 
-<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/covtracer.png"> _**covtracer** - Automated tracing of code coverage via a network of test execution, linking tests to code & code to documentation. This package is used to provide the tracebility matrix for CICD based validation.
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/covtracer.png"> **covtracer** - Automated tracing of code coverage via a network of test execution, linking tests to code & code to documentation. This package is used to provide the tracebility matrix for CICD based validation.
 
-<img width="80" height="90" src="https://github.com/insightsengineering/hex-stickers/raw/main/PNG/thevalidatoR.png"> _**thevalidatoR** - A Github action on the Github Marketplace to provide standardised build reports for 
+<img width="80" height="90" src="https://github.com/insightsengineering/hex-stickers/raw/main/PNG/thevalidatoR.png"> **thevalidatoR** - A Github action on the Github Marketplace to provide standardised build reports for 
 validation. An alternative approach to valtools that relies on the normal 
 R framework for validation.
 
@@ -67,7 +67,7 @@ R framework for validation.
 
 <hr>
 
-### _Nest - a closed source collabodations_
+### _Nest - a closed source collaboration_
 
 The Nest family of packages provides an end to end TLG framework. As of 
 December 2021 this is a closed source collaboration where the code 
@@ -75,15 +75,15 @@ is shared between 4 pharma companies. The code is used in filings by
 one company, and the plan is to open source all the packages 
 in early 2022.
 
-<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/tern.png"> _**tern** - Layers analytics from descriptive summaries to more complex statistics on top of the foundational table layouts, analytic and content controls <OPEN SOURCE RELEASE EXPECTED EARLY 2022>_
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/tern.png"> **tern** - Layers analytics from descriptive summaries to more complex statistics on top of the foundational table layouts, analytic and content controls _<OPEN SOURCE RELEASE EXPECTED EARLY 2022>_
 
-<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/chevron.png"> _**chevron** - Holds TLG template standards to feed into other tabulation packages <OPEN SOURCE RELEASE EXPECTED EARLY>_
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/chevron.png"> **chevron** - Holds TLG template standards to feed into other tabulation packages _<OPEN SOURCE RELEASE EXPECTED EARLY>_
 
-<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/teal.png"> _**teal** - Framework developed that leverages the R Shiny package to scale development of our shiny apps <OPEN SOURCE RELEASE EXPECTED EARLY 2022>_
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/teal.png"> **teal** - Framework developed that leverages the R Shiny package to scale development of our shiny apps _<OPEN SOURCE RELEASE EXPECTED EARLY 2022>_
 
-### _Closed source collabodations_
+### _Closed source collaborations_
 
 This section highlights those packages we are aware of which are still under development but not released outside of a single company, but will likely form part of the pharmaverse in future. If you are considering developing a package with a similar scope to any of the below, we encourage you first make contact with the lead developer to discuss whether a collaboration may be possible.
 
-<img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133067114-65f89b9c-be77-4a85-8d78-bd6229c24921.png"> _**Oak** - SDTM mapping algorithms via R functions <OPEN SOURCE RELEASE EXPECTED ~MID-2022; Contact Ram Ganapathy (ganapar1@gene.com)>_ 
+<img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133067114-65f89b9c-be77-4a85-8d78-bd6229c24921.png"> **Oak** - SDTM mapping algorithms via R functions _<OPEN SOURCE RELEASE EXPECTED ~MID-2022; Contact Ram Ganapathy (ganapar1@gene.com)>_ 
 
