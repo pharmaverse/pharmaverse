@@ -81,7 +81,7 @@ in early 2022.
 
 <img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/teal.png"> **teal** - Framework developed that leverages the R Shiny package to scale development of our shiny apps _<OPEN SOURCE RELEASE EXPECTED EARLY 2022>_
 
-### _Closed source collaborations_
+### _Closed source projects_
 
 This section highlights those packages we are aware of which are still under development but not released outside of a single company, but will likely form part of the pharmaverse in future. If you are considering developing a package with a similar scope to any of the below, we encourage you first make contact with the lead developer to discuss whether a collaboration may be possible.
 
