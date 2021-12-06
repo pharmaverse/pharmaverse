@@ -1,7 +1,7 @@
 ---
 title: "Support"
 date: 2021-09-09T11:02:05+06:00
-icon: "fas fa-plus-hexagon" # fontawesome icon : https://fontawesome.com/icons
+icon: "fas fa-user-plus" # fontawesome icon : https://fontawesome.com/icons
 description: "How to get support for pharmaverse packages."
 # type dont remove or customize
 type : "docs"
