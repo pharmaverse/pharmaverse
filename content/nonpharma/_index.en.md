@@ -9,7 +9,7 @@ type : "docs"
 
 This list covers the wider purpose R packages that we have found most useful and those that most commonly form dependencies to the pharma-specific packages. 
 
-Another useful reference is this document from the R Foundation titled "Regulatory Compliance and Validation Issues - A Guidance Document for the Use of R in Regulated Clinical Trial Environments" [link](https://www.r-project.org/doc/R-FDA.pdf), which shows a list of base and recommended R packages. 
+Another useful reference is this document from the R Foundation titled ["Regulatory Compliance and Validation Issues - A Guidance Document for the Use of R in Regulated Clinical Trial Environments"](https://www.r-project.org/doc/R-FDA.pdf), which shows a list of base and recommended R packages. 
 
 <hr>
 
@@ -17,16 +17,17 @@ Another useful reference is this document from the R Foundation titled "Regulato
 
 There is a current industry working group ongoing effort around tables and the advantages of different packages [here](https://github.com/RConsortium/rtrs-wg/blob/main/Papers/01_cell_values_derivation.Rmd), which will result in a paper. In general, the problem is best divided into the following categories:
 
-## Table Creation
+#### Table Creation
 
-flextable
-gt
-huxtable
-mmtable2
-tableone
-tables
+<img width="80" height="90" src="https://raw.githubusercontent.com/davidgohel/flextable/master/man/figures/logo.png"> **flextable** - Creates tables for HTML, PDF, Microsoft Word and PowerPoint documents from R Markdown
 
-## Formatting and Rendering
+<img width="80" height="90" src="https://raw.githubusercontent.com/rstudio/gt/master/man/figures/logo.svg"> **gt** - Easily generate information-rich, publication-quality tables from R
+
+**huxtable** - An R package to create styled tables in multiple output formats, with a friendly, modern interface
+
+<img width="80" height="90" src="https://raw.githubusercontent.com/ianmoran11/mmtable2/master/man/figures/logo.png"> **mmtable2** - Create and combine tables with a ggplot2/patchwork syntax
+
+#### Formatting and Rendering
 
 There are different solutions already available, but during R/Pharma there was an announcement of the RStudio package tgen to solve the rendering problems consistently.
 
@@ -34,12 +35,17 @@ There are different solutions already available, but during R/Pharma there was a
 
 ### Graphs
 
-ggplot2
-grDevices
-grid
-gridExtra
-gtable
-viridisLite
+<img width="80" height="90" src="https://raw.githubusercontent.com/tidyverse/ggplot2/main/man/figures/logo.png"> **ggplot2** - An implementation of the Grammar of Graphics in R
+
+**grDevices** - 
+
+**grid** - 
+
+**gridExtra** -
+
+**gtable** -
+
+**viridisLite** - 
 
 <img width="80" height="90" src="https://raw.githubusercontent.com/openpharma/visR/master/man/figures/logo.png"> **visR** - a package to wrap functionality for plots, tables and diagrams adhering to graphical principles 
 
@@ -51,29 +57,40 @@ viridisLite
 
 **diffdf** - Functions for comparing two data.frames against each other
 
-rlang
-scales
-labeling
-lintr
-renv
+**rlang** -
+
+**scales** -
+
+**labeling** -
+
+**lintr** -
+
+**renv** -
 
 <hr>
 
 ### Statistical packages
 
-stats
-survival
-car
-emmeans
-lme4
-lmerTest
-dfoptim - very specific for one specific optimization
-broom
-VGAM
+**stats** -
+
+**survival** -
+
+**car** -
+
+**emmeans** -
+
+**lme4** -
+
+**lmerTest** -
+
+**broom** -
+
+**VGAM** - 
 
 It is also worth attracting attention here to the wider CRAN task views across several pertinent topics, such as:
+
 [Clinical Trials](https://cran.r-project.org/web/views/ClinicalTrials.html), [Survival](https://cran.r-project.org/web/views/Survival.html), [Bayes](https://cran.r-project.org/web/views/Bayesian.html), and [Missing data](https://cran.r-project.org/web/views/MissingData.html).
 
 <hr>
 
-As we hope you appreciate with R such an ever-evolving language we would never be able to include and maintain a complete list of all recommended packages here, but we hope that this page helps to introduce to some of the most common packages used both within and beyond pharma.
+As you can appreciate with R such an ever-evolving language we would never be able to include and maintain a complete list of all recommended packages here, but we hope that this page helps to introduce to some of the most common packages used both within and beyond pharma.
