@@ -49,11 +49,11 @@ There are different solutions already available, but during R/Pharma there was a
 
 **diffdf** - Functions for comparing two data.frames against each other
 
-<img width="80" height="90" src="https://user-images.githubusercontent.com/r-lib/rlang/main/man/figures/logo.png"> **rlang** - Low-level API for programming with R
+**rlang** - Low-level API for programming with R
 
 **lintr** - Static code analysis for R that checks adherence to a given style, syntax errors and possible semantic issues
 
-<img width="80" height="90" src="https://user-images.githubusercontent.com/rstudio/renv/main/man/figures/logo.svg"> **renv** - Helps you create reproducible environments for your R projects 
+**renv** - Helps you create reproducible environments for your R projects 
 
 <hr>
 
