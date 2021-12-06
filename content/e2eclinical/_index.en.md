@@ -7,21 +7,15 @@ description: "An opinionated set of R packages that make up the pharmaverse core
 type : "docs"
 ---
 
-This list encapsulates all the R packages we have found that fall under the scope of usage for e2e clinical reporting in pharma. Over time the pharmaverse council will endeavour to curate this into an “opinionated” stack. 
+This list encapsulates all the open source R packages we have found that fall under the scope of usage for e2e clinical reporting in pharma. Over time the pharmaverse council will endeavour to curate this into an “opinionated” stack. 
 
 _**If you have a package that you feel fits within the scope of the pharmaverse then please reach out to any of our council reps.**_
 
 <hr>
 
-### SDTM
-
-<img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133067114-65f89b9c-be77-4a85-8d78-bd6229c24921.png"> _**Oak** - SDTM mapping algorithms via R functions <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
-
-<hr>
-
 ### ADaM
 
-<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/admiral.png"> _**Admiral** (ADaM In R Asset Library) - Modular framework to generate ADaM via R functions relying on community contributions <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/admiral.png"> **Admiral** (ADaM In R Asset Library) - Modular framework to generate ADaM via R functions relying on community contributions
 
 <hr>
 
@@ -34,22 +28,6 @@ _**If you have a package that you feel fits within the scope of the pharmaverse 
 <img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133070970-d908707d-0bfc-4e88-a8da-b12b4015024a.png"> **PharmaRTF** - Enhanced RTF wrapper for use with existing R tables packages
 
 <img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/rtables.png"> **rtables** - A framework for declaring complex multi-level tabulations and then applying them to data
-
-#### Templates
-
-<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/tern.png"> _**tern** - Layers analytics from descriptive summaries to more complex statistics on top of the foundational table layouts, analytic and content controls <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
-
-<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/chevron.png"> _**chevron** - Holds TLG template standards to feed into other tabulation packages <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
-
-#### Orchestration
-
-_To be added..._
-    
-<hr>
-
-### Interactive Display
-
-<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/teal.png"> _**teal** - Framework developed that leverages the R Shiny package to scale development of our shiny apps <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2023>_
     
 <hr>
 
@@ -81,7 +59,19 @@ _To be added..._
 
 <img width="80" height="90" src="https://raw.githubusercontent.com/phuse-org/valtools/master/man/figures/logo.png"> **valtools** - Validation framework for R packages used in clinical research and drug development
 
-<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/covtracer.png"> _**covtracer** - Automated tracing of code coverage via a network of test execution, linking tests to code & code to documentation <NOT YET OPEN SOURCE RELEASED - EXPECTED XXX 2022>_
+<hr>
 
+### _IN DEVELOPMENT_
 
+This section highlights those packages we are aware of which are still under development (and not yet open source released), but will likely form part of the pharmaverse in future. If you are considering developing a package with a similar scope to any of the below, we encourage you first make contact with the lead developer to discuss whether a collaboration may be possible.
+
+<img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133067114-65f89b9c-be77-4a85-8d78-bd6229c24921.png"> _**Oak** - SDTM mapping algorithms via R functions <OPEN SOURCE RELEASE EXPECTED ~MID-2022; Contact Ram Ganapathy (ganapar1@gene.com)>_ 
+
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/tern.png"> _**tern** - Layers analytics from descriptive summaries to more complex statistics on top of the foundational table layouts, analytic and content controls <OPEN SOURCE RELEASE EXPECTED IN 2022; Contact Adrian Waddell (adrian.waddell@roche.com)>_
+
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/chevron.png"> _**chevron** - Holds TLG template standards to feed into other tabulation packages <OPEN SOURCE RELEASE EXPECTED IN 2022; Contact Adrian Waddell (adrian.waddell@roche.com)>_
+
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/teal.png"> _**teal** - Framework developed that leverages the R Shiny package to scale development of our shiny apps <OPEN SOURCE RELEASE EXPECTED IN 2022; Contact Adrian Waddell (adrian.waddell@roche.com)>_
+
+<img width="80" height="90" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/master/PNG/covtracer.png"> _**covtracer** - Automated tracing of code coverage via a network of test execution, linking tests to code & code to documentation <OPEN SOURCE RELEASE EXPECTED IN 2022; Contact Doug Kelkhoff (kelkhofd@gene.com)>_
 
