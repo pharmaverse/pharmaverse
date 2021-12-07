@@ -8,7 +8,8 @@
       </svg>
   
       <ul class="honeycomb">
-      {{ range .Site.Data.packages }}
+      {{ $sorted := sort .Site.Data.packages }}
+      {{ range where $sorted "splash" "include" }}
       <li>
           <svg width="300" height="300" viewBox="0 0 100 100" >
           <a href={{ .repolink }} >
@@ -16,5 +17,5 @@
             </a>
         </svg>
       </li>
-      {{ end }}
+       {{ end }}
       </ul>
