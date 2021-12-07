@@ -1,0 +1,7 @@
+name: chevron
+repo: insightsengineering/chevron
+repo_source: github.com
+docs: https://insightsengineering.github.io/chevron/
+hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/chevron.png
+task: tlg
+details: Holds TLG template standards to feed into other tabulation packages

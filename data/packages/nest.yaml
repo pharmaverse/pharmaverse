@@ -1,0 +1,9 @@
+name: nest
+repo: insightsengineering
+repo_source: github.com
+docs: 
+hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/nest.png
+task: Submission
+developer: Roche 
+details: To represent and exchange R package source code as text files, e.g. readable code
+splash: include

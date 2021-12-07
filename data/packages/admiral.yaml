@@ -1,7 +1,8 @@
 name: admiral
-repolink: https://github.com/Roche-GSK/admiral
+repo: Roche-GSK/admiral
+repo_source: github.com
 docs: https://roche-gsk.github.io/admiral/
 hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/admiral.png
 task: ADaM
-developer: Roche/GSK 
-details: ADaM in R Asset Library
+details: (ADaM In R Asset Library) - Modular framework to generate ADaM via R functions relying on community contributions
+splash: include
