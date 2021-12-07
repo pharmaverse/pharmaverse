@@ -127,7 +127,7 @@ languageName = "En"
 languageCode = "en-us"
 weight = 1
 # copyright
-copyright = "pharmaverse - add some relevant footer stuff"
+copyright = "github.com/pharmaverse"
 
 # banner
 [Languages.en.banner]
