@@ -5,8 +5,29 @@ weight: 3
 draft: false
 ---
 
-TLG related packages have been broken down into three themes:
+TLGs (tables, listings, and graphs) refer to the packages that take data, and convert then into a human 
+intepretable insight. 
 
-- **Templates**: packages that allow the creation of TLGs that meet specific standards. This often means they are 'wrapper' packages, that create specific TLGs like a table 1, or a kaplan mier plot.
-- **Execution**: packages that provide the engine to create the plot, table or listing. These are more extensible packages. 
-- **Orchestration**: packages (or tools) that help facillitate the orchestration of templates and execution packages to be run over a series of planned outputs.
+There are two relevant stages of TLGs - static TLGs, which as of today are the 
+only type of evidence submitted to regulatory bodies, and interactive TLGs, which are predominantly,
+but not limited to, shiny apps.
+
+### Nest
+
+{{< pharmaverse pkg="nest" >}}
+
+The Nest project is a (as of Dec 2021) closed source collaboration between 4 Pharma companies. 
+
+{{< pharmaverse pkg="tern" >}}
+
+{{< pharmaverse pkg="teal" >}}
+
+{{< pharmaverse pkg="chevron" >}}
+
+### De-coupled packages
+
+{{< pharmaverse pkg="rtables" >}}
+
+{{< pharmaverse pkg="pharmaRTF" >}}
+
+{{< pharmaverse pkg="tplyr" >}}

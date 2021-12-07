@@ -1,0 +1,7 @@
+name: teal
+repo: insightsengineering/teal
+repo_source: github.com
+docs: https://insightsengineering.github.io/teal/
+hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/teal.png
+task: tlg
+details: Framework developed that leverages the R Shiny package to scale development of our shiny apps

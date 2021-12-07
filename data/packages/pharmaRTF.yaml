@@ -1,7 +1,7 @@
 name: pharmaRTF
-repolink: https://github.com/insightsengineering/thevalidatoR
-docs: https://github.com/marketplace/actions/r-package-validation-report
-hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/thevalidatoR.png
-task: TLG-reporting
-developer: Roche 
-details: validation
+repo: atorus-research/pharmaRTF
+repo_source: github.com
+docs: https://atorus-research.github.io/pharmaRTF/
+hex: /images/emptyhex.png
+task: tlg
+details: Enhanced RTF wrapper written in R for use with existing R tables packages such as huxtable or GT

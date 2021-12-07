@@ -1,7 +1,8 @@
 name: rtables
-repolink: https://github.com/Roche/rtables
+repo: Roche/rtables
+repo_source: github.com
 docs: https://roche.github.io/rtables/
 hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/rtables.png
-task: TLG-reporting
-developer: Roche 
-details: Create and display complex tables with R
+task: tlg
+details: A framework for declaring complex multi-level tabulations and then applying them to data
+splash: include

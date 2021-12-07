@@ -5,6 +5,11 @@ weight: 2
 draft: false
 ---
 
-Given the endless possibility of ADaM, GSK, Roche and Atorus are working to build an open R based modular framework and codebase so that we collectively contribute and share analysis derivation functions that can be re-used in order to reduce the industry burden of ADaM. At the same time this offers an appealing route for our data scientists at any level of experience to make a name for themselves in the Pharma open-source community and make connections across Pharma companies to share implementations of new derivation modules.
+[According to CDISC:](https://www.cdisc.org/standards/foundational/adam) ADaM defines dataset and metadata standards that support:
 
-more content...
+* efficient generation, replication, and review of clinical trial statistical analyses, and
+* traceability among analysis results, analysis data, and data represented in the Study Data Tabulation Model (SDTM).​
+
+ADaM is one of the required standards for data submission to FDA (U.S.) and PMDA (Japan).
+
+{{< pharmaverse pkg="admiral" >}}

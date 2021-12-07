@@ -1,0 +1,10 @@
+name: thevalidatoR
+repo: insightsengineering/thevalidatoR
+repo_source: github.com
+docs: https://github.com/marketplace/actions/r-package-validation-report
+hex: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/PNG/thevalidatoR.png
+task: validation
+details: > 
+    A Github action on the Github Marketplace to provide standardised build reports for 
+    validation. An alternative approach to valtools that relies on the normal 
+    R framework for validation.

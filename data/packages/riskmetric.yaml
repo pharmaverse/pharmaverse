@@ -1,0 +1,7 @@
+name: riskmetric
+repo: pharmaR/riskmetric
+repo_source: github.com
+docs: https://pharmar.github.io/riskmetric/
+hex: 
+task: validation
+details: Facilities for assessing R packages against a number of metrics to help quantify their robustness

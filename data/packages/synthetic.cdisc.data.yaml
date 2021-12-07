@@ -1,7 +1,7 @@
 name: synthetic.cdisc.data
-repolink: https://github.com/Roche/synthetic.cdisc.data
+repo: Roche/synthetic.cdisc.data
+repo_source: github.com
 docs: https://github.com/Roche/synthetic.cdisc.data
 hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/synthetic.cdisc.data.png
-task: Submission
-developer: Roche 
-details: Synthetic CDISC data on the fly
+task: utilities
+details: Generates synthetic CDISC data
