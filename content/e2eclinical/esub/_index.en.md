@@ -5,7 +5,9 @@ weight: 4
 draft: false
 ---
 
-**GoDocs** has been built to be as configurable as possible.
+eSubs (eSubmissions) refers to the tools used to 
+help submit electronic Common Technical Documents (eCTD) to 
+regultory bodies.
 
 
 {{< pharmaverse pkg="xportr" >}}
