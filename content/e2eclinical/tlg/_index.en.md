@@ -16,7 +16,10 @@ but not limited to, shiny apps.
 
 {{< pharmaverse pkg="nest" >}}
 
-The Nest project is a (as of Dec 2021) closed source collaboration between 4 Pharma companies. 
+The Nest project is a (as of Dec 2021) closed source collaboration between 4 Pharma companies. Nest is a framework,
+so engine used to generate the output can be modified. `ggplot2` and `rtables` are the preferred engines due 
+to their flexibility and feature set, but examples 
+exist within the Nest framework using other packages like `plotly`, `visR` and `tplyr`.
 
 {{< pharmaverse pkg="tern" >}}
 
@@ -24,10 +27,16 @@ The Nest project is a (as of Dec 2021) closed source collaboration between 4 Pha
 
 {{< pharmaverse pkg="chevron" >}}
 
-### De-coupled packages
+### Tables
 
 {{< pharmaverse pkg="rtables" >}}
 
 {{< pharmaverse pkg="pharmaRTF" >}}
 
 {{< pharmaverse pkg="tplyr" >}}
+
+### Plots
+
+{{< pharmaverse pkg="visR" >}}
+
+{{< otherpackages pkg="ggplot2" >}}

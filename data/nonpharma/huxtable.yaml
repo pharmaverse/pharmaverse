@@ -1,0 +1,9 @@
+name: huxtable
+repo: hughjonesd/huxtable
+repo_source: github.com
+docs: https://hughjonesd.github.io/huxtable/
+hex: /images/emptyhex.png
+task: tlg
+details: An R package to create styled tables in multiple output formats, with a friendly, modern interface.
+
+

@@ -1,0 +1,9 @@
+name: tidyverse
+repo: tidyverse
+repo_source: github.com
+docs: https://www.tidyverse.org/packages/
+hex: https://github.com/tidyverse/tidyverse/raw/main/man/figures/logo.png
+task: tlg
+details: Set of packages with a common API for data manipulation and TLGs (includes dplyr, ggplot2, etc)
+
+

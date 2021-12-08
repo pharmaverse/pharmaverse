@@ -19,13 +19,13 @@ There is a current industry working group ongoing effort around tables and the a
 
 #### Table Creation
 
-<img width="80" height="90" src="https://raw.githubusercontent.com/davidgohel/flextable/master/man/figures/logo.png"> **flextable** - Creates tables for HTML, PDF, Microsoft Word and PowerPoint documents from R Markdown
+{{< otherpackages pkg="flextable" >}}
 
-<img width="80" height="90" src="https://raw.githubusercontent.com/rstudio/gt/master/man/figures/logo.svg"> **gt** - Easily generate information-rich, publication-quality tables from R
+{{< otherpackages pkg="gt" >}}
 
-**huxtable** - An R package to create styled tables in multiple output formats, with a friendly, modern interface
+{{< otherpackages pkg="huxtable" >}}
 
-<img width="80" height="90" src="https://raw.githubusercontent.com/ianmoran11/mmtable2/master/man/figures/logo.png"> **mmtable2** - Create and combine tables with a ggplot2/patchwork syntax
+{{< otherpackages pkg="mmtable2" >}}
 
 #### Formatting and Rendering
 
@@ -35,29 +35,32 @@ There are different solutions already available, but during R/Pharma there was a
 
 ### Graphs
 
-<img width="80" height="90" src="https://raw.githubusercontent.com/tidyverse/ggplot2/main/man/figures/logo.png"> **ggplot2** - An implementation of the Grammar of Graphics in R
+{{< pharmaverse pkg="visR" >}}
 
-<img width="80" height="90" src="https://raw.githubusercontent.com/openpharma/visR/master/man/figures/logo.png"> **visR** - a package to wrap functionality for plots, tables and diagrams adhering to graphical principles 
+{{< otherpackages pkg="ggplot2" >}}
 
-<img width="80" height="90" src="https://raw.githubusercontent.com/sjmgarnier/viridisLite/master/man/figures/logo.png"> **viridisLite** - Colorblind-Friendly Color Maps for R
+{{< otherpackages pkg="viridisLite" >}}
 
 <hr>
 
 ### Utilities
 
-<img width="80" height="90" src="https://user-images.githubusercontent.com/82581364/133089154-88763b10-8052-42fa-a65d-e6edcda5d858.png"> **tidyverse** [link](https://www.tidyverse.org/packages/) - an opinionated collection of R packages designed for data science, including tidyr, dplyr, readr, purrr, tibble, stringr, forcats, magrittr and haven.
+{{< otherpackages pkg="tidyverse" >}}
 
-**diffdf** - Functions for comparing two data.frames against each other
+{{< otherpackages pkg="diffdf" >}}
 
-**rlang** - Low-level API for programming with R
+{{< otherpackages pkg="lintr" >}}
 
-**lintr** - Static code analysis for R that checks adherence to a given style, syntax errors and possible semantic issues
-
-**renv** - Helps you create reproducible environments for your R projects 
+{{< otherpackages pkg="renv" >}}
 
 <hr>
 
 ### Statistical packages
+
+It would be impossible to capture all the relevant statistical packages, as there are potentially thousands of 
+potential methods that could be applied in a study. Below we include a handful that are likely to be 
+used in the majority of trial reporting events, and refer to the Cran Task Views (CTVs) that attempt 
+to maintain a landscape of available packages other several important domains.
 
 **stats** - Base R package with a lot of functionality useful for design and analysis of clinical trials
 
@@ -75,7 +78,7 @@ There are different solutions already available, but during R/Pharma there was a
 
 **VGAM** - Vector generalized linear and additive models
 
-It is also worth attracting attention here to the wider CRAN task views across several pertinent topics, such as:
+It is also worth attracting attention here to the wider CTVs across several pertinent topics, such as:
 
 [Clinical Trials](https://cran.r-project.org/web/views/ClinicalTrials.html), [Survival](https://cran.r-project.org/web/views/Survival.html), [Bayes](https://cran.r-project.org/web/views/Bayesian.html), and [Missing data](https://cran.r-project.org/web/views/MissingData.html).
 

@@ -1,0 +1,9 @@
+name: renv
+repo: rstudio/renv
+repo_source: github.com
+docs: https://rstudio.github.io/renv/
+hex: https://rstudio.github.io/renv/reference/figures/logo.svg
+task: utility
+details: Helps you create reproducible environments for your R projects
+
+

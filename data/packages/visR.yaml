@@ -1,0 +1,7 @@
+name: visR
+repo: openpharma/visR
+repo_source: github.com
+docs: https://openpharma.github.io/visR/
+hex: https://openpharma.github.io/visR/reference/figures/logo.png
+task: tlg
+details: The goal of visR is to enable fit-for-purpose, reusable clinical and medical research focused visualizations and tables with sensible defaults and based on sound graphical principles.

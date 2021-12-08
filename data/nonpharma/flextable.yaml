@@ -1,0 +1,9 @@
+name: flextable
+repo: davidgohel/flextable
+repo_source: github.com
+docs: https://davidgohel.github.io/flextable/
+hex: https://raw.githubusercontent.com/davidgohel/flextable/master/man/figures/logo.png
+task: tlg
+details: Creates tables for HTML, PDF, Microsoft Word and PowerPoint documents from R Markdown
+
+

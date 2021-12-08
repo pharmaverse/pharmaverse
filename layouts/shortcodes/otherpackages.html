@@ -1,0 +1,10 @@
+{{ if .IsNamedParams }}
+  {{ $pkg := .Get "pkg" }}
+  {{ $data := index $.Site.Data.nonpharma $pkg}}
+  {{ if (isset $data "hex" )}}
+  <img width="80" height="90" hspace="10" align="left" src={{ $data.hex }}>
+  {{ end }}
+  <b>{{ $data.name }}</b> <a href="https://{{$data.docs}}"><span> <i class="fa fa-book"></i></span></a> <a href="https://{{$data.repo_source}}/{{$data.repo}}"><span> <i class="fab fa-github"></i></span></a>
+  <p>{{ $data.details }}</p> </br>
+{{- end -}}
+
