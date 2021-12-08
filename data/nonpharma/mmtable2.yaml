@@ -1,0 +1,9 @@
+name: mmtable2
+repo: ianmoran11/mmtable2
+repo_source: github.com
+docs: https://ianmoran11.github.io/mmtable2/
+hex: https://ianmoran11.github.io/mmtable2/reference/figures/logo.png
+task: tlg
+details: Create and combine tables with a ggplot2/patchwork syntax.
+
+

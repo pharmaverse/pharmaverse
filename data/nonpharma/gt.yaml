@@ -1,0 +1,9 @@
+name: gt
+repo: rstudio/gt
+repo_source: github.com
+docs: https://gt.rstudio.com/
+hex: https://github.com/rstudio/gt/raw/master/man/figures/logo.svg
+task: tlg
+details: Easily generate information-rich, publication-quality tables from R
+
+

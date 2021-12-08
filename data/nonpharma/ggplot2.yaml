@@ -1,0 +1,8 @@
+name: ggplot2
+repo: tidyverse/ggplot2
+repo_source: github.com
+docs: https://ggplot2.tidyverse.org/
+hex: https://github.com/tidyverse/ggplot2/raw/main/man/figures/logo.png
+task: tlg
+details: An implementation of the Grammar of Graphics in R, and the most popular plotting package for static plots in R.
+
