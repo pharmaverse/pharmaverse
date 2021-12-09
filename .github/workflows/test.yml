@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - '!main'  # not on main
+      - develop  # not on main
       
 jobs:
   deploy:
