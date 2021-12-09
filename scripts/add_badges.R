@@ -35,12 +35,14 @@ badges <- read_csv(
     i_badge_cran <- badges %>% filter(name == i_package) %>% pull(badge_cran)
     i_badge_health <- badges %>% filter(name == i_package) %>% pull(badge_health)
     i_badge_contributors <- badges %>% filter(name == i_package) %>% pull(badge_contributors)
+    i_badge_riskmetric <- badges %>% filter(name == i_package) %>% pull(badge_riskmetric)
     
   
     
     write_badge(i_badge_cran, i, "badge_cran: ")
     write_badge(i_badge_health, i, "badge_health: ")
     write_badge(i_badge_contributors, i, "badge_contributors: ")
+    write_badge(i_badge_riskmetric, i, "badge_riskmetric: ")
   }
 
 
