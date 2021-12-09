@@ -12,7 +12,7 @@ There are two relevant stages of TLGs - static TLGs, which as of today are the
 only type of evidence submitted to regulatory bodies, and interactive TLGs, which are predominantly,
 but not limited to, shiny apps.
 
-### Nest
+### Frameworks
 
 {{< pharmaverse pkg="nest" >}}
 
