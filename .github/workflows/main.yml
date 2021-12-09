@@ -21,8 +21,8 @@ jobs:
       
       - name: Install dependencies
         run: |
-          install.packages("dplyr", type = "binary")
-          install.packages("readr", type = "binary")
+          install.packages("dplyr", type = "source")
+          install.packages("readr", type = "source")
         shell: Rscript {0}
         
       - name: Add badges
