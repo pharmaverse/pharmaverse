@@ -14,7 +14,7 @@ badges <- read_csv(
     badge, file, text
   ){
     if (!rlang::is_empty(badge)) {
-    if (!is.na(badge) & badge != "") {
+    if (!is.na(badge) & badge != "" & badge != "NA") {
       cat(
         paste0("\n",text,badge),
         file = file, append = TRUE)   
