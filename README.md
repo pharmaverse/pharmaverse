@@ -1,209 +1,85 @@
 
-## pharmaverse website
+# pharmaverse website
 
-Test site is built from `develop`: http://openpharma.s3-website.us-east-2.amazonaws.com/website/
+For any questions about the site, please reach out to @epijim (or ideally, make issues here).
 
+## Hosted sites:
 
+- production: [pharmaverse.org](https://pharmaverse.org)
+- `develop` branch: [openpharma.s3-website.us-east-2.amazonaws.com/develop/](http://openpharma.s3-website.us-east-2.amazonaws.com/develop/)
+- most recent PR onto `develop`: [openpharma.s3-website.us-east-2.amazonaws.com/pr/](http://openpharma.s3-website.us-east-2.amazonaws.com/pr/)
 
-Markdown style guide
+## Development / git flow
 
-#### Heading example
+When you push to  `develop` OR make a pull request onto `develop` a github action will run which will render the site, and deploy 
+it to the test server. But the test server is different depending on which route you took.
 
-Here is example of hedings. You can use this heading by following markdownify rules. For example: use `#` for heading 1 and use `######` for heading 6.
+The code on `develop` is hosted to: http://openpharma.s3-website.us-east-2.amazonaws.com/develop/
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+The code from the last edited PR is hosted at: http://openpharma.s3-website.us-east-2.amazonaws.com/pr/
 
-<hr>
+The intended workflows is develop is the UAT branch, and so you check things here before moving to prod. While the 'build from PR` allows you to 
+work on something very experimental and check results, before pushing it do develop.
 
-##### Emphasis
+This git flow is predicated on it being unlikely to have more than one person actively working on the site at any one time. If 
+that isn't the case, we can look to build more commit specific workflows.
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+You cannot work directly on master branch. The only way to push in is via a PR. And it will be denied if 
+you have not come through develop.
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+## Data flows
 
-Combined emphasis with **asterisks and _underscores_**.
+### 'Scraped' data
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+Passive data is collected via openpharma.github.io, a sister org that is completely un-opinionated and has  
+a wider remit spanning discovery to access. This site contains no curated data beyond names - and is instead focussed on 
+collecting and sharing data on open source health and related metadata (e.g. CRAN status and riskmetric scores).  
+Information on the data collected is here: https://openpharma.github.io/#data. 
 
-<hr>
+Data is stored in a pharmaverse AWS account.
 
-##### Link
-[I'm an inline-style link](https://www.google.com)
+But in essence, as of time of writing this it covers:
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+- CRAN
+- Github activity
+- riskmetric score
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+### Package info
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+Curated package info is stored in the folder `data/`. `pharmaverse` packages are in the folder `data/packages`. Non-pharma packages that get a special 
+mention are in `data/nonpharma`. Each package is a unique `.yaml` file. 
 
-[You can use numbers for reference-style link definitions][1]
+The general structure is:
 
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.themefisher.com
-[1]: https://gethugothemes.com
-[link text itself]: https://www.getjekyllthemes.com
-
-<hr>
-
-##### Paragraph
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
-<hr>
-
-##### Ordered List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
-
-<hr>
-
-##### Unordered List
-
-* List item
-* List item
-* List item
-* List item
-* List item
-
-<hr>
-
-#### Notice
-
-{{< notice "note" >}}
-  This is a simple note.
-{{< /notice >}}
-
-{{< notice "tip" >}}
-  This is a simple tip.
-{{< /notice >}}
-
-{{< notice "info" >}}
-  This is a simple info.
-{{< /notice >}}
-
-<hr>
-
-#### Tab
-
-{{< tabs >}}
-
-  {{< tab "first" >}}
-   This is first tab
-  {{< /tab >}}
-
-  {{< tab "second" >}}
-  this is second tab
-  {{< /tab >}}
-
-  {{< tab "third" >}}
-  this is third tab
-  {{< /tab >}}
-
-{{</ tabs >}}
-
-<hr>
-
-### Collapse
-
-{{< collapse "collapse 1" >}}
-  This is a simple collapse
-{{< /collapse >}}
-
-{{< collapse "collapse 2" >}}
-  This is a simple collapse
-{{< /collapse >}}
-
-{{< collapse "collapse 3" >}}
-  This is a simple collapse
-{{< /collapse >}}
-
-<hr>
-
-##### Code and Syntax Highlighting
-
-Inline `code` has `back-ticks around` it.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
- 
-```
-No language indicated, so no syntax highlighting. 
-But let's throw in a <b>tag</b>.
+```yaml
+name: admiral
+repo: Roche-GSK/admiral
+repo_source: github.com
+docs: https://roche-gsk.github.io/admiral/
+hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/admiral.png
+task: ADaM
+details: (ADaM In R Asset Library) - Modular framework to generate ADaM via R functions relying on community contributions
+splash: include # this controls what is shown on the main page. Plan is to deprecate and put all hex's up
 ```
 
-<hr>
+It should be self explanatory. Please use the categories in the site for `task:`. Although right now it's not used, it could be very 
+useful in the future.
 
-##### Blockquote
+### General content of the site
 
-> This is a blockquote example.
+Site content is in `content`. It's normal markdown files. See [markdown-guide.md](markdown-guide.md). 
 
-<hr>
+### Calling package info in the site
 
-##### Inline HTML
+ To call a package, we have two shortcuts. Right now they are different, as I was 
+planning to do some different things with the cards depending on the type. `pharmaverse` means it's 'pharmaverse' - e.g. in the folder 
+`data/packages`. `otherpackages` is for non-pharmaverse packages, in `data/nonpharma`.
 
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
+```r
+{{< pharmaverse pkg="rtables" >}}
 
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
+{{< otherpackages pkg="gt" >}}
+```
 
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-
-
-<hr>
-
-##### Tables
-
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-<hr>
-
-##### Image
-
-![image](img-1.jpg)
-
-<hr>
-
-##### Youtube video
-
-{{< youtube C0DPdy98e4c >}}
+We can do anything with these shortcuts and machine readable package data though. e.g. hex stickers on the front page also come from this
+yaml data.

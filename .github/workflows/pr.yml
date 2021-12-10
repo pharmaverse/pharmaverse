@@ -1,9 +1,9 @@
 name: develop branch
 
 on:
-  push:
+  pull_request:
     branches:
-      - develop  # not on main
+      - develop
       
 jobs:
   deploy:
@@ -47,4 +47,4 @@ jobs:
           aws-region: us-east-2
 
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync ./public/ s3://openpharma/website --delete      
+        run: aws s3 sync ./public/ s3://openpharma/pr --delete      
