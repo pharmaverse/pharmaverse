@@ -33,7 +33,7 @@ exist within the Nest framework using other packages like `plotly`, `visR` and `
 
 {{< pharmaverse pkg="pharmaRTF" >}}
 
-{{< pharmaverse pkg="tplyr" >}}
+{{< pharmaverse pkg="Tplyr" >}}
 
 ### Plots
 
