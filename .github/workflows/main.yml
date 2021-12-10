@@ -16,22 +16,15 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
           
-          
-      - uses: r-lib/actions/setup-r@v1
+      - name: Install curl
+        run: sudo apt-get install -y libcurl4-openssl-dev   
+
+      - uses: r-lib/actions/setup-r@master
       
-      - name: Install dependencies
-        run: |
-          install.packages("dplyr")
-          install.packages("glue")
-          install.packages("readr")
-          install.packages("devtools")
-        shell: Rscript {0}
-        
-      - name: Install github dependencies
-        run: |
-          devtools::install_github("openpharma/GithubMetrics")
-        shell: Rscript {0}
-        
+      - uses: r-lib/actions/setup-renv@master
+        with:
+          cache-version: 2
+
       - name: Run scripts
         run: |
           Rscript scripts/add_badges.R
