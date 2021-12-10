@@ -22,7 +22,10 @@ jobs:
       - name: Install dependencies
         run: |
           install.packages("dplyr")
+          install.packages("glue")
           install.packages("readr")
+          install.packages("devtools")
+          devtools::install_github("openpharma/GithubMetrics")
         shell: Rscript {0}
         
       - name: Add badges
