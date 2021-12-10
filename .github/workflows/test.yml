@@ -1,4 +1,4 @@
-name: github pages
+name: develop branch
 
 on:
   push:
@@ -19,18 +19,9 @@ jobs:
           
       - uses: r-lib/actions/setup-r@v1
       
-      - name: Install dependencies
-        run: |
-          install.packages("dplyr")
-          install.packages("glue")
-          install.packages("readr")
-          install.packages("devtools")
-        shell: Rscript {0}
-        
-      - name: Install github dependencies
-        run: |
-          devtools::install_github("openpharma/GithubMetrics")
-        shell: Rscript {0}
+      - uses: r-lib/actions/setup-renv@v1
+        with:
+          cache-version: 2
 
       - name: Run scripts
         run: |
