@@ -25,11 +25,17 @@ jobs:
           install.packages("glue")
           install.packages("readr")
           install.packages("devtools")
+        shell: Rscript {0}
+        
+      - name: Install github dependencies
+        run: |
           devtools::install_github("openpharma/GithubMetrics")
         shell: Rscript {0}
         
-      - name: Add badges
-        run: Rscript scripts/add_badges.R
+      - name: Run scripts
+        run: |
+          Rscript scripts/add_badges.R
+          Rscript scripts/add_contributions.R
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
