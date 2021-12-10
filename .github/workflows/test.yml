@@ -16,7 +16,9 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
           
-          
+      - name: Install curl
+        run: sudo apt-get install -y libcurl4-openssl-dev   
+
       - uses: r-lib/actions/setup-r@master
       
       - uses: r-lib/actions/setup-renv@master
