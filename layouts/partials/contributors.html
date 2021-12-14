@@ -1,12 +1,24 @@
 <ul>
-    <h3>Executive</h3>
-    {{ range .exec }}
+    <h3>Council</h3>
+    {{ range .council }}
         <li>{{ . }}</li>
     {{ end }}
 </ul>
 <ul>
-    <h3>Pharmaverse contributors</h3>
-    {{ range .contributors }}
+    <h3>Data Engineering WG</h3>
+    {{ range .data }}
+        <li>{{ . }}</li>
+    {{ end }}
+</ul>
+<ul>
+    <h3>TLG and interactive tools WG</h3>
+    {{ range .tlg }}
+        <li>{{ . }}</li>
+    {{ end }}
+</ul>
+<ul>
+    <h3>Technology and templates WG</h3>
+    {{ range .tech }}
         <li>{{ . }}</li>
     {{ end }}
 </ul>
