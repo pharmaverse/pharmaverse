@@ -42,7 +42,9 @@ you have not come through develop.
 ### 'Scraped' data
 
 Passive data is collected via openpharma.github.io, a sister org that is completely un-opinionated and has  
-a wider remit spanning discovery to access. This site contains no curated data beyond names - and is instead focussed on 
+a wider remit spanning discovery to access (at the time of writing this, openpharma tracked 210 R packages and 3 python libraries built for pharma, 
+the majority being statistical in nature). 
+This site contains no curated data beyond names - and is instead focussed on 
 collecting and sharing data on open source health and related metadata (e.g. CRAN status and riskmetric scores).  
 Information on the data collected is here: https://openpharma.github.io/#data. 
 
