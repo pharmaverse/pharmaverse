@@ -3,6 +3,7 @@ title: "Our Charter"
 date: 2021-09-09T11:02:05+06:00
 icon: "fas fa-book" # fontawesome icon : https://fontawesome.com/icons
 description: "Pharmaverse charter covering our high level objective and scope, along with recommendations for new pharmaverse collaborations."
+weight: 1
 # type dont remove or customize
 type : "docs"
 ---

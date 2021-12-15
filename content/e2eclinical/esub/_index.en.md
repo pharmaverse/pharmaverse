@@ -7,7 +7,7 @@ draft: false
 
 eSubs (eSubmissions) refers to the tools used to 
 help submit electronic Common Technical Documents (eCTD) to 
-regultory bodies.
+regulatory bodies.
 
 
 {{< pharmaverse pkg="xportr" >}}

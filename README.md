@@ -3,7 +3,16 @@
 
 For any questions about the site, please reach out to @epijim (or ideally, make issues here).
 
+### Roadmap
+
+Check out the project board for the current roadmap: 
+
+* In a table view (James' preferred): https://github.com/orgs/pharmaverse/projects/3/views/9
+* In kanban view: https://github.com/orgs/pharmaverse/projects/3/views/1?layout=board
+
 ## Hosted sites:
+
+This website is available at 3 locations:
 
 - production: [pharmaverse.org](https://pharmaverse.org)
 - `develop` branch: [openpharma.s3-website.us-east-2.amazonaws.com/develop/](http://openpharma.s3-website.us-east-2.amazonaws.com/develop/)
@@ -18,13 +27,14 @@ The code on `develop` is hosted to: http://openpharma.s3-website.us-east-2.amazo
 
 The code from the last edited PR is hosted at: http://openpharma.s3-website.us-east-2.amazonaws.com/pr/
 
-The intended workflows is develop is the UAT branch, and so you check things here before moving to prod. While the 'build from PR` allows you to 
-work on something very experimental and check results, before pushing it do develop.
+The intended workflows expects that `develop` is the UAT branch where you check things pre-prod. 
+While the 'build from PR` allows you to work on something very experimental and check results, before pushing it do develop.
 
-This git flow is predicated on it being unlikely to have more than one person actively working on the site at any one time. If 
-that isn't the case, we can look to build more commit specific workflows.
+This git flow is predicated on it being unlikely to have more than one person actively working on the site at any one time. As if to 
+totally seperate PRs are made 30 seconds apart, you can't be sure which PR is deployed to the test site.
+If it becomes an issue, we can look to build more commit specific workflows.
 
-You cannot work directly on master branch. The only way to push in is via a PR. And it will be denied if 
+**You cannot work directly on master branch**. The only way to push in is via a PR. And it will be denied if 
 you have not come through develop.
 
 ## Data flows
@@ -32,7 +42,9 @@ you have not come through develop.
 ### 'Scraped' data
 
 Passive data is collected via openpharma.github.io, a sister org that is completely un-opinionated and has  
-a wider remit spanning discovery to access. This site contains no curated data beyond names - and is instead focussed on 
+a wider remit spanning discovery to access (at the time of writing this, openpharma tracked 210 R packages and 3 python libraries built for pharma, 
+the majority being statistical in nature). 
+This site contains no curated data beyond names - and is instead focussed on 
 collecting and sharing data on open source health and related metadata (e.g. CRAN status and riskmetric scores).  
 Information on the data collected is here: https://openpharma.github.io/#data. 
 
@@ -43,6 +55,7 @@ But in essence, as of time of writing this it covers:
 - CRAN
 - Github activity
 - riskmetric score
+- Cran Task Views
 
 ### Package info
 
