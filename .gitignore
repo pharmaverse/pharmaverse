@@ -7,3 +7,5 @@
 *.Rproj
 
 public/
+
+static/shields/*.png
