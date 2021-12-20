@@ -53,13 +53,13 @@ jobs:
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
-        if: ${{ !github.ref == 'refs/heads/develop' }}
+        if: ${{ github.ref == 'refs/heads/develop' }}
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
           
       - name: Deploy static site to S3 bucket
-        if: ${{ !github.ref == 'refs/heads/develop' }}
+        if: ${{ github.ref == 'refs/heads/develop' }}
         run: aws s3 sync ./public/ s3://openpharma/develop --delete  
 
