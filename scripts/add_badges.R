@@ -19,10 +19,16 @@ library(gt)
   dir_shields <- "static/shields"
   
   # check if a pkg has been removed!
-  removed <- setdiff(
-    gsub(".png","",list.files(dir_shields, pattern = "*.png")),
-    gsub(pattern = ".yaml",replacement = "",basename(files_pharmaverse))
-  )
+  removed <- unique(c(
+    setdiff(
+      gsub(".png","",list.files(dir_shields, pattern = "*.png")),
+      gsub(pattern = ".yaml",replacement = "",basename(files_pharmaverse))
+    ),
+    setdiff(
+      gsub(".svg","",list.files(dir_shields, pattern = "*.svg")),
+      gsub(pattern = ".yaml",replacement = "",basename(files_pharmaverse))
+    )
+  ))
   
   if(length(removed) > 0) {
     message("The following packages are no longer pharmaverse: ",
@@ -31,15 +37,24 @@ library(gt)
     file.remove(
       glue("{dir_shields}/{removed}.png")
     )
+    file.remove(
+      glue("{dir_shields}/{removed}.svg")
+    )
   }
   
 
   
   # check if a pkg already exists
-  missing <- setdiff(
-    gsub(pattern = ".yaml",replacement = "",basename(files_pharmaverse)),
-    gsub(".png","",list.files(dir_shields, pattern = "*.png"))
-  )
+  missing <- unique(c(
+    setdiff(
+      gsub(pattern = ".yaml",replacement = "",basename(files_pharmaverse)),
+      gsub(".png","",list.files(dir_shields, pattern = "*.png"))
+    ),
+    setdiff(
+      gsub(pattern = ".yaml",replacement = "",basename(files_pharmaverse)),
+      gsub(".svg","",list.files(dir_shields, pattern = "*.svg"))
+    )
+  ))
   
   if(length(missing) > 0) {
     message("The following packages are new to the pharmaverse: ",
@@ -54,18 +69,18 @@ library(gt)
         label = i,
         logo = "static/images/logo-14-14.png",
         color = "blue",
-        filename = glue("{dir_shields}/{i}.png")
+        filename = glue("{dir_shields}/{i}")
       )
     }
   }
   
   # Summarise badges
-  all_badges <- gsub(".png","",list.files(dir_shields, pattern = "*.png"))
+  all_badges <- gsub(".svg","",list.files(dir_shields, pattern = "*.svg"))
   
   tibble(
     Package = all_badges,
-    Shield = glue('<img src="http://pharmaverse.org/shields/{all_badges}.png">'),
-    Markdown = glue('[<img src="http://pharmaverse.org/shields/{all_badges}.png">](https://pharmaverse.org)')
+    Shield = glue('<img src="http://pharmaverse.org/shields/{all_badges}.svg">'),
+    Markdown = glue('[<img src="http://pharmaverse.org/shields/{all_badges}.svg">](https://pharmaverse.org)')
     ) %>%
     gt() %>%
     fmt_markdown(columns = Shield) %>%
