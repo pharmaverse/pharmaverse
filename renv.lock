@@ -471,15 +471,15 @@
     },
     "shieldR": {
       "Package": "shieldR",
-      "Version": "0.2.1",
+      "Version": "0.3.0",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteRepo": "shieldR",
       "RemoteUsername": "epijim",
       "RemoteRef": "HEAD",
-      "RemoteSha": "b7f64d469755d37c566dcd187b35cb2d30af19cd",
-      "Hash": "917856a9a905c141b956fca9df513477"
+      "RemoteSha": "f29338e0b012d60a3e2d99a3e4edefb0ed263dfd",
+      "Hash": "a54d65f76dcbada54df9eda9a1b648dc"
     },
     "stringi": {
       "Package": "stringi",
