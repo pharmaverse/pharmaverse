@@ -1,6 +1,6 @@
 ---
-title: "Got Any Questions"
-description: "this is meta description"
+title: "Reach out to us"
+description: "Send a message to the pharmaverse slack"
 layout: "contact"
 draft: false
 ---
