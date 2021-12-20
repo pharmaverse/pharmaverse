@@ -29,7 +29,7 @@ contributors <- contributors %>%
 table <- contributors %>%
   filter(!is.na(name)) %>%
   mutate(
-    `Activity on the website and metadata <a href="https://github.com/pharmaverse/pharmaverse/projects/1">(to contribute click here)</a>` =
+    `Activity on the website and metadata <a href="https://github.com/orgs/pharmaverse/projects/3">(to contribute click here)</a>` =
       glue(
         '<img src="{avatar}" alt="" width = "30" height="30"> {name} ({author}): {commits} commits between {first_commit} and {last_commit}')
   ) %>%
