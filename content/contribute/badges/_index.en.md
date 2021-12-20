@@ -5,7 +5,7 @@ weight: 3
 draft: false
 ---
 
-For packages we include in the pharmaverse, we generate and host sheilds/badges
+For packages we include in the pharmaverse, we generate and host shields/badges
 that the package authors are free to use on their packages. 
 
 There is no requirement to use these badges, and we reserve the right to 
