@@ -12,11 +12,10 @@ Check out the project board for the current roadmap:
 
 ## Hosted sites:
 
-This website is available at 3 locations:
+This website is available at 2 locations:
 
 - production: [pharmaverse.org](https://pharmaverse.org)
 - `develop` branch: [openpharma.s3-website.us-east-2.amazonaws.com/develop/](http://openpharma.s3-website.us-east-2.amazonaws.com/develop/)
-- most recent PR onto `develop`: [openpharma.s3-website.us-east-2.amazonaws.com/pr/](http://openpharma.s3-website.us-east-2.amazonaws.com/pr/)
 
 ## Development / git flow
 
@@ -25,14 +24,10 @@ it to the test server. But the test server is different depending on which route
 
 The code on `develop` is hosted to: http://openpharma.s3-website.us-east-2.amazonaws.com/develop/
 
-The code from the last edited PR is hosted at: http://openpharma.s3-website.us-east-2.amazonaws.com/pr/
-
 The intended workflows expects that `develop` is the UAT branch where you check things pre-prod. 
 While the 'build from PR` allows you to work on something very experimental and check results, before pushing it do develop.
 
-This git flow is predicated on it being unlikely to have more than one person actively working on the site at any one time. As if to 
-totally seperate PRs are made 30 seconds apart, you can't be sure which PR is deployed to the test site.
-If it becomes an issue, we can look to build more commit specific workflows.
+This git flow is predicated on it being unlikely to have more than one person actively working on the site at any one time. 
 
 **You cannot work directly on master branch**. The only way to push in is via a PR. And it will be denied if 
 you have not come through develop.
@@ -44,9 +39,11 @@ you have not come through develop.
 Passive data is collected via openpharma.github.io, a sister org that is completely un-opinionated and has  
 a wider remit spanning discovery to access (at the time of writing this, openpharma tracked 210 R packages and 3 python libraries built for pharma, 
 the majority being statistical in nature). 
-This site contains no curated data beyond names - and is instead focussed on 
+This site contains no curated data beyond names - and is instead focused on 
 collecting and sharing data on open source health and related metadata (e.g. CRAN status and riskmetric scores).  
 Information on the data collected is here: https://openpharma.github.io/#data. 
+
+Note openpharma is getting an intern in 2022 to look at doing better insights on this data.
 
 Data is stored in a pharmaverse AWS account.
 
