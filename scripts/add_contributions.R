@@ -141,7 +141,11 @@ library(readr)
     arrange(-repos) %>%
     select(
       label
-    ) %>%
+    ) 
+  
+  n_people <- nrow(html_all)
+  
+  html_all <- html_all
     knitr::kable("html", escape = FALSE)
   
     html_all <- gsub(" <thead>.*</thead>","",html_all)
@@ -159,7 +163,7 @@ cat(
     {html_website}
     </br>
     <h4>All pharmaverse contributors</h4>
-    <p>We'd also like to acknowledge all the people that contributed code to 
+    <p>We'd also like to acknowledge the ~{n_people} people that have contributed code to 
     the pharmaverse</p>
     {html_all}
     "
