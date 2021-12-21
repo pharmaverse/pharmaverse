@@ -4,8 +4,9 @@ library(glue)
 library(yaml)
 library(purrr)
 library(tidyr)
+library(readr)
 
-## WGs ------------------
+## Data ------------------
   people_yamls <- list.files("data/people")
   
   extract_person <- function(file){
@@ -16,15 +17,28 @@ library(tidyr)
       name = person_list$name,
       pharmaverse_roles = person_list$pharmaverse_roles,
       company = person_list$company,
-      logo = person_list$company_logo
+      logo = person_list$company_logo,
+      gh_handle = gsub(".yaml","",file)
     )
   }
   
-  extract_person("epijim.yaml")
-  
   people <- people_yamls %>%
     map_df(extract_person)
+# s3
+  people_s3 <- read_csv(
+    "https://openpharma.s3.us-east-2.amazonaws.com/people.csv",
+    na = " "
+  )
   
+  people <- people %>%
+    left_join(
+      people_s3 %>% select(gh_handle = author,commits,repo_list),
+      by = "gh_handle"
+    )
+  
+  
+
+## WGs ------------------  
   people_long <- people %>%
     select(name,pharmaverse_roles) %>%
     separate_rows(
@@ -37,9 +51,13 @@ library(tidyr)
     html <- data %>%
       filter(grepl(filter,pharmaverse_roles)) %>%
         mutate(
+          contribution = if_else(
+            is.na(commits) | is.na(repo_list),"",
+            as.character(glue("(contributed {commits} commits to {repo_list})"))
+            ),
           label =
             glue(
-              '<img src="images/logos/{logo}" alt="" width = "30" height="30">  {name}')
+              '<img src="images/logos/{logo}" alt="" width = "30" height="30">  {name} {contribution} ')
         ) %>%
         select(tail(names(.), 1)) %>%
         knitr::kable("html", escape = FALSE)
@@ -103,10 +121,35 @@ library(tidyr)
   
   html_website <- gsub(" <thead>.*</thead>","",html_website)
 
+# Make all contributors
+  pharmaverse <- gsub(".yaml","",list.files("data/packages"))
+  
+  html_all <- people_s3 %>%
+    filter(pretty_name != "NA (NA)") %>%
+    select(pretty_contributor,commits,repo_list) %>%
+    separate_rows(repo_list, sep = " | ") %>%
+    filter(repo_list %in% pharmaverse)  %>%
+    group_by(pretty_contributor) %>%
+    summarise(
+      repo_list = paste(repo_list, collapse = ", "),
+      repos = n()
+      ) %>%
+    na.omit %>%
+    mutate(
+      label = glue("{pretty_contributor} has contributed to {repo_list}")
+    ) %>%
+    arrange(-repos) %>%
+    select(
+      label
+    ) %>%
+    knitr::kable("html", escape = FALSE)
+  
+    html_all <- gsub(" <thead>.*</thead>","",html_all)
+  
+# render --------  
 cat(
   glue(
     "
-    <! –– This file is written by scripts/add_contributors.R ––>
     {html_wg}
     
     </br>
@@ -114,6 +157,11 @@ cat(
     <p>Activity on the website and metadata is scraped automatically based on 
     contributions to the codebase <a href='https://github.com/orgs/pharmaverse/projects/3'>(to contribute click here)</a>
     {html_website}
+    </br>
+    <h4>All pharmaverse contributors</h4>
+    <p>We'd also like to acknowledge all the people that contributed code to 
+    the pharmaverse</p>
+    {html_all}
     "
   )
   ,
