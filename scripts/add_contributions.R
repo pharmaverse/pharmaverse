@@ -145,7 +145,7 @@ library(readr)
   
   n_people <- nrow(html_all)
   
-  html_all <- html_all
+  html_all <- html_all %>%
     knitr::kable("html", escape = FALSE)
   
     html_all <- gsub(" <thead>.*</thead>","",html_all)
