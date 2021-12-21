@@ -54,7 +54,7 @@ jobs:
 
       - name: Build
         if: ${{ github.ref == 'refs/heads/develop' }}
-        run: hugo --minify --config config.toml,config-staging.toml
+        run: hugo -e staging
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
