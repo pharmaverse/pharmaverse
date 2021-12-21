@@ -106,6 +106,7 @@ library(tidyr)
 cat(
   glue(
     "
+    <! –– This file is written by scripts/add_contributors.R ––>
     {html_wg}
     
     </br>
