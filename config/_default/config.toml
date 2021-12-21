@@ -100,25 +100,25 @@ link = "contact"
 
   
 ############################# social site ########################
-[[params.social]]
-title = "facebook"
-icon = "fab fa-facebook" # fontawesome icon : https://fontawesome.com/icons
-link = "#"
+#[[params.social]]
+#title = "facebook"
+#icon = "fab fa-facebook" # fontawesome icon : https://fontawesome.com/icons
+#link = "#"
 
-[[params.social]]
-title = "twitter"
-icon = "fab fa-twitter" # fontawesome icon : https://fontawesome.com/icons
-link = "#"
+#[[params.social]]
+#title = "twitter"
+#icon = "fab fa-twitter" # fontawesome icon : https://fontawesome.com/icons
+#link = "#"
 
 [[params.social]]
 title = "github"
 icon = "fab fa-github" # fontawesome icon : https://fontawesome.com/icons
-link = "#"
+link = "https://github.com/pharmaverse/pharmaverse/blob/main/README.md"
 
 [[params.social]]
 title = "linkedin"
 icon = "fab fa-linkedin" # fontawesome icon : https://fontawesome.com/icons
-link = "#"
+link = "https://www.linkedin.com/groups/9126149/"
 
 
 ################################### English language #####################################

@@ -35,12 +35,13 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.85.0'
-          # extended: true
-
-      - name: Build
-        run: hugo --minify
+          extended: true
         
 # IF main
+
+      - name: Build
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -50,6 +51,10 @@ jobs:
           publish_dir: ./public
           
 # IF develop
+
+      - name: Build
+        if: ${{ github.ref == 'refs/heads/develop' }}
+        run: hugo -e staging
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
