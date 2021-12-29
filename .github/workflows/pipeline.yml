@@ -5,6 +5,8 @@ on:
     branches:
       - main  # Set a branch to deploy
       - develop
+  schedule:
+    - cron: 0 13 * * 1
 
 jobs:
   deploy:
