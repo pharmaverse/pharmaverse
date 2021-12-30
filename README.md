@@ -1,6 +1,8 @@
 
 # pharmaverse website
 
+pharmaverse.org
+
 For any questions about the site, please reach out to @epijim (or ideally, make issues here).
 
 ### Roadmap
