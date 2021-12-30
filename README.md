@@ -79,6 +79,8 @@ useful in the future.
 
 Info on people is in `data/people`. The `yaml` should be something like below, with the filename being the github handle.
 
+Tracking here ideas on this section: https://github.com/pharmaverse/pharmaverse/issues/44
+
 ```yaml 
 name: James Black
 pharmaverse_roles: tech
