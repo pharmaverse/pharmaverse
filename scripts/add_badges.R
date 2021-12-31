@@ -15,7 +15,7 @@ library(gt)
   )
   
   
-## External badges
+## External badges -------------
   dir_shields <- "static/shields"
   
   # check if a pkg has been removed!
@@ -91,7 +91,7 @@ library(gt)
 
 
 
-## Internal badges
+## Internal badges ---------
 
 badges <- read_csv(
   "https://openpharma.s3.us-east-2.amazonaws.com/badges.csv",
