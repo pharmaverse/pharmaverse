@@ -51,13 +51,13 @@ library(readr)
     html <- data %>%
       filter(grepl(filter,pharmaverse_roles)) %>%
         mutate(
-          contribution = if_else(
-            is.na(commits) | is.na(repo_list),"",
-            as.character(glue("(contributed {commits} commits to {repo_list})"))
-            ),
+          # contribution = if_else(
+          #   is.na(commits) | is.na(repo_list),"",
+          #   as.character(glue("(contributed {commits} commits to {repo_list})"))
+          #   ),
           label =
             glue(
-              '<img src="images/logos/{logo}" alt="" width = "30" height="30">  {name} {contribution} ')
+              '<img src="images/logos/{logo}" alt="" width = "30" height="30">  {name} ')
         ) %>%
         select(tail(names(.), 1)) %>%
         knitr::kable("html", escape = FALSE)
