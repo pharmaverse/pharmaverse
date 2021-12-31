@@ -1,6 +1,8 @@
 
 # pharmaverse website
 
+pharmaverse.org
+
 For any questions about the site, please reach out to @epijim (or ideally, make issues here).
 
 ### Roadmap
@@ -74,6 +76,24 @@ splash: include # this controls what is shown on the main page. Plan is to depre
 
 It should be self explanatory. Please use the categories in the site for `task:`. Although right now it's not used, it could be very 
 useful in the future.
+
+### People
+
+Info on people is in `data/people`. The `yaml` should be something like below, with the filename being the github handle.
+
+Tracking here ideas on this section: https://github.com/pharmaverse/pharmaverse/issues/44
+
+```yaml 
+name: James Black
+pharmaverse_roles: tech
+company: Roche
+company_logo: roche.png
+# Following is more a nice to have for profile pages [and optional]
+linkedin: https://www.linkedin.com/in/epijim/
+site: https://epijim.uk
+title: People and Product Family Leader for Insights Engineering, Scientific Computing Environment Product Owner
+bio: James is currently leading our pan-study codebase for insights
+```
 
 ### General content of the site
 
