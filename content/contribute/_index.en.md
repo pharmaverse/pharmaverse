@@ -33,6 +33,7 @@ For new package collaborations, beyond our charter we also offer the following t
 * Example [contribution model](https://pharmaverse.github.io/admiral/articles/contribution_model.html) - this is what is used for the {admiral} package and includes vignettes around programming strategy, unit testing guidance and git usage. This model will evolve over time as the admiral team learn from the experience, but could serve as an example to consider if you will open your package for contributions, which we would recommend.
 * Recommended [support model](https://pharmaverse.org/support/) - this is important to give users a consistent experience across pharmaverse packages, and if packages are not kept well maintained and supported then they are likely to be removed from the pharmaverse package list.
 * R package validation strategy - we currently are connecting with several companies and industry working groups to assess whether there could be an industry recommended approach to R package validation utilising open source packages. Until we have this, we'd be happy to share our learnings and current strategies in this area.
+* Option to include a pharmaverse [hosted shield/badge](https://pharmaverse.org/contribute/badges/) for your package which shows users you are part of pharmaverse thus adding an extra level of credibility.
 
 ### Council Representative
 
