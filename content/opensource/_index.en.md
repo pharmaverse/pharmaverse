@@ -1,9 +1,9 @@
 ---
 title: "Other Open Sourcing"
 date: 2021-09-09T11:02:05+06:00
-icon: "fas fa-pagelines" # fontawesome icon : https://fontawesome.com/icons
+icon: "fas fa-link" # fontawesome icon : https://fontawesome.com/icons
 description: "Further open source resources useful for either R enablement or beyond."
-weight: 5
+weight: 6
 # type dont remove or customize
 type : "docs"
 ---
