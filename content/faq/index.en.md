@@ -16,7 +16,7 @@ We are always looking for new collaborators to join us in helping achieve our vi
 {{</ faq >}}
 
 {{< faq "How can I get access to these packages?" >}}
-While it's likely in a production use of the packages you will be maintaining your own CRAN-like library within your company, for exploration and development purposes any of the hex logos shown above include a link direct to the Github repo of each package. We also host the packages, and their dependencies, in a CRAN-like server on R-universe. Please [follow this link](https://pharmaverse.r-universe.dev/ui#builds) to see how to point add this CRAN-like server to your library list in R.
+While it's likely in a production use of the packages you will be maintaining your own CRAN-like library within your company, for exploration and development purposes any of the hex logos shown above include a link direct to the GitHub repo of each package. We also host the packages, and their dependencies, in a CRAN-like server on R-universe. Please [follow this link](https://pharmaverse.r-universe.dev/ui#builds) to see how to point add this CRAN-like server to your library list in R.
 {{</ faq >}}
 
 {{< faq "Is this validated/GxP/regulatory assured?" >}}
