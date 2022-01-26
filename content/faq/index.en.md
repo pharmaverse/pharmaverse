@@ -20,5 +20,5 @@ While it's likely in a production use of the packages you will be maintaining yo
 {{</ faq >}}
 
 {{< faq "Is this validated/GxP/regulatory assured?" >}}
-No, but we currently are connecting with several companies and industry working groups to assess whether there could be an industry recommended approach to R package validation utilising open source packages. Until we have this, we’d be happy to share our learnings and current strategies in this area from the companies involved in pharmaverse.
+No, but we currently are connecting with several companies and industry working groups (see [Other Open Sourcing](https://pharmaverse.org/opensource/)) to assess whether there could be an industry recommended approach to R package validation utilising open source packages. Until we have this, we’d be happy to share our learnings and current strategies in this area from the companies involved in pharmaverse.
 {{</ faq >}}
