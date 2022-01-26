@@ -157,7 +157,7 @@ url = ""
 weight = 1
 
 [[Languages.en.menu.main]]
-name = "Github"
+name = "GitHub"
 url = "https://github.com/pharmaverse/"
 weight = 2
 
@@ -169,12 +169,12 @@ url = "https://openpharma.github.io"
 weight = 1
 
 [[Languages.en.menu.footer]]
-name = "contact"
+name = "Contact"
 url = "contact"
 weight = 2
 
 [[Languages.en.menu.footer]]
-name = "github"
+name = "GitHub"
 url = "https://github.com/pharmaverse/"
 weight = 3
 
@@ -215,7 +215,7 @@ url = ""
 weight = 1
 
 [[Languages.fr.menu.main]]
-name = "Github"
+name = "GitHub"
 url = "https://github.com/themefisher/"
 weight = 2
 
@@ -227,11 +227,11 @@ url = "changelog"
 weight = 1
 
 [[Languages.fr.menu.footer]]
-name = "contact"
+name = "Contact"
 url = "contact"
 weight = 2
 
 [[Languages.fr.menu.footer]]
-name = "Github"
+name = "GitHub"
 url = "https://github.com/themefisher/"
 weight = 3
