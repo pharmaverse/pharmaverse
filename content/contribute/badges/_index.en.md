@@ -18,7 +18,7 @@ example in the tables is the SVG badge, but you can swap `.svg` for `.png`.
 
 ### Example
 
-You can see an example of the badge in use on the `thevalidatoR` Github repo.
+You can see an example of the badge in use on the `thevalidatoR` GitHub repo.
 
 ![thevalidator](example.png)
 
