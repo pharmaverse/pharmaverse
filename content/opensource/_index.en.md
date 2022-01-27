@@ -25,7 +25,7 @@ Please find below some links to other useful resources around supporting open so
 
 * [R Consortium](https://www.r-consortium.org/) is a non-profit that supports the use and development of R. Within the R Consortium is the Pharma Oversight Commitee, which helps to identify and address Pharma related gaps in the R language. The R Consortium also gives out grants to fund open source projects, and contributes funding to some high level projects relevant to Pharma like `DBI` and `R Core`.
 * [CDISC Open-Source Alliance (COSA)](https://cosa.cdisc.org/) supports, promotes, and sometimes sponsors open source software projects that create tools for implementing or developing CDISC standards to drive innovation in the CDISC community. An example of open source work being led out of CDISC would be [CORE](https://www.cdisc.org/core), where the objective is to provide an open source executable suite of CDISC conformance checks.
-* [github.com/openpharma
+* [github.com/openpharma](A github organisation founded by Novartis and Roche) that is happy to host any repo that needs a home. No opinions or controls are placed on repos added, beyond the initial threshold the repo being added is coming from Pharma and for Pharma. 
 
 ## Open source project portals
 
