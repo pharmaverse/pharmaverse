@@ -5,15 +5,20 @@ on:
     types: [labeled]
 env:
   MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
-
+  ToDiscuss: ToDiscuss 🗣️
+        
 jobs:
-  assign_to_project:
+  issue_opened_or_reopened:
+    name: issue_opened_or_reopened
     runs-on: ubuntu-latest
-    name: Assign topic to Project
+    if: github.event_name == 'issues' && (github.event.action == 'opened' || github.event.action == 'reopened')
     steps:
-    - name: Assign issues with specific label to GitHub Project
-      uses: srggrs/assign-one-project-github-action@1.3.1
-      if: contains(github.event.issue.labels.*.name, 'bug') || contains(github.event.issue.labels.*.name, 'enhancement')
-      with:
-        project: 'https://github.com/orgs/pharmaverse/projects/3'
-        column_name: 'ToDiscuss'
+      - name: Move issue to project
+        uses: leonsteinhaeuser/project-beta-automations@v1.1.0
+        with:
+          gh_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          # user: epijim
+          organization: pharmaverse
+          project_id: 3
+          resource_node_id: ${{ github.event.issue.node_id }}
+          status_value: ${{ env.todo }} # Target status
