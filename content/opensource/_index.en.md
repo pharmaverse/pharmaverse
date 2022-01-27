@@ -10,22 +10,22 @@ type : "docs"
 
 Please find below some links to other useful resources around supporting open sourcing to help the industry with clinical reporting.
 
-## Working groups
+### Working groups
 
 * [PHUSE Working Groups](https://advance.phuse.global/pages/viewpage.action?pageId=327777) supporting industry adoption of open source technology, such as by assessing the fundamental differences in statistical analysis results across languages and how we can mitigate such risk and maintain confidence in open source languages.
 * [R Consortium Working Groups](https://www.r-consortium.org/projects/isc-working-groups) focused around industry R enablement, such as by working with FDA to pilot fully R-based submissions. 
 * [R Validation Hub](https://www.pharmar.org/) designing a framework that assesses the quality of an R package and considering topics around R package validation in accordance with regulatory standards.
 * [TransCelerate Modernization of Statistical Analytics project](https://www.transceleratebiopharmainc.com/initiatives/modernization-statistical-analytics/) aiming to analyze methods for considering and validating novel statistical computing platforms to propose to Health Authorities.
 
-## Conferences
+### Conferences
 
 * [R/Pharma](Rinpharma.com) is a non-profit, free, yearly conference that brings together the R users in Pharma and is the primary focal point for the R developer community in Pharma.
 
-## Open source incubators
+### Open source incubators
 
 * [R Consortium](https://www.r-consortium.org/) is a non-profit that supports the use and development of R. Within the R Consortium is the Pharma Oversight Commitee, which helps to identify and address Pharma related gaps in the R language. The R Consortium also gives out grants to fund open source projects, and contributes funding to some high level projects relevant to Pharma like `DBI` and `R Core`.
 * [CDISC Open-Source Alliance (COSA)](https://cosa.cdisc.org/) supports, promotes, and sometimes sponsors open source software projects that create tools for implementing or developing CDISC standards to drive innovation in the CDISC community. An example of open source work being led out of CDISC would be [CORE](https://www.cdisc.org/core), where the objective is to provide an open source executable suite of CDISC conformance checks.
-* [github.com/openpharma](A github organisation founded by Novartis and Roche) that is happy to host any repo that needs a home. No opinions or controls are placed on repos added, beyond the initial threshold the repo being added is coming from Pharma and for Pharma. 
+* [github.com/openpharma](https://github.com/openpharma) A github organisation founded by Novartis and Roche that is happy to host any repo that needs a home. No opinions or controls are placed on repos added, beyond the initial threshold the repo being added is coming from Pharma and for Pharma. 
 
 ## Open source project portals
 
