@@ -11,8 +11,8 @@ type : "docs"
 ### Packages
 
 For all [pharmaverse packages](https://pharmaverse.org/e2eclinical/) we recommend to use the following for support and communications between user and developer communities:
-* **Slack** - for informal discussions, Q&A and building user community
-* **GitHub Issues** - for direct feedback, enhancement requests or raising bugs
+* <img width="15" height="15" src="https://user-images.githubusercontent.com/82581364/152139063-91a9b166-947b-40e8-8c06-60122c9da30a.png"> **Slack** - for informal discussions, Q&A and building user community
+* <img width="15" height="15" src="https://user-images.githubusercontent.com/82581364/152139260-792feb42-addd-4a76-ad05-dc089860d4eb.png"> **GitHub Issues** - for direct feedback, enhancement requests or raising bugs
 
 Here's our guidance when using these to ensure support is managed in a consistent way across packages:
 | Package Developer Guidance | User Guidance | Naming Conventions |
