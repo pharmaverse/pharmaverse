@@ -5,7 +5,7 @@ weight: 3
 draft: false
 ---
 
-TLGs (tables, listings, and graphs) refer to the packages that take data, and convert then into a human 
+TLGs (tables, listings, and graphs _- also known as TLFs/TFLs with F for figures_) refer to the packages that take data, and convert then into a human 
 intepretable insight. 
 
 There are two relevant stages of TLGs - static TLGs, which as of today are the 
