@@ -21,7 +21,7 @@ This will encompass the majority of our community and encapsulates those using a
 
 ### Package Co-lead
 
-In order for pharmaverse to be truly successful we need to encourage that any gaps in the e2e clinical reporting flow are addressed by new collaborative efforts, rather than many individual companies addressing the same problem in isolation - which at worst ends with private code and at best ends with a proliferation of open source code all doing the same thing.
+In order for pharmaverse to be truly successful we need to encourage that any gaps in the end-to-end clinical reporting flow are addressed by new collaborative efforts, rather than many individual companies addressing the same problem in isolation - which at worst ends with private code and at best ends with a proliferation of open source code all doing the same thing.
 
 So we actively encourage individuals or organisations that have an idea for a new R package within our pharmaverse scope to reach out to our council members, so that we can help you initiate a new collaboration with like-minded other individuals. We can also connect you with others that would be willing to contribute to testing your package as you progress development.
 
