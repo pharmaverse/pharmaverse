@@ -35,6 +35,10 @@ exist within the Nest framework using other packages like `plotly`, `visR` and `
 
 {{< pharmaverse pkg="Tplyr" >}}
 
+**Upcoming packages**
+
+{{< pharmaverse pkg="tidytlg" >}}
+
 ### Plots
 
 {{< pharmaverse pkg="visR" >}}
@@ -43,4 +47,6 @@ While ggplot2 is a lower level, non-pharma specific plotting package. It is univ
 accepted as the package for graphics, so included here and as a non-pharma package.
 
 {{< otherpackages pkg="ggplot2" >}}
+
+**Upcoming packages**
 
