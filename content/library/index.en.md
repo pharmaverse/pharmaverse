@@ -20,4 +20,5 @@ options(
     pharmaverse = 'https://pharmaverse.r-universe.dev',
     CRAN = 'https://cloud.r-project.org')
     )
+  )
 ```
