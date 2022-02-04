@@ -18,7 +18,7 @@ We currently also have an [r-universe build](https://pharmaverse.r-universe.dev/
 options(
     repos = c(
     pharmaverse = 'https://pharmaverse.r-universe.dev',
-    CRAN = 'https://cloud.r-project.org')
+    CRAN = 'https://cloud.r-project.org'
     )
   )
 ```
