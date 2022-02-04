@@ -5,13 +5,14 @@ layout: "docs"
 draft: false
 ---
 
-### Installing individually
+### Installing for GxP use
 
 In an internal regulatory setting, you are likely to have your own agreed package management solutions and your own mirror of CRAN.
 
 ### Installing from r-universe.org
 
-We currently also have an [r-universe build](https://pharmaverse.r-universe.dev/ui#builds) available.
+We currently also have an [r-universe build](https://pharmaverse.r-universe.dev/ui#builds) available for ease of use outside 
+GxP settings.
 
 ```r
 # Enable this universe
@@ -22,3 +23,5 @@ options(
     )
   )
 ```
+
+As of today there are [![:total status badge](https://pharmaverse.r-universe.dev/badges/:total)](https://pharmaverse.r-universe.dev)  from the pharmaverse hosted in this CRAN-like instance.  
