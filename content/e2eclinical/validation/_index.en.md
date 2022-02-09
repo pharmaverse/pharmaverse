@@ -13,7 +13,7 @@ a simplified version of this approach.
 
 When we talk about package validation, the focus here is on the generalised functions we put in a package as a 
 developer. There is also the user perspective of how to downstream quality check the usage of such packages
-and functions in creating clinical reporting deliverables. For this reason, we categorise the packages seprately
+and functions in creating clinical reporting deliverables. For this reason, we categorise the packages separately
 below, dependent on relevance. 
 
 ### Package Validation
