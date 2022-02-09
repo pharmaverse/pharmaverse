@@ -16,10 +16,12 @@ but not limited to, shiny apps.
 
 {{< pharmaverse pkg="nest" >}}
 
-The Nest project is a (as of Dec 2021) closed source collaboration between 4 Pharma companies. Nest is a framework,
+The Nest project is currently a closed source collaboration between 4 Pharma companies. Nest is a framework,
 so engine used to generate the output can be modified. `ggplot2` and `rtables` are the preferred engines due 
 to their flexibility and feature set, but examples 
 exist within the Nest framework using other packages like `plotly`, `visR` and `tplyr`.
+
+OPEN SOURCE RELEASE FOR Nest (tern/teal/chevron) EXPECTED ~MID-2022 Contact James Black (james.black.jb2@roche.com)
 
 {{< pharmaverse pkg="tern" >}}
 
