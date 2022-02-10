@@ -20,3 +20,7 @@ SDTM is one of the required standards for data submission to FDA (U.S.) and PMDA
 
 {{< pharmaverse pkg="oak" >}}
 
+Some gaps which we are interested to start new package collaborations for are as follows:
+- applying a **datacut** to SDTM  
+- removing/adding **supplemental qualifiers** from/to the parent SDTM domain
+Please reach out to Ross Farrugia (ross.farrugia@roche.com) if interested to join either efforts.
