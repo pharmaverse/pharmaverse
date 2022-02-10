@@ -10,4 +10,5 @@ type : "docs"
 
 As detailed in our [pharmaverse charter](https://pharmaverse.org/charter/) there are numerous ways to get involved to support depending on contribution level.
 These include Individual contributor, Package co-lead, Working Group member, or Council representative. 
+
 These pages include more detailed guidance and expectations for each.
