@@ -8,7 +8,7 @@ _build:
 ---
 
 {{< faq "Who decides what's in and not in the pharmaverse?" >}}
-This is governed by the pharmaverse council - see our [Contribute](https://pharmaverse.org/contribute/) page for more detail on the council founding principles, and please reach out to us if you feel a package should be included.
+This is governed by the pharmaverse council, with recommendations from our working groups - see our [Contribute](https://pharmaverse.org/contribute/) page for more details. The contacts are given if you scroll down this page. Please reach out to us if you feel a package should be included.
 {{</ faq >}}
 
 {{< faq "How can I get involved?" >}}
