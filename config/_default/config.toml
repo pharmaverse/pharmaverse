@@ -3,7 +3,7 @@ baseURL = "https://pharmaverse.org"
 title = "pharmaverse"
 theme = "godocs-1"
 # google analytics
-googleAnalytics = "" # example : UA-123-45
+googleAnalytics = "G-M4MDJB56FX" # example : UA-123-45
 # disable language
 disableLanguages = ["fr"] # desable language from here
 
