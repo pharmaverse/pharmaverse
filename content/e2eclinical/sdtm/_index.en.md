@@ -12,7 +12,7 @@ collaborations between companies, or our gold standard of open sourced.
  If you are considering developing a package with a similar scope to any of the below, we encourage you first make contact with the lead developer to discuss whether a collaboration may be possible.
 {{< /notice >}}
 
-[According to CDISC:](https://www.cdisc.org/standards/foundational/stdm) SDTM provides a standard for organizing and formatting data to streamline processes in collection, management, analysis and reporting. Implementing SDTM supports data aggregation and warehousing; fosters mining and reuse; facilitates sharing; helps perform due diligence and other important data review activities; and improves the regulatory review and approval process. 
+[According to CDISC:](https://www.cdisc.org/standards/foundational/sdtm) SDTM provides a standard for organizing and formatting data to streamline processes in collection, management, analysis and reporting. Implementing SDTM supports data aggregation and warehousing; fosters mining and reuse; facilitates sharing; helps perform due diligence and other important data review activities; and improves the regulatory review and approval process. 
 
 SDTM is one of the required standards for data submission to FDA (U.S.) and PMDA (Japan).
 
@@ -20,8 +20,10 @@ SDTM is one of the required standards for data submission to FDA (U.S.) and PMDA
 
 {{< pharmaverse pkg="oak" >}}
 
+{{< pharmaverse pkg="sdtmchecks" >}}
+
 Some gaps which we are interested to start new package collaborations for are as follows:
 - applying a **datacut** to SDTM  
-- removing/adding **supplemental qualifiers** from/to the parent SDTM domain
+- removing/adding **supplemental qualifiers** from/to the parent SDTM domain _(currently planned to incorporate into [metatools](https://pharmaverse.org/e2eclinical/metadata/))_
 
 Please reach out to Ross Farrugia (ross.farrugia@roche.com) if interested to join either efforts.
