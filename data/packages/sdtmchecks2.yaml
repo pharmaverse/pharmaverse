@@ -1,7 +1,7 @@
-name: sdtmchecks
+name: sdtmchecks2
 repo: 
 repo_source: 
 docs: 
-hex: /images/emptyhex.png
+hex: https://user-images.githubusercontent.com/36176570/156031003-2c6fdac1-fc12-436c-89b2-288a7c245aab.png
 task: sdtm
 details: Contains data check functions to identify SDTM issues that are generalizable, actionable, and meaningful for analysis OPEN SOURCE RELEASE EXPECTED ~END-2022 Contact Will Harris (harric17@gene.com)
