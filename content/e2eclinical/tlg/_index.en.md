@@ -22,7 +22,6 @@ to their flexibility and feature set, but examples
 exist within the Nest framework using other packages like `plotly`, `visR` and `tplyr`.
 
 There are publicly available examples:
-
 - The efficacy APP [Efficacy](https://genentech.shinyapps.io/teal_efficacy/)
 - The safety APP [Safety](https://genentech.shinyapps.io/teal_safety/)
 - The exploratory APP [Exploratory](https://genentech.shinyapps.io/teal_exploratory/)
