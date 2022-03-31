@@ -81,7 +81,7 @@ to maintain a landscape of available packages other several important domains.
 
 It is also worth attracting attention here to the wider CTVs across several pertinent topics, such as:
 
-[Clinical Trials](https://cran.r-project.org/web/views/ClinicalTrials.html), [Survival](https://cran.r-project.org/web/views/Survival.html), [Bayes](https://cran.r-project.org/web/views/Bayesian.html), and [Missing data](https://cran.r-project.org/web/views/MissingData.html).
+[Clinical Trials](https://cran.r-project.org/web/views/ClinicalTrials.html), [Survival](https://cran.r-project.org/web/views/Survival.html), [Bayes](https://cran.r-project.org/web/views/Bayesian.html), [Missing data](https://cran.r-project.org/web/views/MissingData.html), and [PK](https://cran.r-project.org/web/views/Pharmacokinetics.html).
 
 <hr>
 
