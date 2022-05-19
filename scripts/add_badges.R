@@ -105,6 +105,7 @@ badges <- read_csv(
   write_badge <- function(
     badge, file, text
   ){
+    badge <- badge[1] #edge case issue - not a good hack
     if (!rlang::is_empty(badge)) {
     if (!is.na(badge) & badge != "" & badge != "NA") {
       cat(
