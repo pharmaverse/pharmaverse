@@ -117,7 +117,7 @@ badges <- read_csv(
   
   # write new line
   for (i in files){
-    message(i)
+    message(paste("i:",i))
     
     i_package <- gsub(pattern = ".yaml",replacement = "",basename(i))
     
@@ -126,7 +126,7 @@ badges <- read_csv(
     i_badge_contributors <- badges %>% filter(name == i_package) %>% pull(badge_contributors)
     i_badge_riskmetric <- badges %>% filter(name == i_package) %>% pull(badge_riskmetric)
     
-  
+    message(paste("i_badge_cran:",i_badge_cran))
     
     write_badge(i_badge_cran, i, "badge_cran: ")
     write_badge(i_badge_health, i, "badge_health: ")
