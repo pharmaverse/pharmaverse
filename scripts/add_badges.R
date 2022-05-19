@@ -105,6 +105,7 @@ badges <- read_csv(
   write_badge <- function(
     badge, file, text
   ){
+    badge <- badge[1] #edge case issue - not a good hack
     if (!rlang::is_empty(badge)) {
     if (!is.na(badge) & badge != "" & badge != "NA") {
       cat(
@@ -117,6 +118,8 @@ badges <- read_csv(
   
   # write new line
   for (i in files){
+    message(paste("i:",i))
+    
     i_package <- gsub(pattern = ".yaml",replacement = "",basename(i))
     
     i_badge_cran <- badges %>% filter(name == i_package) %>% pull(badge_cran)
@@ -124,7 +127,7 @@ badges <- read_csv(
     i_badge_contributors <- badges %>% filter(name == i_package) %>% pull(badge_contributors)
     i_badge_riskmetric <- badges %>% filter(name == i_package) %>% pull(badge_riskmetric)
     
-  
+    message(paste("i_badge_cran:",i_badge_cran))
     
     write_badge(i_badge_cran, i, "badge_cran: ")
     write_badge(i_badge_health, i, "badge_health: ")

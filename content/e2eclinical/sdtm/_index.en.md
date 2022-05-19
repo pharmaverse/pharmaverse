@@ -22,8 +22,7 @@ SDTM is one of the required standards for data submission to FDA (U.S.) and PMDA
 
 {{< pharmaverse pkg="sdtmchecks2" >}}
 
-Some gaps which we are interested to start new package collaborations for are as follows:
+Gaps which we are interested to start new package collaborations for:
 - applying a **datacut** to SDTM  
-- removing/adding **supplemental qualifiers** from/to the parent SDTM domain _(currently planned to incorporate into [metatools](https://pharmaverse.org/e2eclinical/metadata/))_
 
-Please reach out to Ross Farrugia (ross.farrugia@roche.com) if interested to join either efforts.
+Please reach out to Ross Farrugia (ross.farrugia@roche.com) if interested to join any such effort.
