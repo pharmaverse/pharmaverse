@@ -117,6 +117,8 @@ badges <- read_csv(
   
   # write new line
   for (i in files){
+    message(i)
+    
     i_package <- gsub(pattern = ".yaml",replacement = "",basename(i))
     
     i_badge_cran <- badges %>% filter(name == i_package) %>% pull(badge_cran)
