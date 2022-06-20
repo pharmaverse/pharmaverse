@@ -1,8 +1,8 @@
-name: timber
+name: logrx
 repo: atorus-research/timber
 repo_source: github.com
-docs: https://atorus-research.github.io/timber/
-hex: https://atorus-research.github.io/timber/reference/figures/logo.png
+docs: https://atorus-research.github.io/logrx/
+hex: https://atorus-research.github.io/logrx/reference/figures/logo.png
 task: utilities
 details: Generates an execution log to support reproducibility and traceability of an R script
 splash: include
