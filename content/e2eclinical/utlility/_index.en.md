@@ -5,6 +5,6 @@ weight: 6
 draft: false
 ---
 
-{{< pharmaverse pkg="timber" >}}
+{{< pharmaverse pkg="logrx" >}}
 
 {{< pharmaverse pkg="synthetic.cdisc.data" >}}
