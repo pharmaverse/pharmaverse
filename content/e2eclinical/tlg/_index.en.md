@@ -16,7 +16,7 @@ but not limited to, shiny apps.
 
 {{< pharmaverse pkg="nest" >}}
 
-The Nest project is currently a closed source collaboration between 4 Pharma companies. Nest is a framework,
+The Nest project is an open source collaboration. Nest is a framework,
 so engine used to generate the output can be modified. `ggplot2` and `rtables` are the preferred engines due 
 to their flexibility and feature set, but examples 
 exist within the Nest framework using other packages like `plotly`, `visR` and `tplyr`.
@@ -25,8 +25,6 @@ There are publicly available examples:
 - The efficacy APP [Efficacy](https://genentech.shinyapps.io/teal_efficacy/)
 - The safety APP [Safety](https://genentech.shinyapps.io/teal_safety/)
 - The exploratory APP [Exploratory](https://genentech.shinyapps.io/teal_exploratory/)
-
-OPEN SOURCE RELEASE FOR Nest (tern/teal/chevron) EXPECTED ~MID-2022 Contact James Black (james.black.jb2@roche.com)
 
 {{< pharmaverse pkg="tern" >}}
 
