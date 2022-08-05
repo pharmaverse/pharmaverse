@@ -24,6 +24,8 @@ For new package collaborations, beyond our charter we also offer the following t
 as you see there our recommendation is to target permissive licensing (such as [MIT](https://opensource.org/licenses/MIT) or 
 [Apache 2.0](https://opensource.org/licenses/Apache-2.0)), but this is only a template and all decisions need to be considered with the respective legal groups of the 
 companies involved.
+* A [GitHub template](https://github.com/pharmaverse/admiraltemplate) focused on the {admiral} family of packages and their conventions, but could be useful as an
+example of possible approaches to use, such as Issue and Pull Request templates.
 * Example [contribution model](https://pharmaverse.github.io/admiral/articles/contribution_model.html) - this is what is used for the {admiral} package and includes 
 vignettes around programming strategy, unit testing guidance and git usage. This model will evolve over time as the admiral team learn from the experience, but could 
 serve as an example to consider if you will open your package for contributions, which we would recommend.
