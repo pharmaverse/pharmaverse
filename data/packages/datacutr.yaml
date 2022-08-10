@@ -1,0 +1,7 @@
+name: datacutr
+repo: pharmaverse/datacutr
+repo_source: github.com
+docs: 
+hex: 
+task: sdtm
+details: Applying a datacut to SDTM

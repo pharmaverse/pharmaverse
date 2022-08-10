@@ -40,6 +40,8 @@ There are publicly available examples:
 
 {{< pharmaverse pkg="Tplyr" >}}
 
+{{< pharmaverse pkg="tfrmt" >}}
+
 **Upcoming packages**
 
 {{< pharmaverse pkg="tidytlg" >}}
