@@ -9,3 +9,5 @@ type : "docs"
 ---
 
 This list encapsulates all the open source R packages we have found that fall under the scope of usage for end-to-end clinical reporting in pharma. Over time the pharmaverse council will endeavour to curate this into an “opinionated” stack. 
+
+We recommend users to also check out our [end-to-end examples](http://examples.pharmaverse.org/) as these show how the various packages listed can be used in conjunction to solve common clinical reporting challenges.
