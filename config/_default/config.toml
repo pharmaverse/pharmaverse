@@ -120,6 +120,11 @@ title = "linkedin"
 icon = "fab fa-linkedin" # fontawesome icon : https://fontawesome.com/icons
 link = "https://www.linkedin.com/groups/9126149/"
 
+[[params.social]]
+title = "youtube"
+icon = "fab fa-youtube" # fontawesome icon : https://fontawesome.com/icons
+link = "https://www.youtube.com/channel/UCxQFEv8HNqM01DXzdQLCy6Q"
+
 
 ################################### English language #####################################
 [Languages.en]
@@ -161,6 +166,11 @@ name = "GitHub"
 url = "https://github.com/pharmaverse/"
 weight = 2
 
+[[Languages.en.menu.main]]
+name = "YouTube"
+url = "https://www.youtube.com/channel/UCxQFEv8HNqM01DXzdQLCy6Q"
+weight = 3
+
 
 # footer menu
 [[Languages.en.menu.footer]]
@@ -178,60 +188,8 @@ name = "GitHub"
 url = "https://github.com/pharmaverse/"
 weight = 3
 
+[[Languages.en.menu.footer]]
+name = "YouTube"
+url = "https://www.youtube.com/channel/UCxQFEv8HNqM01DXzdQLCy6Q"
+weight = 4
 
-################################### French language #####################################
-[Languages.fr]
-languageName = "Fr"
-languageCode = "fr-fr"
-weight = 2
-# copyright
-copyright = "Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"
-
-# banner
-[Languages.fr.banner]
-title = "Documentation Theme By Themefisher Team"
-subtitle = "Lorem ipsum dolor amet, consetetur sadiffspscing elitr, diam nonumy invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua At."
-image = "images/banner.jpg"
-
-# call to action
-[Languages.fr.call_to_action]
-enable = true
-title = "Still Didn't Find Your Answer?"
-image = "images/cta-illustration.jpg"
-content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br> nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
-
-  # call to action button
-  [Languages.fr.call_to_action.button]
-  enable = "true"
-  label = "Submit a ticket"
-  link = "contact"
-
-
-############## French navigation ###############
-# main menu
-[[Languages.fr.menu.main]]
-name = "Home"
-url = ""
-weight = 1
-
-[[Languages.fr.menu.main]]
-name = "GitHub"
-url = "https://github.com/themefisher/"
-weight = 2
-
-
-# footer menu
-[[Languages.fr.menu.footer]]
-name = "Changelog"
-url = "changelog"
-weight = 1
-
-[[Languages.fr.menu.footer]]
-name = "Contact"
-url = "contact"
-weight = 2
-
-[[Languages.fr.menu.footer]]
-name = "GitHub"
-url = "https://github.com/themefisher/"
-weight = 3
