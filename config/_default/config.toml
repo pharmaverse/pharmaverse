@@ -171,25 +171,30 @@ name = "YouTube"
 url = "https://www.youtube.com/channel/UCxQFEv8HNqM01DXzdQLCy6Q"
 weight = 3
 
+[[Languages.en.menu.main]]
+name = "EXAMPLES"
+url = "http://examples.pharmaverse.org/"
+weight = 4
+
 
 # footer menu
 [[Languages.en.menu.footer]]
-name = "openpharma"
-url = "https://openpharma.github.io"
-weight = 1
-
-[[Languages.en.menu.footer]]
 name = "Contact"
 url = "contact"
-weight = 2
+weight = 1
 
 [[Languages.en.menu.footer]]
 name = "GitHub"
 url = "https://github.com/pharmaverse/"
-weight = 3
+weight = 2
 
 [[Languages.en.menu.footer]]
 name = "YouTube"
 url = "https://www.youtube.com/channel/UCxQFEv8HNqM01DXzdQLCy6Q"
+weight = 3
+
+[[Languages.en.menu.footer]]
+name = "openpharma"
+url = "https://openpharma.github.io"
 weight = 4
 
