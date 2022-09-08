@@ -1,0 +1,7 @@
+name: envsetup
+repo: pharmaverse/envsetup
+repo_source: github.com
+docs: https://pharmaverse.github.io/envsetup/main/index.html
+hex: https://pharmaverse.github.io/envsetup/main/logo.png
+task: utilities
+details: Support the setup of an R environment
