@@ -12,4 +12,13 @@ draft: false
 
 ADaM is one of the required standards for data submission to FDA (U.S.) and PMDA (Japan).
 
+Our recommended packages for ADaM belong to the admiral family of packages. These consist of a core package covering common
+analysis needs and a growing suite of therapeutic area specific package extensions.
+
 {{< pharmaverse pkg="admiral" >}}
+
+{{< pharmaverse pkg="admiralonco" >}}
+
+{{< pharmaverse pkg="admiralophtha" >}}
+
+{{< pharmaverse pkg="admiralvaccine" >}}
