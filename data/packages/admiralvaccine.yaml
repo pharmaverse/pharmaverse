@@ -2,6 +2,6 @@ name: admiralvaccine
 repo: pharmaverse/admiralvaccine
 repo_source: github.com
 docs:
-hex: 
+hex: https://raw.githubusercontent.com/pharmaverse/admiralvaccine/main/man/figures/logo.png
 task: ADaM
 details: Vaccines RELEASE EXPECTED ~2023
