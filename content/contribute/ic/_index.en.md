@@ -11,3 +11,7 @@ Examples of how you could get involved to help us achieve our vision:
 * Raise feedback via Issues for areas where you find potential package enhancements or bugs
 * For those packages with an open contribution model, develop new functionality and make pull requests to make your code available for re-use
 * For new pharmaverse package collaborations, volunteer for user testing to help the development team build robust solutions
+
+To help you find suitable open source packages to contribute your skills toward, check out [openpharma.pharmaverse.org](http://openpharma.pharmaverse.org/).
+Here you can see a range of open issues where developer teams are asking for support via "good first issue" or "help wanted" GitHub issue labels.
+You might even make the Leader Board!
