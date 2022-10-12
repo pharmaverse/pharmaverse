@@ -1,9 +1,7 @@
-name: gviridisLite
+name: viridisLite
 repo: sjmgarnier/viridisLite
 repo_source: github.com
 docs: https://sjmgarnier.github.io/viridisLite/
-hex: https://github.com/rstudio/gt/raw/master/man/figures/logo.svg
+hex: https://github.com/sjmgarnier/viridisLite/raw/master/man/figures/logo.png
 task: tlg
 details: Colorblind-Friendly Color Maps for R
-
-
