@@ -15,6 +15,16 @@ So we actively encourage individuals or organisations that have an idea for a ne
 we can help you initiate a new collaboration with like-minded other individuals. We can also connect you with others that would be willing to contribute to testing 
 your package as you progress development.
 
+Before you contact us, please consider whether there is already an existing pharmaverse package that could solve your need, or if you could combine forces
+with an existing effort to add your feature to their package. Our aim is always to reduce repetition across our packages, so as to provide a lower bar for
+pharmaceutical companies to adopt R. With this in mind, expect that we would say no to including a new package in pharmaverse unless it offers unique features
+and scope compared to the packages already included.
+
+If you would like to see your package included in pharmaverse, then the following are our minimal required criteria for all our packages:
+* MIKE TO ADD LIST...
+* If you meet all of the above criteria, one of our respective working groups will review your package and determine whether the scope is suitable and the package
+adds sufficient value to pharmaverse.
+
 The responsibilities of package co-leads (both for new or existing packages) include:
 * Deciding the strategy for the package, such as scope, contribution model, testing, governance, maintenance and communication planning - for each of these points 
 there exists high level guidance and pharmaverse recommendations within our charter.
