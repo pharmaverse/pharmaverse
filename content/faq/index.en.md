@@ -8,11 +8,11 @@ _build:
 ---
 
 {{< faq "Who decides what's in and not in the pharmaverse?" >}}
-This is governed by the pharmaverse council, with recommendations from our working groups - see our [Contribute](https://pharmaverse.org/contribute/) page for more details. The contacts are given if you scroll down this page. Please reach out to us if you feel a package should be included.
+This is governed by our pharmaverse working groups - see our [Contribute](https://pharmaverse.org/contribute/lead/) section of the site for more details. The working group contacts are given if you scroll down this page. Please reach out to us if you feel a package should be included, provided it offers significantly unique scope compared to the packages already included.
 {{</ faq >}}
 
 {{< faq "How can I get involved?" >}}
-We are always looking for new collaborators to join us in helping achieve our vision - visit our [Contribute](https://pharmaverse.org/contribute/) page for all options.
+We are always looking for new collaborators to join us in helping achieve our vision - visit our [Contribute](https://pharmaverse.org/contribute/ic/) section of the site for all options.
 {{</ faq >}}
 
 {{< faq "How can I get access to these packages?" >}}
