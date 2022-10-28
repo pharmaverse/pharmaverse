@@ -5,6 +5,10 @@ weight: 2
 draft: false
 ---
 
+The responsibilities of package co-leads (both for new or existing packages) include:
+* Deciding the strategy for the package, such as scope, contribution model, testing, governance, maintenance and communication planning - for each of these points 
+there exists high level guidance and pharmaverse recommendations within our charter.
+
 We openly welcome developers of existing packages or those initiating new packages to reach out to us.
 
 In order for pharmaverse to be truly successful we need to encourage that any gaps in the end-to-end clinical reporting flow are addressed by new collaborative efforts, 
@@ -19,6 +23,8 @@ Before you contact us, please consider whether there is already an existing phar
 with an existing effort to add your feature to their package. Our aim is always to reduce duplication across our packages, so as to provide a lower bar for
 pharmaceutical companies to adopt R. With this in mind, expect that we would say no to including a new package in pharmaverse unless it offers unique features
 and scope compared to the packages already included.
+
+**Existing Packages**
 
 If you would like to see your package included in pharmaverse, starting in January 2023 pharmaverse will have new minimum inclusion criteria:
 
@@ -57,10 +63,8 @@ If you would like to see your package included in pharmaverse, starting in Janua
 adds sufficient value to pharmaverse. 
 
 For other best practices, we encourage you to follow guidance from both [R Packages](https://r-pkgs.org/) and [rOpenSci](https://devguide.ropensci.org/building.html).
-  
-The responsibilities of package co-leads (both for new or existing packages) include:
-* Deciding the strategy for the package, such as scope, contribution model, testing, governance, maintenance and communication planning - for each of these points 
-there exists high level guidance and pharmaverse recommendations within our charter.
+
+**New Packages**
 
 For new package collaborations, beyond our charter we also offer the following to help you get started:
 * A [collaboration contract template](https://github.com/pharmaverse/pharmaverse/blob/main/content/contribute/Pharmaverse%20Collaborative%20Agreement%20(template).docx) - 
