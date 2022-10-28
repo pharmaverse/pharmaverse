@@ -32,7 +32,7 @@ If you would like to see your package included in pharmaverse, starting in Janua
 
 * __Hosting and Licensing__
   * Packages must have an acceptable open source license, preferably permissive unless a packaged dependency requires a copy-left license is used. The recommended license of pharmaverse at this point in time is the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
-  * Source code must be hosted publicly, preferably on GitHub. Wherever hosted, there must be a place to publicly report issues.
+  * Source code must be hosted publicly, preferably on GitHub. Wherever hosted, there must be a place to publicly report issues. Accepted packages may be hosted under the pharmaverse GitHub org but this is not required, although we have seen that using a neutral home like this can foster increased community contributions vs company-specific orgs.
 
 * __Documentation__
   * Pharmaverse packages must be well documented. All exported function must have function documentation and pass R CMD documentation requirements.
@@ -48,8 +48,8 @@ If you would like to see your package included in pharmaverse, starting in Janua
 
 * __Support and Maintenance__
   * To stay included in pharmaverse, packages must be actively maintained.
-    * If a package is started in the pharmaverse, then a maintenance strategy can be organized within participating pharmaverse organizations. If a package is included pharmaverse but owned by a individual organization, then that organization is responsible for ensuring the package is maintained. Lack of maintenance of a package will result in the package being removed from pharmaverse.
-    * If an organization no longer wishes to maintain a package, but it is crucial to the pharmaverse, then pharmaverse may accept moving the packages under the pharmaverse Github organization and taking on maintenance. 
+    * If a package is started in the pharmaverse, then a maintenance strategy can be organized within participating pharmaverse organizations. If a package is included in pharmaverse but owned by a individual organization, then that organization is responsible for ensuring the package is maintained. Lack of maintenance of a package will result in the package being removed from pharmaverse.
+    * If an organization no longer wishes to maintain a package, but it is crucial to the pharmaverse, then another contributing organisation within the pharmaverse may accept moving the packages under the pharmaverse Github organization and taking on maintenance. 
   * The main branch of the package repository must be protected, and a separate development branch should be used. A resticted set of maintainers should have authority to admit changes to the main branch.
   * The main branch of the package should additionally have Continuous Integration (CI) requirements in the form of automated testing. 
     * At a minimum, the CI actions should test R CMD Check on Windows, Linux, and MacOS.
