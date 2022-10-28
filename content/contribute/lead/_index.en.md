@@ -5,9 +5,11 @@ weight: 2
 draft: false
 ---
 
-The responsibilities of package co-leads (both for new or existing packages) include:
-* Deciding the strategy for the package, such as scope, contribution model, testing, governance, maintenance and communication planning - for each of these points 
-there exists high level guidance and pharmaverse recommendations within our charter.
+**Package Ownership**
+
+The responsibilities of package co-leads or leads (both for new or existing packages) would be to decide the strategy for the package, such as scope, contribution model, testing, governance, maintenance and communication planning.
+For each of these points there exists high level guidance and pharmaverse recommendations within our charter, but the owners of the package have full control over such decisions.
+Pharmaverse is not a consortium that owns or maintains these packages. 
 
 We openly welcome developers of existing packages or those initiating new packages to reach out to us.
 
@@ -15,7 +17,7 @@ In order for pharmaverse to be truly successful we need to encourage that any ga
 rather than many individual companies addressing the same problem in isolation - which at worst ends with private code and at best ends with a proliferation of open 
 source code all doing the same thing.
 
-So we actively encourage individuals or organisations that have an idea for a new R package within our pharmaverse scope to contact our council representatives, so that 
+So we actively encourage individuals or organisations that have a new idea or an existing R package within our pharmaverse scope to contact our council representatives, so that 
 we can help you initiate a new collaboration with like-minded other individuals. We can also connect you with others that would be willing to contribute to testing 
 your package as you progress development.
 
