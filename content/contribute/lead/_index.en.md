@@ -31,8 +31,8 @@ and scope compared to the packages already included.
 If you would like to see your package included in pharmaverse, starting in January 2023 pharmaverse will have new minimum inclusion criteria:
 
 * __Hosting and Licensing__
-  * Packages must have an acceptable open source license, preferably permissive unless a packaged dependency requires a copy-left license is used. The recommended license of pharmaverse at this point in time is the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
-  * Source code must be hosted publicly, preferably on GitHub. Wherever hosted, there must be a place to publicly report issues. Accepted packages may be hosted under the pharmaverse GitHub org but this is not required, although we have seen that using a neutral home like this can foster increased community contributions vs company-specific orgs.
+  * Packages must have an acceptable open source license, preferably permissive unless a packaged dependency requires a copy-left license to be used. The recommended license of pharmaverse at this point in time is the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+  * Source code must be hosted publicly, preferably on GitHub. Wherever hosted, there must be a place to publicly report issues. Accepted packages may be hosted under the pharmaverse GitHub org but this is not required, although we have seen that using a neutral home like this can foster increased community contributions vs using company-specific orgs.
 
 * __Documentation__
   * Pharmaverse packages must be well documented. All exported function must have function documentation and pass R CMD documentation requirements.
@@ -43,17 +43,15 @@ If you would like to see your package included in pharmaverse, starting in Janua
     * This requirement will _start_ in January 2023, meaning that the minimum version compatibility of R initially will be version 4.2.2 ("Innocent and Trusting"). Packages will not be required to support previous R versions at this point, rather R version 4.2.2 must be supported for another 4 minor releases.
   * Incremental, semantic versioning should be used. We recommend following the strategies detailed in [R Packages](https://r-pkgs.org/lifecycle.html#version)
 
-* __Style__
-  * While pharmaverse does not have strict style requirements, we encourage package authors to follow the [Tidyverse style guide](https://style.tidyverse.org/)
-
 * __Support and Maintenance__
   * To stay included in pharmaverse, packages must be actively maintained.
     * If a package is started in the pharmaverse, then a maintenance strategy can be organized within participating pharmaverse organizations. If a package is included in pharmaverse but owned by a individual organization, then that organization is responsible for ensuring the package is maintained. Lack of maintenance of a package will result in the package being removed from pharmaverse.
-    * If an organization no longer wishes to maintain a package, but it is crucial to the pharmaverse, then another contributing organisation within the pharmaverse may accept moving the packages under the pharmaverse Github organization and taking on maintenance. 
-  * The main branch of the package repository must be protected, and a separate development branch should be used. A resticted set of maintainers should have authority to admit changes to the main branch.
+    * If an organization no longer wishes to maintain a package, but it is crucial to the pharmaverse, then another contributing organisation within the pharmaverse may accept moving the packages under the pharmaverse GitHub organization and taking on maintenance. 
+  * The main branch of the package repository must be protected, and a separate development branch should be used. A restricted set of maintainers should have authority to admit changes to the main branch.
   * The main branch of the package should additionally have Continuous Integration (CI) requirements in the form of automated testing. 
     * At a minimum, the CI actions should test R CMD Check on Windows, Linux, and MacOS.
-    * In line with version requirements, the CI actions should test the appropriate versions of R. _Starting in January 2023, pharmaverse will offer template GitHub actions that test these minimum requirements_
+    * In line with version requirements, the CI actions should test the appropriate versions of R. 
+    * Feel free to re-use these and more useful workflows from [admiralci](https://pharmaverse.github.io/admiralci/main/)
 
 * __CRAN Acceptability__
   * A pharmaverse package is considered a __pharmaverse candidate__ until it is admitted to CRAN. 
@@ -65,6 +63,7 @@ If you would like to see your package included in pharmaverse, starting in Janua
 adds sufficient value to pharmaverse. 
 
 For other best practices, we encourage you to follow guidance from both [R Packages](https://r-pkgs.org/) and [rOpenSci](https://devguide.ropensci.org/building.html).
+Pharmaverse does not have strict style requirements, but we encourage package authors to follow the [Tidyverse style guide](https://style.tidyverse.org/).
 
 **New Packages**
 
