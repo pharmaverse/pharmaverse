@@ -5,7 +5,7 @@ weight: 2
 draft: false
 ---
 
-**Package Ownership**
+**Ownership**
 
 The responsibilities of package co-leads or leads (both for new or existing packages) would be to decide the strategy for the package, such as scope, contribution model, testing, governance, maintenance and communication planning.
 For each of these points there exists high level guidance and pharmaverse recommendations within our charter, but the owners of the package have full control over such decisions.
@@ -26,7 +26,9 @@ with an existing effort to add your feature to their package. Our aim is always 
 pharmaceutical companies to adopt R. With this in mind, expect that we would say no to including a new package in pharmaverse unless it offers unique features
 and scope compared to the packages already included.
 
-**Existing Packages**
+Note: we refer to R "packages" here, but you may also have other useful pieces to share (outside of packages) that enable R, such as CI/CD workflows, utility scripts or templates.
+
+**Inclusion Criteria for pharmaverse**
 
 If you would like to see your package included in pharmaverse, starting in January 2023 pharmaverse will have new minimum inclusion criteria:
 
@@ -44,7 +46,7 @@ If you would like to see your package included in pharmaverse, starting in Janua
   * Incremental, semantic versioning should be used. We recommend following the strategies detailed in [R Packages](https://r-pkgs.org/lifecycle.html#version)
 
 * __Support and Maintenance__
-  * To stay included in pharmaverse, packages must be actively maintained.
+  * To stay included in pharmaverse, packages must be actively maintained - by this we mean monitoring user-raised issues and addressing bug fixes within a reasonable timeframe, even if no planned active development for a stable package.
     * If a package is started in the pharmaverse, then a maintenance strategy can be organized within participating pharmaverse organizations. If a package is included in pharmaverse but owned by a individual organization, then that organization is responsible for ensuring the package is maintained. Lack of maintenance of a package will result in the package being removed from pharmaverse.
     * If an organization no longer wishes to maintain a package, but it is crucial to the pharmaverse, then another contributing organisation within the pharmaverse may accept moving the packages under the pharmaverse GitHub organization and taking on maintenance. 
   * The main branch of the package repository must be protected, and a separate development branch should be used. A restricted set of maintainers should have authority to admit changes to the main branch.
@@ -65,7 +67,7 @@ adds sufficient value to pharmaverse.
 For other best practices, we encourage you to follow guidance from both [R Packages](https://r-pkgs.org/) and [rOpenSci](https://devguide.ropensci.org/building.html).
 Pharmaverse does not have strict style requirements, but we encourage package authors to follow the [Tidyverse style guide](https://style.tidyverse.org/).
 
-**New Packages**
+**New Collaborations**
 
 For new package collaborations, beyond our charter we also offer the following to help you get started:
 * A [collaboration contract template](https://github.com/pharmaverse/pharmaverse/blob/main/content/contribute/Pharmaverse%20Collaborative%20Agreement%20(template).docx) - 
