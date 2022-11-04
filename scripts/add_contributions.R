@@ -100,7 +100,7 @@ library(readr)
       last_commit = as.Date(last_commit),
       first_commit = as.Date(first_commit)
     ) %>%
-    filter(!author %in% c(".gitconfig missing email","actions-user"))
+    filter(!author %in% c(".gitconfig missing email","actions-user") & !is.na(author))
 
   contributors <- contributors %>%
     left_join(
