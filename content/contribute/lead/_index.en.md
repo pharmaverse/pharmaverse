@@ -5,19 +5,67 @@ weight: 2
 draft: false
 ---
 
+**Ownership**
+
+The responsibilities of package co-leads or leads (both for new or existing packages) would be to decide the strategy for the package, such as scope, contribution model, testing, governance, maintenance and communication planning.
+For each of these points there exists high level guidance and pharmaverse recommendations within our charter, but the owners of the package have full control over such decisions.
+Pharmaverse is not a consortium that owns or maintains these packages. 
+
 We openly welcome developers of existing packages or those initiating new packages to reach out to us.
 
 In order for pharmaverse to be truly successful we need to encourage that any gaps in the end-to-end clinical reporting flow are addressed by new collaborative efforts, 
 rather than many individual companies addressing the same problem in isolation - which at worst ends with private code and at best ends with a proliferation of open 
 source code all doing the same thing.
 
-So we actively encourage individuals or organisations that have an idea for a new R package within our pharmaverse scope to contact our council representatives, so that 
+So we actively encourage individuals or organisations that have a new idea or an existing R package within our pharmaverse scope to contact our council representatives, so that 
 we can help you initiate a new collaboration with like-minded other individuals. We can also connect you with others that would be willing to contribute to testing 
 your package as you progress development.
 
-The responsibilities of package co-leads (both for new or existing packages) include:
-* Deciding the strategy for the package, such as scope, contribution model, testing, governance, maintenance and communication planning - for each of these points 
-there exists high level guidance and pharmaverse recommendations within our charter.
+Before you contact us, please consider whether there is already an existing pharmaverse package that could solve your need, or if you could combine forces
+with an existing effort to add your feature to their package. Our aim is always to reduce duplication across our packages, so as to provide a lower bar for
+pharmaceutical companies to adopt R. With this in mind, expect that we would say no to including a new package in pharmaverse unless it offers unique features
+and scope compared to the packages already included.
+
+Note: we refer to R "packages" here, but you may also have other useful pieces to share (outside of packages) that enable R, such as CI/CD workflows, utility scripts or templates.
+
+**Inclusion Criteria for pharmaverse**
+
+If you would like to see your package included in pharmaverse, starting in January 2023 pharmaverse will have new minimum inclusion criteria:
+
+* __Hosting and Licensing__
+  * Packages must have an acceptable open source license, preferably permissive unless a packaged dependency requires a copy-left license to be used. The recommended license of pharmaverse at this point in time is the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+  * Source code must be hosted publicly, preferably on GitHub. Wherever hosted, there must be a place to publicly report issues. Accepted packages may be hosted under the pharmaverse GitHub org but this is not required, although we have seen that using a neutral home like this can foster increased community contributions vs using company-specific orgs.
+
+* __Documentation__
+  * Pharmaverse packages must be well documented. All exported function must have function documentation and pass R CMD documentation requirements.
+  * Packages should have a package website available, with vignettes documenting contextual use of the package code.  
+
+* __Version Compatibility__
+  * Pharmaverse packages should have a Continuous Integration (CI) action to test R CMD Check against the latest R version. It can also be a good convention to consider adding some extra workflows for recent R versions, but this is not required 
+  * Incremental, semantic versioning should be used. We recommend following the strategies detailed in [R Packages](https://r-pkgs.org/lifecycle.html#version)
+
+* __Support and Maintenance__
+  * To stay included in pharmaverse, packages must be actively maintained - by this we mean monitoring user-raised issues and addressing bug fixes within a reasonable timeframe, even if no planned active development for a stable package.
+    * If a package is started in the pharmaverse, then a maintenance strategy can be organized within participating pharmaverse organizations. If a package is included in pharmaverse but owned by a individual organization, then that organization is responsible for ensuring the package is maintained. Lack of maintenance of a package will result in the package being removed from pharmaverse.
+    * If an organization no longer wishes to maintain a package, but it is crucial to the pharmaverse, then another contributing organisation within the pharmaverse may accept moving the packages under the pharmaverse GitHub organization and taking on maintenance. 
+  * The main branch of the package repository must be protected, and a separate development branch should be used. A restricted set of maintainers should have authority to admit changes to the main branch.
+  * The main branch of the package should additionally have extra CI automated testing for package releases. 
+    * For example, testing R CMD Check on Windows, Linux, and MacOS. This could also be achieved via the CRAN checks
+    * Feel free to re-use these and more useful workflows from [admiralci](https://pharmaverse.github.io/admiralci/main/)
+
+* __CRAN Acceptability__
+  * A pharmaverse package is considered a __pharmaverse candidate__ until it is admitted to CRAN. 
+  * Once admitted to CRAN, the package must stay on CRAN.
+    * _Note: If a pharmaverse package is archived due to the archival of a dependency, we understand that is not the fault of the pharmaverse package authors. That said, if a dependency becomes a systemic problem, steps should be taken to eliminate that package as a dependency_
+  * Note that long term, CRAN may not be the ultimate destination for pharmaverse packages, but given that CRAN is still the defacto location for retrieving R packages, pharmaverse packages must be admitted to CRAN and comply with CRAN requirements.
+
+* If you meet all of the above criteria, one of our respective working groups will review your package and determine whether the scope is suitable and the package
+adds sufficient value to pharmaverse. 
+
+For other best practices, we encourage you to follow guidance from both [R Packages](https://r-pkgs.org/) and [rOpenSci](https://devguide.ropensci.org/building.html).
+Pharmaverse does not have strict style requirements, but we encourage package authors to follow the [Tidyverse style guide](https://style.tidyverse.org/).
+
+**New Collaborations**
 
 For new package collaborations, beyond our charter we also offer the following to help you get started:
 * A [collaboration contract template](https://github.com/pharmaverse/pharmaverse/blob/main/content/contribute/Pharmaverse%20Collaborative%20Agreement%20(template).docx) - 
