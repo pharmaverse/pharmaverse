@@ -41,8 +41,7 @@ If you would like to see your package included in pharmaverse, starting in Janua
   * Packages should have a package website available, with vignettes documenting contextual use of the package code.  
 
 * __Version Compatibility__
-  * Pharmaverse packages will follow the same R version support schedule as the tidyverse. Tidyverse packages are maintained to generally support the current version, devel version, and four previous minor release versions of R (see post [here](https://www.tidyverse.org/blog/2019/04/r-version-support/))
-    * This requirement will _start_ in January 2023, meaning that the minimum version compatibility of R initially will be version 4.2.2 ("Innocent and Trusting"). Packages will not be required to support previous R versions at this point, rather R version 4.2.2 must be supported for another 4 minor releases.
+  * Pharmaverse packages should have a Continuous Integration (CI) action to test R CMD Check against the latest R version. It can also be a good convention to consider adding some extra workflows for recent R versions, but this is not required 
   * Incremental, semantic versioning should be used. We recommend following the strategies detailed in [R Packages](https://r-pkgs.org/lifecycle.html#version)
 
 * __Support and Maintenance__
@@ -50,9 +49,8 @@ If you would like to see your package included in pharmaverse, starting in Janua
     * If a package is started in the pharmaverse, then a maintenance strategy can be organized within participating pharmaverse organizations. If a package is included in pharmaverse but owned by a individual organization, then that organization is responsible for ensuring the package is maintained. Lack of maintenance of a package will result in the package being removed from pharmaverse.
     * If an organization no longer wishes to maintain a package, but it is crucial to the pharmaverse, then another contributing organisation within the pharmaverse may accept moving the packages under the pharmaverse GitHub organization and taking on maintenance. 
   * The main branch of the package repository must be protected, and a separate development branch should be used. A restricted set of maintainers should have authority to admit changes to the main branch.
-  * The main branch of the package should additionally have Continuous Integration (CI) requirements in the form of automated testing. 
-    * At a minimum, the CI actions should test R CMD Check on Windows, Linux, and MacOS.
-    * In line with version requirements, the CI actions should test the appropriate versions of R. 
+  * The main branch of the package should additionally have extra CI automated testing for package releases. 
+    * For example, testing R CMD Check on Windows, Linux, and MacOS. This could also be achieved via the CRAN checks
     * Feel free to re-use these and more useful workflows from [admiralci](https://pharmaverse.github.io/admiralci/main/)
 
 * __CRAN Acceptability__
