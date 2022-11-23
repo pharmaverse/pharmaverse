@@ -71,6 +71,8 @@ to maintain a landscape of available packages other several important domains.
 
 **emmeans** - Estimated marginal means, aka least-squares means
 
+**mmrm** - Mixed models for repeated measures ([link](https://openpharma.github.io/mmrm))
+
 **lme4** - Fit linear and generalized linear mixed-effects models
 
 **lmerTest** - Tests in linear mixed effects models
