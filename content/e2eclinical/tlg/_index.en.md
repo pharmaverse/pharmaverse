@@ -30,6 +30,8 @@ There are publicly available examples:
 
 {{< pharmaverse pkg="teal" >}}
 
+**Upcoming package**
+
 {{< pharmaverse pkg="chevron" >}}
 
 ### Tables
@@ -42,7 +44,7 @@ There are publicly available examples:
 
 {{< pharmaverse pkg="tfrmt" >}}
 
-**Upcoming packages**
+**Upcoming package**
 
 {{< pharmaverse pkg="tidytlg" >}}
 
