@@ -11,7 +11,7 @@ type : "docs"
 ### About
 
 The pharmaverse is a connected network of industry individuals working together in collaboration to achieve the below objective.
-We are not a consortium or organisation, and we have no binding links to any other industry group.
+We are not a consortium nor organisation, and we have no binding links to any other industry group.
 We receive no funding and all contributors do so of their own accords and represent their own ideas, not those of any single company.
 Any legal counsel comes from legal representatives from any organisations of our council members.
 
