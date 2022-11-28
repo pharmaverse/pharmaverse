@@ -55,17 +55,7 @@ Contributing to pharmaverse is open to all organizations working within the clin
 
 The pharmaverse recommendation is for all our new code collaborations to be hosted under github.com/pharmaverse. This forms a neutral home for all open-source repos falling under our scope. The admins of this org would include pharmaverse council members.
 
-The preferred model of development of new pharmaverse offerings would be to initiate projects as open-source from the start of development or as soon as a stable first draft is available. This is coupled with an expectation of engagement of other companies in ongoing testing and possibly via supporting development efforts with pull requests/issues/feedback. This way we result in more robust code for which many companies have already engaged with during the development process, and it has a higher chance of successful embedding. In addition, the open and transparent development reduces the chance of others creating duplicative parallel packages.
-
-The development team should agree on a similar style of programming for which the pharmaverse site will offer non-binding recommendations (e.g. lintr compatible and with a common vocabulary for pharma-specific standards like CDISC object naming), so as to achieve a consistent look and feel across modules. Note whilst this would be advantageous for new code from the point of launching pharmaverse onwards, it would be unrealistic to expect any existing packages to rework their code base to accommodate this.
-
-Where relevant, development efforts would use synthetic CDISC data, and then users from each developer or tester company would take the code modules back to their own restricted systems to test out using real patient data. The learnings from testing would be shared openly, without sharing any patient information.
-
-For co-developed packages, development should be done in a shared development area to ensure a consistent environment, e.g. a Docker container based upon a custom-built Docker image running an agreed R version. The development team should also consider compatibility with different operating systems, such as Linux or Windows.   
-
-There should be no specific tie to any company-specific statistical computing environment or internal validation/qualification process. The GitHub repos will have CI/CD (e.g. GitHub actions) to run unit tests and test package builds against an open-source container with the pharmaverse endorsed environment layered (e.g. versioned rocker + pharmaverse). The default branch (e.g. master or main) will be protected against merges that fail CI/CD checks. Individual companies are welcomed to layer additional private CI/CD jobs if needed to meet their internal requirements as long as that is done without adding code specific to one company to the public repo. 
-
-Dependency packages to install will be determined by the team and will be clearly documented. When using these, no source code should be copied and other packages shouldn’t be bundled into releases, as we prefer all pharmaverse packages to target permissive licensing (preferably MIT). 
+For more information on development guidance and requirements, see the minimum inclusion criteria and recommended development practices available in https://pharmaverse.org/contribute/lead/
 
 ### Risks & Testing
 
