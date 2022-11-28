@@ -14,14 +14,10 @@ but not limited to, shiny apps.
 
 ### Frameworks
 
-{{< pharmaverse pkg="nest" >}}
+The following frameworks allow for the engine used to generate the output to be modified.
+For example, they could be used with `ggplot2`, `rtables`, `plotly`, `visR` or `Tplyr`.
 
-The Nest project is an open source collaboration. Nest is a framework,
-so engine used to generate the output can be modified. `ggplot2` and `rtables` are the preferred engines due 
-to their flexibility and feature set, but examples 
-exist within the Nest framework using other packages like `plotly`, `visR` and `tplyr`.
-
-There are publicly available examples:
+There are publicly available example Shiny applications created using these:
 - The efficacy APP [Efficacy](https://genentech.shinyapps.io/teal_efficacy/)
 - The safety APP [Safety](https://genentech.shinyapps.io/teal_safety/)
 - The exploratory APP [Exploratory](https://genentech.shinyapps.io/teal_exploratory/)
