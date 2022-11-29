@@ -62,7 +62,7 @@ For more information on development guidance and requirements, see the minimum i
 
 Each respective company should decide whether legal contracts or collaboration agreements are required. Any company involved should be free to decide to withdraw from any pharmaverse collaboration at any stage.
 
-Testing of any code has to be a key consideration and the pharmaverse council will define guidelines around ideal documentation and unit testing strategy to give sufficient reliability. Packages initiated to fill gaps in the pharmaverse will need to meet the required standards. It will also be necessary to make available any evidence generated on the reliability and methods executed, as this transparency would in turn encourage wider engagement and adoption of the package. 
+Testing of any code has to be a key consideration. Packages initiated to fill gaps in the pharmaverse will need to meet the required standards as outlined in our [Package co-lead guidance](https://pharmaverse.org/contribute/lead/). It will also be necessary to make available any evidence generated on the reliability and methods executed, as this transparency would in turn encourage wider engagement and adoption of the package. 
 
 Liability for the reliability of the pharmaverse environment remains with the users, but to help limit risk, package dependencies should be intentionally limited to the most necessary, such as selected tidyverse packages.  
 
