@@ -33,16 +33,18 @@ Note: we refer to R "packages" here, but you may also have other useful pieces t
 If you would like to see your package included in pharmaverse, starting in January 2023 pharmaverse will have new minimum inclusion criteria:
 
 * __Hosting and Licensing__
-  * Packages must have an acceptable open source license, preferably permissive unless a packaged dependency requires a copy-left license to be used. The recommended license of pharmaverse at this point in time is the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
-  * Source code must be hosted publicly, preferably on GitHub. Wherever hosted, there must be a place to publicly report issues. Accepted packages may be hosted under the pharmaverse GitHub org but this is not required, although we have seen that using a neutral home like this can foster increased community contributions vs using company-specific orgs.
+  * Packages must have an acceptable open source license, preferably permissive unless a packaged dependency requires a copy-left license is used. The recommended license of pharmaverse at this point in time is the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+  * Source code must be hosted publicly, preferably on GitHub. Wherever hosted, there must be a place to publicly report issues. We encourage new package collaborations to use the pharmaverse GitHub organization where possible. 
 
 * __Documentation__
   * Pharmaverse packages must be well documented. All exported function must have function documentation and pass R CMD documentation requirements.
   * Packages should have a package website available, with vignettes documenting contextual use of the package code.  
 
-* __Version Compatibility__
-  * Pharmaverse packages should have a Continuous Integration (CI) action to test R CMD Check against the latest R version. It can also be a good convention to consider adding some extra workflows for recent R versions, but this is not required 
+* __Version Compatibility and Dependencies__
+  * Pharmaverse packages will follow the same R version support schedule as the tidyverse. Tidyverse packages are maintained to generally support the current version, devel version, and four previous minor release versions of R (see post [here](https://www.tidyverse.org/blog/2019/04/r-version-support/))
+    * This requirement will _start_ in January 2023, meaning that the minimum version compatibility of R initially will be version 4.2.2 ("Innocent and Trusting"). Packages will not be required to support previous R versions at this point, rather R version 4.2.2 must be supported for another 4 minor releases.
   * Incremental, semantic versioning should be used. We recommend following the strategies detailed in [R Packages](https://r-pkgs.org/lifecycle.html#version)
+  * Dependency packages to install will be determined by the team and will be clearly documented. When using these, bundling of other package's source code should be avoided where possible. Package dependencies should be intentionally limited to the most necessary, such as selected tidyverse packages
 
 * __Support and Maintenance__
   * To stay included in pharmaverse, packages must be actively maintained - by this we mean monitoring user-raised issues and addressing bug fixes within a reasonable timeframe, even if no planned active development for a stable package.
@@ -61,6 +63,13 @@ If you would like to see your package included in pharmaverse, starting in Janua
 
 * If you meet all of the above criteria, one of our respective working groups will review your package and determine whether the scope is suitable and the package
 adds sufficient value to pharmaverse. 
+
+We additionally have other recommended development practices, that while not required are encourage for new pharmarverse packages or new package collaborations.
+
+* The development team should agree on a similar style of programming for which the pharmaverse site will offer non-binding recommendations (e.g. lintr compatible and with a common vocabulary for pharma-specific standards like CDISC object naming), so as to achieve a consistent look and feel across modules. Note whilst this would be advantageous for new code from the point of launching pharmaverse onwards, it would be unrealistic to expect any existing packages to rework their code base to accommodate this.
+* Where relevant, development efforts would use synthetic CDISC data, and then users from each developer or tester company could optionally take the code modules back to their own restricted systems to test out using their data. The learnings from testing would be shared openly, without sharing any patient information.
+* For co-developed packages, development should be done in a shared development area to ensure a consistent environment. This could be a through the use of renv, or a Docker container based upon a custom-built Docker image running an agreed R version. 
+* There should be no specific tie to any company-specific statistical computing environment or internal validation/qualification process. Packages in pharmaverse are intended to be suitable for any company's environment or process. If binding tightly to company process or standards, the package scope may be too broad. 
 
 For other best practices, we encourage you to follow guidance from both [R Packages](https://r-pkgs.org/) and [rOpenSci](https://devguide.ropensci.org/building.html).
 Pharmaverse does not have strict style requirements, but we encourage package authors to follow the [Tidyverse style guide](https://style.tidyverse.org/).
