@@ -17,14 +17,14 @@ but not limited to, shiny apps.
 The following frameworks allow for the engine used to generate the output to be modified.
 For example, they could be used with `ggplot2`, `rtables`, `plotly`, `visR` or `Tplyr`.
 
+{{< pharmaverse pkg="tern" >}}
+
+{{< pharmaverse pkg="teal" >}}
+
 There are publicly available example Shiny applications created using these:
 - The efficacy APP [Efficacy](https://genentech.shinyapps.io/teal_efficacy/)
 - The safety APP [Safety](https://genentech.shinyapps.io/teal_safety/)
 - The exploratory APP [Exploratory](https://genentech.shinyapps.io/teal_exploratory/)
-
-{{< pharmaverse pkg="tern" >}}
-
-{{< pharmaverse pkg="teal" >}}
 
 **Upcoming package**
 
