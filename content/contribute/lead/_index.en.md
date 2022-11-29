@@ -24,7 +24,7 @@ If you would like to see your package included in pharmaverse, starting in Janua
 
 * __Hosting and Licensing__
   * Packages must have an acceptable open source license, preferably permissive unless a packaged dependency requires a copy-left license is used. The recommended license of pharmaverse at this point in time is the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
-  * Source code must be hosted publicly, preferably on GitHub. Wherever hosted, there must be a place to publicly report issues. We ecnourage new package collaborations to use the pharmaverse GitHub organization where possible. 
+  * Source code must be hosted publicly, preferably on GitHub. Wherever hosted, there must be a place to publicly report issues. We encourage new package collaborations to use the pharmaverse GitHub organization where possible. 
 
 * __Documentation__
   * Pharmaverse packages must be well documented. All exported function must have function documentation and pass R CMD documentation requirements.
