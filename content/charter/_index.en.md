@@ -55,6 +55,8 @@ Contributing to pharmaverse is open to all organizations working within the clin
 
 The pharmaverse recommendation is for all our new code collaborations to be hosted under github.com/pharmaverse. This forms a neutral home for all open-source repos falling under our scope. The admins of this org would include pharmaverse council members.
 
+The preferred model of development of new pharmaverse offerings would be to initiate projects as open-source from the start of development or as soon as a stable first draft is available. This is coupled with an expectation of engagement of other companies in ongoing testing and possibly via supporting development efforts with pull requests/issues/feedback. This way we result in more robust code for which many companies have already engaged with during the development process, and it has a higher chance of successful embedding. In addition, the open and transparent development reduces the chance of others creating duplicative parallel packages.
+
 For more information on development guidance and requirements, see the minimum inclusion criteria and recommended development practices available in https://pharmaverse.org/contribute/lead/
 
 ### Risks & Testing
