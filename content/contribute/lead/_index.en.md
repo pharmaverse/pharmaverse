@@ -64,7 +64,7 @@ If you would like to see your package included in pharmaverse, starting in Janua
 * If you meet all of the above criteria, one of our respective working groups will review your package and determine whether the scope is suitable and the package
 adds sufficient value to pharmaverse. 
 
-We additionally have other recommended development practices, that while not required are encourage for new pharmarverse packages or new package collaborations.
+We additionally have other recommended development practices, that while not required are encouraged for new pharmarverse packages or new package collaborations.
 
 * The development team should agree on a similar style of programming for which the pharmaverse site will offer non-binding recommendations (e.g. lintr compatible and with a common vocabulary for pharma-specific standards like CDISC object naming), so as to achieve a consistent look and feel across modules. Note whilst this would be advantageous for new code from the point of launching pharmaverse onwards, it would be unrealistic to expect any existing packages to rework their code base to accommodate this.
 * Where relevant, development efforts would use synthetic CDISC data, and then users from each developer or tester company could optionally take the code modules back to their own restricted systems to test out using their data. The learnings from testing would be shared openly, without sharing any patient information.
