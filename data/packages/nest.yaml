@@ -1,9 +1,0 @@
-name: nest
-repo: insightsengineering
-repo_source: github.com
-docs: 
-hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/nest.png
-task: Submission
-developer: Roche 
-details: Set of R packages to streamline and bring efficiency to the generation of TLGs and interactive analyses
-splash: include

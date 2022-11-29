@@ -10,7 +10,7 @@ Our working groups are listed towards the bottom of our homepage, and these may 
 Some guiding principles are as follows:
 
 - The council will look to rely on specialist experts from the working groups to make recommendations on which packages to include and
-identifying gaps in the pharmaverse. The Data WG covers areas such as STDM and ADaM, the TLG WG covers TLGs and interactive apps, and
+identifying gaps in the pharmaverse. The Data WG covers areas such as SDTM and ADaM, the TLG WG covers TLGs and interactive apps, and
 the Technology WG covers any other packages and our website
 - Each WG nominates a lead
 - The members of each group are empowered to agree on any additional scope, objectives and deliverables

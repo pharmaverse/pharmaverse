@@ -2,6 +2,6 @@ name: datacutr
 repo: pharmaverse/datacutr
 repo_source: github.com
 docs: 
-hex: 
+hex: /images/emptyhex.png # /images/emptyhex.png
 task: sdtm
 details: Applying a datacut to SDTM
