@@ -41,8 +41,7 @@ If you would like to see your package included in pharmaverse, starting in Janua
   * Packages should have a package website available, with vignettes documenting contextual use of the package code.  
 
 * __Version Compatibility and Dependencies__
-  * Pharmaverse packages will follow the same R version support schedule as the tidyverse. Tidyverse packages are maintained to generally support the current version, devel version, and four previous minor release versions of R (see post [here](https://www.tidyverse.org/blog/2019/04/r-version-support/))
-    * This requirement will _start_ in January 2023, meaning that the minimum version compatibility of R initially will be version 4.2.2 ("Innocent and Trusting"). Packages will not be required to support previous R versions at this point, rather R version 4.2.2 must be supported for another 4 minor releases.
+  * Pharmaverse packages should have a Continuous Integration (CI) action to test R CMD Check against the latest R version. It can also be a good convention to consider adding some extra workflows for recent R versions, but this is not required.
   * Incremental, semantic versioning should be used. We recommend following the strategies detailed in [R Packages](https://r-pkgs.org/lifecycle.html#version)
   * Dependency packages to install will be determined by the team and will be clearly documented. When using these, bundling of other package's source code should be avoided where possible. Package dependencies should be intentionally limited to the most necessary, such as selected tidyverse packages
 
