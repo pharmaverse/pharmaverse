@@ -7,6 +7,10 @@ _build:
   list: never
 ---
 
+{{< faq "Is there any presentation available to learn more about the pharmaverse?" >}}
+Please see our keynote speech at [R/Pharma 2022](https://www.youtube.com/watch?v=APMDOS4v9Hk).
+{{</ faq >}}
+
 {{< faq "Who decides what's in and not in the pharmaverse?" >}}
 This is governed by our pharmaverse working groups - see our [Contribute](https://pharmaverse.org/contribute/lead/) section of the site for more details. The working group contacts are given if you scroll down this page. Please reach out to us if you feel a package should be included, provided it offers significantly unique scope compared to the packages already included.
 {{</ faq >}}
