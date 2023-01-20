@@ -172,7 +172,7 @@ url = "https://www.youtube.com/channel/UCxQFEv8HNqM01DXzdQLCy6Q"
 weight = 3
 
 [[Languages.en.menu.main]]
-name = "EXAMPLES"
+name = "Examples"
 url = "http://examples.pharmaverse.org/"
 weight = 4
 
