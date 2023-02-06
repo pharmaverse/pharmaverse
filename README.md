@@ -67,7 +67,7 @@ The general structure is:
 name: admiral
 repo: pharmaverse/admiral
 repo_source: github.com
-docs: https://pharmaverse.github.io/admiral/
+docs: https://pharmaverse.github.io/admiral/cran-release/
 hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/admiral.png
 task: ADaM
 details: (ADaM In R Asset Library) - Modular framework to generate ADaM via R functions relying on community contributions

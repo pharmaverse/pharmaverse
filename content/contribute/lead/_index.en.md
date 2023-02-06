@@ -83,7 +83,7 @@ companies involved.
 * A [GitHub template](https://github.com/pharmaverse/admiraltemplate) focused on the {admiral} family of packages and their conventions, but could be useful as an
 example of possible approaches to use, such as Issue and Pull Request templates.
 * [Developer utilities](https://pharmaverse.github.io/admiraldev/) and [CI/CD workflows](https://pharmaverse.github.io/admiralci/) again focused on the {admiral} family of packages, but could be useful to re-use.
-* Example [contribution model](https://pharmaverse.github.io/admiral/articles/contribution_model.html) - this is what is used for the {admiral} package and includes 
+* Example [contribution model](https://pharmaverse.github.io/admiral/cran-release/articles/contribution_model.html) - this is what is used for the {admiral} package and includes 
 vignettes around programming strategy, unit testing guidance and git usage. This model will evolve over time as the admiral team learn from the experience, but could 
 serve as an example to consider if you will open your package for contributions, which we would recommend.
 * Recommended [support model](https://pharmaverse.org/support/) - this is important to give users a consistent experience across pharmaverse packages, and if packages 
