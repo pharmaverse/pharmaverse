@@ -43,5 +43,5 @@ of a tie, keep talking and figure it out.
 **Council Meetings** 
 
 *	Monthly - 1h agenda from topics as described above (to be determined by Council members)
-*	From start of 2023, summary minutes will be posted openly at https://github.com/pharmaverse/pharmaverse    
+*	From start of 2023, summary minutes will be posted openly [here](https://github.com/pharmaverse/pharmaverse/tree/main/static/council%20meeting%20minutes) 
 *	There is an expectation of Council member action items to be completed between Council meetings
