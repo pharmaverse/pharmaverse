@@ -37,7 +37,6 @@ Communications plan for new package releases (including new versions)
 *	Determines the course of the 'pharmaverse' as an entity:	Does it become a stand-alone organization? Does it require funding?	Should it be self-sufficient?
 *	Helps new open source contributors find projects they may support
 
-The Council does not accept organizations into the pharmaverse. Any organization can be a member - any individual can contribute.
 Any decision rendered by the Council will be determined by majority vote of the Council membership where at least 60% of the Council is present. In the event 
 of a tie, keep talking and figure it out.
 
