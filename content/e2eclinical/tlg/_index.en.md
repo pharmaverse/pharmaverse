@@ -26,7 +26,9 @@ There are publicly available example Shiny applications created using these:
 - The safety APP [Safety](https://genentech.shinyapps.io/teal_safety/)
 - The exploratory APP [Exploratory](https://genentech.shinyapps.io/teal_exploratory/)
 
-**Upcoming package**
+#### Upcoming packages for consideration
+
+The following are being worked up towards open sourcing to be considered for later inclusion into the pharmaverse - we felt important to share here in case others are working in a similar space and would be interested to collaborate with the respective developers.
 
 {{< pharmaverse pkg="chevron" >}}
 
@@ -40,7 +42,7 @@ There are publicly available example Shiny applications created using these:
 
 {{< pharmaverse pkg="tfrmt" >}}
 
-**Upcoming package**
+#### Upcoming packages for consideration
 
 {{< pharmaverse pkg="tidytlg" >}}
 
