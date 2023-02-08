@@ -93,3 +93,8 @@ To call a package, we have two shortcuts. `pharmaverse` means it's 'pharmaverse'
 
 {{< otherpackages pkg="gt" >}}
 ```
+
+### Council meeting minutes
+
+From 2023 onwards, our monthly council meeting minutes will be published in `static/council meeting minutes`.
+Other static files such as images are stored in `static` also.
