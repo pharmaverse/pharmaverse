@@ -12,7 +12,7 @@ Please see our keynote speech at [R/Pharma 2022](https://www.youtube.com/watch?v
 {{</ faq >}}
 
 {{< faq "Who decides what's in and not in the pharmaverse?" >}}
-This is governed by our pharmaverse working groups - see our [Contribute](https://pharmaverse.org/contribute/lead/) section of the site for more details. The working group contacts are given if you scroll down this page. Please reach out to us if you feel a package should be included, provided it offers significantly unique scope compared to the packages already included.
+This is governed by our pharmaverse working groups - see our [Contribute](https://pharmaverse.org/contribute/wg/) section of the site for more details. Please reach out to us if you feel a package should be included, provided it offers significantly unique scope compared to the packages already included. You can do this by raising an issue [here](https://github.com/pharmaverse/pharmaverse/issues) and choosing our "New package request" template.
 {{</ faq >}}
 
 {{< faq "How can I get involved?" >}}

@@ -18,7 +18,9 @@ SDTM is one of the required standards for data submission to FDA (U.S.) and PMDA
 
 {{< pharmaverse pkg="sdtmchecks" >}}
 
-**Upcoming packages**
+#### Upcoming packages for consideration
+
+The following are being worked up towards open sourcing to be considered for later inclusion into the pharmaverse - we felt important to share here in case others are working in a similar space and would be interested to collaborate with the respective developers.
 
 {{< pharmaverse pkg="roak" >}}
 
