@@ -1,0 +1,19 @@
+name: update universe package.json
+
+on:
+  push:
+    paths:
+      - 'data/packages/**.yaml'
+    branches:
+      - main  # Set a branch to deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
