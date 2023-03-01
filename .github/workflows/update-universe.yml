@@ -56,7 +56,7 @@ jobs:
           path: ./updated_packages.json
           retention-days: 5
 
-      - name: clone universe repo
+      - name: checkout universe repo
         uses: actions/checkout@v2
         with:
           repository: pharmaverse/universe
@@ -69,11 +69,14 @@ jobs:
         with:
           name: packages
       
-      - name: push updated package.json
-        run: |
-          git status
-          git add .
-          git commit -m "test update packages.json"
-          git push
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: update packages.json
+          repository: pharmaverse/universe
+          commit_user_name: pharmaverse-bot
+          commit_user_email: 113703390+pharmaverse-bot@users.noreply.github.com
+          branch: main
 
 # TODO: mv ./updated_packages.json ./packages.json
