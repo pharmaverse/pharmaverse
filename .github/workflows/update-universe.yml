@@ -46,8 +46,15 @@ jobs:
           }
 
           json_data <- prettify(toJSON(all_pkg))
-          write(json_data, "package.json")
+          write(json_data, "updated_packages.json")
         shell: Rscript {0}
+
+      - name: Upload packages artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: packages
+          path: ./.github/workflows/updated_packages.json
+          retention-days: 5
 
       - name: clone universe repo
         uses: actions/checkout@v2
@@ -56,6 +63,11 @@ jobs:
           token: ${{ secrets.PHARMAVERSE_BOT }}
           submodules: true  #
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Download packages aartifact
+        uses: actions/download-artifact@v3
+        with:
+          name: packages
       
       - name: debug after clone 
         run: |
