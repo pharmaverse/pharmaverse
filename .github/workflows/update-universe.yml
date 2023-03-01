@@ -6,10 +6,13 @@ on:
       - 'data/packages/**.yaml'
     branches:
       - main  # Set a branch to deploy
+      - feature/update-universe-pkg-file # TODO: del - for debug
 
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+    container:
+      image: rocker/tidyverse:latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
@@ -17,3 +20,41 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: create package.json file
+        run: |
+          library(yaml)
+          library(jsonlite)
+
+          yml_dir <- "./data/packages"
+          yml_files <- list.files()
+
+          all_pkg <- data.frame()
+          for (f in yml_files) {
+            content <- read_yaml(file.path(ymlDir, f))
+            pkg_name <- content$name
+            pkg_repo <- content$repo
+            if (is.null(content$repo) | is.null(content$name)) {
+              print(paste("WARNING - check your conf for this file", f))
+            } else {
+              pkg_df <- data.frame(package = c(pkg_name),
+              url = c(file.path("https://github.com", pkg_repo)))
+              all_pkg <- rbind(all_pkg, pkg_df)
+            }
+          }
+
+          json_data <- prettify(toJSON(all_pkg))
+          write(json_data, "package.json")
+        shell: Rscript {0}
+
+      - name: clone universe repo
+      - uses: actions/checkout@v2
+        with:
+          repository: pharmaverse/universe
+          token: ${{ secrets.PHARMAVERSE_BOT }}
+          submodules: true  #
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      
+      - name: debug after clone 
+        run: |
+          ls 
