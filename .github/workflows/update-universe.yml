@@ -48,7 +48,7 @@ jobs:
         shell: Rscript {0}
 
       - name: clone universe repo
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
         with:
           repository: pharmaverse/universe
           token: ${{ secrets.PHARMAVERSE_BOT }}
