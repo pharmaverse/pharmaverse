@@ -46,7 +46,7 @@ jobs:
           }
 
           json_data <- prettify(toJSON(all_pkg))
-          write(json_data, file.path(Sys.getenv("GITHUB_PATH"), "updated_packages.json"))
+          write(json_data, updated_packages.json")
         shell: Rscript {0}
 
       - name: debug
@@ -58,7 +58,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: packages
-          path: "${GITHUB_PATH}/updated_packages.json"
+          path: ./updated_packages.json
           retention-days: 5
 
       - name: clone universe repo
