@@ -6,3 +6,4 @@ hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/admiral.pn
 task: ADaM
 details: (ADaM In R Asset Library) - Modular framework to generate ADaM via R functions relying on community contributions
 splash: include
+test: test

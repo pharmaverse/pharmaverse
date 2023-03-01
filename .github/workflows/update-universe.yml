@@ -23,10 +23,12 @@ jobs:
 
       - name: create package.json file
         run: |
+          install.packages("yaml")
+          install.packages("jsonlite")
           library(yaml)
           library(jsonlite)
 
-          yml_dir <- "./data/packages"
+          yml_dir <- file.path(Sys.getenv("GITHUB_PATH"), "data/packages")
           yml_files <- list.files()
 
           all_pkg <- data.frame()
