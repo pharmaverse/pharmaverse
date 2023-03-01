@@ -49,11 +49,15 @@ jobs:
           write(json_data, "updated_packages.json")
         shell: Rscript {0}
 
+      - name: debug after clone 
+        run: |
+          git status 
+
       - name: Upload packages artifact
         uses: actions/upload-artifact@v3
         with:
           name: packages
-          path: ./.github/workflows/updated_packages.json
+          path: ./updated_packages.json
           retention-days: 5
 
       - name: clone universe repo
