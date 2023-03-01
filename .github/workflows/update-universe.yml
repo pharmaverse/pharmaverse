@@ -69,13 +69,17 @@ jobs:
         with:
           name: packages
       
+      - name: add changes
+        # mv ./updated_packages.json ./packages.json
+        run: |
+          git config --global --add safe.directory ${PWD}
+          git add .
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: update packages.json
+          repository: pharmaverse/universe
           commit_user_name: pharmaverse-bot
           commit_user_email: 113703390+pharmaverse-bot@users.noreply.github.com
           branch: main
-
-# TODO: mv ./updated_packages.json ./packages.json
