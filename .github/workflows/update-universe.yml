@@ -49,11 +49,6 @@ jobs:
           write(json_data, "updated_packages.json")
         shell: Rscript {0}
 
-      - name: debug
-        run: |
-          ls
-          echo $GITHUB_PATH
-
       - name: Upload packages artifact
         uses: actions/upload-artifact@v3
         with:
@@ -74,6 +69,11 @@ jobs:
         with:
           name: packages
       
-      - name: debug after clone 
+      - name: push updated package.json
         run: |
-          ls 
+          git status
+          git add .
+          git commit -m "test update packages.json"
+          git push
+
+# TODO: mv ./updated_packages.json ./packages.json
