@@ -9,7 +9,7 @@ on:
       - feature/update-universe-pkg-file # TODO: del - for debug
 
 jobs:
-  deploy:
+  update-universe:
     runs-on: ubuntu-20.04
     container:
       image: rocker/tidyverse:latest
