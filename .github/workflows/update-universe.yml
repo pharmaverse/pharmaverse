@@ -8,6 +8,7 @@ on:
       - main  # Set a branch to deploy
       - feature/update-universe-pkg-file # TODO: del - for debug
 
+# Improvment to test : call git diff to get only changed yml files and pass it to "create package.json file" (but then harder to deal with deleted packages)
 jobs:
   update-universe:
     runs-on: ubuntu-20.04
@@ -20,7 +21,6 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
       - name: create package.json file
         run: |
           install.packages("yaml")
@@ -68,14 +68,28 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: packages
+
+      - name: Update package.json file # read updated_packages.json and old package.json and merge it
+        script: |
+          library(jsonlite)
+          old <- fromJSON("./packages.json") %>% as.data.frame
+          new <- fromJSON("./updated_packages.json") %>% as.data.frame
+          merged <- merge(old, new, by="package", all.x=TRUE)
+          merged$url.x[!is.na(merged$url.y)] = merged$url.y[!is.na(merged$url.y)]
+          merged <- merged[c("package","url.x")]
+          names(merged)[names(merged) == 'url.x'] <- 'url'
+          write(json_data, "packages.json")
+
+        shell: Rscript {0}
       
       - name: add changes
-        # mv ./updated_packages.json ./packages.json
         run: |
+          rm ./updated_packages.json
           git config --global --add safe.directory ${PWD}
           git config --global user.email "113703390+pharmaverse-bot@users.noreply.github.com"
           git config --global user.name "pharmaverse-bot"
           git add .
           git status
+          git diff
           git commit -m "update packages.json"
           git push
