@@ -27,7 +27,7 @@ jobs:
           install.packages("jsonlite")
           library(yaml)
           library(jsonlite)
-          yml_dir <- file.path(Sys.getenv("GITHUB_PATH"), "data/packages")
+          yml_dir <- "./data/packages"
           yml_files <- list.files(yml_dir)
           print("yml_files")
           print(yml_files)
