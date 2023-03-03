@@ -23,8 +23,6 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: create package.json file
         run: |
-          install.packages("yaml")
-          install.packages("jsonlite")
           library(yaml)
           library(jsonlite)
 
@@ -72,6 +70,7 @@ jobs:
       - name: Update package.json file # read updated_packages.json and old package.json and merge it
         run: |
           library(jsonlite)
+          library(tidyverse)
           old <- fromJSON("./packages.json") %>% as.data.frame
           new <- fromJSON("./updated_packages.json") %>% as.data.frame
           merged <- merge(old, new, by="package", all.x=TRUE)
