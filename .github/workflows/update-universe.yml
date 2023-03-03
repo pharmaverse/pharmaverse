@@ -29,9 +29,13 @@ jobs:
           library(jsonlite)
           yml_dir <- file.path(Sys.getenv("GITHUB_PATH"), "data/packages")
           yml_files <- list.files(yml_dir)
+          print("yml_files")
+          print(yml_files)
           all_pkg <- data.frame()
           for (f in yml_files) {
             content <- read_yaml(file.path(yml_dir, f))
+            print(file.path(yml_dir, f))
+            print(content)
             pkg_name <- content$name
             pkg_repo <- content$repo
             if (is.null(content$repo) | is.null(content$name)) {
@@ -42,6 +46,8 @@ jobs:
               all_pkg <- rbind(all_pkg, pkg_df)
             }
           }
+          print("all_pkg")
+          print(all_pkg)
           json_data <- prettify(toJSON(all_pkg))
           print("end")
           print(json_data)
