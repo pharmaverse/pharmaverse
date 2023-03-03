@@ -43,6 +43,8 @@ jobs:
             }
           }
           json_data <- prettify(toJSON(all_pkg))
+          print("end")
+          print(json_data)
           write(json_data, "updated_packages.json")
         shell: Rscript {0}
 
