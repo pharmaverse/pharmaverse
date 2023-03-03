@@ -23,6 +23,7 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: create package.json file
         run: |
+          install.packages("yaml")
           library(yaml)
           library(jsonlite)
 
