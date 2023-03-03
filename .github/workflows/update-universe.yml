@@ -24,6 +24,7 @@ jobs:
       - name: create package.json file
         run: |
           install.packages("yaml")
+          install.packages("jsonlite")
           library(yaml)
           library(jsonlite)
 
