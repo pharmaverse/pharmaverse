@@ -81,6 +81,19 @@ jobs:
       - name: debug artifact 1
         run: |
           cat ./updated_packages.json
+
+      - name: Update package.json file # read updated_packages.json and old package.json and merge it
+        run: |
+          library(jsonlite)
+          library(tidyverse)
+          old <- fromJSON("./packages.json") %>% as.data.frame
+          new <- fromJSON("./updated_packages.json") %>% as.data.frame
+          merged <- merge(x=old, y=new, by="package", all.x=TRUE)
+          merged$url.x[!is.na(merged$url.y)] = merged$url.y[!is.na(merged$url.y)]
+          merged <- merged[c("package","url.x")]
+          names(merged)[names(merged) == 'url.x'] <- 'url'
+          write(json_data, "packages.json")
+        shell: Rscript {0}
       
       - name: add changes
         # mv ./updated_packages.json ./packages.json
