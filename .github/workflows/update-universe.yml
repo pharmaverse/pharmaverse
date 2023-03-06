@@ -29,13 +29,9 @@ jobs:
           library(jsonlite)
           yml_dir <- "./data/packages"
           yml_files <- list.files(yml_dir)
-          print("yml_files")
-          print(yml_files)
           all_pkg <- data.frame()
           for (f in yml_files) {
             content <- read_yaml(file.path(yml_dir, f))
-            print(file.path(yml_dir, f))
-            print(content)
             pkg_name <- content$name
             pkg_repo <- content$repo
             if (is.null(content$repo) | is.null(content$name)) {
@@ -46,17 +42,10 @@ jobs:
               all_pkg <- rbind(all_pkg, pkg_df)
             }
           }
-          print("all_pkg")
-          print(all_pkg)
           json_data <- prettify(toJSON(all_pkg))
-          print("end")
-          print(json_data)
           write(json_data, "updated_packages.json")
         shell: Rscript {0}
 
-      - name: debug artifact 1
-        run: |
-          cat ./updated_packages.json
 
       - name: Upload packages artifact
         uses: actions/upload-artifact@v3
@@ -77,10 +66,6 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: packages
-      
-      - name: debug artifact 1
-        run: |
-          cat ./updated_packages.json
 
       - name: Update package.json file # read updated_packages.json and old package.json and merge it
         run: |
@@ -97,11 +82,11 @@ jobs:
         shell: Rscript {0}
       
       - name: add changes
-        # mv ./updated_packages.json ./packages.json
         run: |
           git config --global --add safe.directory ${PWD}
           git config --global user.email "113703390+pharmaverse-bot@users.noreply.github.com"
           git config --global user.name "pharmaverse-bot"
+          rm ./updated_packages.json
           git add .
           git status
           git commit -m "update packages.json"
