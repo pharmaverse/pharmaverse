@@ -92,6 +92,7 @@ jobs:
           merged$url.x[!is.na(merged$url.y)] = merged$url.y[!is.na(merged$url.y)]
           merged <- merged[c("package","url.x")]
           names(merged)[names(merged) == 'url.x'] <- 'url'
+          json_data <- prettify(toJSON(merged))
           write(json_data, "packages.json")
         shell: Rscript {0}
       
