@@ -1,7 +1,7 @@
 name: rtables
-repo: Roche/rtables
+repo: insightsengineering/rtables
 repo_source: github.com
-docs: https://roche.github.io/rtables/
+docs: https://insightsengineering.github.io/rtables/
 hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/rtables.png
 task: tlg
 details: A framework for declaring complex multi-level tabulations and then applying them to data
