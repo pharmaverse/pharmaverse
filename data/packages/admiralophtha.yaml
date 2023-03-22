@@ -1,7 +1,7 @@
 name: admiralophtha
 repo: pharmaverse/admiralophtha
 repo_source: github.com
-docs:
+docs: https://pharmaverse.github.io/admiralophtha
 hex: https://raw.githubusercontent.com/pharmaverse/admiralophtha/main/man/figures/logo.png
 task: ADaM
-details: Ophthalmology RELEASE EXPECTED ~2023
+details: Ophthalmology
