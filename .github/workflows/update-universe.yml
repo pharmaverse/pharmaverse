@@ -6,7 +6,7 @@ on:
       - 'data/packages/**.yaml'
     branches:
       - main  # Set a branch to deploy
-      - feature/update-universe-pkg-file # TODO: del - for debug
+      - fix-universe-job # TODO: del - for debug
 
 jobs:
   update-universe:
