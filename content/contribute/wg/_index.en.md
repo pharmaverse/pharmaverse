@@ -9,7 +9,7 @@ Our working groups are detailed below with their respective mission statements.
 All members are listed towards the bottom of our homepage, except for the R Adoption WG which we expect will grow quite large as a network of many different company representatives and we expect membership to be fluid.
 
 - **Data engineering WG** (lead: eli.miller@atorusresearch.com) - _To coordinate and evaluate the efforts of open source developers working on data workflows and bridge the gaps between the needs of stakeholders and existing tools for data solutions._
-- **TLG and interactive tools WG** (lead: mike.stackhouse@atorusresearch.com) - _To be added._
+- **TLG and interactive tools WG** (lead: mike.stackhouse@atorusresearch.com) - _To govern the inclusion of tables/listings/graphs and interactive tool packages._
 - **Technology and templates WG** (lead: ross.farrugia@roche.com) - _To provide the ecosystem that brings together the end-to-end component of pharmaverse and give users an easy journey to finding what they need.
 Examples of how we’ll achieve this include governing the non-data/TLG WG packages, maintaining the website, and enhancing our end-to-end examples via both our efforts and community contributions._
 - **R Adoption WG** (lead: juha-pekka.perttola@roche.com) - _To bring together R enablement/strategy leads for clinical reporting from pharmaceutical companies to knowledge share through the challenges of embedding R usage in this space. Understanding each of our aims, progress and gaps with R adoption will help to influence future opportunities for open source collaborations._

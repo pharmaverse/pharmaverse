@@ -6,7 +6,6 @@ on:
       - 'data/packages/**.yaml'
     branches:
       - main  # Set a branch to deploy
-      - feature/update-universe-pkg-file # TODO: del - for debug
 
 jobs:
   update-universe:
@@ -87,7 +86,13 @@ jobs:
           git config --global user.email "113703390+pharmaverse-bot@users.noreply.github.com"
           git config --global user.name "pharmaverse-bot"
           rm ./updated_packages.json
-          git add .
-          git status
-          git commit -m "update packages.json"
-          git push
+          changes=$(git diff)
+          if [ -z "$changes" ]
+          then
+            echo "no changes detected"
+          else
+            git add .
+            git status
+            git commit -m "update packages.json"
+            git push
+          fi
