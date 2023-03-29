@@ -16,12 +16,14 @@ If you are considering developing a package with a similar scope to any of the b
 
 SDTM is one of the required standards for data submission to FDA (U.S.) and PMDA (Japan).
 
-**Upcoming packages**
+{{< pharmaverse pkg="sdtmchecks" >}}
+
+#### Upcoming packages for consideration
+
+The following are being worked up towards open sourcing to be considered for later inclusion into the pharmaverse - we felt important to share here in case others are working in a similar space and would be interested to collaborate with the respective developers.
 
 {{< pharmaverse pkg="roak" >}}
 
 {{< pharmaverse pkg="datacutr" >}}
-
-{{< pharmaverse pkg="sdtmchecks" >}}
 
 In addition, a collaboration of 7 companies is being formed to tackle "Open Source test data generation" for SDTM mapping via an R package. it would be focused on test data from EDC systems that is needed to test SDTM mapping.

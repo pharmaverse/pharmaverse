@@ -1,16 +1,13 @@
 
 # pharmaverse website
 
-pharmaverse.org
+[pharmaverse.org](https://pharmaverse.org/)
 
-For any questions about the site, please reach out to @epijim (or ideally, make issues here).
+This website is maintained and governed by the pharmaverse Technology and Templates Working Group. 
+Further details of this WG are available [here](https://pharmaverse.org/contribute/wg/), and all WG members are shown on our homepage.
+The WG lead is considered the product owner for the website and has final say on any decisions related to the website.
 
-### Roadmap
-
-Check out the project board for the current roadmap: 
-
-* In a table view (James' preferred): https://github.com/orgs/pharmaverse/projects/3/views/9
-* In kanban view: https://github.com/orgs/pharmaverse/projects/3/views/1?layout=board
+For any questions or enhancements for the site, please make issues at this repo.
 
 ## Hosted sites:
 
@@ -31,30 +28,20 @@ While the 'build from PR` allows you to work on something very experimental and 
 
 This git flow is predicated on it being unlikely to have more than one person actively working on the site at any one time. 
 
-**You cannot work directly on master branch**. The only way to push in is via a PR. And it will be denied if 
-you have not come through develop.
+**You cannot work directly on `main` branch**. The only way to push in is via a PR. And it will be denied if 
+you have not come through `develop`. Any PR requires approval from one other Technology and Templates WG member.
 
 ## Data flows
 
 ### 'Scraped' data
 
 Passive data is collected via openpharma.github.io, a sister org that is completely un-opinionated and has  
-a wider remit spanning discovery to access (at the time of writing this, openpharma tracked 210 R packages and 3 python libraries built for pharma, 
-the majority being statistical in nature). 
+a wider remit spanning discovery to access. 
 This site contains no curated data beyond names - and is instead focused on 
 collecting and sharing data on open source health and related metadata (e.g. CRAN status and riskmetric scores).  
 Information on the data collected is here: https://openpharma.github.io/#data. 
 
-Note openpharma is getting an intern in 2022 to look at doing better insights on this data.
-
 Data is stored in a pharmaverse AWS account.
-
-But in essence, as of time of writing this it covers:
-
-- CRAN
-- Github activity
-- riskmetric score
-- Cran Task Views
 
 ### Package info
 
@@ -67,21 +54,18 @@ The general structure is:
 name: admiral
 repo: pharmaverse/admiral
 repo_source: github.com
-docs: https://pharmaverse.github.io/admiral/
+docs: https://pharmaverse.github.io/admiral/cran-release/
 hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/admiral.png
 task: ADaM
 details: (ADaM In R Asset Library) - Modular framework to generate ADaM via R functions relying on community contributions
 splash: include # this controls what is shown on the main page. Plan is to deprecate and put all hex's up
 ```
 
-It should be self explanatory. Please use the categories in the site for `task:`. Although right now it's not used, it could be very 
-useful in the future.
+It should be self explanatory. Please use the categories in the site for `task:`.
 
 ### People
 
 Info on people is in `data/people`. The `yaml` should be something like below, with the filename being the github handle.
-
-Tracking here ideas on this section: https://github.com/pharmaverse/pharmaverse/issues/44
 
 ```yaml 
 name: James Black
@@ -101,8 +85,7 @@ Site content is in `content`. It's normal markdown files. See [markdown-guide.md
 
 ### Calling package info in the site
 
- To call a package, we have two shortcuts. Right now they are different, as I was 
-planning to do some different things with the cards depending on the type. `pharmaverse` means it's 'pharmaverse' - e.g. in the folder 
+To call a package, we have two shortcuts. `pharmaverse` means it's 'pharmaverse' - e.g. in the folder 
 `data/packages`. `otherpackages` is for non-pharmaverse packages, in `data/nonpharma`.
 
 ```r
@@ -111,5 +94,7 @@ planning to do some different things with the cards depending on the type. `phar
 {{< otherpackages pkg="gt" >}}
 ```
 
-We can do anything with these shortcuts and machine readable package data though. e.g. hex stickers on the front page also come from this
-yaml data.
+### Council meeting minutes
+
+From 2023 onwards, our monthly council meeting minutes will be published in `static/council meeting minutes`.
+Other static files such as images are stored in `static` also.

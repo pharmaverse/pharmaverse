@@ -8,3 +8,5 @@ draft: false
 {{< pharmaverse pkg="logrx" >}}
 
 {{< pharmaverse pkg="synthetic.cdisc.data" >}}
+
+{{< pharmaverse pkg="envsetup" >}}
