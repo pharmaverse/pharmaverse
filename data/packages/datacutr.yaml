@@ -5,3 +5,4 @@ docs:
 hex: /images/emptyhex.png # /images/emptyhex.png
 task: sdtm
 details: Applying a datacut to SDTM
+hexwall: FALSE

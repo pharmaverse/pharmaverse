@@ -6,3 +6,4 @@ hex: https://pharmaverse.github.io/envsetup/main/logo.png
 task: utilities
 details: Support the setup of an R environment
 splash: include
+hexwall: TRUE

@@ -5,3 +5,4 @@ docs: https://gsk-biostatistics.github.io/tfrmt/
 hex: https://raw.githubusercontent.com/GSK-Biostatistics/tfrmt/main/man/figures/tfrmt.png
 task: tlg
 details: A language for defining display-related metadata to automate the transformation from an Analysis Results Dataset (ARD) to a table
+hexwall: TRUE

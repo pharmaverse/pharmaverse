@@ -5,3 +5,4 @@ docs: https://cran.r-project.org/web/packages/Tplyr/index.html
 hex: https://raw.githubusercontent.com/atorus-research/Tplyr/master/man/figures/logo.png
 task: tlg
 details: To simplify the data manipulation necessary to create clinical reports
+hexwall: TRUE

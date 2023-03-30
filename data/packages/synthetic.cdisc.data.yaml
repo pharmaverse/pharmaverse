@@ -5,3 +5,4 @@ docs: https://github.com/Roche/synthetic.cdisc.data
 hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/synthetic.cdisc.data.png
 task: utilities
 details: Generates synthetic CDISC data
+hexwall: TRUE

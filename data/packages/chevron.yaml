@@ -5,3 +5,4 @@ docs:
 hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/chevron.png
 task: tlg
 details: Holds TLG template standards to feed into other tabulation packages OPEN SOURCE RELEASE EXPECTED ~MID-2023 Contact Lena Wang (wangx216@gene.com)
+hexwall: FALSE
