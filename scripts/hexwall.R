@@ -16,7 +16,7 @@ yaml_files <- list.files(path = "data/packages",
 # Process yaml info
 ymlinfo <- map(yaml_files, \(x){
   
-  this_info <- yaml::read_yaml(x, readLines.warn = FALSE)
+  this_info <- yaml::read_yaml(x)
   
   # Check for fields with missing info
   check_this_info <- sapply(this_info,is.null)
@@ -26,7 +26,7 @@ ymlinfo <- map(yaml_files, \(x){
   
   out_info <- this_info %>% 
     as_tibble() %>% 
-    select(name,docs,hex,task)
+    select(name,docs,hex,task,hexwall)
   
 }) %>% rlist::list.stack(.)
 
@@ -66,6 +66,8 @@ hex_out <- ymlinfo %>%
 # People visualisation ----
 
 
+
+
 # HTML wrapping ----
 
 
@@ -75,12 +77,5 @@ hex_out <- ymlinfo %>%
 
 
 
-
-
-
-
-
-
-
-# Store as html
+# Store as html ----
 cat(hex_out, file = "hexwall.html")
