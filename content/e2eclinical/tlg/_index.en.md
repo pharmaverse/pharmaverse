@@ -22,8 +22,6 @@ but not limited to, shiny apps.
 
 {{< pharmaverse pkg="tfrmt" >}}
 
-#### Upcoming packages for consideration
-
 {{< pharmaverse pkg="tidytlg" >}}
 
 ### Plots
