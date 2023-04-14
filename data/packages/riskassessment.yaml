@@ -4,4 +4,4 @@ repo_source: github.com
 docs: https://pharmar.github.io/riskassessment/
 hex: https://raw.githubusercontent.com/pharmaR/riskassessment/master/man/figures/hex-riskassessment-aspconfig.png
 task: validation
-details: Shiny utility for riskmetric
+details: Shiny utility for riskmetric.
