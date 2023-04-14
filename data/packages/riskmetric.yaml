@@ -4,4 +4,4 @@ repo_source: github.com
 docs: https://pharmar.github.io/riskmetric/
 hex: https://raw.githubusercontent.com/pharmaR/riskmetric/master/man/figures/hex-riskmetric-aspconfig.png
 task: validation
-details: Framework to quantify R package risk by assessing a number of meaningful metrics
+details: Framework to quantify R package risk by assessing a number of meaningful metrics.
