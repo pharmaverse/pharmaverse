@@ -55,12 +55,11 @@ If you would like to see your package included in pharmaverse, starting in Janua
     * Feel free to re-use these and more useful workflows from [admiralci](https://pharmaverse.github.io/admiralci/main/)
 
 * __CRAN Acceptability__
-  * A pharmaverse package is considered a __pharmaverse candidate__ until it is admitted to CRAN. 
-  * Once admitted to CRAN, the package must stay on CRAN.
+  * Being admitted on CRAN gives confidence of a level of maturity of the package and may help for it to be viewed more favourably for industry adoption, but is not a stringent requirement as some package developers have rationale not to pursue a CRAN submission. 
+  * If admitted to CRAN, the package must stay on CRAN.
     * _Note: If a pharmaverse package is archived due to the archival of a dependency, we understand that is not the fault of the pharmaverse package authors. That said, if a dependency becomes a systemic problem, steps should be taken to eliminate that package as a dependency_
-  * Note that long term, CRAN may not be the ultimate destination for pharmaverse packages, but given that CRAN is still the defacto location for retrieving R packages, pharmaverse packages must be admitted to CRAN and comply with CRAN requirements.
 
-* If you meet all of the above criteria, one of our respective working groups will review your package and determine whether the scope is suitable and the package
+If you meet all of the above criteria, one of our respective working groups will review your package and determine whether the scope is suitable and the package
 adds sufficient value to pharmaverse. 
 
 We additionally have other recommended development practices, that while not required are encouraged for new pharmarverse packages or new package collaborations.
