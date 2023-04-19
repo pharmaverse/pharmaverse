@@ -24,6 +24,10 @@ below, dependent on relevance.
 
 {{< pharmaverse pkg="valtools" >}}
 
+{{< pharmaverse pkg="riskmetric" >}}
+
+{{< pharmaverse pkg="riskassessment" >}}
+
 ### Quality Checking
 
 {{< otherpackages pkg="diffdf" >}}
