@@ -10,21 +10,25 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-          
+
       - name: Install curl
         run: sudo apt update && sudo apt-get install -y libcurl4-openssl-dev   
 
-      - uses: r-lib/actions/setup-r@v2-branch
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.1.0'
       
-      - uses: r-lib/actions/setup-renv@v2-branch
+      - name: Setup renv
+        uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 2
 
@@ -38,9 +42,8 @@ jobs:
         with:
           hugo-version: '0.85.0'
           extended: true
-        
-# IF main
 
+# IF main
       - name: Build
         if: ${{ github.ref == 'refs/heads/main' }}
         run: hugo --minify
@@ -53,7 +56,6 @@ jobs:
           publish_dir: ./public
           
 # IF develop
-
       - name: Build
         if: ${{ github.ref == 'refs/heads/develop' }}
         run: hugo -e staging
@@ -69,4 +71,3 @@ jobs:
       - name: Deploy static site to S3 bucket
         if: ${{ github.ref == 'refs/heads/develop' }}
         run: aws s3 sync ./public/ s3://openpharma/develop --delete  
-
