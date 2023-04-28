@@ -9,13 +9,13 @@ on:
 
 jobs:
   update-universe:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     container:
       image: rocker/tidyverse:latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
@@ -42,7 +42,7 @@ jobs:
             }
           }
           json_data <- prettify(toJSON(all_pkg))
-          write(json_data, "updated_packages.json")
+          write(json_data, "packages.json")
         shell: Rscript {0}
 
 
@@ -65,27 +65,12 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: packages
-
-      - name: Update package.json file # read updated_packages.json and old package.json and merge it
-        run: |
-          library(jsonlite)
-          library(tidyverse)
-          old <- fromJSON("./packages.json") %>% as.data.frame
-          new <- fromJSON("./updated_packages.json") %>% as.data.frame
-          merged <- merge(x=old, y=new, by="package", all.x=TRUE)
-          merged$url.x[!is.na(merged$url.y)] = merged$url.y[!is.na(merged$url.y)]
-          merged <- merged[c("package","url.x")]
-          names(merged)[names(merged) == 'url.x'] <- 'url'
-          json_data <- prettify(toJSON(merged))
-          write(json_data, "packages.json")
-        shell: Rscript {0}
       
       - name: add changes
         run: |
           git config --global --add safe.directory ${PWD}
           git config --global user.email "113703390+pharmaverse-bot@users.noreply.github.com"
           git config --global user.name "pharmaverse-bot"
-          rm ./updated_packages.json
           changes=$(git diff)
           if [ -z "$changes" ]
           then
