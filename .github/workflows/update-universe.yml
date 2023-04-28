@@ -50,7 +50,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: packages
-          path: ./updated_packages.json
+          path: ./packages.json
           retention-days: 5
 
       - name: checkout universe repo
