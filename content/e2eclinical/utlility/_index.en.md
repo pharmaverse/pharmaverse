@@ -8,3 +8,5 @@ draft: false
 {{< pharmaverse pkg="logrx" >}}
 
 {{< pharmaverse pkg="envsetup" >}}
+
+{{< otherpackages pkg="diffdf" >}}
