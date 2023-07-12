@@ -178,14 +178,19 @@ url = "https://www.youtube.com/channel/UCxQFEv8HNqM01DXzdQLCy6Q"
 weight = 3
 
 [[Languages.en.menu.main]]
+name = "Blog"
+url = "https://pharmaverse.github.io/blog/"
+weight = 4
+
+[[Languages.en.menu.main]]
 name = "Examples"
 url = "http://examples.pharmaverse.org/"
-weight = 4
+weight = 5
 
 [[Languages.en.menu.main]]
 name = "Slack"
 url = "https://pharmaverse.slack.com"
-weight = 5
+weight = 6
 
 
 # footer menu
