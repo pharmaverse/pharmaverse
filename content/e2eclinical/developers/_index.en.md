@@ -29,8 +29,21 @@ approaching validation strategy for R packages.
 
 ### CI/CD
 
-Placeholder for continuous integration / continuous deployment and other DevOps topics.
+Continuous Integration / Continuous Deployment and other DevOps methods can hugely help package developers
+with efficiency saving, by reducing manual steps.
+
+Under the pharmaverse GitHub org we have [admiralci](https://pharmaverse.github.io/admiralci) which offers
+re-usable GitHub action workflows that may be useful to any pharmaverse package. Outside of this there is
+a [PHUSE WG](https://advance.phuse.global/pages/viewpage.action?pageId=75399294) looking to broaden this
+for greater community benefit.
 
 ### Synthetic Data
 
-Placeholder for generating CDISC standards synthetic data for use when developing and testing R packages.
+Generating CDISC standards synthetic data for use when developing and testing R packages can be a painful
+but often necessary part of building clinical reporting R packages. 
+
+Currently we offer [{admiral.test}](https://github.com/pharmaverse/admiral.test) which uses SDTM data from the
+CDISC pilot project, but has added therapeutic area specifics such as oncology domains. The team behind
+this are in the process of working up a more robust and generic solution to provide any pharmaverse package
+developer with both test SDTM via [{pharmaversesdtm}](https://github.com/pharmaverse/pharmaversesdtm) and test ADaM
+via [{pharmaverseadam}](https://github.com/pharmaverse/pharmaverseadam).
