@@ -47,3 +47,8 @@ CDISC pilot project, but has added therapeutic area specifics such as oncology d
 this are in the process of working up a more robust and generic solution to provide any pharmaverse package
 developer with both test SDTM via [{pharmaversesdtm}](https://github.com/pharmaverse/pharmaversesdtm) and test ADaM
 via [{pharmaverseadam}](https://github.com/pharmaverse/pharmaverseadam).
+
+### Developer Utilities
+
+[{admiraldev}](https://pharmaverse.github.io/admiraldev/) offers numerous developer utilities focused on the {admiral}
+family of packages, but some could be useful to re-use. Take a look at the reference page to explore further.
