@@ -52,7 +52,7 @@ If you would like to see your package included in pharmaverse, starting in Janua
   * The main branch of the package repository must be protected, and a separate development branch should be used. A restricted set of maintainers should have authority to admit changes to the main branch.
   * The main branch of the package should additionally have extra CI automated testing for package releases. 
     * For example, testing R CMD Check on Windows, Linux, and MacOS. This could also be achieved via the CRAN checks
-    * Feel free to re-use these and more useful workflows from [admiralci](https://pharmaverse.github.io/admiralci/main/)
+    * See tips and possible re-use on our [Developers](https://pharmaverse.org/e2eclinical/developers/) page
 
 * __CRAN Acceptability__
   * Being admitted on CRAN gives confidence of a level of maturity of the package and may help for it to be viewed more favourably for industry adoption, but is not a stringent requirement as some package developers have rationale not to pursue a CRAN submission. 
@@ -65,7 +65,7 @@ adds sufficient value to pharmaverse.
 We additionally have other recommended development practices, that while not required are encouraged for new pharmarverse packages or new package collaborations.
 
 * The development team should agree on a similar style of programming for which the pharmaverse site will offer non-binding recommendations (e.g. lintr compatible and with a common vocabulary for pharma-specific standards like CDISC object naming), so as to achieve a consistent look and feel across modules. Note whilst this would be advantageous for new code from the point of launching pharmaverse onwards, it would be unrealistic to expect any existing packages to rework their code base to accommodate this.
-* Where relevant, development efforts would use synthetic CDISC data, and then users from each developer or tester company could optionally take the code modules back to their own restricted systems to test out using their data. The learnings from testing would be shared openly, without sharing any patient information.
+* Where relevant, development efforts would use synthetic CDISC data (see our [Developers](https://pharmaverse.org/e2eclinical/developers/) page), and then users from each developer or tester company could optionally take the code modules back to their own restricted systems to test out using their data. The learnings from testing would be shared openly, without sharing any patient information.
 * For co-developed packages, development should be done in a shared development area to ensure a consistent environment. This could be a through the use of renv, or a Docker container based upon a custom-built Docker image running an agreed R version. 
 * There should be no specific tie to any company-specific statistical computing environment or internal validation/qualification process. Packages in pharmaverse are intended to be suitable for any company's environment or process. If binding tightly to company process or standards, the package scope may be too broad. 
 
@@ -81,13 +81,11 @@ as you see there our recommendation is to target permissive licensing (such as [
 companies involved.
 * A [GitHub template](https://github.com/pharmaverse/admiraltemplate) focused on the {admiral} family of packages and their conventions, but could be useful as an
 example of possible approaches to use, such as Issue and Pull Request templates.
-* [Developer utilities](https://pharmaverse.github.io/admiraldev/) and [CI/CD workflows](https://pharmaverse.github.io/admiralci/) again focused on the {admiral} family of packages, but could be useful to re-use.
+* Our [Developers](https://pharmaverse.org/e2eclinical/developers/) page offers packages and resources that could be re-used when creating new pharmaverse packages.
 * Example [contribution model](https://pharmaverse.github.io/admiral/cran-release/articles/contribution_model.html) - this is what is used for the {admiral} package and includes 
 vignettes around programming strategy, unit testing guidance and git usage. This model will evolve over time as the admiral team learn from the experience, but could 
 serve as an example to consider if you will open your package for contributions, which we would recommend.
 * Recommended [support model](https://pharmaverse.org/support/) - this is important to give users a consistent experience across pharmaverse packages, and if packages 
 are not kept well maintained and supported then they are likely to be removed from the pharmaverse package list.
-* R package validation strategy - we currently are connecting with several companies and industry working groups to assess whether there could be an industry 
-recommended approach to R package validation utilising open source packages. Until we have this, we'd be happy to share our learnings and current strategies in this area.
 * Option to include a pharmaverse [hosted shield/badge](https://pharmaverse.org/contribute/badges/) for your package which shows users you are part of pharmaverse 
 thus adding an extra level of credibility.
