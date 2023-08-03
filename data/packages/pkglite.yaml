@@ -7,3 +7,8 @@ task: esub
 details: To represent and exchange R package source code as text files, e.g. readable code
 splash: include
 hexwall: TRUE
+
+badge_cran: https://img.shields.io/badge/CRAN-0.2.1-9cf
+badge_health: https://img.shields.io/badge/OS Activity-71-yellowgreen
+badge_contributors: https://img.shields.io/badge/Contributors-5-9cf
+badge_riskmetric: https://img.shields.io/badge/riskmetric-0.49-brightgreen

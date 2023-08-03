@@ -6,3 +6,8 @@ hex: https://raw.githubusercontent.com/pharmaverse/admiralonco/main/man/figures/
 task: ADaM
 details: Oncology
 hexwall: FALSE
+
+badge_cran: https://img.shields.io/badge/CRAN-0.4.0-9cf
+badge_health: https://img.shields.io/badge/OS Activity-29-red
+badge_contributors: https://img.shields.io/badge/Contributors-2-9cf
+badge_riskmetric: https://img.shields.io/badge/riskmetric-0.56-yellowgreen

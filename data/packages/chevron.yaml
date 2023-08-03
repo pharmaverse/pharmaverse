@@ -6,3 +6,6 @@ hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/chevron.pn
 task: tlg
 details: Holds TLG template standards to feed into other tabulation packages OPEN SOURCE RELEASE EXPECTED ~MID-2023 Contact Lena Wang (wangx216@gene.com)
 hexwall: FALSE
+
+badge_health: https://img.shields.io/badge/OS Activity-86-green
+badge_contributors: https://img.shields.io/badge/Contributors-20-9cf

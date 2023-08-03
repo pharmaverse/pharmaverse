@@ -7,3 +7,8 @@ task: tlg
 details: A framework for declaring complex multi-level tabulations and then applying them to data
 splash: include
 hexwall: TRUE
+
+badge_cran: https://img.shields.io/badge/CRAN-0.6.1-9cf
+badge_health: https://img.shields.io/badge/OS Activity-0-red
+badge_contributors: https://img.shields.io/badge/Contributors-28-9cf
+badge_riskmetric: https://img.shields.io/badge/riskmetric-0.53-green

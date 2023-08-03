@@ -6,3 +6,8 @@ hex: https://user-images.githubusercontent.com/61123199/152377149-83d7aea2-b78b-
 task: tlg
 details: Generate table, listings, and graphs (TLG) using the Tidyverse OPEN SOURCE RELEASE EXPECTED ~MID-2022 Contact Nicholas Masel (NMasel@its.jnj.com)
 hexwall: FALSE
+
+badge_cran: https://img.shields.io/badge/CRAN-0.1.1-9cf
+badge_health: https://img.shields.io/badge/OS Activity-57-yellow
+badge_contributors: https://img.shields.io/badge/Contributors-2-9cf
+badge_riskmetric: https://img.shields.io/badge/riskmetric-0.57-yellowgreen

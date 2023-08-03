@@ -6,3 +6,6 @@ hex: https://raw.githubusercontent.com/pharmaverse/admiralvaccine/main/man/figur
 task: ADaM
 details: Vaccines RELEASE EXPECTED ~2023
 hexwall: FALSE
+
+badge_health: https://img.shields.io/badge/OS Activity-57-yellow
+badge_contributors: https://img.shields.io/badge/Contributors-1-9cf

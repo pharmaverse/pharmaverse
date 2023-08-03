@@ -58,24 +58,41 @@ hexgrid <- function(pkginfo) {
   
 }
 
-hex_out <- ymlinfo %>% 
+hex_body <- ymlinfo %>% 
   filter(hexwall == TRUE) %>% 
   hexgrid()
 
-
-# People visualisation ----
-
-
-
-
-# HTML wrapping ----
+# Add styling
+hex_style <- c("<style>",
+               readLines("layouts/partials/hexwall.css"),
+               "</style>")
 
 
+vis_header <- c('<center><h2>',
+                'pharmaverse is made up of 2 things',
+                '</h2></center><br>')
 
-
-
-
+hex_out <- c('<div class="row" style="width: 80%; margin-bottom: 150px">',
+             # vis_header,
+             '<div class="column" style="width: 45%;">',
+             '<center><h3>Packages</h3></center><br>',
+             hex_style,
+             hex_body,
+             '</div>',
+             '<div class="column border-left" style="width: 45%;">',
+             '<center><h3>People</h3></center>',
+             '<iframe src="con.html"></iframe>',
+             '</div>',
+             '</div><br>')
 
 
 # Store as html ----
-cat(hex_out, file = "hexwall.html")
+cat(hex_out, file = "layouts/partials/hexwall.html")
+
+
+
+
+
+
+
+

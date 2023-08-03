@@ -6,3 +6,8 @@ hex: https://raw.githubusercontent.com/pharmaR/riskmetric/master/man/figures/hex
 task: validation
 details: Facilities for assessing R packages against a number of metrics to help quantify their robustness
 hexwall: TRUE
+
+badge_cran: https://img.shields.io/badge/CRAN-0.2.1-9cf
+badge_health: https://img.shields.io/badge/OS Activity-86-green
+badge_contributors: https://img.shields.io/badge/Contributors-12-9cf
+badge_riskmetric: https://img.shields.io/badge/riskmetric-0.52-brightgreen

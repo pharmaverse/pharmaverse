@@ -6,3 +6,6 @@ hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/synthetic.
 task: utilities
 details: Generates synthetic CDISC data
 hexwall: TRUE
+
+badge_health: https://img.shields.io/badge/OS Activity-0-red
+badge_contributors: https://img.shields.io/badge/Contributors-4-9cf
