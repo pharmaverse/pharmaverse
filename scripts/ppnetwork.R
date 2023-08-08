@@ -1,14 +1,6 @@
 
 
-library(visNetwork)
-library(htmlwidgets)
-library(dplyr)
-library(GithubMetrics)
-library(glue)
-library(yaml)
-library(purrr)
-library(tidyr)
-library(readr)
+
 
 
 # Retrieve and mutate people info ----------------------------------------------
@@ -100,17 +92,6 @@ my_net <- visNetwork(nodes, edges, height = "700px", width = "100%") %>%
 visSave(my_net, file = file.path("layouts/partials/con.html"),
         selfcontained = FALSE)
 
-
-# Now make it work in HUGO ----------------------------------------------------------
-# Need to strip visNet HTML file to just body
-vn_in <- readLines(con = "layouts/partials/con.html")
-vn_in_body_range <- which(grepl("<body>|</body>",vn_in)) %>% 
-  {seq.int(.[1] + 1, .[2] - 1, by = 1)}
-
-vn_body <- vn_in[vn_in_body_range]
-
-# Return just the body
-cat(vn_body, file = "layouts/partials/con.html")
 
 
 
