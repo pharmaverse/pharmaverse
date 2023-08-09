@@ -74,7 +74,7 @@ icon_font = "Font Awesome 5 Free"
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
+logo = "images/phuse.png"
 favicon = "images/favicon.png"
 # Meta data
 description = "This is meta description"
@@ -191,6 +191,11 @@ weight = 5
 name = "Slack"
 url = "https://pharmaverse.slack.com"
 weight = 6
+
+[[Languages.en.menu.main]]
+name = "PHUSE"
+url = "https://phuse.global/"
+weight = 7
 
 
 # footer menu
