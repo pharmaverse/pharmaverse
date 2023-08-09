@@ -5,3 +5,7 @@ docs: https://pharmaverse.github.io/sdtmchecks/
 hex: https://raw.githubusercontent.com/pharmaverse/sdtmchecks/main/man/figures/logo_em.png
 task: sdtm
 details: Contains data check functions to identify SDTM issues that are generalizable, actionable, and meaningful for analysis
+hexwall: TRUE
+
+badge_health: https://img.shields.io/badge/OS Activity-57-yellow
+badge_contributors: https://img.shields.io/badge/Contributors-4-9cf

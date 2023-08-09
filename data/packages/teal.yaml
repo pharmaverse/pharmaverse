@@ -5,3 +5,7 @@ docs: https://insightsengineering.github.io/teal/
 hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/teal.png
 task: tlg
 details: Framework developed that leverages the R Shiny package to scale development of our shiny apps
+hexwall: TRUE
+
+badge_health: https://img.shields.io/badge/OS Activity-86-green
+badge_contributors: https://img.shields.io/badge/Contributors-52-9cf
