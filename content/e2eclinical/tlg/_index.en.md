@@ -22,13 +22,13 @@ but not limited to, shiny apps.
 
 {{< pharmaverse pkg="tfrmt" >}}
 
-#### Upcoming packages for consideration
-
 {{< pharmaverse pkg="tidytlg" >}}
 
 ### Plots
 
 {{< pharmaverse pkg="visR" >}}
+
+{{< pharmaverse pkg="ggsurvfit" >}}
 
 While ggplot2 is a lower level, non-pharma specific plotting package. It is universally 
 accepted as the package for graphics, so included here and as a non-pharma package.

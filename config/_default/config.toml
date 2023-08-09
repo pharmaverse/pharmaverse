@@ -74,7 +74,7 @@ icon_font = "Font Awesome 5 Free"
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
+logo = "images/phuse.png"
 favicon = "images/favicon.png"
 # Meta data
 description = "This is meta description"
@@ -143,6 +143,7 @@ copyright = "github.com/pharmaverse"
 [Languages.en.banner]
 title = "pharmaverse"
 subtitle = "A connected network of companies and individuals working to promote collaborative development of curated open source R packages for clinical reporting usage in pharma, in a space where previously we would only ever have worked in silos on our own closed source and often duplicative solutions. Adopting shared solutions in this post-competitive space should ultimately ease regulatory review, resulting in bringing new treatments to patients faster."
+disclaimer = "Disclaimer: Anyone is free to choose any selection of pharmaverse recommended software or those from any other source, as there are many different pathways available. Being listed on our site gives no endorsement of the reliability of any code, it is up to you to assess suitability for your needs. Finally, before using any open source software you should always check the license."
 image = "images/banner.png"
 
 # call to action
@@ -177,14 +178,24 @@ url = "https://www.youtube.com/channel/UCxQFEv8HNqM01DXzdQLCy6Q"
 weight = 3
 
 [[Languages.en.menu.main]]
+name = "Blog"
+url = "https://pharmaverse.github.io/blog/"
+weight = 4
+
+[[Languages.en.menu.main]]
 name = "Examples"
 url = "http://examples.pharmaverse.org/"
-weight = 4
+weight = 5
 
 [[Languages.en.menu.main]]
 name = "Slack"
 url = "https://pharmaverse.slack.com"
-weight = 5
+weight = 6
+
+[[Languages.en.menu.main]]
+name = "PHUSE"
+url = "https://phuse.global/"
+weight = 7
 
 
 # footer menu

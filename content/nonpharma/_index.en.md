@@ -36,8 +36,6 @@ There are different solutions already available, but during R/Pharma there was a
 
 ### Graphs
 
-{{< pharmaverse pkg="visR" >}}
-
 {{< otherpackages pkg="ggplot2" >}}
 
 {{< otherpackages pkg="viridisLite" >}}
