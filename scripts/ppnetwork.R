@@ -83,6 +83,7 @@ dd_list <- packages$id
 
 # Create the network visualization ---------------------------------------------
 my_net <- visNetwork(nodes, edges, height = "700px", width = "100%") %>%
+  visIgraphLayout() %>% 
     visNodes(
       shapeProperties = list(borderWidth = 3, shadow = TRUE),
       font = list(face = "Segoe UI", color = "#333", align = "center"),
@@ -92,13 +93,14 @@ my_net <- visNetwork(nodes, edges, height = "700px", width = "100%") %>%
       imagePadding = 10,
       size = 50  
     ) %>%
-    visEdges(arrows = "from") %>%
+    visEdges(arrows = "from",
+             smooth = FALSE) %>%
     visOptions(highlightNearest = list(enabled = T, hover = T),
                nodesIdSelection = list(enabled = TRUE,
                                        values = dd_list),
                autoResize = TRUE) %>%
     visLayout(randomSeed = 1234) %>%
-    visInteraction(hover = TRUE) 
+    visInteraction(hover = TRUE)
 
 visSave(my_net, file = file.path("layouts/partials/con.html"),
         selfcontained = FALSE)
