@@ -37,6 +37,8 @@ jobs:
           Rscript scripts/add_badges.R
           Rscript scripts/add_contributions.R
           Rscript scripts/add_hexwall_network.R
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
