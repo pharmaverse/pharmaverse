@@ -1,22 +1,6 @@
 
 
 
-
-
-# Retrieve and mutate people info ----------------------------------------------
-
-# Retrieve people from S3
-people <- read_csv("https://openpharma.s3.us-east-2.amazonaws.com/people.csv",na = " ",
-                   show_col_types = FALSE) %>% 
-  filter(pretty_name != "NA (NA)") %>% 
-  mutate(group = 1,
-         shape = "image") %>% 
-  rename(id = author,
-         label = pretty_name,
-         image = avatar) %>% 
-  select(id,label,group,shape,image,repo_list) 
-
-
 # Retrieve and mutate package info ---------------------------------------------
 
 # Fetch files
@@ -36,39 +20,66 @@ packages <- map(yaml_files, \(x){
   
   out_info <- this_info %>% 
     as_tibble() %>% 
-    select(name,docs,hex,task,hexwall)
+    select(name,repo,docs,hex,task,hexwall)
   
 }) %>% rlist::list.stack(.) %>% 
-  # filter(hexwall == TRUE) %>% 
+  filter(repo != "TBD") %>% 
   mutate(group = 2,
          shape = "image",
          label = name) %>% 
   rename(id = name,
          image = hex) %>% 
-  select(id,label,group,shape,image)
+  select(id,repo,label,group,shape,image)
 
+
+# get git commits from all repos
+repo_all_commits <- gh_commits_get(
+  packages$repo,
+  days_back = 365*10
+)
+
+new_people <- repo_all_commits %>% 
+  filter(!is.na(author)) %>% 
+  select(full_name,author) %>% 
+  distinct()
+
+people_info <- new_people %>%
+  left_join(
+    gh_user_get(unique(new_people$author)),
+    by = c("author" = "username")
+  )
+
+# Create dataset with people info that can be feed to visNetwork
+people <- people_info %>% 
+  mutate(id = author,
+         label = case_when(
+           is.na(name) ~ author,
+           TRUE ~ paste(name,"(",author,")")),
+         group = 1,
+         shape = "image",
+         image = avatar,
+         repo_list = stringr::word(full_name, 2, sep = "/")) %>% 
+  select(id,label,group,shape,image,repo_list) 
+
+# Count the number of unique contributors
+np <- length(unique(people$id))
 
 # Collect nodes and adges ----------------------------------------------------------
 
 nodes <- rbind(people %>% 
-                 filter(grepl(paste0(packages$id, collapse = "|"), repo_list)) %>% 
-                 select(-repo_list),
-               packages)
+                 select(-repo_list) %>% 
+                 distinct(),
+               packages %>% 
+                 select(-repo))
 
 # Define the edges (connections between contributors and packages)
-pharmaverse <- list.files("./data/packages") %>% 
-  gsub(".yaml","",.)
-
 edges <- people %>% 
   select(id,repo_list) %>% 
-  separate_rows(repo_list, sep = " | ") %>%
-  filter(repo_list %in% pharmaverse) %>% 
   rename(from = repo_list,
          to = id)
 
 # Define drop-down selection
 dd_list <- packages$id
-
 
 # Create the network visualization ---------------------------------------------
 my_net <- visNetwork(nodes, edges, height = "700px", width = "100%") %>%
