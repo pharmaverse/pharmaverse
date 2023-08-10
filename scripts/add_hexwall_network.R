@@ -10,6 +10,7 @@ library(glue)
 library(tidyr)
 library(readr)
 library(htmltools)
+library(igraph)
 
 
 # Hexwall ----------------------------------------------------------

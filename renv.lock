@@ -329,6 +329,13 @@
       "Repository": "CRAN",
       "Hash": "a525aba14184fec243f9eaec62fbed43"
     },
+    "igraph": {
+      "Package": "igraph",
+      "Version": "1.5.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "80401cb5ec513e8ddc56764d03f63669"
+    },
     "ini": {
       "Package": "ini",
       "Version": "0.3.1",
