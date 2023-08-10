@@ -1,7 +1,7 @@
 name: covtracer
 repo: Genentech/covtracer
 repo_source: github.com
-docs: https://github.com/Genentech/covtracer
+docs: https://genentech.github.io/covtracer/
 hex: https://github.com/Genentech/covtracer/raw/main/man/figures/hex.png
 task: validation
 details: >
