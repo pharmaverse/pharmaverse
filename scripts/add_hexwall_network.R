@@ -24,7 +24,7 @@ hex_body <- ymlinfo %>%
 
 # Network ----------------------------------------------------------
 # Generate HTML, CSS and JS for network
-source("scripts/ppnetwork.R")
+source("scripts/ppnetwork.R") # This source also generates the np (Number of people)
 
 # Need to strip visNet HTML file to just body
 vn_in <- readLines("layouts/partials/con.html")
@@ -52,7 +52,7 @@ hex_out <- c('<div class="row" style="width: 80%; margin-bottom: 150px;">\n',
              hex_body,
              '</div>\n',
              '<div class="column border-left" style="width: 45%; margin-bottom: 350px;">\n',
-             '<center><h3>People</h3></center>\n',
+             glue('<center><h3>People ({np})</h3></center>\n'),
              "<script>\n",
              includeHTML("layouts/partials/con_files/htmlwidgets-1.6.2/htmlwidgets.js"), # js to make the network interactive
              includeHTML("layouts/partials/con_files/vis-9.1.0/vis-network.min.js"), # js to make the network interactive
