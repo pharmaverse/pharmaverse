@@ -8,7 +8,7 @@ details: >
     A GitHub action on the GitHub Marketplace to provide standardised build reports for 
     validation. An alternative approach to valtools that relies on the normal 
     R framework for validation.
-hexwall: TRUE
+hexwall: FALSE
 
 badge_health: https://img.shields.io/badge/OS Activity-0-red
 badge_contributors: https://img.shields.io/badge/Contributors-8-9cf
