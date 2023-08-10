@@ -5,7 +5,7 @@ docs: https://pharmaverse.github.io/datacutr/
 hex: https://github.com/pharmaverse/datacutr/raw/main/man/figures/logo.png
 task: sdtm
 details: Applying a datacut to SDTM
-hexwall: FALSE
+hexwall: TRUE
 
 badge_cran: https://img.shields.io/badge/CRAN-0.1.0-9cf
 badge_health: https://img.shields.io/badge/OS Activity-71-yellowgreen
