@@ -8,7 +8,3 @@ details: Provides an interface to read in various metadata sources and store in 
 splash: include
 hexwall: TRUE
 
-badge_cran: https://img.shields.io/badge/CRAN-0.1.2-9cf
-badge_health: https://img.shields.io/badge/OS Activity-86-green
-badge_contributors: https://img.shields.io/badge/Contributors-9-9cf
-badge_riskmetric: https://img.shields.io/badge/riskmetric-0.54-green

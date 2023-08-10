@@ -7,7 +7,3 @@ task: tlg
 details: A language for defining display-related metadata to automate the transformation from an Analysis Results Dataset (ARD) to a table
 hexwall: TRUE
 
-badge_cran: https://img.shields.io/badge/CRAN-0.0.2-9cf
-badge_health: https://img.shields.io/badge/OS Activity-100-brightgreen
-badge_contributors: https://img.shields.io/badge/Contributors-6-9cf
-badge_riskmetric: https://img.shields.io/badge/riskmetric-0.64-orange

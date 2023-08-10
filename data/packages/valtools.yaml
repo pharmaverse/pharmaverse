@@ -7,5 +7,3 @@ task: validation
 details: Validation framework for R packages that allows you to bolt in additional validation documentation.
 hexwall: TRUE
 
-badge_health: https://img.shields.io/badge/OS Activity-43-orange
-badge_contributors: https://img.shields.io/badge/Contributors-6-9cf

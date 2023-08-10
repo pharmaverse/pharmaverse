@@ -10,5 +10,3 @@ details: >
     R framework for validation.
 hexwall: FALSE
 
-badge_health: https://img.shields.io/badge/OS Activity-0-red
-badge_contributors: https://img.shields.io/badge/Contributors-8-9cf

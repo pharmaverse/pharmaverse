@@ -8,5 +8,3 @@ details: Support the setup of an R environment
 splash: include
 hexwall: TRUE
 
-badge_health: https://img.shields.io/badge/OS Activity-43-orange
-badge_contributors: https://img.shields.io/badge/Contributors-2-9cf

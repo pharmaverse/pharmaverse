@@ -7,7 +7,3 @@ task: esub
 details: Serves as a single tool to create SAS transport files and perform pharma specific dataset level validation checks
 hexwall: TRUE
 
-badge_cran: https://img.shields.io/badge/CRAN-0.2.0-9cf
-badge_health: https://img.shields.io/badge/OS Activity-57-yellow
-badge_contributors: https://img.shields.io/badge/Contributors-7-9cf
-badge_riskmetric: https://img.shields.io/badge/riskmetric-0.54-green

@@ -8,5 +8,3 @@ details: (ADaM In R Asset Library) - Modular framework to generate ADaM via R fu
 splash: include
 hexwall: TRUE
 
-badge_health: https://img.shields.io/badge/OS Activity-0-red
-badge_contributors: https://img.shields.io/badge/Contributors-20-9cf

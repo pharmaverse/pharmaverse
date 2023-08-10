@@ -7,7 +7,3 @@ task: sdtm
 details: Applying a datacut to SDTM
 hexwall: TRUE
 
-badge_cran: https://img.shields.io/badge/CRAN-0.1.0-9cf
-badge_health: https://img.shields.io/badge/OS Activity-71-yellowgreen
-badge_contributors: https://img.shields.io/badge/Contributors-3-9cf
-badge_riskmetric: https://img.shields.io/badge/riskmetric-0.72-red

@@ -7,7 +7,3 @@ task: tlg
 details: To simplify the data manipulation necessary to create clinical reports
 hexwall: TRUE
 
-badge_cran: https://img.shields.io/badge/CRAN-1.1.0-9cf
-badge_health: https://img.shields.io/badge/OS Activity-43-orange
-badge_contributors: https://img.shields.io/badge/Contributors-8-9cf
-badge_riskmetric: https://img.shields.io/badge/riskmetric-0.51-brightgreen

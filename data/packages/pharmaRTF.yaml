@@ -7,7 +7,3 @@ task: tlg
 details: Enhanced RTF wrapper written in R for use with existing R tables packages such as huxtable or GT
 hexwall: TRUE
 
-badge_cran: https://img.shields.io/badge/CRAN-0.1.4-9cf
-badge_health: https://img.shields.io/badge/OS Activity-0-red
-badge_contributors: https://img.shields.io/badge/Contributors-7-9cf
-badge_riskmetric: https://img.shields.io/badge/riskmetric-0.61-orange

@@ -7,7 +7,3 @@ task: tlg
 details: Generate table, listings, and graphs (TLG) using the Tidyverse
 hexwall: TRUE
 
-badge_cran: https://img.shields.io/badge/CRAN-0.1.1-9cf
-badge_health: https://img.shields.io/badge/OS Activity-57-yellow
-badge_contributors: https://img.shields.io/badge/Contributors-2-9cf
-badge_riskmetric: https://img.shields.io/badge/riskmetric-0.57-yellowgreen
