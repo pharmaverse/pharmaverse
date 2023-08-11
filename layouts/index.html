@@ -9,6 +9,7 @@
         {{ with .Site.Params.banner }}
         <h1 class="mb-4">{{ .title | markdownify }}</h1>
         <p class="mb-4">{{ .subtitle | markdownify }}</p>
+        <p class="mb-4"><em>{{ .disclaimer | markdownify }}</em></p>
         {{ end }}
         <form class="search-wrapper" name="search-form" action="{{ `search` | relLangURL }}" onsubmit="return validateForm()">
           <input id="search-by" name="s" type="search" class="form-control form-control-lg px-4" placeholder="{{ i18n `search_placeholder`}}">
