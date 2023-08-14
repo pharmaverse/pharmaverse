@@ -38,7 +38,7 @@ If you would like to see your package included in pharmaverse, starting in Janua
 
 * __Documentation__
   * Pharmaverse packages must be well documented. All exported function must have function documentation and pass R CMD documentation requirements.
-  * Packages should have a package website available, with vignettes documenting contextual use of the package code.  
+  * Packages should have a package website available, with vignettes documenting contextual use of the package code. A hex logo is preferable and we recommend a high resolution PNG here with no background whitespace and flat vertical edging.
 
 * __Version Compatibility and Dependencies__
   * Pharmaverse packages should have a Continuous Integration (CI) action to test R CMD Check against the latest R version. It can also be a good convention to consider adding some extra workflows for recent R versions, but this is not required.

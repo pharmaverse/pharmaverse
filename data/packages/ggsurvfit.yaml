@@ -5,3 +5,4 @@ docs: http://www.danieldsjoberg.com/ggsurvfit/
 hex:  https://github.com/pharmaverse/ggsurvfit/raw/main/man/figures/logo.png
 task: tlg
 details: Eases the creation of time-to-event (aka survival) summary figures
+hexwall: TRUE

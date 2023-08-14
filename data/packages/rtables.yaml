@@ -6,3 +6,5 @@ hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/rtables.pn
 task: tlg
 details: A framework for declaring complex multi-level tabulations and then applying them to data
 splash: include
+hexwall: TRUE
+

@@ -156,16 +156,6 @@ cat(
     "
     {html_wg}
     
-    </br>
-    <h4>Website</h4>
-    <p>Activity on the website and metadata is scraped automatically based on 
-    contributions to the codebase <a href='https://github.com/orgs/pharmaverse/projects/3'>(to contribute click here)</a>
-    {html_website}
-    </br>
-    <h4>All pharmaverse contributors</h4>
-    <p>We'd also like to acknowledge the ~{n_people} people that have contributed code to 
-    the pharmaverse</p>
-    {html_all}
     "
   )
   ,

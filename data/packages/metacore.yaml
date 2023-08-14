@@ -6,3 +6,5 @@ hex: https://github.com/atorus-research/metacore/raw/main/man/figures/metacore.P
 task: metadata
 details: Provides an interface to read in various metadata sources and store in a standardized object 
 splash: include
+hexwall: TRUE
+

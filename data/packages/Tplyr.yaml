@@ -1,7 +1,9 @@
 name: Tplyr
 repo: atorus-research/Tplyr
 repo_source: github.com
-docs: https://cran.r-project.org/web/packages/Tplyr/index.html
+docs: https://atorus-research.github.io/Tplyr/
 hex: https://raw.githubusercontent.com/atorus-research/Tplyr/master/man/figures/logo.png
 task: tlg
 details: To simplify the data manipulation necessary to create clinical reports
+hexwall: TRUE
+

@@ -5,3 +5,5 @@ docs: https://biogen-inc.github.io/tidyCDISC/
 hex: https://raw.githubusercontent.com/Biogen-Inc/tidyCDISC/master/man/figures/hex-tidyCDISC.png
 task: tlg
 details: A shiny app to easily create custom tables and figures from ADaM-ish data sets
+hexwall: TRUE
+
