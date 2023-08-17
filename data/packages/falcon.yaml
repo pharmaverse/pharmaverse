@@ -1,0 +1,8 @@
+name: chevron
+repo: pharmaverse/falcon
+repo_source: github.com
+docs: https://pharmaverse.github.io/falcon/
+hex: https://github.com/pharmaverse/falcon/raw/main/quarto/assets/images/falcon.png
+task: tlg
+details: Implementation of FDA Safety Tables and Figures OPEN SOURCE COLLABORATION IN PROGRESS Contact Pawel Rucki (pawel.rucki@roche.com) to get involved
+hexwall: FALSE
