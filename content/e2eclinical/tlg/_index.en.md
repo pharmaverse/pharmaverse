@@ -48,6 +48,9 @@ For example, they could be used with `ggplot2`, `rtables`, `plotly`, `visR` or `
 
 {{< pharmaverse pkg="teal" >}}
 
+A Tables, Listings, and Graphs Catalog with many examples is available here:
+- [TLG Catalog](https://insightsengineering.github.io/tlg-catalog/)
+
 There are publicly available example Shiny applications created using these:
 - The efficacy APP [Efficacy](https://genentech.shinyapps.io/teal_efficacy/)
 - The safety APP [Safety](https://genentech.shinyapps.io/teal_safety/)
