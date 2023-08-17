@@ -64,3 +64,5 @@ There are publicly available example Shiny applications created using these:
 The following are being worked up towards open sourcing to be considered for later inclusion into the pharmaverse - we felt important to share here in case others are working in a similar space and would be interested to collaborate with the respective developers.
 
 {{< pharmaverse pkg="chevron" >}}
+
+{{< pharmaverse pkg="falcon" >}}
