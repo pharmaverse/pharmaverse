@@ -12,7 +12,7 @@ There are two relevant stages of TLGs - static TLGs, which as of today are the
 only type of evidence submitted to regulatory bodies, and interactive TLGs, which are predominantly,
 but not limited to, shiny apps.
 
-For tables, we recommend the effort from R Consortium - [Tables in Clinical Trials with R](https://rconsortium.github.io/rtrs-wg/){:target="_blank"} - as a useful
+For tables, we recommend the effort from R Consortium - [Tables in Clinical Trials with R](https://rconsortium.github.io/rtrs-wg/) - as a useful
 read to compare examples from several of the below packages.
 
 ### Tables
