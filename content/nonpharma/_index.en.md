@@ -10,7 +10,7 @@ type : "docs"
 
 This list covers the wider purpose R packages that we have found most useful and those that most commonly form dependencies to the pharma-specific packages. 
 
-Another useful reference is this document from the R Foundation titled ["Regulatory Compliance and Validation Issues - A Guidance Document for the Use of R in Regulated Clinical Trial Environments"](https://www.r-project.org/doc/R-FDA.pdf), which shows a list of base and recommended R packages. 
+Another useful reference is this document from the R Foundation titled [Regulatory Compliance and Validation Issues - A Guidance Document for the Use of R in Regulated Clinical Trial Environments](https://www.r-project.org/doc/R-FDA.pdf), which shows a list of base and recommended R packages. 
 
 <hr>
 
