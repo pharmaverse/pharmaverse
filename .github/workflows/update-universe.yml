@@ -67,7 +67,7 @@ jobs:
           name: packages
 
       - name: Update package.json file # read updated_packages.json and old package.json and merge it
-        script: |
+        run: |
           library(jsonlite)
           old <- fromJSON("./packages.json") %>% as.data.frame
           new <- fromJSON("./updated_packages.json") %>% as.data.frame
