@@ -77,7 +77,7 @@ jobs:
           merged$url.x[!is.na(merged$url.y)] = merged$url.y[!is.na(merged$url.y)]
           merged <- merged[c("package","url.x")]
           names(merged)[names(merged) == 'url.x'] <- 'url'
-          write(json_data, "packages.json")
+          write(merged, "packages.json")
         shell: Rscript {0}
         # test this code (deleted ggsurvfit, updated tidyCDISC url tidyCDISC9, and add another package)
 
