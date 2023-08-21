@@ -68,6 +68,7 @@ jobs:
       
       - name: add changes
         run: |
+          cat ./packages.json
           git config --global --add safe.directory ${PWD}
           git config --global user.email "113703390+pharmaverse-bot@users.noreply.github.com"
           git config --global user.name "pharmaverse-bot"
@@ -78,6 +79,8 @@ jobs:
           else
             git add .
             git status
-            git commit -m "update packages.json"
-            git push
           fi
+
+
+# git commit -m "update packages.json"
+# git push
