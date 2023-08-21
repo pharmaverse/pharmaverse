@@ -20,7 +20,7 @@ Please find below some links to other useful resources around supporting open so
 
 ### Conferences
 
-* [R/Pharma](Rinpharma.com) is a non-profit, free, yearly conference that brings together the R users in Pharma and is the primary focal point for the R developer community in Pharma.
+* [R/Pharma](https://rinpharma.com/) is a non-profit, free, yearly conference that brings together the R users in Pharma and is the primary focal point for the R developer community in Pharma.
 
 ### Open source incubators
 
