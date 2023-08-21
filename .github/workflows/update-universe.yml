@@ -42,7 +42,7 @@ jobs:
             }
           }
           json_data <- prettify(toJSON(all_pkg))
-          write(json_data, "packages.json")
+          write(json_data, "updated_packages.json")
         shell: Rscript {0}
 
 
@@ -50,7 +50,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: packages
-          path: ./packages.json
+          path: ./updated_packages.json
           retention-days: 5
 
       - name: checkout universe repo
@@ -65,7 +65,21 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: packages
-      
+
+      - name: Update package.json file # read updated_packages.json and old package.json and merge it
+        script: |
+          library(jsonlite)
+          old <- fromJSON("./packages.json") %>% as.data.frame
+          new <- fromJSON("./updated_packages.json") %>% as.data.frame
+          merged <- merge(old, new, by="package", all.x=TRUE)
+          merged$url.x[!is.na(merged$url.y)] = merged$url.y[!is.na(merged$url.y)]
+          merged <- merged[c("package","url.x")]
+          names(merged)[names(merged) == 'url.x'] <- 'url'
+          write(json_data, "packages.json")
+        shell: Rscript {0}
+        # test this code (deleted ggsurvfit, updated tidyCDISC url tidyCDISC9, and add another package)
+
+      # https://github.com/pharmaverse/pharmaverse/commit/f8e058435fa2a44ee633779173c780adb329fca4
       - name: add changes
         run: |
           cat ./packages.json
