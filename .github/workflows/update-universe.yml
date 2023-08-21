@@ -70,6 +70,7 @@ jobs:
       - name: Update package.json file # read updated_packages.json and old package.json and merge it
         run: |
           library(jsonlite)
+          library(dplyr)
           old <- fromJSON("./packages.json") %>% as.data.frame
           new <- fromJSON("./updated_packages.json") %>% as.data.frame
           merged <- merge(old, new, by="package", all.x=TRUE)
@@ -88,6 +89,8 @@ jobs:
           git config --global user.email "113703390+pharmaverse-bot@users.noreply.github.com"
           git config --global user.name "pharmaverse-bot"
           changes=$(git diff)
+          echo "changes"
+          echo $changes
           if [ -z "$changes" ]
           then
             echo "no changes detected"
