@@ -99,7 +99,6 @@ jobs:
             git add .
             git status
           fi
-        shell: 
 
 
 # git commit -m "update packages.json"
