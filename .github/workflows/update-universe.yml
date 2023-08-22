@@ -73,7 +73,7 @@ jobs:
           library(dplyr)
           old <- fromJSON("./packages.json") %>% as.data.frame
           new <- fromJSON("./updated_packages.json") %>% as.data.frame
-          merged <- merge(old, new, by="package", all.x=TRUE)
+          merged <- merge(old, new, by="package", all.x=TRUE, all.y=TRUE)
           merged$url.x[!is.na(merged$url.y)] = merged$url.y[!is.na(merged$url.y)]
           merged <- merged[c("package","url.x")]
           names(merged)[names(merged) == 'url.x'] <- 'url'
