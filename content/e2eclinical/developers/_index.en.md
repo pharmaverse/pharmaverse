@@ -19,8 +19,6 @@ approaching validation strategy for R packages.
 
 {{< pharmaverse pkg="covtracer" >}}
 
-{{< pharmaverse pkg="thevalidatoR" >}}
-
 {{< pharmaverse pkg="valtools" >}}
 
 {{< pharmaverse pkg="riskmetric" >}}
@@ -36,6 +34,10 @@ Under the pharmaverse GitHub org we have [admiralci](https://pharmaverse.github.
 re-usable GitHub action workflows that may be useful to any pharmaverse package. Outside of this there is
 a [PHUSE WG](https://advance.phuse.global/pages/viewpage.action?pageId=75399294) looking to broaden this
 for greater community benefit.
+
+For a GitHub specific CI example related to package validation see:
+
+{{< pharmaverse pkg="thevalidatoR" >}}
 
 ### Synthetic Data
 
