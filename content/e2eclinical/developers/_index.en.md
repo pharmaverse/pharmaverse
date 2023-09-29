@@ -42,13 +42,15 @@ For a GitHub specific CI example related to package validation see:
 ### Synthetic Data
 
 Generating CDISC standards synthetic data for use when developing and testing R packages can be a painful
-but often necessary part of building clinical reporting R packages. 
+but often necessary part of building clinical reporting R packages.
 
-Currently we offer [{admiral.test}](https://github.com/pharmaverse/admiral.test) which uses SDTM data from the
-CDISC pilot project, but has added therapeutic area specifics such as oncology domains. The team behind
-this are in the process of working up a more robust and generic solution to provide any pharmaverse package
-developer with both test SDTM via [{pharmaversesdtm}](https://github.com/pharmaverse/pharmaversesdtm) and test ADaM
-via [{pharmaverseadam}](https://github.com/pharmaverse/pharmaverseadam).
+We offer the following packages that as a basis re-used SDTM data from the CDISC pilot project, with added
+therapeutic area specifics such as oncology domains. These have then been ran through {admiral} templates
+to provide consistent ADaM test data.
+
+{{< pharmaverse pkg="pharmaversesdtm" >}}
+
+{{< pharmaverse pkg="pharmaverseadam" >}}
 
 ### Developer Utilities
 

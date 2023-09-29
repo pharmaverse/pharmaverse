@@ -1,0 +1,8 @@
+name: pharmaversesdtm
+repo: pharmaverse/pharmaversesdtm
+repo_source: github.com
+docs: https://pharmaverse.github.io/pharmaversesdtm/
+hex: https://github.com/pharmaverse/pharmaversesdtm/raw/main/man/figures/logo.png
+task: synthetic
+details: Test data (SDTM) for the pharmaverse family of packages
+hexwall: TRUE
