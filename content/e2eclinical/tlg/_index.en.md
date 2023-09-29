@@ -42,6 +42,8 @@ accepted as the package for graphics, so included here and as a non-pharma packa
 
 {{< pharmaverse pkg="tidyCDISC" >}}
 
+{{< pharmaverse pkg="rhino" >}}
+
 ### Frameworks
 
 The following frameworks allow for the engine used to generate the output to be modified.
