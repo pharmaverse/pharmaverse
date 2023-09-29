@@ -1,0 +1,8 @@
+name: pharmaverseadam
+repo: pharmaverse/pharmaverseadam
+repo_source: github.com
+docs: https://pharmaverse.github.io/pharmaverseadam/
+hex: https://github.com/pharmaverse/pharmaverseadam/raw/main/man/figures/logo.png
+task: synthetic
+details: Test data (ADaM) for the pharmaverse family of packages
+hexwall: TRUE
