@@ -184,7 +184,7 @@ weight = 4
 
 [[Languages.en.menu.main]]
 name = "Examples"
-url = "http://examples.pharmaverse.org/"
+url = "https://pharmaverse.github.io/examples/"
 weight = 5
 
 [[Languages.en.menu.main]]
