@@ -50,6 +50,8 @@ There are different solutions already available, but during R/Pharma there was a
 
 {{< otherpackages pkg="lintr" >}}
 
+{{< otherpackages pkg="styler" >}}
+
 {{< otherpackages pkg="renv" >}}
 
 <hr>
