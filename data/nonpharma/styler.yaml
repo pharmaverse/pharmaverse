@@ -1,0 +1,7 @@
+name: styler
+repo: r-lib/styler
+repo_source: github.com
+docs: https://github.com/r-lib/styler
+hex: /images/emptyhex.png
+task: utility
+details: Pretty-prints R code without changing the user's formatting intent
