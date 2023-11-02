@@ -9,4 +9,6 @@ draft: false
 
 {{< pharmaverse pkg="envsetup" >}}
 
+{{< pharmaverse pkg="datasetjson" >}}
+
 {{< otherpackages pkg="diffdf" >}}
