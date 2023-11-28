@@ -29,8 +29,6 @@ read to compare examples from several of the below packages.
 
 ### Plots
 
-{{< pharmaverse pkg="visR" >}}
-
 {{< pharmaverse pkg="ggsurvfit" >}}
 
 While ggplot2 is a lower level, non-pharma specific plotting package. It is universally 
@@ -47,7 +45,7 @@ accepted as the package for graphics, so included here and as a non-pharma packa
 ### Frameworks
 
 The following frameworks allow for the engine used to generate the output to be modified.
-For example, they could be used with `ggplot2`, `rtables`, `plotly`, `visR` or `Tplyr`.
+For example, they could be used with `ggplot2`, `rtables`, `plotly`, or `Tplyr`.
 
 {{< pharmaverse pkg="tern" >}}
 
