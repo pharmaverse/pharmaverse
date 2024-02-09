@@ -17,7 +17,7 @@ Any legal counsel comes from legal representatives from any organisations of our
 
 ### Objective
 
-The objective of pharmaverse is to bring together a collection of pharmaceutical industry representatives to agree on a curated and opinionated subset of open-source software packages and codebases, which would be based on the R language and those that we believe are the most suitable for the industry to adopt in order to deliver the clinical data pipeline. If suitable tools do not already exist within the open-source ecosystem, these gaps can be identified. Then via collective collaboration (around development and testing), new solutions may be developed with the aim to reduce duplication of efforts and gain increased harmonization to the way we work across the industry.
+The objective of pharmaverse is to bring together a collection of pharmaceutical industry representatives to agree on a curated subset of open-source software packages and codebases, which would be based on the R language and those that we believe are the most suitable for the industry to adopt in order to deliver the clinical data pipeline. If suitable tools do not already exist within the open-source ecosystem, these gaps can be identified. Then via collective collaboration (around development and testing), new solutions may be developed with the aim to reduce duplication of efforts and gain increased harmonization to the way we work across the industry.
 
 There would be no commercial interest from contributors to any of these efforts, as all code will be targeted for open-source release under a permissive license.
 
