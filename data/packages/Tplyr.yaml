@@ -6,4 +6,3 @@ hex: https://raw.githubusercontent.com/atorus-research/Tplyr/master/man/figures/
 task: tlg
 details: To simplify the data manipulation necessary to create clinical reports
 hexwall: TRUE
-
