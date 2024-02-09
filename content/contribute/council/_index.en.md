@@ -24,7 +24,7 @@ design, development, testing, release, and/or maintenance
 **Council Activities** 
 
 (What does the Council do?)
-*	Renders (or delegates the rendering of) the 'opinionated' element of 'an opinionated set of packages'
+*	Renders (or delegates the rendering of) the 'curated' element of 'a curated set of packages'
 *	Sets the strategy for pharmaverse
 *	Governs packages within the pharmaverse: What's in and what's out; What's recommended to practitioners and what’s not; Sets the requirements for a package 
 to be included in the pharmaverse
