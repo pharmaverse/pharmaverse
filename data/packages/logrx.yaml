@@ -7,4 +7,3 @@ task: utilities
 details: Generates an execution log to support reproducibility and traceability of an R script
 splash: include
 hexwall: TRUE
-

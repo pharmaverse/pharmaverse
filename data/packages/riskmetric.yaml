@@ -6,4 +6,3 @@ hex: https://raw.githubusercontent.com/pharmaR/riskmetric/master/man/figures/hex
 task: validation
 details: Framework to quantify R package risk by assessing a number of meaningful metrics.
 hexwall: TRUE
-

@@ -1,9 +1,8 @@
 name: chevron
-repo: 
-repo_source: 
-docs: 
+repo: insightsengineering/chevron
+repo_source: github.com
+docs: https://insightsengineering.github.io/chevron
 hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/chevron.png
 task: tlg
-details: Holds TLG template standards to feed into other tabulation packages OPEN SOURCE RELEASE EXPECTED ~END-2023 Contact Lena Wang (wangx216@gene.com)
+details: Holds TLG template standards to create standard outputs for clinical trials reporting with limited parameterisation.
 hexwall: FALSE
-

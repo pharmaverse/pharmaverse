@@ -7,4 +7,3 @@ task: esub
 details: To represent and exchange R package source code as text files, e.g. readable code
 splash: include
 hexwall: TRUE
-

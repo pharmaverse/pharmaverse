@@ -4,7 +4,6 @@ repo_source: github.com
 docs: https://atorus-research.github.io/metacore/
 hex: https://github.com/atorus-research/metacore/raw/main/man/figures/metacore.PNG
 task: metadata
-details: Provides an interface to read in various metadata sources and store in a standardized object 
+details: Provides an interface to read in various metadata sources and store in a standardized object
 splash: include
 hexwall: TRUE
-
