@@ -2,7 +2,7 @@
 title: "End-to-End Clinical Reporting Packages"
 date: 2018-12-01T11:02:05+06:00
 icon: "fas fa-pills" # fontawesome icon : https://fontawesome.com/icons
-description: "An opinionated set of R packages that make up the pharmaverse core."
+description: "A curated set of R packages that make up the pharmaverse core."
 weight: 2
 # type dont remove or customize
 type : "docs"
