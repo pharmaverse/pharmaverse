@@ -5,4 +5,4 @@ docs: https://insightsengineering.github.io/chevron
 hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/chevron.png
 task: tlg
 details: Holds TLG template standards to create standard outputs for clinical trials reporting with limited parameterisation.
-hexwall: FALSE
+hexwall: TRUE
