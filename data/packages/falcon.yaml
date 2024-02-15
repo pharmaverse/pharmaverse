@@ -4,5 +4,5 @@ repo_source: github.com
 docs: https://pharmaverse.github.io/falcon/
 hex: https://github.com/pharmaverse/falcon/raw/main/quarto/assets/images/falcon.png
 task: tlg
-details: Implementation of table-generating functions to implement standard FDA Safety Tables according to the guidelines.
+details: Implementation of table-generating functions to implement standard FDA Safety Tables according to the guidelines. NOTE: there is a planned rename of this package before being submitted to CRAN.
 hexwall: FALSE
