@@ -25,6 +25,8 @@ read to compare examples from several of the below packages.
 
 {{< pharmaverse pkg="Tplyr" >}}
 
+{{< pharmaverse pkg="cards" >}}
+
 {{< pharmaverse pkg="tfrmt" >}}
 
 {{< pharmaverse pkg="tidytlg" >}}
