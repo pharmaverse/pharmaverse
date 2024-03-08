@@ -1,0 +1,8 @@
+name: cards
+repo: insightsengineering/cards
+repo_source: github.com
+docs: https://insightsengineering.github.io/cards/
+hex: https://github.com/insightsengineering/cards/raw/main/man/figures/logo.png
+task: tlg
+details: Construct CDISC Analysis Results Dataset (ARD) objects
+hexwall: TRUE
