@@ -29,6 +29,8 @@ read to compare examples from several of the below packages.
 
 {{< pharmaverse pkg="tfrmt" >}}
 
+{{< pharmaverse pkg="tfrmtbuilder" >}}
+
 {{< pharmaverse pkg="tidytlg" >}}
 
 ### Plots
