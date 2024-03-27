@@ -46,13 +46,13 @@ hex_style <- c("<style>",
                "</style>")
 
 
-hex_out <- c('<div class="row" style="width: 80%; margin-bottom: 150px;">\n',
+hex_out <- c('<div class="row" style="width: 80%; margin-bottom: 150px; overflow: auto;">\n', # Added overflow: auto to contain the content
              '<div class="column" style="width: 45%;">\n',
              '<center><h3>Packages</h3></center><br>\n',
              hex_style,
              hex_body,
              '</div>\n',
-             '<div class="column border-left" style="width: 45%; margin-bottom: 350px;">\n',
+             '<div class="column border-left" style="width: 45%;">\n', 
              glue('<center><h3>People ({np})</h3></center>\n'),
              "<script>\n",
              includeHTML("layouts/partials/con_files/htmlwidgets-1.6.2/htmlwidgets.js"), # js to make the network interactive
