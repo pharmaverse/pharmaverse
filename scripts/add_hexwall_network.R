@@ -46,7 +46,7 @@ hex_style <- c("<style>",
                "</style>")
 
 
-hex_out <- c('<div class="row" style="width: 80%; margin-bottom: 150px;">\n',
+hex_out <- c('<div class="row" style="width: 80%;">\n',
              '<div class="column" style="width: 45%;">\n',
              '<center><h3>Packages</h3></center><br>\n',
              hex_style,
