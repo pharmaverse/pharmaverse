@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box; /* ensure padding and borders are included in the total width and height */
 }
-
 #hexGrid {
 display: flex;
 flex-wrap: wrap;
@@ -39,6 +38,7 @@ outline: 1px solid transparent; /* fix for jagged edges in FF on hover transitio
     -ms-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
         transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
 }
+
 
 .hexIn * {
 position: absolute;
