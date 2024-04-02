@@ -1,44 +1,67 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* ensure padding and borders are included in the total width and height */
 }
+
 #hexGrid {
-  display: flex;
-  flex-wrap: wrap;
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
-  font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-  list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+width: 90%;
+margin: 0 auto;
+font-family: 'Raleway', sans-serif;
+font-size: 15px;
+list-style-type: none;
+/* Removed overflow: hidden; to allow content to expand */
 }
 
 .hex {
-  position: relative;
-  visibility:hidden;
-  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+position: relative;
+visibility: hidden;
+outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
 }
-.hex::after{
-  content:'';
-  display:block;
-  padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
+
+.hex::after {
+content: '';
+display: block;
+padding-bottom: 86.602%; /* = 100 / tan(60) * 1.5 */
 }
-.hexIn{
-  position: absolute;
-  width:96%;
-  padding-bottom: 110.851%; /* =  width / sin(60) */
-  margin:0 2%;
-  overflow: hidden;
-  visibility: hidden;
-  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
-  -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-      -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-          transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+
+.hexIn {
+position: absolute;
+width: 96%;
+padding-bottom: 110.851%; /* = width / sin(60) */
+margin: 0 2%;
+overflow: visible; /* Changed from hidden to visible to show content */
+visibility: hidden;
+outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
+-webkit-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
+    -ms-transform: rotate3d(0, 0, 1, -60deg);
+        transform: rotate3d(0, 0, 1, -60deg);
 }
+
 .hexIn * {
-  position: absolute;
-  visibility: visible;
-  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+position: absolute;
+visibility: visible;
+outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
+}
+
+
+/* Remove fixed height from .column to allow it to grow with the content */
+.column {
+flex: 50%;
+padding: 10px;
+/* height: 300px; Removed to allow column to grow with content */
+}
+
+/* Adjust the .border-left class to ensure it doesn't have a fixed height */
+.border-left {
+  border-left: 2px solid #ddd;
+  padding: 10px;
+  margin-top: 2%;
+  /* height: 700px; Removed to allow it to grow with content */
+  /* You can use min-height if you want a minimum height */
+  min-height: 700px;
 }
 .hexLink {
     display:block;
