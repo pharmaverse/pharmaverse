@@ -2,7 +2,7 @@ name: tfrmtbuilder
 repo: GSK-Biostatistics/tfrmtbuilder
 repo_source: github.com
 docs: https://gsk-biostatistics.github.io/tfrmtbuilder/
-hex: https://raw.githubusercontent.com/GSK-Biostatistics/tfrmtbuilder/main/man/figures/tfrmtbuilder_hex.png
+hex: https://raw.githubusercontent.com/GSK-Biostatistics/tfrmtbuilder/main/inst/www/tfrmtbuilder_hex.png
 task: tlg
 details: A Shiny app interface for the {tfrmt} package
 hexwall: TRUE
