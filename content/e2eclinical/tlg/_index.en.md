@@ -33,6 +33,10 @@ read to compare examples from several of the below packages.
 
 {{< pharmaverse pkg="tidytlg" >}}
 
+### Listings
+
+{{< pharmaverse pkg="rlistings" >}}
+
 ### Plots
 
 {{< pharmaverse pkg="ggsurvfit" >}}
