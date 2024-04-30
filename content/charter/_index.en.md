@@ -34,7 +34,7 @@ The initial focus of pharmaverse is on the journey from CRF through to submissio
 The R packages recommended under pharmaverse will fall under one of the following:
 | Category    | Description | Examples    | 
 | ----------- | ----------- | ----------- |
-| External to pharma      | Transcends specifically pharma needs       | tidyverse, diffdf |
+| External to pharma      | Transcends specifically pharma needs       | tidyverse |
 | Pharma-specific independent of pharmaverse   | Created for use in pharma, but not necessarily following the pharmaverse charter and recommendations  | rtables, xportr |
 | Pharma-specific under pharmaverse   | Created for use in pharma, following the pharmaverse charter and recommendations   | admiral |
 
