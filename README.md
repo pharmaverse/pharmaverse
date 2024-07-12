@@ -1,11 +1,10 @@
-
 # pharmaverse website
 
 [pharmaverse.org](https://pharmaverse.org/)
 
-This website is maintained and governed by the pharmaverse Technology and Templates Working Group. 
-Further details of this WG are available [here](https://pharmaverse.org/contribute/wg/), and all WG members are shown on our homepage.
-The WG lead is considered the product owner for the website and has final say on any decisions related to the website.
+This website is maintained and governed by our website community. 
+Further details of this are available [here](https://pharmaverse.org/contribute/wg/).
+The community lead is considered the product owner for the website and has final say on any decisions related to the website.
 
 For any questions or enhancements for the site, please make issues at this repo.
 
