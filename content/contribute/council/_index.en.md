@@ -20,7 +20,19 @@ It is expected that a Council member organization contribute:
 *	One representative to the Council
 *	Commitment to at least 2 open source packages under pharmaverse via reviews, hands-on code development, product leads, or other roles which contribute to the 
 design, development, testing, release, and/or maintenance     
- 
+
+**Council Member Terms**
+
+| Name | Company | Term End Date |
+| ----------- | ----------- | ----------- |
+| Ari Siggaard Knoph | Novo Nordisk | Jan-25 |
+| Ross Farrugia | Roche | Mar-25 |
+| Michael Rimler | GSK | Mar-25 |
+| Sumesh Kalappurakal | Janssen/J&J | Mar-25 |
+| Mike Stackhouse | Atorus | Mar-25 |
+| Damian Rodziewicz | Appsilon | Apr-26 |
+| Andre Couturier | Sanofi | Apr-26 |
+
 **Council Activities** 
 
 (What does the Council do?)
