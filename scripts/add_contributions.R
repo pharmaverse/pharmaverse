@@ -69,12 +69,6 @@ library(readr)
     "
     <h4>Council</h4>
     {create_wg(people,'council')}
-    <h4>Data Engineering WG</h4>
-    {create_wg(people,'data')}
-    <h4>TLG and interactive tools WG</h4>
-    {create_wg(people,'tlg')}
-    <h4>Technology and templates WG</h4>
-    {create_wg(people,'tech')}
     </br>
     ")
 
