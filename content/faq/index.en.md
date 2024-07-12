@@ -12,7 +12,10 @@ Please see our keynote speech at [R/Pharma 2022](https://www.youtube.com/watch?v
 {{</ faq >}}
 
 {{< faq "Who decides what's in and not in the pharmaverse?" >}}
-This is governed by our pharmaverse working groups - see our [Contribute](https://pharmaverse.org/contribute/wg/) section of the site for more details. Please reach out to us if you feel a package should be included, provided it offers significantly unique scope compared to the packages already included. You can do this by raising an issue [here](https://github.com/pharmaverse/pharmaverse/issues) and choosing our "New package request" template.
+Anyone can raise a request for a package to be included in the pharmaverse, by raising an issue [here](https://github.com/pharmaverse/pharmaverse/issues) and choosing our "New package request" template.
+Similarly, anyone could raise an issue requesting for anything to be removed from pharmaverse, with the rationale provided.
+Then we leverage our community via our Slack workspace to give the opportunity for anyone to comment on the proposal.
+Our website team will then either action the request (if no concerns from our community) or for any contentious decisions our council will be asked to adjudicate.
 {{</ faq >}}
 
 {{< faq "How can I get involved?" >}}
