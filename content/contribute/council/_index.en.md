@@ -7,14 +7,14 @@ draft: false
 
 **Council Structure**
 
-The initial Council was comprised of 1 representative from each of Roche, GSK, Atorus, and Janssen/J&J. 
+The initial Council was comprised of 1 representative from each of Roche, GSK, Atorus, and Janssen/J&J.
 During 2023 and 2024, the Council expanded by 3 organizations, the first being Novo Nordisk followed by Appsilon and Sanofi.
-Each council member puts forward one representative for a 2-year commitment. At the start of each subsequent year, 
+Each council member puts forward one representative for a 2-year commitment. At the start of each subsequent year,
 any Council member organization with an expiring commitment may remain on the Council with a renewed 2-year commitment. If a Council member organization leaves, 
-they will be replaced by another Organization with one representative and a 2-year commitment. There is no restriction on the type of organization that may be 
-part of the Council (e.g., pharma, CRO, vendor, or regulatory). In the event of a vacancy on the Council, any Council member may nominate a replacement 
-organization to fill the vacancy. Alternatively, anyone could reach out to any Council member to apply. Acceptance to the Council 2-year term is granted
-by the existing council, inclusive of outgoing membership. 
+they will be replaced by another Organization with one representative and a 2-year commitment. There is no restriction on the type of organization that may be
+part of the Council (e.g., pharma, CRO, vendor, or regulatory). In the event of a vacancy on the Council, any Council member may nominate a replacement
+organization to fill the vacancy. Alternatively, any organization believing they could make an impact (and able to meet the expectations below) could reach out
+to any Council member to apply. Acceptance to the Council 2-year term is granted by the existing council, inclusive of outgoing membership.
 
 It is expected that a Council member organization contribute:
 *	One representative to the Council
