@@ -19,7 +19,7 @@ The following are our currently active sub-communities:
 - **R Adoption** (lead: juha-pekka.perttola@roche.com) - _Connecting R enablement/strategy leads for clinical reporting from pharmaceutical companies to share the challenges of embedding R usage in this space._
 - **Website** (lead: ross.farrugia@roche.com) - _To maintain our website and our end-to-end examples._
 
-Membership of these communities are not linked to any specific organizations. Any individual can request to join our pharmaverse working groups, as long as able 
+Membership of these communities are not linked to any specific organizations. Any individual can request to join, as long as able 
 to add value in the required area.
 
 If you are interested in joining, reach out to the respective lead above, as they would have final say on who joins.
