@@ -59,8 +59,8 @@ If you would like to see your package included in pharmaverse, starting in Janua
   * If admitted to CRAN, the package must stay on CRAN.
     * _Note: If a pharmaverse package is archived due to the archival of a dependency, we understand that is not the fault of the pharmaverse package authors. That said, if a dependency becomes a systemic problem, steps should be taken to eliminate that package as a dependency_
 
-If you meet all of the above criteria, one of our respective working groups will review your package and determine whether the scope is suitable and the package
-adds sufficient value to pharmaverse. 
+If you meet all of the above criteria, one of our website team will share your application with our pharmaverse community via our Slack to determine whether
+our community would like to accept the package into pharmaverse. 
 
 We additionally have other recommended development practices, that while not required are encouraged for new pharmarverse packages or new package collaborations.
 
