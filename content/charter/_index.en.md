@@ -49,7 +49,7 @@ There are different levels of commitment companies and individuals can make towa
 | Commitment Level    | Description |  
 | ----------- | ----------- |  
 | [Council representative](https://pharmaverse.org/contribute/council/)	| Strategy and decision-making body across pharmaverse |
-| [Working group member](https://pharmaverse.org/contribute/wg/)	| Support selection of pharmaverse preferred packages in dedicated SME areas |
+| [Community member](https://pharmaverse.org/contribute/wg/)	| Support and knowledge share as part of one of our communities |
 | [Package co-lead](https://pharmaverse.org/contribute/lead/)	| Lead and maintainer for a specific pharmaverse package or codebase |
 | [Individual contributor](https://pharmaverse.org/contribute/ic/) | Development contributor to any pharmaverse package or codebase |
 
