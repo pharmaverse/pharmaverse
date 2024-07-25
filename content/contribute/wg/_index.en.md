@@ -17,6 +17,7 @@ The following are our currently active sub-communities:
 
 - **Package maintainers** (lead: michael.s.rimler@gsk.com) - _It's not easy taking the burden of maintaining a package, so any package leaders for pharmaverse packages have each other to lean on as a support network!_
 - **R Adoption** (lead: juha-pekka.perttola@roche.com) - _Connecting R enablement/strategy leads for clinical reporting from pharmaceutical companies to share the challenges of embedding R usage in this space._
+- **Blog** (leads: Ben Straub, Edoardo Mancini, Kangjie Zhang, Gift Kenneth, Stefan Thoma) - _Originators and co-ordinators of our very own pharmaverse [blog site](https://pharmaverse.github.io/blog/) that is open for anyone to make an issue and propose a blog topic._
 - **Website** (lead: ross.farrugia@roche.com) - _To maintain our website and our end-to-end examples._
 
 Membership of these communities are not linked to any specific organizations. Any individual can request to join, as long as able 
