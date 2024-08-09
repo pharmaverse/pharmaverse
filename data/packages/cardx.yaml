@@ -1,0 +1,8 @@
+name: cardx
+repo: insightsengineering/cardx
+repo_source: github.com
+docs: https://insightsengineering.github.io/cardx/
+hex: https://github.com/insightsengineering/cardx/raw/main/man/figures/logo.png
+task: tlg
+details: Extra Analysis Results Data (ARD) summary objects supplementary to {cards}
+hexwall: TRUE

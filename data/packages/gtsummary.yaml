@@ -1,0 +1,8 @@
+name: gtsummary
+repo: ddsjoberg/gtsummary
+repo_source: github.com
+docs: http://www.danieldsjoberg.com/gtsummary/
+hex: https://github.com/ddsjoberg/gtsummary/raw/main/man/figures/logo.png
+task: tlg
+details: Creates tables either from an Analysis Results Dataset (ARD) or providing an ARD by-product
+hexwall: TRUE
