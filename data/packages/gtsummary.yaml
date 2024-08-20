@@ -4,5 +4,5 @@ repo_source: github.com
 docs: http://www.danieldsjoberg.com/gtsummary/
 hex: https://github.com/ddsjoberg/gtsummary/raw/main/man/figures/logo.png
 task: tlg
-details: Creates tables either from an Analysis Results Dataset (ARD) or providing an ARD by-product
+details: Creates tables from either an Analysis Results Dataset (ARD) or a data frame with an ARD by-product
 hexwall: TRUE
