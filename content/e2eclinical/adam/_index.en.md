@@ -22,3 +22,5 @@ analysis needs and a growing suite of therapeutic area specific package extensio
 {{< pharmaverse pkg="admiralophtha" >}}
 
 {{< pharmaverse pkg="admiralvaccine" >}}
+
+{{< pharmaverse pkg="admiralpeds" >}}

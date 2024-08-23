@@ -1,0 +1,8 @@
+name: admiralpeds
+repo: pharmaverse/admiralpeds
+repo_source: github.com
+docs: https://pharmaverse.github.io/admiralpeds/
+hex: https://raw.githubusercontent.com/pharmaverse/admiralpeds/main/man/figures/logo.png
+task: ADaM
+details: Pediatrics
+hexwall: FALSE
