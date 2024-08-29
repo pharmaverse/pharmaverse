@@ -20,3 +20,7 @@ The following are being worked up towards open sourcing to be considered for lat
 {{< pharmaverse pkg="roak" >}}
 
 In addition, a collaboration of 7 companies is being formed to tackle "Open Source test data generation" for SDTM mapping via an R package. it would be focused on test data from EDC systems that is needed to test SDTM mapping.
+
+Finally, several companies are working on an R package {aNCA} with a Shiny front-end to perform Non-Compartment Analysis (NCA) on both pre-clinical and clinical datasets.
+
+If you have interest to support any of the above, then post on our Slack and we could connect any passionate individuals or companies.

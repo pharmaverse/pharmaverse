@@ -12,10 +12,10 @@ Examples of how you could get involved to help us achieve our vision:
 * For those packages with an open contribution model, develop new functionality and make pull requests to make your code available for re-use
 * For new pharmaverse package collaborations, volunteer for user testing to help the development team build robust solutions
 
-To help you find suitable open source packages to contribute your skills toward, check out [openpharma.pharmaverse.org](http://openpharma.pharmaverse.org/).
-[Here](http://openpharma.pharmaverse.org/?nav=openissues) you can see a range of open issues where people are asking for support via "good first issue" or "help wanted" GitHub issue labels.
+One route to find suitable open source packages to contribute your skills towards is to look for those marked with a "good first issue" or "help wanted" label.
+You could use this [search](https://github.com/search?q=org%3Apharmaverse+label%3A%22good+first+issue%22%2C%22help+wanted%22+is%3Aopen&type=issues) of the packages
+that belong under the pharmaverse org.
 If you'd like to contribute to any, then open up the respective issue and add a comment so that the author or development team could help arrange any required access/onboarding to help you get started.
-Over time, you might even make the [Leader Board](http://openpharma.pharmaverse.org/?nav=leaderboard)!
 
 It can feel daunting getting involved initially in open source, so we asked our community for tips and here's what they shared:
 * If you are new to R package development or Git/GitHub then there are freely available resources to help you learn like [R Packages book](https://r-pkgs.org/), [Git tutorial](https://www.atlassian.com/git) or [GitHub interactive course](https://skills.github.com/)
