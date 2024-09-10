@@ -4,24 +4,28 @@ First off, thank you for considering contributing to the Pharmaverse Website! We
 
 ## Table of Contents
 
+1. [Governance](#governance)
+1. [Branching and deployment strategy](#branching-and-deployment-strategy)
 1. [Code of Conduct](#code-of-conduct)
-2. [How Can I Contribute?](#how-can-i-contribute)
-   - [Reporting Bugs](#reporting-bugs)
-   - [Suggesting Enhancements](#suggesting-enhancements)
-   - [Submitting Pull Requests](#submitting-pull-requests)
-3. [Development Setup](#development-setup)
-4. [Style Guides](#style-guides)
-   - [Git Commit Messages](#git-commit-messages)
-   - [Code Style](#code-style)
-5. [Getting Help](#getting-help)
-6. [Acknowledgments](#acknowledgments)
+1. [How can I contribute](#how-can-i-contribute)
 
-## Code of Conduct
+## Governance
+
+[Access](https://github.com/pharmaverse/pharmaverse/settings/access) to the repo is limited to the council (who are GH organisation admins), and 
+members of the Github Team [website-maintainers](https://github.com/orgs/pharmaverse/teams/website-maintainers). Any other contributions must be made
+as a pull request from a fork.
+
+## Branching and deployment strategy
+
+1. The default branch is `develop`, and all PRs should go through `develop` before being merged to `main`.
+1. Our GH Action [pipeline](https://github.com/pharmaverse/pharmaverse/blob/develop/.github/workflows/pipeline.yml) deploys from `main` and `develop` (to prod and a testing space)
+1. Branches should be deleted once they are deployed to `develop`
+1. We use [issue templates](https://github.com/pharmaverse/pharmaverse/tree/develop/.github/ISSUE_TEMPLATE)
 
 ## Code of Conduct
 
 This project adheres to the [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/). 
-By participating, you are expected to uphold this code. Please report any unacceptable behavior to a member of the pharmaverse council.
+By participating, you are expected to uphold this code. Please report any unacceptable behavior to [a member of the pharmaverse council](https://pharmaverse.org/contribute/council/).
 
 ## How Can I Contribute?
 
@@ -56,20 +60,6 @@ If you're ready to contribute code, follow these steps:
 8. Create a Pull Request (PR) from your branch to the `develop` branch of the original repository.
 
 Your PR will be reviewed by members of the tech-wg team. Please be prepared to make revisions based on feedback.
-
-## Style Guides
-
-### Git Commit Messages
-
-- Use the present tense ("Add feature" not "Added feature").
-- Use the imperative mood ("Move cursor to..." not "Moves cursor to...").
-- Limit the first line to 72 characters or less.
-- Reference issues and pull requests liberally after the first line.
-
-### Code Style
-
-- Use descriptive names for variables and functions.
-- Document your code where necessary, especially for complex logic.
 
 ## Getting Help
 
