@@ -13,4 +13,4 @@
 ## Metadata
 
 Please reference any related issues here (using `#issuenumber`): 
-People to notify: 
+People to notify: @website-maintainers
