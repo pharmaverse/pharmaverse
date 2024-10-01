@@ -13,7 +13,7 @@ SDTM is one of the required standards for data submission to FDA (U.S.) and PMDA
 
 {{< pharmaverse pkg="datacutr" >}}
 
-{{< pharmaverse pkg="sdtmoak" >}}
+{{< pharmaverse pkg="sdtm.oak" >}}
 
 #### Upcoming packages for consideration
 
