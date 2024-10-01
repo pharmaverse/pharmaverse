@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - main  # Set a branch to deploy
-      - develop # Note has logic around deployment
-      - test-staging
+      - develop 
   schedule:
     - cron: 0 13 * * 1 # At 13:00 on Monday
 
@@ -48,7 +47,7 @@ jobs:
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
@@ -67,12 +66,12 @@ jobs:
 
 # IF develop
       - name: Build
-        if: ${{ github.ref == 'refs/heads/test-staging' }}
+        if: ${{ github.ref == 'refs/heads/develop' }}
         run: hugo -e staging
 
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
-        if: ${{ github.ref == 'refs/heads/test-staging' }}
+        if: ${{ github.ref == 'refs/heads/develop' }}
         with:
           args: deploy --dir=public --prod  # Update 'dist' to your build output folder
         env:
