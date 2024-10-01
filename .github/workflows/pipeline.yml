@@ -5,6 +5,7 @@ on:
     branches:
       - main  # Set a branch to deploy
       - develop 
+      - test-staging
   schedule:
     - cron: 0 13 * * 1 # At 13:00 on Monday
 
@@ -66,12 +67,12 @@ jobs:
 
 # IF develop
       - name: Build
-        if: ${{ github.ref == 'refs/heads/develop' }}
+        if: ${{ github.ref == 'refs/heads/test-staging' }}
         run: hugo -e staging
 
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
-        if: ${{ github.ref == 'refs/heads/develop' }}
+        if: ${{ github.ref == 'refs/heads/test-staging' }}
         with:
           args: deploy --dir=public --prod  # Update 'dist' to your build output folder
         env:
