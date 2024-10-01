@@ -22,7 +22,7 @@ This section outlines the development workflow that is followed to streamline th
 - The GitHub Action is then triggered, rendering and deploying the site to the deployment server. For `main` branch, the deployment server is [GitHub Pages](https://pages.github.com/) and for `develop` branch, it is [Netlify](https://www.netlify.com/).
 - The `develop` branch is considered the UAT branch for pre-production checks.
 
-**Notes:**
+**Important notes:**
 
 - The git workflow is designed with the assumption that typically only one person will be actively working on the site at any given time.
 - Direct work on the `main` branch is not allowed.
@@ -35,7 +35,7 @@ This section outlines the development workflow that is followed to streamline th
 
 ## Data Flows
 
-### 'Scraped' Data
+### Scraped Data
 
 The passive data is collected via [OpenPharma](https://openpharma.github.io/), which is a sister organization that:
 
@@ -68,8 +68,6 @@ task: ADaM
 details: (ADaM In R Asset Library) - Modular framework to generate ADaM via R functions relying on community contributions
 splash: include # this controls what is shown on the main page. The plan is to deprecate and put all the hexes up.
 ```
-
-**Note:** Please use the categories in the site for `task:`.
 
 ### Deployment
 
