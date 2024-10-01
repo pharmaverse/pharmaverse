@@ -7,7 +7,7 @@ draft: false
 
 When pharmaverse first started we felt important to have our own working groups to drive topics of interest, but through
 our partnership with PHUSE we recognise that we could have more impact in collaboration so we recommend people towards
-contributing to the [Data Visualisation and Open Source Technology (DVOST) working group](https://advance.phuse.global/pages/viewpage.action?pageId=327777)
+contributing to the [Data Visualisation and Open Source Technology (DVOST) working group](https://advance.hub.phuse.global/wiki/spaces/WEL/pages/26804419/Data+Visualisation+Open+Source+Technology)
 projects.
 
 Instead of working groups, we feel the strength of pharmaverse is bringing like-minded people together to support and
