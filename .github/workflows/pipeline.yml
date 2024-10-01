@@ -66,17 +66,14 @@ jobs:
 
 # IF develop
       - name: Build
-        if: ${{ github.ref == 'refs/heads/develop' }}
+        if: ${{ github.ref == 'refs/heads/test-staging' }}
         run: hugo -e staging
 
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        if: ${{ github.ref == 'refs/heads/develop' }}
+      - name: Deploy to Netlify
+        uses: netlify/actions/cli@v3.2.0
+        if: ${{ github.ref == 'refs/heads/test-staging' }}
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-2
-
-      - name: Deploy static site to S3 bucket
-        if: ${{ github.ref == 'refs/heads/develop' }}
-        run: aws s3 sync ./public/ s3://openpharma/develop --delete
+          args: deploy --dir=public --prod  # Update 'dist' to your build output folder
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  # Store this in GitHub secrets
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}  
