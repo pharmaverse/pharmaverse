@@ -24,9 +24,9 @@ Access to the repository is restricted to members of the council (GitHub organiz
 ## Branching and Deployment Strategy
 
 1. **Default Branch**: The default branch is `develop`. All pull requests (PRs) must go through the `develop` branch before being merged into `main`.
-2. **Deployment Pipeline**: Our GitHub Actions [pipeline](https://github.com/pharmaverse/pharmaverse/blob/develop/.github/workflows/pipeline.yml) deploys code from the `main` and `develop` branches (to production and a testing space).
+2. **Deployment Pipeline**: The GitHub Actions [pipeline](https://github.com/pharmaverse/pharmaverse/blob/develop/.github/workflows/pipeline.yml) deploys code from the `main` and `develop` branches (to production and a testing space).
 3. **Branch Lifecycle**: Once a branch has been deployed to `develop`, it should be deleted.
-4. **Issue Tracking**: We utilize [issue templates](https://github.com/pharmaverse/pharmaverse/tree/develop/.github/ISSUE_TEMPLATE) for reporting bugs and requesting features.
+4. **Issue Tracking**: The [issue templates](https://github.com/pharmaverse/pharmaverse/tree/develop/.github/ISSUE_TEMPLATE) is utilised for reporting bugs and requesting features.
 
 ---
 
