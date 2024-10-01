@@ -32,12 +32,12 @@ jobs:
         with:
           cache-version: 2
 
-      - name: Run scripts
-        run: |
-          Rscript scripts/add_badges.R
-          Rscript scripts/add_contributions.R
-        env:
-          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Run scripts
+      #   run: |
+      #     Rscript scripts/add_badges.R
+      #     Rscript scripts/add_contributions.R
+      #   env:
+      #     GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run visualisations
         if: ${{ github.ref == 'refs/heads/main' }}
