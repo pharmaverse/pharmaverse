@@ -5,6 +5,7 @@ on:
     branches:
       - main  # Set a branch to deploy
       - develop # Note has logic around deployment
+      - test-staging
   schedule:
     - cron: 0 13 * * 1 # At 13:00 on Monday
 
@@ -49,7 +50,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.85.0'
+          hugo-version: 'latest'
           extended: true
 
 # IF main
@@ -70,10 +71,10 @@ jobs:
         run: hugo -e staging
 
       - name: Deploy to Netlify
-        uses: netlify/actions/cli@v3.2.0
+        uses: netlify/actions/cli@master
         if: ${{ github.ref == 'refs/heads/test-staging' }}
         with:
           args: deploy --dir=public --prod  # Update 'dist' to your build output folder
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  # Store this in GitHub secrets
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}  
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
