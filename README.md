@@ -1,53 +1,62 @@
-# pharmaverse website
+# Pharmaverse Website
 
-[pharmaverse.org](https://pharmaverse.org/)
+## Overview
 
-This website is maintained and governed by our website community. 
-Further details of this are available [here](https://pharmaverse.org/contribute/wg/).
-The community lead is considered the product owner for the website and has final say on any decisions related to the website.
+The [pharmaverse.org](https://pharmaverse.org/) website is maintained and governed by our website community. For more details on community involvement, please visit our [contribution page](https://pharmaverse.org/contribute/wg/). The community lead serves as the product owner for the website and has the final say on any website-related decisions.
 
-For any questions or enhancements for the site, please make issues at this repo.
+For questions or enhancement suggestions, please create issues in this repository.
 
-## Hosted sites:
+## Hosted Sites
 
-This website is available at 2 locations:
+The website is available at two locations:
 
-- production: [pharmaverse.org](https://pharmaverse.org)
-- `develop` branch: [openpharma.s3-website.us-east-2.amazonaws.com/develop/](http://openpharma.s3-website.us-east-2.amazonaws.com/develop/)
+- Production: [pharmaverse.org](https://pharmaverse.org)
+- `develop` branch: [pharmaverse-staging-test.netlify.app](https://pharmaverse-staging-test.netlify.app/)
 
-## Development / git flow
+## Development / Git Flow
 
-When you push to  `develop` OR make a pull request onto `develop` a github action will run which will render the site, and deploy 
-it to the test server. But the test server is different depending on which route you took.
+### Workflow
+This section outlines the development workflow that is followed to streamline the process of ensuring efficient collaboration, continuous integration, and smooth deployment.
 
-The code on `develop` is hosted to: http://openpharma.s3-website.us-east-2.amazonaws.com/develop/
+- Push to `develop` or create a pull request onto `develop`.
+- The GitHub Action is then triggered, rendering and deploying the site to the deployment server. For `main` branch, the deployment server is [GitHub Pages](https://pages.github.com/) and for `develop` branch, it is [Netlify](https://www.netlify.com/).
+- The `develop` branch is considered the UAT branch for pre-production checks.
 
-The intended workflows expects that `develop` is the UAT branch where you check things pre-prod. 
-While the 'build from PR` allows you to work on something very experimental and check results, before pushing it do develop.
+**Important notes:**
 
-This git flow is predicated on it being unlikely to have more than one person actively working on the site at any one time. 
+- The git workflow is designed with the assumption that typically only one person will be actively working on the site at any given time.
+- Direct work on the `main` branch is not allowed.
+- All changes must come through `develop` via a pull request.
 
-**You cannot work directly on `main` branch**. The only way to push in is via a PR. And it will be denied if 
-you have not come through `develop`. Any PR requires approval from one other Technology and Templates WG member.
+### Pull Request Requirements
 
-## Data flows
+- PRs require approval from one other Technology and Templates WG member.
+- PRs will be denied if they haven't come through the `develop` branch.
 
-### 'Scraped' data
+## Data Flows
 
-Passive data is collected via openpharma.github.io, a sister org that is completely un-opinionated and has  
-a wider remit spanning discovery to access. 
-This site contains no curated data beyond names - and is instead focused on 
-collecting and sharing data on open source health and related metadata (e.g. CRAN status and riskmetric scores).  
-Information on the data collected is here: https://openpharma.github.io/#data. 
+### Scraped Data
 
-Data is stored in a pharmaverse AWS account.
+The passive data is collected via [OpenPharma](https://openpharma.github.io/), which is a sister organization that:
 
-### Package info
+- Has a completely un-opinionated approach and a wider remit spanning discovery to access.
+- Contains no curated data beyond package names.
+- Focuses on collecting and sharing:
+  - Open source health data
+  - Related metadata (e.g., CRAN status, riskmetric scores)
 
-Curated package info is stored in the folder `data/`. `pharmaverse` packages are in the folder `data/packages`. Non-pharma packages that get a special 
-mention are in `data/nonpharma`. Each package is a unique `.yaml` file. 
+For detailed information on the collected data, visit: https://openpharma.github.io/#data
 
-The general structure is:
+### Package Info
+
+Curated package info is stored in the `data/` folder.
+
+- `data/packages/` contains `pharmaverse` packages details
+- `data/nonpharma/` contains non-pharma packages details
+
+Each of the packages has a unique `.yaml` file
+
+Example structure:
 
 ```yaml
 name: admiral
@@ -57,43 +66,62 @@ docs: https://pharmaverse.github.io/admiral/cran-release/
 hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/admiral.png
 task: ADaM
 details: (ADaM In R Asset Library) - Modular framework to generate ADaM via R functions relying on community contributions
-splash: include # this controls what is shown on the main page. Plan is to deprecate and put all hex's up
+splash: include # this controls what is shown on the main page. The plan is to deprecate and put all the hexes up.
 ```
 
-It should be self explanatory. Please use the categories in the site for `task:`.
+### Deployment
+
+The `main` branch is deployed to [GitHub Pages](https://pages.github.com/), while the `develop` branch is deployed to [Netlify](https://www.netlify.com/). [Hugo](https://gohugo.io/) creates the static site in the `public` directory in the root of the project. This includes the HTML files, and assets such as images, CSS files, and JavaScript files.
+
+- For the `main` branch, the [secret token](https://github.com/peaceiris/actions-gh-pages/tree/v3/#supported-tokens) is securely stored in the GitHub environemnt.
+- For the `develop` branch, the Netlify authorization token and site id are also securely stored in the GitHub environemnt.
 
 ### People
 
-Info on people is in `data/people`. The `yaml` should be something like below, with the filename being the github handle.
+- Info on people is in `data/people/`
+- Filename should be the GitHub handle
 
-```yaml 
+Example structure:
+
+```yaml
 name: James Black
 pharmaverse_roles: tech
 company: Roche
 company_logo: roche.png
-# Following is more a nice to have for profile pages [and optional]
+# Following is more of a nice to have for profile pages [and optional]
 linkedin: https://www.linkedin.com/in/epijim/
 site: https://epijim.uk
 title: People and Product Family Leader for Insights Engineering, Scientific Computing Environment Product Owner
 bio: James is currently leading our pan-study codebase for insights
 ```
 
-### General content of the site
+## Site Content
 
-Site content is in `content`. It's normal markdown files. See [markdown-guide.md](markdown-guide.md). 
+The site content is in the `content/` directory. It contains standard markdown files. See [markdown-guide.md](markdown-guide.md) for more information.
 
-### Calling package info in the site
+### Calling Package Info in the Site
 
-To call a package, we have two shortcuts. `pharmaverse` means it's 'pharmaverse' - e.g. in the folder 
-`data/packages`. `otherpackages` is for non-pharmaverse packages, in `data/nonpharma`.
+To reference packages in the site content, use the following shortcodes:
+
+- For pharmaverse packages (located in `data/packages/`):
 
 ```r
 {{< pharmaverse pkg="rtables" >}}
+```
 
+- For non-pharmaverse packages (located in `data/nonpharma/`):
+
+```r
 {{< otherpackages pkg="gt" >}}
 ```
 
-### Council meeting minutes
+These shortcodes will automatically pull and display the relevant package information from the corresponding YAML files.
 
-From 2023 onwards, our monthly council meeting minutes will be published in `static/council meeting minutes`.
-Other static files such as images are stored in `static` also.
+## Council Minutes of Meeting
+
+- From 2023 onwards, monthly council meeting minutes are published in `static/council meeting minutes/`
+- Other static files (e.g., images) are stored in the `static/` directory
+
+## Contributing
+
+We welcome contributions from the community! To ensure a smooth process, please review our [CONTRIBUTING.md](.github/CONTRIBUTING.md) guide for detailed instructions on how to get involved.
