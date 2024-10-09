@@ -32,12 +32,13 @@ jobs:
         with:
           cache-version: 2
 
-      - name: Run scripts
-        run: |
-          Rscript scripts/add_badges.R
-          Rscript scripts/add_contributions.R
-        env:
-          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      # BROKEN - need to migrate to pharmaverse/metrics
+      #- name: Run scripts
+      #  run: |
+      #    Rscript scripts/add_badges.R
+      #    Rscript scripts/add_contributions.R
+      #  env:
+      #    GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run visualisations
         if: ${{ github.ref == 'refs/heads/main' }}
@@ -65,18 +66,18 @@ jobs:
           publish_dir: ./public
 
 # IF develop
-      - name: Build
-        if: ${{ github.ref == 'refs/heads/develop' }}
-        run: hugo -e staging
+      #- name: Build
+      #  if: ${{ github.ref == 'refs/heads/develop' }}
+      #  run: hugo -e staging
 
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        if: ${{ github.ref == 'refs/heads/develop' }}
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-2
+      #- name: Configure AWS Credentials
+      #  uses: aws-actions/configure-aws-credentials@v1
+      #  if: ${{ github.ref == 'refs/heads/develop' }}
+      #  with:
+      #    aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #    aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #    aws-region: us-east-2
 
-      - name: Deploy static site to S3 bucket
-        if: ${{ github.ref == 'refs/heads/develop' }}
-        run: aws s3 sync ./public/ s3://openpharma/develop --delete
+      #- name: Deploy static site to S3 bucket
+      #  if: ${{ github.ref == 'refs/heads/develop' }}
+      #  run: aws s3 sync ./public/ s3://openpharma/develop --delete

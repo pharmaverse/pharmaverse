@@ -15,12 +15,12 @@ SDTM is one of the required standards for data submission to FDA (U.S.) and PMDA
 
 {{< pharmaverse pkg="sdtm.oak" >}}
 
+{{< pharmaverse pkg="aNCA" >}}
+
 #### Upcoming packages for consideration
 
 The following are being worked up towards open sourcing to be considered for later inclusion into the pharmaverse - we felt important to share here in case others are working in a similar space and would be interested to collaborate with the respective developers.
 
 A collaboration of 7 companies is being formed to tackle "Open Source test data generation" for SDTM mapping via an R package. it would be focused on test data from EDC systems that is needed to test SDTM mapping.
 
-Several companies are working on an R package {aNCA} with a Shiny front-end to perform Non-Compartment Analysis (NCA) on both pre-clinical and clinical datasets.
-
-If you have interest to support any of the above, then post on our Slack and we could connect any passionate individuals or companies.
+If you have interest to support the above, then post on our Slack and we could connect any passionate individuals or companies.

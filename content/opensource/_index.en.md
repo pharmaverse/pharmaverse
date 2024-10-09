@@ -16,7 +16,7 @@ Please find below some links to other useful resources around supporting open so
 * [R Consortium Working Groups](https://www.r-consortium.org/projects/isc-working-groups) focused around industry R enablement, such as by working with FDA to pilot fully R-based submissions. 
 * [R Validation Hub](https://www.pharmar.org/) designing a framework that assesses the quality of an R package and considering topics around R package validation in accordance with regulatory standards.
 * [TransCelerate Modernization of Statistical Analytics project](https://www.transceleratebiopharmainc.com/initiatives/modernization-statistical-analytics/) aiming to analyze methods for considering and validating novel statistical computing platforms to propose to Health Authorities.
-* [Software Engineering Working Group](https://rconsortium.github.io/asa-biop-swe-wg/) engineers selected statistical R-packages and promotes good software engineering practices in the biostatistics community and beyond.
+* [Openstatsware](https://www.openstatsware.org/) engineers selected statistical R-packages and promotes good software engineering practices in the biostatistics community and beyond.
 
 ### Conferences
 
