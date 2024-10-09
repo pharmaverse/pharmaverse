@@ -5,4 +5,4 @@ docs: https://github.com/pharmaverse/aNCA
 hex: /images/emptyhex.png # /images/emptyhex.png
 task: sdtm
 details: (Pre-)clinical Non-Compartment Analysis (NCA) in a dynamic Shiny app
-hexwall: TRUE
+hexwall: FALSE
