@@ -32,11 +32,12 @@ jobs:
         with:
           cache-version: 2
 
-      # BROKEN - need to migrate to pharmaverse/metrics
+      # Run R code
+      # Rscript scripts/add_contributions.R disabled
       - name: Run scripts
         run: |
           Rscript scripts/add_badges.R
-          Rscript scripts/add_contributions.R
+          
         env:
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
