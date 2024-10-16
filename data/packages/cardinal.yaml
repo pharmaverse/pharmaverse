@@ -2,7 +2,7 @@ name: cardinal
 repo: pharmaverse/cardinal
 repo_source: github.com
 docs: https://pharmaverse.github.io/cardinal/
-hex: https://github.com/pharmaverse/cardinal/raw/main/quarto/assets/images/cardinal.png
+hex: https://github.com/pharmaverse/cardinal/raw/main/quarto/assets/images/logo/cardinal.png
 task: tlg
 details: Implementation of table-generating functions to implement standard FDA Safety Tables according to the guidelines.
 hexwall: FALSE
