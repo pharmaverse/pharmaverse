@@ -3,8 +3,8 @@ name: github pages
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
-      - develop 
+      - main # Set a branch to deploy
+      - develop
   schedule:
     - cron: 0 13 * * 1 # At 13:00 on Monday
 
@@ -16,8 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4.2.0
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Install curl
         run: sudo apt update && sudo apt-get install -y libcurl4-openssl-dev
@@ -50,10 +50,10 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.136.5'
           extended: true
 
-# IF main
+      # IF main
       - name: Build
         if: ${{ github.ref == 'refs/heads/main' }}
         run: hugo --minify
@@ -65,7 +65,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 
-# IF develop
+      # IF develop
       - name: Build
         if: ${{ github.ref == 'refs/heads/develop' }}
         run: hugo -e staging
@@ -74,7 +74,7 @@ jobs:
         uses: netlify/actions/cli@master
         if: ${{ github.ref == 'refs/heads/develop' }}
         with:
-          args: deploy --dir=public --prod  # Update 'dist' to your build output folder
+          args: deploy --dir=public --prod # Update 'dist' to your build output folder
         env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  # Store this in GitHub secrets
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }} # Store this in GitHub secrets
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
