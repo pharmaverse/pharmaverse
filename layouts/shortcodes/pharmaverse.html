@@ -5,10 +5,15 @@
   <img width="80" height="90" hspace="10" align="left" src={{ $data.hex }}>
   {{ end }}
   <b>{{ $data.name }}</b> <a href="{{$data.docs}}"><span> <i class="fa fa-book"></i></span></a> <a href="https://{{$data.repo_source}}/{{$data.repo}}"><span> <i class="fab fa-github"></i></span></a> 
-  {{ if (isset $data "badge_health" )}}<a href="https://openpharma.github.io/os-health.html"><img src="{{$data.badge_health}}"></a>{{ end }}
-  {{ if (isset $data "badge_riskmetric" )}}<a href="https://openpharma.github.io/"><img src="{{$data.badge_riskmetric}}"></a>{{ end }}
-  {{ if (isset $data "badge_cran" )}}<a href="https://www.r-pkg.org/pkg/{{$data.name}}"><img src="{{$data.badge_cran}}"></a>{{ end }}
-  {{ if (isset $data "badge_contributors" )}}<a href="https://openpharma.github.io/"><img src="{{$data.badge_contributors}}"></a>{{ end }}
+  {{ if (isset $data "badge_cran" )}}
+    <img src='https://img.shields.io/badge/CRAN-{{$data.badge_cran}}-blue.svg' alt='cran shield'>
+  {{ end }}
+  {{ if (isset $data "badge_stars" )}}
+    <img src='https://img.shields.io/badge/Stars-{{$data.badge_stars}}-green.svg' alt='cran shield'>
+  {{ end }}
+  {{ if (isset $data "badge_contributors" )}}
+    <img src='https://img.shields.io/badge/Contributors-{{$data.badge_contributors}}-purple.svg' alt='cran shield'>
+  {{ end }}
   <p>{{ $data.details }}</p> </br>
 {{- end -}}
 
