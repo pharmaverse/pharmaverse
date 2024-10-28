@@ -1,0 +1,8 @@
+name: aNCA
+repo: pharmaverse/aNCA
+repo_source: github.com
+docs: https://github.com/pharmaverse/aNCA
+hex: https://raw.githubusercontent.com/pharmaverse/aNCA/main/inst/shiny/www/images/aNCA_logo.png
+task: sdtm
+details: (Pre-)clinical Non-Compartment Analysis (NCA) in a dynamic Shiny app
+hexwall: TRUE
