@@ -63,9 +63,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 
-      # develop branch
+      # develop test-staging
       - name: Build
-        if: ${{ github.ref == 'refs/heads/develop' }}
+        if: ${{ github.ref == 'refs/heads/test-staging' }}
         run: hugo -e staging
 
       - name: Deploy to Netlify
