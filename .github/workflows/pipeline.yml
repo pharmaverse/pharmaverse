@@ -3,8 +3,8 @@ name: github pages
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
-      - develop # Note has logic around deployment
+      - main
+      - develop
   schedule:
     - cron: 0 13 * * 1 # At 13:00 on Monday
 
@@ -14,30 +14,27 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v4.1.1
+      - uses: actions/checkout@v4.2.0
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
+          submodules: true
+          fetch-depth: 0
       - name: Install curl
         run: sudo apt update && sudo apt-get install -y libcurl4-openssl-dev
 
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
         with:
-          r-version: '4.2.0'
+          r-version: "4.2.0"
 
       - name: Setup renv
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 2
 
-      # Run R code
-      # Rscript scripts/add_contributions.R disabled
       - name: Run scripts
         run: |
           Rscript scripts/add_badges.R
-          
+        # Rscript scripts/add_contributions.R disabled
         env:
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
@@ -49,12 +46,12 @@ jobs:
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.85.0'
+          hugo-version: "0.119.0"
           extended: true
 
-# IF main
+      # main branch
       - name: Build
         if: ${{ github.ref == 'refs/heads/main' }}
         run: hugo --minify
@@ -66,19 +63,16 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 
-# IF develop
-      #- name: Build
-      #  if: ${{ github.ref == 'refs/heads/develop' }}
-      #  run: hugo -e staging
+      # develop branch
+      - name: Build
+        if: ${{ github.ref == 'refs/heads/develop' }}
+        run: hugo -e staging
 
-      #- name: Configure AWS Credentials
-      #  uses: aws-actions/configure-aws-credentials@v1
-      #  if: ${{ github.ref == 'refs/heads/develop' }}
-      #  with:
-      #    aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      #    aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      #    aws-region: us-east-2
-
-      #- name: Deploy static site to S3 bucket
-      #  if: ${{ github.ref == 'refs/heads/develop' }}
-      #  run: aws s3 sync ./public/ s3://openpharma/develop --delete
+      - name: Deploy to Netlify
+        uses: netlify/actions/cli@master
+        if: ${{ github.ref == 'refs/heads/develop' }}
+        with:
+          args: deploy --dir=public --prod
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
