@@ -70,7 +70,7 @@ jobs:
 
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
-        if: ${{ github.ref == 'refs/heads/develop' }}
+        if: ${{ github.ref == 'refs/heads/test-staging' }}
         with:
           args: deploy --dir=public --prod
         env:
