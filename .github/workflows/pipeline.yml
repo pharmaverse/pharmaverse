@@ -63,14 +63,14 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 
-      # develop branch
+      # 250-fix-phuse-logo-in-navbar branch
       - name: Build
-        if: ${{ github.ref == 'refs/heads/develop' }}
+        if: ${{ github.ref == 'refs/heads/250-fix-phuse-logo-in-navbar' }}
         run: hugo -e staging
 
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
-        if: ${{ github.ref == 'refs/heads/develop' }}
+        if: ${{ github.ref == 'refs/heads/250-fix-phuse-logo-in-navbar' }}
         with:
           args: deploy --dir=public --prod
         env:
