@@ -56,3 +56,7 @@ to provide consistent ADaM test data.
 
 [{admiraldev}](https://pharmaverse.github.io/admiraldev/) offers numerous developer utilities focused on the {admiral}
 family of packages, but some could be useful to re-use. Take a look at the reference page to explore further.
+
+There is an ongoing effort [{roxytractor}](https://github.com/pharmaverse/roxytractor) to extract information from
+{roxygen2} documentation within R packages, simplifying the process of converting documentation into structured data
+efficiently. This could be useful in activities such as training GenAI/LLM solutions.
