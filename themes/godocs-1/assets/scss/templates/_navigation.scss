@@ -37,19 +37,17 @@
   }
 }
 
-.navbar-expand-lg {
-  &.navbar-nav .nav-link {
-    padding: 20px;
-    font-size: 15px;
-    @include desktop {
-      padding: 10px;
-      display: block;
-    }
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 20px;
+  font-size: 15px;
+  @include desktop {
+    padding: 10px;
+    display: block;
   }
+}
 
-  &.navbar-brand {
-    min-width: fit-content;
-  }
+.navbar-expand-lg .navbar-brand {
+  min-width: fit-content;
 }
 
 #select-language {
