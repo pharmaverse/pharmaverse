@@ -5,7 +5,6 @@ on:
     branches:
       - main
       - develop
-      - fix-sidenav-dropdown
   schedule:
     - cron: 0 13 * * 1 # At 13:00 on Monday
 
@@ -64,14 +63,14 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 
-      # fix-sidenav-dropdown branch
+      # develop branch
       - name: Build
-        if: ${{ github.ref == 'refs/heads/fix-sidenav-dropdown' }}
+        if: ${{ github.ref == 'refs/heads/develop' }}
         run: hugo -e staging
 
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
-        if: ${{ github.ref == 'refs/heads/fix-sidenav-dropdown' }}
+        if: ${{ github.ref == 'refs/heads/develop' }}
         with:
           args: deploy --dir=public --prod
         env:
