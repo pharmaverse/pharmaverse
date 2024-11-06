@@ -35,7 +35,7 @@ jobs:
       - name: Run scripts
         run: |
           Rscript scripts/add_badges.R
-        # Rscript scripts/add_contributions.R disabled
+          Rscript scripts/add_contributions.R
         env:
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
