@@ -7,3 +7,6 @@ task: tlg
 details: A framework for creating data listings
 splash: include
 hexwall: TRUE
+badge_cran: 0.2.9
+badge_stars: 25
+badge_contributors: 17

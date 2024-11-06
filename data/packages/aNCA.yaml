@@ -6,3 +6,5 @@ hex: https://raw.githubusercontent.com/pharmaverse/aNCA/main/inst/shiny/www/imag
 task: sdtm
 details: (Pre-)clinical Non-Compartment Analysis (NCA) in a dynamic Shiny app
 hexwall: TRUE
+badge_stars: 9
+badge_contributors: 7

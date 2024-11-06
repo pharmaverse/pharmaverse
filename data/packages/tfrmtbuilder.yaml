@@ -6,3 +6,6 @@ hex: https://raw.githubusercontent.com/GSK-Biostatistics/tfrmtbuilder/main/inst/
 task: tlg
 details: A Shiny app interface for the {tfrmt} package
 hexwall: TRUE
+badge_cran: 0.1.0
+badge_stars: 6
+badge_contributors: 2

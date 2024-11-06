@@ -7,3 +7,6 @@ task: utilities
 details: Read and write CDISC Dataset JSON files (PACKAGE CURRENTLY EXPERIMENTAL)
 splash: include
 hexwall: TRUE
+badge_cran: 0.2.0
+badge_stars: 14
+badge_contributors: 3

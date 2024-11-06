@@ -7,3 +7,6 @@ task: ADaM
 details: (ADaM In R Asset Library) - Modular framework to generate ADaM via R functions relying on community contributions
 splash: include
 hexwall: TRUE
+badge_cran: 1.1.1
+badge_stars: 224
+badge_contributors: 80

@@ -7,3 +7,5 @@ task: utilities
 details: Support the setup of an R environment
 splash: include
 hexwall: TRUE
+badge_stars: 7
+badge_contributors: 6

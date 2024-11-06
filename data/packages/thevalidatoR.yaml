@@ -9,3 +9,5 @@ details: >
   validation. An alternative approach to valtools that relies on the normal 
   R framework for validation.
 hexwall: FALSE
+badge_stars: 57
+badge_contributors: 8

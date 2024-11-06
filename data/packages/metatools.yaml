@@ -6,3 +6,6 @@ hex: https://github.com/pharmaverse/metatools/raw/main/man/figures/metatools.png
 task: metadata
 details: Enables the use of metacore objects to build, enhance or check datasets using metadata - including removing/adding supplemental qualifiers from/to the parent SDTM domain
 hexwall: TRUE
+badge_cran: 0.1.6
+badge_stars: 8
+badge_contributors: 6

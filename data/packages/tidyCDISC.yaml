@@ -6,3 +6,6 @@ hex: https://raw.githubusercontent.com/Biogen-Inc/tidyCDISC/master/man/figures/h
 task: tlg
 details: A shiny app to easily create custom tables and figures from ADaM-ish data sets
 hexwall: TRUE
+badge_cran: 0.2.1
+badge_stars: 108
+badge_contributors: 8

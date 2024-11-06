@@ -6,3 +6,6 @@ hex: https://raw.githubusercontent.com/GSK-Biostatistics/tfrmt/main/man/figures/
 task: tlg
 details: A language for defining display-related metadata to automate the transformation from an Analysis Results Dataset (ARD) to a table
 hexwall: TRUE
+badge_cran: 0.1.3
+badge_stars: 70
+badge_contributors: 8
