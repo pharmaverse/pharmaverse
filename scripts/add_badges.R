@@ -21,17 +21,21 @@ write_badge <- function(badge, file, text) {
   # Load the YAML file
   yaml_data <- yaml::read_yaml(file)
   
-  # Check if the key is available
-  if (text %in% names(yaml_data)) {
-    # Update the value
-    yaml_data[[text]] <- badge
-  } else {
-    # Append the new key-value pair
-    yaml_data[[text]] <- badge
+  badge <- badge[1] #edge case issue - not a good hack
+  if(is.na(badge)) return()
+  if (!rlang::is_empty(badge) & !is.na(badge) & badge != "" & badge != "NA") {
+    # Check if the key is available
+    if (text %in% names(yaml_data)) {
+      # Update the value
+      yaml_data[[text]] <- badge
+    } else {
+      # Append the new key-value pair
+      yaml_data[[text]] <- badge
+    }
+    
+    # Write the updated YAML data back to the file
+    yaml::write_yaml(yaml_data, file)  
   }
-  
-  # Write the updated YAML data back to the file
-  yaml::write_yaml(yaml_data, file)
 }
 
 
