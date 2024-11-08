@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - develop
+      - fix-add_badge-script
   schedule:
     - cron: 0 13 * * 1 # At 13:00 on Monday
 
@@ -39,7 +40,7 @@ jobs:
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run visualisations
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: ${{ github.ref == 'refs/heads/fix-add_badge-script' }}
         run: |
           Rscript scripts/add_hexwall_network.R
         env:
@@ -63,14 +64,14 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 
-      # develop branch
+      # fix-add_badge-script branch
       - name: Build
-        if: ${{ github.ref == 'refs/heads/develop' }}
+        if: ${{ github.ref == 'refs/heads/fix-add_badge-script' }}
         run: hugo -e staging
 
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
-        if: ${{ github.ref == 'refs/heads/develop' }}
+        if: ${{ github.ref == 'refs/heads/fix-add_badge-script' }}
         with:
           args: deploy --dir=public --prod
         env:
