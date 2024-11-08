@@ -9,3 +9,6 @@ details: >
   linking tests to code & code to documentation. 
   This package is used to provide the tracebility matrix for CICD based validation.
 hexwall: TRUE
+badge_cran: 0.0.1
+badge_stars: 21
+badge_contributors: 4

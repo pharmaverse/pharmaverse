@@ -6,3 +6,5 @@ hex: https://github.com/pharmaverse/cardinal/raw/main/quarto/assets/images/logo/
 task: tlg
 details: Implementation of table-generating functions to implement standard FDA Safety Tables according to the guidelines.
 hexwall: FALSE
+badge_stars: 42
+badge_contributors: 15

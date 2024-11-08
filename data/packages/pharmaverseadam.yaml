@@ -6,3 +6,6 @@ hex: https://github.com/pharmaverse/pharmaverseadam/raw/main/man/figures/logo.pn
 task: synthetic
 details: Test data (ADaM) for the pharmaverse family of packages
 hexwall: TRUE
+badge_cran: 1.1.0
+badge_stars: 11
+badge_contributors: 9

@@ -6,3 +6,6 @@ hex: https://github.com/insightsengineering/cards/raw/main/man/figures/logo.png
 task: tlg
 details: Construct CDISC Analysis Results Dataset (ARD) objects
 hexwall: TRUE
+badge_cran: 0.3.0
+badge_stars: 33
+badge_contributors: 11

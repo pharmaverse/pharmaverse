@@ -6,3 +6,6 @@ hex: https://raw.githubusercontent.com/pharmaverse/admiralpeds/main/man/figures/
 task: ADaM
 details: Pediatrics
 hexwall: FALSE
+badge_cran: 0.1.0
+badge_stars: 13
+badge_contributors: 11

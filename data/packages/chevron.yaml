@@ -6,3 +6,6 @@ hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/chevron.pn
 task: tlg
 details: Holds TLG template standards to create standard outputs for clinical trials reporting with limited parameterisation.
 hexwall: TRUE
+badge_cran: 0.2.7
+badge_stars: 11
+badge_contributors: 27

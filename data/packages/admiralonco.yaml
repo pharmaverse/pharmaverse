@@ -6,3 +6,6 @@ hex: https://raw.githubusercontent.com/pharmaverse/admiralonco/main/man/figures/
 task: ADaM
 details: Oncology
 hexwall: FALSE
+badge_cran: 1.1.0
+badge_stars: 31
+badge_contributors: 22

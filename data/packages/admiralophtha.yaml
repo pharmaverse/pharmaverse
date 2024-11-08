@@ -6,3 +6,6 @@ hex: https://raw.githubusercontent.com/pharmaverse/admiralophtha/main/man/figure
 task: ADaM
 details: Ophthalmology
 hexwall: FALSE
+badge_cran: 1.1.0
+badge_stars: 15
+badge_contributors: 21

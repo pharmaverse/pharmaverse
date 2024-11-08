@@ -6,3 +6,4 @@ hex: https://github.com/ddsjoberg/gtsummary/raw/main/man/figures/logo.png
 task: tlg
 details: Creates tables from either an Analysis Results Dataset (ARD) or a data frame with an ARD by-product
 hexwall: TRUE
+badge_cran: 2.0.3

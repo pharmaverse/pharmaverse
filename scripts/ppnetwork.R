@@ -1,11 +1,7 @@
-
-
-
 # Retrieve and mutate package info ---------------------------------------------
 
 # Fetch files
-yaml_files <- list.files(path = "data/packages",
-                         full.names = TRUE)
+yaml_files <- list.files(path = "data/packages", full.names = TRUE)
 
 # Process yaml info
 packages <- map(yaml_files, \(x){
@@ -104,8 +100,4 @@ my_net <- visNetwork(nodes, edges, height = "700px", width = "100%") %>%
 
 visSave(my_net, file = file.path("layouts/partials/con.html"),
         selfcontained = FALSE)
-
-
-
-
 
