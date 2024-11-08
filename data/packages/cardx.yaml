@@ -6,3 +6,6 @@ hex: https://github.com/insightsengineering/cardx/raw/main/man/figures/logo.png
 task: tlg
 details: Extra Analysis Results Data (ARD) summary objects supplementary to {cards}
 hexwall: TRUE
+badge_cran: 0.2.1
+badge_stars: 15
+badge_contributors: 12

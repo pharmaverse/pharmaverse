@@ -6,3 +6,6 @@ hex: https://github.com/pharmaverse/ggsurvfit/raw/main/man/figures/logo.png
 task: tlg
 details: Eases the creation of time-to-event (aka survival) summary figures
 hexwall: TRUE
+badge_cran: 1.1.0
+badge_stars: 71
+badge_contributors: 7

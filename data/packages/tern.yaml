@@ -6,3 +6,6 @@ hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/tern.png
 task: tlg
 details: Layers analytics from descriptive summaries to more complex statistics on top of the foundational table layouts, analytic and content controls
 hexwall: TRUE
+badge_cran: 0.9.6
+badge_stars: 76
+badge_contributors: 57

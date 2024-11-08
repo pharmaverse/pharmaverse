@@ -1,2 +1,220 @@
 ######################## staging configuration ####################
-baseURL = "http://openpharma.s3-website.us-east-2.amazonaws.com/develop"
+baseURL = "https://pharmaverse-staging-test.netlify.app"
+title = "pharmaverse"
+theme = "godocs-1"
+# google analytics
+googleAnalytics = "G-M4MDJB56FX" # example : UA-123-45
+# disable language
+disableLanguages = ["fr"] # desable language from here
+
+# hugo outputs
+[outputs]
+home = [ "HTML", "JSON"]
+
+# render unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/search/auto-complete.css"
+[[params.plugins.css]]
+link = "plugins/featherlight/featherlight.min.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
+attributes = "crossorigin='anonymous' defer='defer' data-search-pseudo-elements"
+[[params.plugins.js]]
+link = "plugins/masonry/masonry.min.js"
+[[params.plugins.js]]
+link = "plugins/featherlight/featherlight.min.js"
+[[params.plugins.js]]
+link = "plugins/clipboard/clipboard.min.js"
+[[params.plugins.js]]
+link = "plugins/search/auto-complete.js"
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+[[params.plugins.js]]
+link = "plugins/search/lunr.min.js"
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+[[params.plugins.js]]
+link = "plugins/search/search-page.js"
+
+# site variables
+[params.variables]
+# Color Variables
+primary_color = "#FF0043"
+text_color = "#333"
+text_color_dark = "#222"
+text_color_light = "#999"
+body_color = "#fff"
+border_color = "#E2E2E2"
+black = "#000"
+white = "#fff"
+light = "#FBFBFB"
+
+# Font Variables
+primary_font = "Montserrat:wght@300;400;500;600;700;800"
+primary_font_type = "sans-serif" # [serif/sans-serif]
+secondary_font = ""
+secondary_font_type = "" # [serif/sans-serif]
+icon_font = "Font Awesome 5 Free"
+
+#################### default parameters ################################
+[params]
+logo = "images/phuse.png"
+favicon = "images/favicon.png"
+# Meta data
+description = "This is meta description"
+author = "epijim"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+
+# Preloader
+[params.preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
+
+# Navigation button
+[[params.nav_button]]
+style = "outline" # available style: solid, outline
+label = "Get packages"
+link = "library"
+
+[[params.nav_button]]
+style = "solid" # available style: solid, outline
+label = "Contact"
+link = "contact"
+
+  
+############################# social site ########################
+#[[params.social]]
+#title = "facebook"
+#icon = "fab fa-facebook" # fontawesome icon : https://fontawesome.com/icons
+#link = "#"
+
+#[[params.social]]
+#title = "twitter"
+#icon = "fab fa-twitter" # fontawesome icon : https://fontawesome.com/icons
+#link = "#"
+
+[[params.social]]
+title = "github"
+icon = "fab fa-github" # fontawesome icon : https://fontawesome.com/icons
+link = "https://github.com/pharmaverse/pharmaverse/blob/main/README.md"
+
+[[params.social]]
+title = "linkedin"
+icon = "fab fa-linkedin" # fontawesome icon : https://fontawesome.com/icons
+link = "https://www.linkedin.com/groups/9126149/"
+
+[[params.social]]
+title = "youtube"
+icon = "fab fa-youtube" # fontawesome icon : https://fontawesome.com/icons
+link = "https://www.youtube.com/channel/UCxQFEv8HNqM01DXzdQLCy6Q"
+
+[[params.social]]
+title = "slack"
+icon = "fab fa-slack" # fontawesome icon : https://fontawesome.com/icons
+link = "https://pharmaverse.slack.com"
+
+
+################################### English language #####################################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+weight = 1
+# copyright
+copyright = "github.com/pharmaverse"
+
+# banner
+[Languages.en.banner]
+title = "pharmaverse"
+subtitle = "A connected network of companies and individuals working to promote collaborative development of curated open source R packages for clinical reporting usage in pharma, in a space where previously we would only ever have worked in silos on our own closed source and often duplicative solutions. Adopting shared solutions in this post-competitive space should ultimately ease regulatory review, resulting in bringing new treatments to patients faster."
+disclaimer = "Disclaimer: Anyone is free to choose any selection of pharmaverse recommended software or those from any other source, as there are many different pathways available. Being listed on our site gives no endorsement of the reliability of any code, it is up to you to assess suitability for your needs. Finally, before using any open source software you should always check the license."
+image = "images/banner.png"
+
+# call to action
+[Languages.en.call_to_action]
+enable = true
+title = "Want to know more?"
+image = "images/cta-illustration.jpg"
+content = "Use the form below to automatically send a slack message to the pharmaverse team"
+
+  # call to action button
+  [Languages.en.call_to_action.button]
+  enable = "true"
+  label = "Send a message"
+  link = "contact"
+
+
+############## English navigation ###############
+# main menu
+[[Languages.en.menu.main]]
+name = "Home"
+url = ""
+weight = 1
+
+[[Languages.en.menu.main]]
+name = "GitHub"
+url = "https://github.com/pharmaverse/"
+weight = 2
+
+[[Languages.en.menu.main]]
+name = "YouTube"
+url = "https://www.youtube.com/channel/UCxQFEv8HNqM01DXzdQLCy6Q"
+weight = 3
+
+[[Languages.en.menu.main]]
+name = "Blog"
+url = "https://pharmaverse.github.io/blog/"
+weight = 4
+
+[[Languages.en.menu.main]]
+name = "Examples"
+url = "https://pharmaverse.github.io/examples/"
+weight = 5
+
+[[Languages.en.menu.main]]
+name = "Slack"
+url = "https://pharmaverse.slack.com"
+weight = 6
+
+[[Languages.en.menu.main]]
+name = "PHUSE"
+url = "https://phuse.global/"
+weight = 7
+
+
+# footer menu
+[[Languages.en.menu.footer]]
+name = "Contact"
+url = "contact"
+weight = 1
+
+[[Languages.en.menu.footer]]
+name = "GitHub"
+url = "https://github.com/pharmaverse/"
+weight = 2
+
+[[Languages.en.menu.footer]]
+name = "YouTube"
+url = "https://www.youtube.com/channel/UCxQFEv8HNqM01DXzdQLCy6Q"
+weight = 3
+
+[[Languages.en.menu.footer]]
+name = "Slack"
+url = "https://pharmaverse.slack.com"
+weight = 4

@@ -6,3 +6,5 @@ hex: https://raw.githubusercontent.com/pharmaR/riskassessment/master/man/figures
 task: validation
 details: Shiny utility for riskmetric.
 hexwall: TRUE
+badge_stars: 101
+badge_contributors: 20

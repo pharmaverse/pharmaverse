@@ -6,3 +6,6 @@ hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/teal.png
 task: tlg
 details: Framework developed that leverages the R Shiny package to scale development of our shiny apps
 hexwall: TRUE
+badge_cran: 0.15.2
+badge_stars: 181
+badge_contributors: 38

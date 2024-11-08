@@ -1,5 +1,5 @@
 .navigation {
-  transition: .2s ease;
+  transition: 0.2s ease;
 
   &.nav-bg {
     background: $white;
@@ -44,6 +44,10 @@
     padding: 10px;
     display: block;
   }
+}
+
+.navbar-expand-lg .navbar-brand {
+  min-width: fit-content;
 }
 
 #select-language {

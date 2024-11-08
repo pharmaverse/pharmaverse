@@ -6,3 +6,6 @@ hex: https://raw.githubusercontent.com/pharmaverse/sdtmchecks/main/man/figures/l
 task: sdtm
 details: Contains data check functions to identify SDTM issues that are generalizable, actionable, and meaningful for analysis
 hexwall: TRUE
+badge_cran: 1.0.0
+badge_stars: 21
+badge_contributors: 10

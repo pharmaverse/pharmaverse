@@ -7,3 +7,6 @@ task: tlg
 details: A framework for declaring complex multi-level tabulations and then applying them to data
 splash: include
 hexwall: TRUE
+badge_cran: 0.6.10
+badge_stars: 226
+badge_contributors: 27

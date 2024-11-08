@@ -7,3 +7,6 @@ task: metadata
 details: Provides an interface to read in various metadata sources and store in a standardized object
 splash: include
 hexwall: TRUE
+badge_cran: 0.1.3
+badge_stars: 33
+badge_contributors: 8

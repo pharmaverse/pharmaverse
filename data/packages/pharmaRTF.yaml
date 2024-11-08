@@ -6,3 +6,6 @@ hex: https://user-images.githubusercontent.com/31387567/151176597-7707d789-c47c-
 task: tlg
 details: Enhanced RTF wrapper written in R for use with existing R tables packages such as huxtable or GT
 hexwall: TRUE
+badge_cran: 0.1.4
+badge_stars: 33
+badge_contributors: 3

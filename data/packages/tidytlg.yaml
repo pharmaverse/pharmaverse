@@ -6,3 +6,6 @@ hex: https://user-images.githubusercontent.com/61123199/152377149-83d7aea2-b78b-
 task: tlg
 details: Generate table, listings, and graphs (TLG) using the Tidyverse
 hexwall: TRUE
+badge_cran: 0.1.5
+badge_stars: 33
+badge_contributors: 7

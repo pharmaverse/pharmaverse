@@ -6,3 +6,6 @@ hex: https://github.com/pharmaverse/datacutr/raw/main/man/figures/logo.png
 task: sdtm
 details: Applying a datacut to SDTM
 hexwall: TRUE
+badge_cran: 0.1.0
+badge_stars: 13
+badge_contributors: 9

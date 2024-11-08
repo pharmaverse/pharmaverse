@@ -6,3 +6,6 @@ hex: https://github.com/Appsilon/rhino/raw/main/man/figures/rhino.png
 task: tlg
 details: Supports creating and extending enterprise Shiny applications using best practices
 hexwall: TRUE
+badge_cran: 1.10.1
+badge_stars: 291
+badge_contributors: 18
