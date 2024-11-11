@@ -11,4 +11,4 @@ draft: false
 
 {{< pharmaverse pkg="datasetjson" >}}
 
-{{< otherpackages pkg="diffdf" >}}
+{{< pharmaverse pkg="diffdf" >}}
