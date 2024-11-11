@@ -2,8 +2,7 @@ name: diffdf
 repo: gowerc/diffdf
 repo_source: github.com
 docs: https://gowerc.github.io/diffdf/
-hex: /images/emptyhex.png # /images/emptyhex.png
+hex: /images/emptyhex.png
 task: utility
 details: The diffdf package is designed to enable detailed comparison of two data.frames.
-
-
+hexwall: FALSE # no hex logo
