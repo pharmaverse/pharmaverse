@@ -3,6 +3,7 @@ library(arrow)
 library(base64enc)
 library(glue)
 library(gt)
+library(yaml)
 
 ## Get packages ---------
 
