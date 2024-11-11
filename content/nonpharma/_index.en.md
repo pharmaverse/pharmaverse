@@ -46,8 +46,6 @@ There are different solutions already available, but during R/Pharma there was a
 
 {{< otherpackages pkg="tidyverse" >}}
 
-{{< otherpackages pkg="diffdf" >}}
-
 {{< otherpackages pkg="lintr" >}}
 
 {{< otherpackages pkg="styler" >}}
