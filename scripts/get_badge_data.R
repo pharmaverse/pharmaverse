@@ -3,7 +3,7 @@ get_badges_data <- function(repos, packages) {
   cran_data <- cran_packages(packages)
 
   repo_meta <- create_gitstats() |>
-    set_github_host(repos = repos, token = Sys.getenv("GITHUB_TOKEN")) |>
+    set_github_host(repos = repos, token = Sys.getenv("GITHUB_PAT")) |>
     get_repos(progress = TRUE)
   
   repo_meta |>
