@@ -4,15 +4,23 @@ library(base64enc)
 library(glue)
 library(gt)
 library(yaml)
+library(pkgsearch)
+library(GitStats)
+library(tibble)
+library(purrr)
 
+source("scripts/get_badge_data.R")
+source("scripts/get_pharmaverse_pkgs.R")
 ## Get packages ---------
 
 files_pharmaverse <- paste0("data/packages/",list.files("data/packages"))
+pharmaverse_pkgs <- get_pharmaverse_pkgs()
 
 ## Get badges ---------
 
-badges <- read_parquet(
-  "https://openpharma.github.io/generate_badges/output/data.parquet"
+badges <- get_badges_data(
+  repos = pharmaverse_pkgs$repo, 
+  packages = pharmaverse_pkgs$name
 )
 
 ## Misc ---------
@@ -29,7 +37,6 @@ write_badge <- function(badge, file, text) {
     write_yaml(yaml_data, file)  
   }
 }
-
 
 # Create data for badges
 for (i in files_pharmaverse) {
@@ -109,15 +116,15 @@ if(length(missing) > 0) {
   }
 }
 
-  # Summarise badges
-  all_badges <- gsub(".svg","",list.files(dir_shields, pattern = "*.svg"))
-  
-  tibble(
-    Package = all_badges,
-    Shield = glue('<img src="http://pharmaverse.org/shields/{all_badges}.svg">'),
-    Markdown = glue('[<img src="http://pharmaverse.org/shields/{all_badges}.svg">](https://pharmaverse.org)')
-    ) %>%
-    gt() %>%
-    fmt_markdown(columns = Shield) %>%
-    # write so shortcode picks up (called 'shields')
-    gtsave(filename = "layouts/shortcodes/shields.html")
+# Summarise badges
+all_badges <- gsub(".svg","",list.files(dir_shields, pattern = "*.svg"))
+
+tibble(
+  Package = all_badges,
+  Shield = glue('<img src="http://pharmaverse.org/shields/{all_badges}.svg">'),
+  Markdown = glue('[<img src="http://pharmaverse.org/shields/{all_badges}.svg">](https://pharmaverse.org)')
+  ) %>%
+  gt() %>%
+  fmt_markdown(columns = Shield) %>%
+  # write so shortcode picks up (called 'shields')
+  gtsave(filename = "layouts/shortcodes/shields.html")
