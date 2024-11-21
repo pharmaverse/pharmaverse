@@ -36,14 +36,14 @@ jobs:
           Rscript scripts/add_badges.R
           Rscript scripts/add_contributions.R
         env:
-          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_PAT: ${{ secrets.PHARMAVERSE_BOT }}
 
       - name: Run visualisations
         if: ${{ github.ref == 'refs/heads/main' }}
         run: |
           Rscript scripts/add_hexwall_network.R
         env:
-          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_PAT: ${{ secrets.PHARMAVERSE_BOT }}
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -60,7 +60,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PHARMAVERSE_BOT }}
           publish_dir: ./public
 
       # develop branch
