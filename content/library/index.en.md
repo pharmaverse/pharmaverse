@@ -23,5 +23,3 @@ options(
     )
   )
 ```
-
-As of today there are [![:total status badge](https://pharmaverse.r-universe.dev/badges/:total)](https://pharmaverse.r-universe.dev)  from the pharmaverse hosted in this CRAN-like instance (`pharmaverse` packages along with package dependencies that are `remotes:`).  
