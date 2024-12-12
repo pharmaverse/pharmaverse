@@ -82,9 +82,8 @@ companies involved.
 * A [GitHub template](https://github.com/pharmaverse/admiraltemplate) focused on the {admiral} family of packages and their conventions, but could be useful as an
 example of possible approaches to use, such as Issue and Pull Request templates.
 * Our [Developers](https://pharmaverse.org/e2eclinical/developers/) page offers packages and resources that could be re-used when creating new pharmaverse packages.
-* Example [contribution model](https://pharmaverse.github.io/admiral/cran-release/articles/contribution_model.html) - this is what is used for the {admiral} package and includes 
-vignettes around programming strategy, unit testing guidance and git usage. This model will evolve over time as the admiral team learn from the experience, but could 
-serve as an example to consider if you will open your package for contributions, which we would recommend.
+* Example [contribution model](https://pharmaverse.github.io/admiral/CONTRIBUTING.html) - this is what is used for the {admiral} package and includes links to developer
+vignettes around programming strategy, unit testing guidance and git usage. This could serve as an example to consider if you will open your package for contributions, which we would recommend.
 * Recommended [support model](https://pharmaverse.org/support/) - this is important to give users a consistent experience across pharmaverse packages, and if packages 
 are not kept well maintained and supported then they are likely to be removed from the pharmaverse package list.
 * Option to include a pharmaverse [hosted shield/badge](https://pharmaverse.org/contribute/badges/) for your package which shows users you are part of pharmaverse 
