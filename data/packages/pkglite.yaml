@@ -4,7 +4,7 @@ repo_source: github.com
 docs: https://merck.github.io/pkglite/
 hex: https://raw.githubusercontent.com/Merck/pkglite/master/man/figures/logo.png
 task: esub
-details: To represent and exchange R package source code as text files, e.g. readable code
+details: To represent and exchange R package source code as text files, e.g. readable code. For python version, visit https://github.com/pharmaverse/py-pkglite
 splash: include
 hexwall: TRUE
 badge_cran: 0.2.3
