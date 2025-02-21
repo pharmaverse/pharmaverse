@@ -5,7 +5,4 @@ docs: https://pharmaverse.github.io/py-pkglite/
 hex: https://raw.githubusercontent.com/pharmaverse/py-pkglite/main/docs/assets/logo.png
 task: python
 details: To represent and exchange any language package source code as text files, e.g. readable code
-hexwall: FALSE
-badge_cran: 
-badge_stars: 
-badge_contributors: 
+hexwall: TRUE

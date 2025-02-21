@@ -5,7 +5,4 @@ docs: https://pharmaverse.github.io/rtflite/
 hex: https://raw.githubusercontent.com/pharmaverse/rtflite/main/docs/assets/logo.png
 task: python
 details: Specializes in precise formatting of production-quality RTF tables and figures
-hexwall: FALSE
-badge_cran: 
-badge_stars: 
-badge_contributors: 
+hexwall: TRUE
