@@ -14,7 +14,9 @@ source("scripts/get_pharmaverse_pkgs.R")
 ## Get packages ---------
 
 files_pharmaverse <- paste0("data/packages/",list.files("data/packages"))
-pharmaverse_pkgs <- get_pharmaverse_pkgs()
+pharmaverse_pkgs <- get_pharmaverse_pkgs() |>
+  # badges not needed for python packages - was breaking workflows
+  filter(toupper(task) != "PYTHON")
 
 ## Get badges ---------
 
