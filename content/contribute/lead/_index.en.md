@@ -23,10 +23,10 @@ your package as you progress development.
 
 Before you contact us, please consider whether there is already an existing pharmaverse package that could solve your need, or if you could combine forces
 with an existing effort to add your feature to their package. Our aim is always to reduce duplication across our packages, so as to provide a lower bar for
-pharmaceutical companies to adopt R. With this in mind, expect that we would say no to including a new package in pharmaverse unless it offers unique features
+pharmaceutical companies to adopt R/open source. With this in mind, expect that we would say no to including a new package in pharmaverse unless it offers unique features
 and scope compared to the packages already included.
 
-Note: we refer to R "packages" here, but you may also have other useful pieces to share (outside of packages) that enable R, such as CI/CD workflows, utility scripts or templates.
+Note: we refer to R "packages" here, but you may also have other useful pieces to share (outside of packages) that enable R, such as CI/CD workflows, utility scripts or templates. Similarly there may be codebases in other open source languages where not all of the below list fully applies, e.g. for Python code you could consider PyPI instead of CRAN for example.
 
 **Inclusion Criteria for pharmaverse**
 
