@@ -25,13 +25,13 @@ design, development, testing, release, and/or maintenance
 
 | Name | Company | Term End Date |
 | ----------- | ----------- | ----------- |
-| Ari Siggaard Knoph | Novo Nordisk | Jan-25 |
-| Ross Farrugia | Roche | Mar-25 |
-| Michael Rimler | GSK | Mar-25 |
-| Sumesh Kalappurakal | Janssen/J&J | Mar-25 |
-| Mike Stackhouse | Atorus | Mar-25 |
 | Damian Rodziewicz | Appsilon | Apr-26 |
 | Andre Couturier | Sanofi | Apr-26 |
+| Julia Gnatek | Novo Nordisk | Jan-27 |
+| Ross Farrugia | Roche | Mar-27 |
+| Michael Rimler | GSK | Mar-27 |
+| Sumesh Kalappurakal | Janssen/J&J | Mar-27 |
+| Mike Stackhouse | Atorus | Mar-27 |
 
 **Council Activities** 
 
