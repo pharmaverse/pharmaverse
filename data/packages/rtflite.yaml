@@ -1,0 +1,8 @@
+name: rtflite
+repo: pharmaverse/rtflite
+repo_source: github.com
+docs: https://pharmaverse.github.io/rtflite/
+hex: https://raw.githubusercontent.com/pharmaverse/rtflite/main/docs/assets/logo.png
+task: python
+details: Specializes in precise formatting of production-quality RTF tables and figures
+hexwall: TRUE
