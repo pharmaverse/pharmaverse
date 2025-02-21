@@ -19,7 +19,20 @@ to any Council member to apply. Acceptance to the Council 2-year term is granted
 It is expected that a Council member organization contribute:
 *	One representative to the Council
 *	Commitment to at least 2 open source packages under pharmaverse via reviews, hands-on code development, product leads, or other roles which contribute to the 
-design, development, testing, release, and/or maintenance     
+design, development, testing, release, and/or maintenance
+
+Any council member organization must fulfill our DE&I (Diversity, Equity & Inclusion) criteria as outlined below:
+
+Pharmaverse is committed to establishing a diverse council that effectively represents the community members with whom it engages. To be considered for inclusion in the council as a sponsor organization, organizations must meet at least two of the criteria listed below. Existing council member organizations will be grandfathered in, provided that they currently meet the conditions or commit to achieving them within a six-month timeframe.
+
+1. Mission Statement and Policies: The company published a mission statement, vision, or set of policies centered around equitable access and inclusivity, clearly outlining its commitment to DEI.
+1. Training and Professional Development: The company provides and requires professional development, training, and education on diversity, equity, inclusion, and belonging topics for all employees.
+1. Programs and Supportive Structures: The company established and maintains diversity, equity, inclusion, and belonging programs such as affinity groups, employee resource groups, mentoring, and internal sponsorship to foster an inclusive environment.
+1. Recruitment and Retention: The company implements a diversity retention and recruitment strategy to attract and retain a diverse workforce.
+1. Accountability and Bias Response: The company holds employees accountable for actively participating in an inclusive culture of belonging and has a process in place to address bias incidents.
+1. Equitable Pay and Monitoring: The company monitors equitable pay across the organization to ensure fair compensation for all employees.
+1. Data-Driven Approach: The company takes a data-driven approach to equity, diversity, inclusion, and belonging initiatives, including public or easily accessible data on diversity retention and diversity in leadership, as well as measurable goals that management and executive leadership are held accountable for meeting.
+1. Community Integration and Support: The company integrates equity, diversity, inclusion, and belonging efforts to add value to the local community, such as through the donation of time, resources, or money to underrepresented community populations or support for local socially equitable policies.
 
 **Council Member Terms**
 
