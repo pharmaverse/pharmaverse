@@ -14,6 +14,10 @@ source("scripts/get_pharmaverse_pkgs.R")
 ## Get packages ---------
 
 files_pharmaverse <- paste0("data/packages/",list.files("data/packages"))
+# badges not needed for python packages - was breaking workflows - adding rough code
+# for now to get the workflows running again, could be cleaned up later
+files_pharmaverse <- files_pharmaverse[files_pharmaverse != "data/packages/py-pkglite.yaml" &
+                                         files_pharmaverse != "data/packages/rtflite.yaml"]
 pharmaverse_pkgs <- get_pharmaverse_pkgs() |>
   # badges not needed for python packages - was breaking workflows
   filter(toupper(task) != "PYTHON")
