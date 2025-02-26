@@ -29,7 +29,7 @@ The benefits would be as follows:
 
 ### Scope
 
-The initial focus of pharmaverse is on the journey from CRF through to submission for clinical trial analysis reporting via R packages (and other open source languages). We intend to provide a pathway to share efforts to build open-source codebases, to identify and rectify gaps in available tools, and then collaboratively build and maintain any additional codebases that complete this end-to-end workflow. This could include, for example, solutions covering SDTM mapping, ADaM derivations, TLG production, and enabling eSub for both today's expectations and potentially through interactive tools in the future. It also could include utility packages that may help this dataflow in any way, such as diffdf, which performs data frame comparisons. 
+The core focus of pharmaverse is on the journey from CRF through to submission for clinical trial analysis reporting via R packages (and other open source languages). We intend to provide a pathway to share efforts to build open-source codebases, to identify and rectify gaps in available tools, and then collaboratively build and maintain any additional codebases that complete this end-to-end workflow. This could include, for example, solutions covering SDTM mapping, ADaM derivations, TLG production, and enabling eSub for both today's expectations and potentially through interactive tools in the future. It also could include utility packages that may help this dataflow in any way, such as diffdf, which performs data frame comparisons. 
 
 The R packages recommended under pharmaverse will fall under one of the following:
 | Category    | Description | Examples    | 
