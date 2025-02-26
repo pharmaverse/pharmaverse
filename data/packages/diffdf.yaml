@@ -5,4 +5,7 @@ docs: https://gowerc.github.io/diffdf/
 hex: /images/emptyhex.png
 task: utility
 details: The diffdf package is designed to enable detailed comparison of two data.frames.
-hexwall: FALSE # no hex logo
+hexwall: no
+badge_cran: 1.1.1
+badge_stars: 48
+badge_contributors: 2

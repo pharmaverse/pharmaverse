@@ -4,8 +4,9 @@ repo_source: github.com
 docs: https://appsilon.github.io/rhino/
 hex: https://github.com/Appsilon/rhino/raw/main/man/figures/rhino.png
 task: tlg
-details: Supports creating and extending enterprise Shiny applications using best practices
-hexwall: TRUE
+details: Supports creating and extending enterprise Shiny applications using best
+  practices
+hexwall: yes
 badge_cran: 1.10.1
-badge_stars: 291
-badge_contributors: 18
+badge_stars: 303
+badge_contributors: 19
