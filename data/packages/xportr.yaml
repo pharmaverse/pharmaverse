@@ -4,8 +4,9 @@ repo_source: github.com
 docs: https://atorus-research.github.io/xportr/
 hex: https://github.com/atorus-research/xportr/raw/main/man/figures/logo.png
 task: esub
-details: Serves as a single tool to create SAS transport files and perform pharma specific dataset level validation checks
-hexwall: TRUE
-badge_cran: 0.4.1
-badge_stars: 42
-badge_contributors: 12
+details: Serves as a single tool to create SAS transport files and perform pharma
+  specific dataset level validation checks
+hexwall: yes
+badge_cran: 0.4.2
+badge_stars: 43
+badge_contributors: 14

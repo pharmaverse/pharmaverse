@@ -5,6 +5,6 @@ docs: https://pharmar.github.io/riskassessment/
 hex: https://raw.githubusercontent.com/pharmaR/riskassessment/master/man/figures/hex-riskassessment-aspconfig.png
 task: validation
 details: Shiny utility for riskmetric.
-hexwall: TRUE
-badge_stars: 101
+hexwall: yes
+badge_stars: 104
 badge_contributors: 20

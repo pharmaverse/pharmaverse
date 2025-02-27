@@ -4,8 +4,9 @@ repo_source: github.com
 docs: https://pharmaverse.github.io/sdtmchecks/
 hex: https://raw.githubusercontent.com/pharmaverse/sdtmchecks/main/man/figures/logo_em.png
 task: sdtm
-details: Contains data check functions to identify SDTM issues that are generalizable, actionable, and meaningful for analysis
-hexwall: TRUE
+details: Contains data check functions to identify SDTM issues that are generalizable,
+  actionable, and meaningful for analysis
+hexwall: yes
 badge_cran: 1.0.0
 badge_stars: 21
-badge_contributors: 10
+badge_contributors: 11

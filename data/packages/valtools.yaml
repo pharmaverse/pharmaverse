@@ -4,7 +4,8 @@ repo_source: github.com
 docs: https://phuse-org.github.io/valtools/
 hex: https://github.com/phuse-org/valtools/raw/main/man/figures/logo.png
 task: validation
-details: Validation framework for R packages that allows you to bolt in additional validation documentation.
-hexwall: TRUE
+details: Validation framework for R packages that allows you to bolt in additional
+  validation documentation.
+hexwall: yes
 badge_stars: 51
 badge_contributors: 6

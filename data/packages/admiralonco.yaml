@@ -5,7 +5,7 @@ docs: https://pharmaverse.github.io/admiralonco/
 hex: https://raw.githubusercontent.com/pharmaverse/admiralonco/main/man/figures/logo.png
 task: ADaM
 details: Oncology
-hexwall: FALSE
-badge_cran: 1.1.0
-badge_stars: 31
+hexwall: no
+badge_cran: 1.2.0
+badge_stars: 32
 badge_contributors: 22

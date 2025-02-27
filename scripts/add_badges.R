@@ -11,23 +11,32 @@ library(purrr)
 
 source("scripts/get_badge_data.R")
 source("scripts/get_pharmaverse_pkgs.R")
-## Get packages ---------
 
-files_pharmaverse <- paste0("data/packages/",list.files("data/packages"))
-# badges not needed for python packages - was breaking workflows - adding rough code
-# for now to get the workflows running again, could be cleaned up later
-files_pharmaverse <- files_pharmaverse[files_pharmaverse != "data/packages/py-pkglite.yaml" &
-                                         files_pharmaverse != "data/packages/rtflite.yaml"]
-pharmaverse_pkgs <- get_pharmaverse_pkgs() |>
-  # badges not needed for python packages - was breaking workflows
-  filter(toupper(task) != "PYTHON")
+## Get packages ---------
+files_pharmaverse <- paste0("data/packages/", list.files("data/packages"))
+pharmaverse_r_pkgs <- get_pharmaverse_pkgs() |> filter(toupper(task) != "PYTHON")
+pharmaverse_py_pkgs <- get_pharmaverse_pkgs() |> filter(toupper(task) == "PYTHON")
+pharmaverse_all_pkgs <- bind_rows(pharmaverse_r_pkgs, pharmaverse_py_pkgs)
 
 ## Get badges ---------
-
-badges <- get_badges_data(
-  repos = pharmaverse_pkgs$repo, 
-  packages = pharmaverse_pkgs$name
+r_badges <- get_badges_data(
+  repos = pharmaverse_r_pkgs$repo, 
+  packages = pharmaverse_r_pkgs$name
 )
+
+py_badges <- create_gitstats() |>
+  set_github_host(repos = pharmaverse_py_pkgs$repo, token = Sys.getenv("GITHUB_PAT")) |>
+  get_repos(progress = TRUE) |>
+  select(
+    name = repo_name, 
+    repo = fullname,
+    badge_stars = stars, 
+    badge_contributors = contributors_n
+  ) |>
+  mutate(badge_cran = NA_character_) |>
+  select(name, repo, badge_cran, badge_stars, badge_contributors)
+
+badges <- bind_rows(r_badges, py_badges)
 
 ## Misc ---------
 
@@ -80,17 +89,20 @@ removed <- unique(c(
   )
 ))
 
-if(length(removed) > 0) {
-  message("The following packages are no longer pharmaverse: ",
-        paste(removed, collapse = ", "))
-  
-  file.remove(
-    glue("{dir_shields}/{removed}.png")
-  )
-  file.remove(
-    glue("{dir_shields}/{removed}.svg")
-  )
-}
+try({
+   if(length(removed) > 0) {
+      message(
+         "The following packages are no longer pharmaverse: ",
+          paste(removed, collapse = ", ")
+      )
+      file.remove(
+      	glue("{dir_shields}/{removed}.png")
+      )
+      file.remove(
+      	glue("{dir_shields}/{removed}.svg")
+      )
+   }
+}, silent = TRUE)
 
 # check if a pkg already exists
 missing <- unique(c(
@@ -107,11 +119,9 @@ missing <- unique(c(
 if(length(missing) > 0) {
   message("The following packages are new to the pharmaverse: ",
           paste(missing, collapse = ", "))
-
   
   # render new badges
   for (i in missing) {
-
     shield_build(
       stub = "pharmaverse",
       label = i,

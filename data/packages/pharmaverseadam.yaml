@@ -5,7 +5,7 @@ docs: https://pharmaverse.github.io/pharmaverseadam/
 hex: https://github.com/pharmaverse/pharmaverseadam/raw/main/man/figures/logo.png
 task: synthetic
 details: Test data (ADaM) for the pharmaverse family of packages
-hexwall: TRUE
+hexwall: yes
 badge_cran: 1.1.0
-badge_stars: 11
-badge_contributors: 9
+badge_stars: 14
+badge_contributors: 11
