@@ -7,5 +7,5 @@ task: tlg
 details: Construct CDISC Analysis Results Dataset (ARD) objects
 hexwall: yes
 badge_cran: 0.5.0
-badge_stars: 38
+badge_stars: 39
 badge_contributors: 14
