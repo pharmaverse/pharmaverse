@@ -4,8 +4,9 @@ repo_source: github.com
 docs: https://pharmar.github.io/riskmetric/
 hex: https://raw.githubusercontent.com/pharmaR/riskmetric/master/man/figures/logo.png
 task: validation
-details: Framework to quantify R package risk by assessing a number of meaningful metrics.
-hexwall: TRUE
+details: Framework to quantify R package risk by assessing a number of meaningful
+  metrics.
+hexwall: yes
 badge_cran: 0.2.4
-badge_stars: 161
-badge_contributors: 18
+badge_stars: 167
+badge_contributors: 19

@@ -15,7 +15,7 @@ assignees: ''
 A clear and concise description including the use case and problem this solves in the clinical reporting space.
 
 **Category of package**
-SDTM, ADaM, TLGs, eSub, Metadata, Utility, Validation, or Other.
+SDTM, ADaM, TLGs, eSub, Metadata, Utility, Python, Developers, or Other.
 
 **Repository**
 A link to the publicly available source code.

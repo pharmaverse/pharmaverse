@@ -4,9 +4,10 @@ repo_source: github.com
 docs: https://pharmaverse.github.io/logrx/
 hex: https://pharmaverse.github.io/logrx/reference/figures/logo.png
 task: utilities
-details: Generates an execution log to support reproducibility and traceability of an R script
+details: Generates an execution log to support reproducibility and traceability of
+  an R script
 splash: include
-hexwall: TRUE
-badge_cran: 0.3.1
+hexwall: yes
+badge_cran: 0.3.2
 badge_stars: 41
-badge_contributors: 8
+badge_contributors: 9

@@ -4,9 +4,10 @@ repo_source: github.com
 docs: https://pharmaverse.github.io/admiral/
 hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/admiral.png
 task: ADaM
-details: (ADaM In R Asset Library) - Modular framework to generate ADaM via R functions relying on community contributions
+details: (ADaM In R Asset Library) - Modular framework to generate ADaM via R functions
+  relying on community contributions
 splash: include
-hexwall: TRUE
-badge_cran: 1.1.1
-badge_stars: 224
-badge_contributors: 80
+hexwall: yes
+badge_cran: 1.2.0
+badge_stars: 233
+badge_contributors: 84

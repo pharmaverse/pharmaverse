@@ -4,8 +4,9 @@ repo_source: github.com
 docs: https://atorus-research.github.io/pharmaRTF/
 hex: https://user-images.githubusercontent.com/31387567/151176597-7707d789-c47c-4a93-b752-bc1e37e35774.png
 task: tlg
-details: Enhanced RTF wrapper written in R for use with existing R tables packages such as huxtable or GT
-hexwall: TRUE
+details: Enhanced RTF wrapper written in R for use with existing R tables packages
+  such as huxtable or GT
+hexwall: yes
 badge_cran: 0.1.4
 badge_stars: 33
 badge_contributors: 3

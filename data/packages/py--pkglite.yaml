@@ -1,0 +1,11 @@
+name: py-pkglite
+repo: pharmaverse/py-pkglite
+repo_source: github.com
+docs: https://pharmaverse.github.io/py-pkglite/
+hex: https://raw.githubusercontent.com/pharmaverse/py-pkglite/main/docs/assets/logo.png
+task: python
+details: To represent and exchange any language package source code as text files,
+  e.g. readable code
+hexwall: yes
+badge_stars: 0
+badge_contributors: 2

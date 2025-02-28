@@ -4,8 +4,9 @@ repo_source: github.com
 docs: https://pharmaverse.github.io/sdtm.oak/
 hex: https://pharmaverse.github.io/sdtm.oak/reference/figures/logo.svg
 task: sdtm
-details: An Electronic Data Capture system and Data Standard agnostic solution that enables to develop SDTM datasets in R
-hexwall: TRUE
-badge_cran: 0.1.0
-badge_stars: 30
-badge_contributors: 10
+details: An Electronic Data Capture system and Data Standard agnostic solution that
+  enables to develop SDTM datasets in R
+hexwall: yes
+badge_cran: 0.1.1
+badge_stars: 33
+badge_contributors: 11

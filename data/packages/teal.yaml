@@ -4,8 +4,9 @@ repo_source: github.com
 docs: https://insightsengineering.github.io/teal/
 hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/teal.png
 task: tlg
-details: Framework developed that leverages the R Shiny package to scale development of our shiny apps
-hexwall: TRUE
-badge_cran: 0.15.2
-badge_stars: 181
+details: Framework developed that leverages the R Shiny package to scale development
+  of our shiny apps
+hexwall: yes
+badge_cran: 0.16.0
+badge_stars: 197
 badge_contributors: 38
