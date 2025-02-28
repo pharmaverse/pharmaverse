@@ -134,9 +134,10 @@ if(length(missing) > 0) {
 
 # Summarise badges
 all_svgs <- list.files(dir_shields, pattern = "*.svg")
+all_svg_names <- gsub("--", "-", all_svgs)   # edge case issue for py-pkglite package
 
 tibble(
-  Package = all_badges,
+  Package = all_svg_names,
   Shield = glue('<img src="http://pharmaverse.org/shields/{all_svgs}">'),
   Markdown = glue('[<img src="http://pharmaverse.org/shields/{all_svgs}">](https://pharmaverse.org)')
   ) %>%
