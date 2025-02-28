@@ -33,7 +33,7 @@ py_badges <- create_gitstats() |>
     badge_stars = stars, 
     badge_contributors = contributors_n
   ) |>
-  mutate(badge_cran = NA_character_) |>
+  mutate(badge_cran = NA) |>
   select(name, repo, badge_cran, badge_stars, badge_contributors)
 
 badges <- bind_rows(r_badges, py_badges)
@@ -133,12 +133,12 @@ if(length(missing) > 0) {
 }
 
 # Summarise badges
-all_badges <- gsub(".svg","",list.files(dir_shields, pattern = "*.svg"))
+all_svgs <- list.files(dir_shields, pattern = "*.svg")
 
 tibble(
   Package = all_badges,
-  Shield = glue('<img src="http://pharmaverse.org/shields/{all_badges}.svg">'),
-  Markdown = glue('[<img src="http://pharmaverse.org/shields/{all_badges}.svg">](https://pharmaverse.org)')
+  Shield = glue('<img src="http://pharmaverse.org/shields/{all_svgs}">'),
+  Markdown = glue('[<img src="http://pharmaverse.org/shields/{all_svgs}">](https://pharmaverse.org)')
   ) %>%
   gt() %>%
   fmt_markdown(columns = Shield) %>%
