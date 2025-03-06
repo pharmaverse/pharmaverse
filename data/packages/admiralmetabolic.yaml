@@ -1,0 +1,11 @@
+name: admiralmetabolic
+repo: pharmaverse/admiralmetabolic
+repo_source: github.com
+docs: https://pharmaverse.github.io/admiralmetabolic/
+hex: https://raw.githubusercontent.com/pharmaverse/admiralmetabolic/main/man/figures/logo.png
+task: ADaM
+details: Metabolism
+hexwall: no
+badge_cran:
+badge_stars:
+badge_contributors:
