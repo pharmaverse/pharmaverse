@@ -12,8 +12,8 @@ Please find below some links to other useful resources around supporting open so
 
 ### Working groups
 
-* [PHUSE Working Groups](https://advance.phuse.global/pages/viewpage.action?pageId=327777) supporting industry adoption of open source technology, such as by assessing the fundamental differences in statistical analysis results across languages and how we can mitigate such risk and maintain confidence in open source languages.
-* [R Consortium Working Groups](https://www.r-consortium.org/projects/isc-working-groups) focused around industry R enablement, such as by working with FDA to pilot fully R-based submissions. 
+* [PHUSE Working Groups](https://advance.hub.phuse.global/wiki/spaces/WEL/overview) supporting industry adoption of open source technology, such as by assessing the fundamental differences in statistical analysis results across languages and how we can mitigate such risk and maintain confidence in open source languages.
+* [R Consortium Working Groups](https://r-consortium.org/all-projects/isc-working-groups.html) focused around industry R enablement, such as by working with FDA to pilot fully R-based submissions. 
 * [R Validation Hub](https://www.pharmar.org/) designing a framework that assesses the quality of an R package and considering topics around R package validation in accordance with regulatory standards.
 * [TransCelerate Modernization of Statistical Analytics project](https://www.transceleratebiopharmainc.com/initiatives/modernization-statistical-analytics/) aiming to analyze methods for considering and validating novel statistical computing platforms to propose to Health Authorities.
 * [Openstatsware](https://www.openstatsware.org/) engineers selected statistical R-packages and promotes good software engineering practices in the biostatistics community and beyond.
