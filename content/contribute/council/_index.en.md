@@ -9,6 +9,7 @@ draft: false
 
 The initial Council was comprised of 1 representative from each of Roche, GSK, Atorus, and Janssen/J&J.
 During 2023 and 2024, the Council expanded by 3 organizations, the first being Novo Nordisk followed by Appsilon and Sanofi.
+In 2025, Novartis joined the Council.
 Each council member puts forward one representative for a 2-year commitment. At the start of each subsequent year,
 any Council member organization with an expiring commitment may remain on the Council with a renewed 2-year commitment. If a Council member organization leaves, 
 they will be replaced by another Organization with one representative and a 2-year commitment. There is no restriction on the type of organization that may be
@@ -45,6 +46,7 @@ Pharmaverse is committed to establishing a diverse council that effectively repr
 | Michael Rimler | GSK | Mar-27 |
 | Sumesh Kalappurakal | Janssen/J&J | Mar-27 |
 | Mike Stackhouse | Atorus | Mar-27 |
+| Orla Doyle | Novartis | Mar-27 |
 
 **Council Activities** 
 
