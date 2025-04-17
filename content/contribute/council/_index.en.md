@@ -45,8 +45,8 @@ Pharmaverse is committed to establishing a diverse council that effectively repr
 | Ross Farrugia | Roche | Mar-27 |
 | Michael Rimler | GSK | Mar-27 |
 | Sumesh Kalappurakal | Janssen/J&J | Mar-27 |
-| Mike Stackhouse | Atorus | Mar-27 |
 | Orla Doyle | Novartis | Mar-27 |
+| Ashley Tarasiewicz | Atorus | Apr-27 |
 
 **Council Activities** 
 
