@@ -72,9 +72,7 @@ Tables, Listings, and Graphs Catalogs with many examples are available here:
 - [Biomarker Catalog](https://insightsengineering.github.io/biomarker-catalog/)
 
 There are publicly available example Shiny applications created using these:
-- The efficacy APP [Efficacy](https://genentech.shinyapps.io/teal_efficacy/)
-- The safety APP [Safety](https://genentech.shinyapps.io/teal_safety/)
-- The exploratory APP [Exploratory](https://genentech.shinyapps.io/teal_exploratory/)
+- [Teal Gallery](https://insightsengineering.github.io/teal.gallery/)
 
 #### Upcoming packages for consideration
 

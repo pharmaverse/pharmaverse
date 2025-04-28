@@ -24,7 +24,7 @@ design, development, testing, release, and/or maintenance
 
 Any council member organization must fulfill our DE&I (Diversity, Equity & Inclusion) criteria as outlined below:
 
-Pharmaverse is committed to establishing a diverse council that effectively represents the community members with whom it engages. To be considered for inclusion in the council as a sponsor organization, organizations must meet at least two of the criteria listed below. Existing council member organizations will be grandfathered in, provided that they currently meet the conditions or commit to achieving them within a six-month timeframe.
+Pharmaverse is committed to establishing a diverse council that effectively represents the community members with whom it engages. To be considered for inclusion in the council as a sponsor organization, organizations must meet at least two of the criteria listed below. Existing council member organizations will be vested in, provided that they currently meet the conditions or commit to achieving them within a six-month timeframe.
 
 1. Mission Statement and Policies: The company published a mission statement, vision, or set of policies centered around equitable access and inclusivity, clearly outlining its commitment to DEI.
 1. Training and Professional Development: The company provides and requires professional development, training, and education on diversity, equity, inclusion, and belonging topics for all employees.
@@ -45,8 +45,8 @@ Pharmaverse is committed to establishing a diverse council that effectively repr
 | Ross Farrugia | Roche | Mar-27 |
 | Michael Rimler | GSK | Mar-27 |
 | Sumesh Kalappurakal | Janssen/J&J | Mar-27 |
-| Mike Stackhouse | Atorus | Mar-27 |
 | Orla Doyle | Novartis | Mar-27 |
+| Ashley Tarasiewicz | Atorus | Apr-27 |
 
 **Council Activities** 
 
