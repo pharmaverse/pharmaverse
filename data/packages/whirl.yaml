@@ -1,0 +1,9 @@
+name: whirl
+repo: NovoNordisk-OpenSource/whirl
+repo_source: github.com
+docs: https://novonordisk-opensource.github.io/whirl/
+hex: https://raw.githubusercontent.com/NovoNordisk-OpenSource/whirl/main/man/figures/logo.png
+task: utilities
+details: Logging with Quarto for readable logs and enabling batch execution
+splash: include
+hexwall: yes

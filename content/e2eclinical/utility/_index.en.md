@@ -7,6 +7,8 @@ draft: false
 
 {{< pharmaverse pkg="logrx" >}}
 
+{{< pharmaverse pkg="whirl" >}}
+
 {{< pharmaverse pkg="envsetup" >}}
 
 {{< pharmaverse pkg="datasetjson" >}}
