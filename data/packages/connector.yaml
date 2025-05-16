@@ -1,0 +1,9 @@
+name: connector
+repo: NovoNordisk-OpenSource/connector
+repo_source: github.com
+docs: https://novonordisk-opensource.github.io/connector/
+hex: https://raw.githubusercontent.com/NovoNordisk-OpenSource/connector/main/man/figures/logo.png
+task: utilities
+details: Interface for connecting R to various data sources including file systems and databases
+splash: include
+hexwall: yes

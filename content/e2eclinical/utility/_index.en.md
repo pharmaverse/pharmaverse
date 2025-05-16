@@ -9,6 +9,8 @@ draft: false
 
 {{< pharmaverse pkg="whirl" >}}
 
+{{< pharmaverse pkg="connector" >}}
+
 {{< pharmaverse pkg="envsetup" >}}
 
 {{< pharmaverse pkg="datasetjson" >}}
