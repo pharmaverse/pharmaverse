@@ -4,7 +4,7 @@ repo_source: github.com
 docs: https://atorus-research.github.io/datasetjson/
 hex: https://github.com/atorus-research/datasetjson/raw/main/man/figures/logo.svg
 task: utilities
-details: Read and write CDISC Dataset JSON files (PACKAGE CURRENTLY EXPERIMENTAL)
+details: Read and write CDISC Dataset JSON files
 splash: include
 hexwall: yes
 badge_cran: 0.3.0
