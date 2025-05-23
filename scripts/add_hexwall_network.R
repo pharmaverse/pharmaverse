@@ -1,11 +1,10 @@
-
 library(yaml)
 library(dplyr)
 library(purrr)
 library(rlist)
 library(visNetwork)
 library(htmlwidgets)
-library(GithubMetrics)
+library(GitStats)
 library(glue)
 library(tidyr)
 library(readr)

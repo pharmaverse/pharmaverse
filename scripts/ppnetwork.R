@@ -25,54 +25,55 @@ packages <- map(yaml_files, \(x){
          label = name) %>% 
   rename(id = name,
          image = hex) %>% 
-  select(id,repo,label,group,shape,image)
-
+  select(id, repo, label, group, shape, image)
 
 # get git commits from all repos
-repo_all_commits <- gh_commits_get(
-  packages$repo,
-  days_back = 365*10
-)
+git_stats <- create_gitstats() |>
+    set_github_host(repos = packages$repo, token = Sys.getenv("GITHUB_PAT"))
+
+repo_all_commits <- git_stats |>
+  get_commits(
+    since = Sys.Date() - 365 * 10
+  )
 
 new_people <- repo_all_commits %>% 
-  filter(!is.na(author)) %>% 
-  select(full_name,author) %>% 
+  filter(!is.na(author_login)) %>% 
+  select(repository, author_login) %>% 
   distinct()
 
 people_info <- new_people %>%
   left_join(
-    gh_user_get(unique(new_people$author)),
-    by = c("author" = "username")
+    get_users(git_stats, unique(new_people$author_login)),
+    by = c("author_login" = "login")
   )
 
-# Create dataset with people info that can be feed to visNetwork
+# Create dataset with people info that can be fed to visNetwork
 people <- people_info %>% 
-  mutate(id = author,
+  mutate(id = author_login,
          label = case_when(
-           is.na(name) ~ author,
-           TRUE ~ paste(name,"(",author,")")),
+           is.na(name) ~ author_login,
+           TRUE ~ paste(name,"(",author_login,")")
+         ),
          group = 1,
          shape = "image",
-         image = avatar,
-         repo_list = stringr::word(full_name, 2, sep = "/")) %>% 
-  select(id,label,group,shape,image,repo_list) 
+         image = avatar_url,
+         repo_list = repository) %>% 
+  select(id, label, group, shape, image, repo_list) 
 
 # Count the number of unique contributors
 np <- length(unique(people$id))
 
 # Collect nodes and adges ----------------------------------------------------------
-
-nodes <- rbind(people %>% 
-                 select(-repo_list) %>% 
-                 distinct(),
-               packages %>% 
-                 select(-repo))
+# Define the nodes (contributors and packages)
+nodes <- rbind(
+  distinct(select(people, -repo_list)), 
+  select(packages, -repo)
+) |>
+  mutate(image = ifelse(is.na(image), glue::glue("https://github.com/identicons/{id}.png"), image))
 
 # Define the edges (connections between contributors and packages)
-edges <- people %>% 
-  select(id,repo_list) %>% 
-  rename(from = repo_list,
-         to = id)
+edges <-  select(people, id, repo_list) |>
+  rename(from = repo_list, to = id)
 
 # Define drop-down selection
 dd_list <- packages$id
