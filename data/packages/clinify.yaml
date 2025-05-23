@@ -1,0 +1,9 @@
+name: clinify
+repo: atorus-research/clinify
+repo_source: github.com
+docs: https://atorus-research.github.io/clinify/
+hex: https://github.com/atorus-research/clinify/raw/main/man/figures/logo.svg
+task: tlg
+details: Clinical table styling tools and utilities
+splash: include
+hexwall: yes
