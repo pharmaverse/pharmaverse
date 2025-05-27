@@ -13,6 +13,10 @@ draft: false
 
 {{< pharmaverse pkg="envsetup" >}}
 
-{{< pharmaverse pkg="datasetjson" >}}
-
 {{< pharmaverse pkg="diffdf" >}}
+
+#### Experimental packages
+
+The following are still under active development, so be aware of the experimental nature of these projects.
+
+{{< pharmaverse pkg="datasetjson" >}}
