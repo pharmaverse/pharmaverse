@@ -11,22 +11,10 @@
   "Packages": {
     "GitStats": {
       "Package": "GitStats",
-      "Version": "2.1.2",
+      "Version": "2.3.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "7c9669f1a8fab1f53575323f9aa23d29"
-    },
-    "GithubMetrics": {
-      "Package": "GithubMetrics",
-      "Version": "0.5.0",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "openpharma",
-      "RemoteRepo": "GithubMetrics",
-      "RemoteRef": "master",
-      "RemoteSha": "81a44684ea55d8c2358f195fca7ed8b425d7d519",
-      "Hash": "06405b6be0c9f842e78be685dfe24030"
     },
     "Matrix": {
       "Package": "Matrix",
