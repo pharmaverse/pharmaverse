@@ -12,7 +12,7 @@ type : "docs"
 
 The pharmaverse is a connected network of industry individuals working together in collaboration to achieve the below objective.
 All contributors do so of their own accords and represent their own ideas, not those of any single company.
-In 2025, pharmaverse officially became a [PHUSE Working Group](https://advance.hub.phuse.global/wiki/spaces/WEL/pages/178290689/pharmaverse)
+In 2025, pharmaverse became a [PHUSE Working Group](https://advance.hub.phuse.global/wiki/spaces/WEL/pages/178290689/pharmaverse)
 strengthening our ties with this non-profit organization who had previously supported our growth and outreach.
 
 ### Objective
