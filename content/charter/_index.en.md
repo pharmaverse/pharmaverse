@@ -11,9 +11,9 @@ type : "docs"
 ### About
 
 The pharmaverse is a connected network of industry individuals working together in collaboration to achieve the below objective.
-We are not a consortium nor organisation, and we have no binding links to any other industry group.
-We receive no funding and all contributors do so of their own accords and represent their own ideas, not those of any single company.
-Any legal counsel comes from legal representatives from any organisations of our council members.
+All contributors do so of their own accords and represent their own ideas, not those of any single company.
+In 2025, pharmaverse officially became a [PHUSE Working Group](https://advance.hub.phuse.global/wiki/spaces/WEL/pages/178290689/pharmaverse)
+strengthening our ties with this non-profit organization who had previously supported our growth and outreach.
 
 ### Objective
 
