@@ -22,18 +22,18 @@ It is expected that a Council member organization contribute:
 *	Commitment to at least 2 open source packages under pharmaverse via reviews, hands-on code development, product leads, or other roles which contribute to the 
 design, development, testing, release, and/or maintenance
 
-Any council member organization must fulfill our DE&I (Diversity, Equity & Inclusion) criteria as outlined below:
+To become a member of the pharmaverse Council, companies should be committed to operating a supportive environment that embraces all individuals, providing all
+their employees with the tools to reach their fullest potential. They should do their utmost to create a culture that fosters growth, and one that is free of
+harassment, intimidation, bias, and discrimination.  This could include publishing vision and mission statements, policies, the provision of professional
+development and training on creating an inclusive workplace, strategies for recruiting and retaining a workforce that represents a broad spectrum of backgrounds
+and actively tracking equitable compensation to guarantee fair pay for all.
 
-Pharmaverse is committed to establishing a diverse council that effectively represents the community members with whom it engages. To be considered for inclusion in the council as a sponsor organization, organizations must meet at least two of the criteria listed below. Existing council member organizations will be vested in, provided that they currently meet the conditions or commit to achieving them within a six-month timeframe.
+Companies should hold all employees accountable for contributing to a culture that values every individual and have established procedures to address any
+discrimination or harassment on the basis of race, colour, religion, veteran status, national origin, ancestry, pregnancy status, sex, gender identity or
+expression, age, marital status, mental or physical disability, medical condition, sexual orientation, or any other characteristics protected by law. They should
+also make all reasonable accommodations to meet their obligations under laws protecting the rights of the disabled.
 
-1. Mission Statement and Policies: The company published a mission statement, vision, or set of policies centered around equitable access and inclusivity, clearly outlining its commitment to DEI.
-1. Training and Professional Development: The company provides and requires professional development, training, and education on diversity, equity, inclusion, and belonging topics for all employees.
-1. Programs and Supportive Structures: The company established and maintains diversity, equity, inclusion, and belonging programs such as affinity groups, employee resource groups, mentoring, and internal sponsorship to foster an inclusive environment.
-1. Recruitment and Retention: The company implements a diversity retention and recruitment strategy to attract and retain a diverse workforce.
-1. Accountability and Bias Response: The company holds employees accountable for actively participating in an inclusive culture of belonging and has a process in place to address bias incidents.
-1. Equitable Pay and Monitoring: The company monitors equitable pay across the organization to ensure fair compensation for all employees.
-1. Data-Driven Approach: The company takes a data-driven approach to equity, diversity, inclusion, and belonging initiatives, including public or easily accessible data on diversity retention and diversity in leadership, as well as measurable goals that management and executive leadership are held accountable for meeting.
-1. Community Integration and Support: The company integrates equity, diversity, inclusion, and belonging efforts to add value to the local community, such as through the donation of time, resources, or money to underrepresented community populations or support for local socially equitable policies.
+All individuals contributing to pharmaverse are expected to adhere to the [PHUSE Code of Conduct](https://phuse.s3.eu-central-1.amazonaws.com/Communications/Forms/PHUSE+Code+of+Conduct+-+V3+December+2024.pdf).
 
 **Council Member Terms**
 

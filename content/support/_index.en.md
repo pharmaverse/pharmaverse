@@ -34,4 +34,4 @@ Otherwise, please reach out directly to one of our council reps via the contact 
 
 ### Code of Conduct
 
-In all of our communication and support channels, please follow the [Slack community code of conduct](https://api.slack.com/community/code-of-conduct). If anyone is in violation of this code or in any way deemed to be acting against the good intentions of pharmaverse, then the council reps may take action to remove individuals from community channels.
+In all of our communication and support channels, please follow the [PHUSE code of conduct](https://phuse.s3.eu-central-1.amazonaws.com/Communications/Forms/PHUSE+Code+of+Conduct+-+V3+December+2024.pdf). If anyone is in violation of this code or in any way deemed to be acting against the good intentions of pharmaverse and PHUSE, then the council reps may take action to remove individuals from community channels.
