@@ -1,0 +1,8 @@
+name: pharmaverseraw
+repo: pharmaverse/pharmaverseraw
+repo_source: github.com
+docs: https://pharmaverse.github.io/pharmaverseraw/
+hex: https://github.com/pharmaverse/pharmaverseraw/raw/main/man/figures/logo.png
+task: synthetic
+details: Raw test data for the pharmaverse family of packages used to create SDTM
+hexwall: yes
