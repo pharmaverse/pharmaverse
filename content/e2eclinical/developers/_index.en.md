@@ -50,6 +50,8 @@ We offer the following packages that as a basis re-used SDTM data from the CDISC
 therapeutic area specifics such as oncology domains. These have then been ran through {admiral} templates
 to provide consistent ADaM test data.
 
+{{< pharmaverse pkg="pharmaverseraw" >}}
+
 {{< pharmaverse pkg="pharmaversesdtm" >}}
 
 {{< pharmaverse pkg="pharmaverseadam" >}}
