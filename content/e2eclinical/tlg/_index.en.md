@@ -61,6 +61,8 @@ accepted as the package for graphics, so included here and as a non-pharma packa
 The following frameworks allow for the engine used to generate the output to be modified.
 For example, they could be used with `ggplot2`, `rtables`, `plotly`, or `Tplyr`.
 
+{{< pharmaverse pkg="gridify" >}}
+
 {{< pharmaverse pkg="autoslider" >}}
 
 {{< pharmaverse pkg="tern" >}}
