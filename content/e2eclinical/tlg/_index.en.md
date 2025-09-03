@@ -61,6 +61,10 @@ accepted as the package for graphics, so included here and as a non-pharma packa
 The following frameworks allow for the engine used to generate the output to be modified.
 For example, they could be used with `ggplot2`, `rtables`, `plotly`, or `Tplyr`.
 
+{{< pharmaverse pkg="clinify" >}}
+
+{{< pharmaverse pkg="gridify" >}}
+
 {{< pharmaverse pkg="autoslider" >}}
 
 {{< pharmaverse pkg="tern" >}}
@@ -73,12 +77,6 @@ Tables, Listings, and Graphs Catalogs with many examples are available here:
 
 There are publicly available example Shiny applications created using these:
 - [Teal Gallery](https://insightsengineering.github.io/teal.gallery/)
-
-#### Experimental packages
-
-The following are still under active development, so be aware of the experimental nature of these projects.
-
-{{< pharmaverse pkg="clinify" >}}
 
 #### Upcoming packages for consideration
 
