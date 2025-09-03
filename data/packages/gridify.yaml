@@ -1,0 +1,9 @@
+name: gridify
+repo: pharmaverse/gridify
+repo_source: github.com
+docs: https://pharmaverse.github.io/gridify/
+hex: https://github.com/pharmaverse/gridify/raw/main/man/figures/logo.png
+task: tlg
+details: Enrich tables and figures with custom headers/footers and more
+splash: include
+hexwall: yes
