@@ -26,3 +26,5 @@ analysis needs and a growing suite of therapeutic area specific package extensio
 {{< pharmaverse pkg="admiralpeds" >}}
 
 {{< pharmaverse pkg="admiralmetabolic" >}}
+
+{{< pharmaverse pkg="admiralneuro" >}}
