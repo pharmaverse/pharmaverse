@@ -4,7 +4,7 @@ repo_source: github.com
 docs: https://pharmaverse.github.io/admiralvaccine/
 hex: https://raw.githubusercontent.com/pharmaverse/admiralvaccine/main/man/figures/logo.png
 task: ADaM
-details: Vaccines RELEASE EXPECTED ~2023
+details: Vaccines
 hexwall: no
 badge_cran: 0.4.0
 badge_stars: 6
