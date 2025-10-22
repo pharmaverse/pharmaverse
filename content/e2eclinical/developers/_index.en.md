@@ -32,10 +32,11 @@ approaching validation strategy for R packages.
 Continuous Integration / Continuous Deployment and other DevOps methods can hugely help package developers
 with efficiency saving, by reducing manual steps.
 
-Under the pharmaverse GitHub org we have [admiralci](https://pharmaverse.github.io/admiralci) which offers
-re-usable GitHub action workflows that may be useful to any pharmaverse package. Outside of this there is
-a [PHUSE WG](https://advance.phuse.global/pages/viewpage.action?pageId=75399294) looking to broaden this
-for greater community benefit.
+We recommend less experienced developers to start with using GitHub actions available for the whole
+R community such as those offered under [r-lib](https://github.com/r-lib/actions).
+For more advanced developers, there are alternative workflows as used for some pharmaverse
+packages available [here](https://github.com/insightsengineering), for example:
+[setup-r-dependencies](https://github.com/insightsengineering/setup-r-dependencies).
 
 For a GitHub specific CI example related to package validation see:
 
