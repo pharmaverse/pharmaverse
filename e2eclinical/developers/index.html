@@ -15,7 +15,7 @@ a simplified version of this approach. There are also packages to support decisi
 approaching validation strategy for R packages.</p><img width=80 height=90 hspace=10 align=left src=https://github.com/Genentech/covtracer/raw/main/man/figures/hex.png>
 <b>covtracer</b> <a href=https://genentech.github.io/covtracer/><span><i class="fa fa-book"></i></span></a> <a href=https://github.com/Genentech/covtracer><span><i class="fab fa-github"></i></span></a>
 <img src=https://img.shields.io/badge/CRAN-0.0.1-blue.svg alt="cran shield">
-<img src=https://img.shields.io/badge/Stars-23-green.svg alt="cran shield">
+<img src=https://img.shields.io/badge/Stars-24-green.svg alt="cran shield">
 <img src=https://img.shields.io/badge/Contributors-4-purple.svg alt="cran shield"><p>Automated tracing of code coverage via a network of test execution, linking tests to code & code to documentation. This package is used to provide the tracebility matrix for CICD based validation.</p></br><img width=80 height=90 hspace=10 align=left src=https://github.com/phuse-org/valtools/raw/main/man/figures/logo.png>
 <b>valtools</b> <a href=https://phuse-org.github.io/valtools/><span><i class="fa fa-book"></i></span></a> <a href=https://github.com/phuse-org/valtools><span><i class="fab fa-github"></i></span></a>
 <img src=https://img.shields.io/badge/Stars-55-green.svg alt="cran shield">
@@ -29,14 +29,15 @@ approaching validation strategy for R packages.</p><img width=80 height=90 hspac
 <img src=https://img.shields.io/badge/Contributors-20-purple.svg alt="cran shield"><p>Shiny utility for riskmetric.</p></br><img width=80 height=90 hspace=10 align=left src=https://raw.githubusercontent.com/sanofi-public/risk.assessr/master/man/figures/logo.png>
 <b>risk.assessr</b> <a href=https://sanofi-public.github.io/risk.assessr/><span><i class="fa fa-book"></i></span></a> <a href=https://github.com/sanofi-public/risk.assessr><span><i class="fab fa-github"></i></span></a>
 <img src=https://img.shields.io/badge/CRAN-2.0.1-blue.svg alt="cran shield">
-<img src=https://img.shields.io/badge/Stars-28-green.svg alt="cran shield">
+<img src=https://img.shields.io/badge/Stars-27-green.svg alt="cran shield">
 <img src=https://img.shields.io/badge/Contributors-1-purple.svg alt="cran shield"><p>Tools for assessing R packages against a number of metrics to help validate their trustworthiness and reliability</p></br><h3 id=cicd>CI/CD</h3><p>Continuous Integration / Continuous Deployment and other DevOps methods can hugely help package developers
-with efficiency saving, by reducing manual steps.</p><p>Under the pharmaverse GitHub org we have <a href=https://pharmaverse.github.io/admiralci target=_blank>admiralci</a> which offers
-re-usable GitHub action workflows that may be useful to any pharmaverse package. Outside of this there is
-a <a href="https://advance.phuse.global/pages/viewpage.action?pageId=75399294" target=_blank>PHUSE WG</a> looking to broaden this
-for greater community benefit.</p><p>For a GitHub specific CI example related to package validation see:</p><img width=80 height=90 hspace=10 align=left src=https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/PNG/thevalidatoR.png>
+with efficiency saving, by reducing manual steps.</p><p>We recommend less experienced developers to start with using GitHub actions available for the whole
+R community such as those offered under <a href=https://github.com/r-lib/actions target=_blank>r-lib</a>.
+For more advanced developers, there are alternative workflows as used for some pharmaverse
+packages available <a href=https://github.com/insightsengineering target=_blank>here</a>, for example:
+<a href=https://github.com/insightsengineering/setup-r-dependencies target=_blank>setup-r-dependencies</a>.</p><p>For a GitHub specific CI example related to package validation see:</p><img width=80 height=90 hspace=10 align=left src=https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/PNG/thevalidatoR.png>
 <b>thevalidatoR</b> <a href=https://github.com/marketplace/actions/r-package-validation-report><span><i class="fa fa-book"></i></span></a> <a href=https://github.com/insightsengineering/thevalidatoR><span><i class="fab fa-github"></i></span></a>
-<img src=https://img.shields.io/badge/Stars-62-green.svg alt="cran shield">
+<img src=https://img.shields.io/badge/Stars-65-green.svg alt="cran shield">
 <img src=https://img.shields.io/badge/Contributors-8-purple.svg alt="cran shield"><p>A GitHub action on the GitHub Marketplace to provide standardised build reports for validation. An alternative approach to valtools that relies on the normal R framework for validation.</p></br><h3 id=synthetic-data>Synthetic Data</h3><p>Generating CDISC standards synthetic data for use when developing and testing R packages can be a painful
 but often necessary part of building clinical reporting R packages.</p><p>We offer the following packages that as a basis re-used SDTM data from the CDISC pilot project, with added
 therapeutic area specifics such as oncology domains. These have then been ran through {admiral} templates
