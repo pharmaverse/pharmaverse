@@ -1,0 +1,9 @@
+name: siera
+repo: clymbclinical/siera
+repo_source: github.com
+docs: https://clymbclinical.github.io/siera/
+hex: https://github.com/clymbclinical/siera/raw/main/man/figures/logo.png
+task: tlg
+details: Generate analysis results programs using ARS metadata
+splash: include
+hexwall: yes
