@@ -27,15 +27,23 @@ read to compare examples from several of the below packages.
 
 {{< pharmaverse pkg="gtsummary" >}}
 
-{{< pharmaverse pkg="cards" >}}
-
-{{< pharmaverse pkg="cardx" >}}
-
 {{< pharmaverse pkg="tfrmt" >}}
 
 {{< pharmaverse pkg="tfrmtbuilder" >}}
 
 {{< pharmaverse pkg="tidytlg" >}}
+
+### ARD / ARS
+
+ARD (Analysis Results Data) is an emerging CDISC standard model for encoding statistical analysis summaries in a machine-readable format.
+ARS (Analysis Results Standard) is the overarching CDISC framework intended to standardize the specification and representation of analysis
+results using metadata.
+
+{{< pharmaverse pkg="cards" >}}
+
+{{< pharmaverse pkg="cardx" >}}
+
+{{< pharmaverse pkg="siera" >}}
 
 ### Listings
 
@@ -64,6 +72,8 @@ For example, they could be used with `ggplot2`, `rtables`, `plotly`, or `Tplyr`.
 {{< pharmaverse pkg="clinify" >}}
 
 {{< pharmaverse pkg="gridify" >}}
+
+{{< pharmaverse pkg="docorator" >}}
 
 {{< pharmaverse pkg="autoslider" >}}
 

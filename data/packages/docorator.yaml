@@ -1,0 +1,9 @@
+name: docorator
+repo: GSK-Biostatistics/docorator
+repo_source: github.com
+docs: https://gsk-biostatistics.github.io/docorator/
+hex: https://github.com/GSK-Biostatistics/docorator/raw/main/man/figures/docorator_hex.png
+task: tlg
+details: A framework for framing a table, listing or figure with headers/footers and saving to an output across multiple file types
+splash: include
+hexwall: yes
