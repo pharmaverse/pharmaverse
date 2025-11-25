@@ -1,10 +1,11 @@
 name: aNCA
 repo: pharmaverse/aNCA
 repo_source: github.com
-docs: https://github.com/pharmaverse/aNCA
+docs: https://pharmaverse.github.io/aNCA/
 hex: https://raw.githubusercontent.com/pharmaverse/aNCA/main/man/figures/aNCA_logo.png
 task: sdtm
-details: (Pre-)clinical Non-Compartment Analysis (NCA) in a dynamic Shiny app
+details: Shiny app to automate Non-Compartmental Analysis (NCA). Produces
+  PP, ADPP, ADNCA, draft slides and TLGs
 hexwall: yes
-badge_stars: 17
-badge_contributors: 8
+badge_stars: 27
+badge_contributors: 14
