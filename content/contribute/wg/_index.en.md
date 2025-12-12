@@ -16,7 +16,7 @@ knowledge share to help accelerate one another's efforts.
 The following are our currently active sub-communities:
 
 - **Package maintainers** - _It's not easy taking the burden of maintaining a package, so any package leaders for pharmaverse packages have each other to lean on as a support network!_
-- **Blog** (leads: Ben Straub, Edoardo Mancini, Kangjie Zhang, Gift Kenneth, Stefan Thoma) - _Originators and co-ordinators of our very own pharmaverse [blog site](https://pharmaverse.github.io/blog/) that is open for anyone to make an issue and propose a blog topic._
+- **Blog** (lead: alice.x.ehmann@gsk.com) - _Co-ordinating our very own pharmaverse [blog site](https://pharmaverse.github.io/blog/) that is open for anyone to make an issue and propose a blog topic. A great way to increase user adoption of your pharmaverse packages!_
 - **Website** (lead: ross.farrugia@roche.com) - _To maintain our website and our end-to-end examples._
 
 Membership of these communities are not linked to any specific organizations. Any individual can request to join, as long as able 
