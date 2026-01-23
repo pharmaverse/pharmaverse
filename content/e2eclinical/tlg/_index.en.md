@@ -33,6 +33,8 @@ read to compare examples from several of the below packages.
 
 {{< pharmaverse pkg="tidytlg" >}}
 
+{{< pharmaverse pkg="eudract" >}}
+
 ### ARD / ARS
 
 ARD (Analysis Results Data) is an emerging CDISC standard model for encoding statistical analysis summaries in a machine-readable format.
