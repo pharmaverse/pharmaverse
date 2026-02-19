@@ -42,11 +42,11 @@ All individuals contributing to pharmaverse are expected to adhere to the [PHUSE
 | Andre Couturier | Sanofi | Apr-26 |
 | Julia Gnatek | Novo Nordisk | Jan-27 |
 | Ross Farrugia | Roche | Mar-27 |
-| Nick Masel | J&J | Feb-28 |
 | Orla Doyle | Novartis | Mar-27 |
 | Ashley Tarasiewicz | Atorus | Apr-27 |
 | Marcin Dubel | Appsilon | Sep-27 |
 | Alice Ehmann | GSK | Oct-27 |
+| Nick Masel | J&J | Feb-28 |
 
 **Council Activities** 
 
