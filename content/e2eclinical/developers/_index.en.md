@@ -27,6 +27,8 @@ approaching validation strategy for R packages.
 
 {{< pharmaverse pkg="risk.assessr" >}}
 
+{{< pharmaverse pkg="test.assessr" >}}
+
 ### CI/CD
 
 Continuous Integration / Continuous Deployment and other DevOps methods can hugely help package developers
