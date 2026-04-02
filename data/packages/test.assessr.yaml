@@ -5,4 +5,4 @@ docs: https://sanofi-public.github.io/test.assessr/
 hex: https://raw.githubusercontent.com/sanofi-public/test.assessr/main/man/figures/test_assessr.png
 task: validation
 details: Tools for assessing test reliability of R packages with standard or non-standard testing frameworks
-hexwall: yes
+hexwall: no
