@@ -38,7 +38,7 @@ repo_all_commits <- git_stats |>
 
 new_people <- repo_all_commits %>% 
   filter(!is.na(author_login)) %>% 
-  select(repository, author_login) %>% 
+  select(repository = repo_name, author_login) %>% 
   distinct()
 
 people_info <- new_people %>%
