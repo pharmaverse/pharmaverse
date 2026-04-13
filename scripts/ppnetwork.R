@@ -31,10 +31,36 @@ packages <- map(yaml_files, \(x){
 git_stats <- create_gitstats() |>
     set_github_host(repos = packages$repo, token = Sys.getenv("GITHUB_PAT"))
 
-repo_all_commits <- git_stats |>
-  get_commits(
-    since = Sys.Date() - 365 * 10
-  )
+failed_repos <- c()
+
+# try to fetch 10-year history of commits for each repo
+repo_all_commits <- purrr::imap(packages$repo, function(repo, idx) {
+  cat(idx, "/", length(packages$repo), "-", repo, "\n")
+  tryCatch({
+    create_gitstats() |>
+      set_github_host(repos = repo, token = Sys.getenv("GITHUB_PAT")) |>
+      get_commits(since = Sys.Date() - 365 * 10)
+  }, error = function(e) {
+    warning("Failed to fetch commits for: ", repo)
+    failed_repos <<- c(failed_repos, repo)
+    data.frame()
+  })
+})
+
+# attempt to fetch 1-year history of commits for failed repos
+failed_repo_all_commits <- purrr::imap(failed_repos, function(repo, idx) {
+  cat(idx, "/", length(failed_repos), "-", repo, "\n")
+  tryCatch({
+    create_gitstats() |>
+      set_github_host(repos = repo, token = Sys.getenv("GITHUB_PAT")) |>
+      get_commits(since = Sys.Date() - 365 * 1)
+  }, error = function(e) {
+    warning("Failed x2 to fetch commits for: ", repo)
+    data.frame()
+  })
+})
+
+repo_all_commits <- dplyr::bind_rows(repo_all_commits, failed_repo_all_commits)
 
 new_people <- repo_all_commits %>% 
   filter(!is.na(author_login)) %>% 
