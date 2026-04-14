@@ -27,45 +27,41 @@ packages <- map(yaml_files, \(x){
          image = hex) %>% 
   select(id, repo, label, group, shape, image)
 
-# get git commits from all repos
-git_stats <- create_gitstats() |>
-    set_github_host(repos = packages$repo, token = Sys.getenv("GITHUB_PAT"))
+#' Make a direct request to Github API to fetch collaborators.
+#' @param repo Full github name which looks like <org>/<owner>
+get_collaborators <- function(repo, token = Sys.getenv("GITHUB_PAT")) {
+  response <- httr2::request("https://api.github.com") |>
+    httr2::req_url_path_append("repos", repo, "contributors") |>
+    httr2::req_url_query(per_page = 100) |>
+    httr2::req_headers(
+      Accept = "application/vnd.github+json",
+      Authorization = paste("Bearer", token),
+      `X-GitHub-Api-Version` = "2026-03-10"
+    ) |>
+    httr2::req_perform() |>
+    httr2::resp_body_json()
 
-failed_repos <- c()
+  purrr::map(response, tibble::as_tibble) |>
+    purrr::list_rbind() |>
+    dplyr::select(author_login = login) |>
+    dplyr::distinct() |>
+    dplyr::mutate(repository = repo)
+}
 
-# try to fetch 10-year history of commits for each repo
-repo_all_commits <- purrr::imap(packages$repo, function(repo, idx) {
+new_people <- purrr::imap(packages$repo, function(repo, idx) {
   cat(idx, "/", length(packages$repo), "-", repo, "\n")
-  tryCatch({
-    create_gitstats() |>
-      set_github_host(repos = repo, token = Sys.getenv("GITHUB_PAT")) |>
-      get_commits(since = Sys.Date() - 365 * 10)
-  }, error = function(e) {
-    warning("Failed to fetch commits for: ", repo)
-    failed_repos <<- c(failed_repos, repo)
+  fallback <- function(e) {
+    warning("Failed to fetch contributors from ", repo)
     data.frame()
-  })
-})
-
-# attempt to fetch 1-year history of commits for failed repos
-failed_repo_all_commits <- purrr::imap(failed_repos, function(repo, idx) {
-  cat(idx, "/", length(failed_repos), "-", repo, "\n")
-  tryCatch({
-    create_gitstats() |>
-      set_github_host(repos = repo, token = Sys.getenv("GITHUB_PAT")) |>
-      get_commits(since = Sys.Date() - 365 * 1)
-  }, error = function(e) {
-    warning("Failed x2 to fetch commits for: ", repo)
-    data.frame()
-  })
-})
-
-repo_all_commits <- dplyr::bind_rows(repo_all_commits, failed_repo_all_commits)
-
-new_people <- repo_all_commits %>% 
-  filter(!is.na(author_login)) %>% 
-  select(repository, author_login) %>% 
-  distinct()
+  }
+  Sys.sleep(1)
+  tryCatch(
+    expr = get_collaborators(repo),
+    error = fallback
+  )
+}) |>
+  dplyr::bind_rows() |>
+  dplyr::distinct()
 
 people_info <- new_people %>%
   left_join(
