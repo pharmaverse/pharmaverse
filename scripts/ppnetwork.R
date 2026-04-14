@@ -29,7 +29,7 @@ packages <- map(yaml_files, \(x){
 
 #' Make a direct request to Github API to fetch collaborators.
 #' @param repo Full github name which looks like <org>/<owner>
-get_collaborators <- function(repo, token = Sys.getenv("GITHUB_PAT")) {
+get_contributors <- function(repo, token = Sys.getenv("GITHUB_PAT")) {
   response <- httr2::request("https://api.github.com") |>
     httr2::req_url_path_append("repos", repo, "contributors") |>
     httr2::req_url_query(per_page = 100, anon = TRUE) |>
@@ -43,12 +43,11 @@ get_collaborators <- function(repo, token = Sys.getenv("GITHUB_PAT")) {
 
   purrr::map(response, tibble::as_tibble) |>
     purrr::list_rbind() |>
-    dplyr::select(author_login = login) |>
     dplyr::distinct() |>
     dplyr::mutate(repository = repo)
 }
 
-new_people <- purrr::imap(packages$repo, function(repo, idx) {
+contributors <- purrr::imap(packages$repo, function(repo, idx) {
   cat(idx, "/", length(packages$repo), "-", repo, "\n")
   fallback <- function(e) {
     warning("Failed to fetch contributors from ", repo)
@@ -56,25 +55,25 @@ new_people <- purrr::imap(packages$repo, function(repo, idx) {
   }
   Sys.sleep(0.3)
   tryCatch(
-    expr = get_collaborators(repo),
+    expr = get_contributors(repo),
     error = fallback
   )
 }) |>
   dplyr::bind_rows() |>
-  dplyr::distinct()
+  dplyr::filter(!is.na(login)) |> 
+  dplyr::distinct(repository, login)
 
-people_info <- new_people %>%
-  left_join(
-    get_users(git_stats, unique(new_people$author_login)),
-    by = c("author_login" = "login")
-  )
+github_users <- create_gitstats() |>
+  set_github_host(repos = packages$repo, token = Sys.getenv("GITHUB_PAT")) |> 
+  get_users(unique(contributors$login), verbose = TRUE)
 
 # Create dataset with people info that can be fed to visNetwork
-people <- people_info %>% 
-  mutate(id = author_login,
+people <- contributors %>%
+  left_join(github_users, by = "login") %>%
+  mutate(id = login,
          label = case_when(
-           is.na(name) ~ author_login,
-           TRUE ~ paste(name,"(",author_login,")")
+           is.na(name) ~ login,
+           TRUE ~ paste(name,"(",login,")")
          ),
          group = 1,
          shape = "image",
