@@ -64,7 +64,7 @@ repo_all_commits <- dplyr::bind_rows(repo_all_commits, failed_repo_all_commits)
 
 new_people <- repo_all_commits %>% 
   filter(!is.na(author_login)) %>% 
-  select(repository = repo_name, author_login) %>% 
+  select(repository, author_login) %>% 
   distinct()
 
 people_info <- new_people %>%
