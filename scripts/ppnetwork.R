@@ -32,7 +32,7 @@ packages <- map(yaml_files, \(x){
 get_collaborators <- function(repo, token = Sys.getenv("GITHUB_PAT")) {
   response <- httr2::request("https://api.github.com") |>
     httr2::req_url_path_append("repos", repo, "contributors") |>
-    httr2::req_url_query(per_page = 100) |>
+    httr2::req_url_query(per_page = 100, anon = TRUE) |>
     httr2::req_headers(
       Accept = "application/vnd.github+json",
       Authorization = paste("Bearer", token),
@@ -54,7 +54,7 @@ new_people <- purrr::imap(packages$repo, function(repo, idx) {
     warning("Failed to fetch contributors from ", repo)
     data.frame()
   }
-  Sys.sleep(1)
+  Sys.sleep(0.3)
   tryCatch(
     expr = get_collaborators(repo),
     error = fallback
