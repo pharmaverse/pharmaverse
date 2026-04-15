@@ -32,7 +32,7 @@ packages <- map(yaml_files, \(x){
 get_contributors <- function(repo, token = Sys.getenv("GITHUB_PAT")) {
   response <- httr2::request("https://api.github.com") |>
     httr2::req_url_path_append("repos", repo, "contributors") |>
-    httr2::req_url_query(per_page = 100, anon = TRUE) |>
+    httr2::req_url_query(per_page = 100, anon = FALSE) |>
     httr2::req_headers(
       Accept = "application/vnd.github+json",
       Authorization = paste("Bearer", token),
