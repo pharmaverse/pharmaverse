@@ -30,7 +30,7 @@ packages <- map(yaml_files, \(x){
 #' Make a direct request to Github API to fetch collaborators.
 #' @param repo Full github name which looks like <org>/<owner>
 get_contributors <- function(repo, token = Sys.getenv("GITHUB_PAT")) {
-  response <- httr2::request("https://api.github.com") |>
+  responses <- httr2::request("https://api.github.com") |>
     httr2::req_url_path_append("repos", repo, "contributors") |>
     httr2::req_url_query(per_page = 100, anon = FALSE) |>
     httr2::req_headers(
@@ -38,10 +38,14 @@ get_contributors <- function(repo, token = Sys.getenv("GITHUB_PAT")) {
       Authorization = paste("Bearer", token),
       `X-GitHub-Api-Version` = "2026-03-10"
     ) |>
-    httr2::req_perform() |>
-    httr2::resp_body_json()
+    httr2::req_perform_iterative(
+      next_req = httr2::iterate_with_link_url("next"),
+      max_reqs = 10
+    )
 
-  purrr::map(response, tibble::as_tibble) |>
+  purrr::map(responses, httr2::resp_body_json) |>
+    purrr::list_c() |>
+    purrr::map(tibble::as_tibble) |>
     purrr::list_rbind() |>
     dplyr::distinct() |>
     dplyr::mutate(repository = repo)
@@ -60,7 +64,7 @@ contributors <- purrr::imap(packages$repo, function(repo, idx) {
   )
 }) |>
   dplyr::bind_rows() |>
-  dplyr::filter(!is.na(login)) |> 
+  dplyr::filter(!is.na(login)) |>
   dplyr::distinct(repository, login)
 
 github_users <- create_gitstats() |>
