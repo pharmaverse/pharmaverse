@@ -97,8 +97,9 @@ nodes <- rbind(
   mutate(image = ifelse(is.na(image), glue::glue("https://github.com/identicons/{id}.png"), image))
 
 # Define the edges (connections between contributors and packages)
-edges <-  select(people, id, repo_list) |>
-  rename(from = repo_list, to = id)
+edges <- select(people, id, repo_list) |>
+  dplyr::mutate(from = sub(".*/", "", repo_list)) |>
+  dplyr::select(from, to = id)
 
 # Define drop-down selection
 dd_list <- packages$id
