@@ -51,6 +51,32 @@ get_contributors <- function(repo, token = Sys.getenv("GITHUB_PAT")) {
     dplyr::mutate(repository = repo)
 }
 
+#' Fetch user details for a vector of GitHub logins in parallel.
+#' @param logins Character vector of GitHub usernames
+get_user_details <- function(logins, token = Sys.getenv("GITHUB_PAT")) {
+  requests <- purrr::map(logins, \(login) {
+    httr2::request("https://api.github.com") |>
+      httr2::req_url_path_append("users", login) |>
+      httr2::req_headers(
+        Accept = "application/vnd.github+json",
+        Authorization = paste("Bearer", token),
+        `X-GitHub-Api-Version` = "2026-03-10"
+      )
+  })
+
+  httr2::req_perform_parallel(requests, on_error = "continue") |>
+    purrr::map(\(resp) {
+      if (inherits(resp, "httr2_error")) return(NULL)
+      body <- httr2::resp_body_json(resp)
+      tibble::tibble(
+        login      = purrr::pluck(body, "login",      .default = NA_character_),
+        name       = purrr::pluck(body, "name",       .default = NA_character_),
+        avatar_url = purrr::pluck(body, "avatar_url", .default = NA_character_)
+      )
+    }) |>
+    purrr::list_rbind()
+}
+
 contributors <- purrr::imap(packages$repo, function(repo, idx) {
   cat(idx, "/", length(packages$repo), "-", repo, "\n")
   fallback <- function(e) {
@@ -67,9 +93,7 @@ contributors <- purrr::imap(packages$repo, function(repo, idx) {
   dplyr::filter(!is.na(login)) |>
   dplyr::distinct(repository, login)
 
-github_users <- create_gitstats() |>
-  set_github_host(repos = packages$repo, token = Sys.getenv("GITHUB_PAT")) |> 
-  get_users(unique(contributors$login), verbose = TRUE)
+github_users <- get_user_details(unique(contributors$login))
 
 # Create dataset with people info that can be fed to visNetwork
 people <- contributors %>%
