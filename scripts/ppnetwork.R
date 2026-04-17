@@ -30,21 +30,51 @@ packages <- map(yaml_files, \(x){
 #' Make a direct request to Github API to fetch collaborators.
 #' @param repo Full github name which looks like <org>/<owner>
 get_contributors <- function(repo, token = Sys.getenv("GITHUB_PAT")) {
-  response <- httr2::request("https://api.github.com") |>
+  responses <- httr2::request("https://api.github.com") |>
     httr2::req_url_path_append("repos", repo, "contributors") |>
-    httr2::req_url_query(per_page = 100, anon = TRUE) |>
+    httr2::req_url_query(per_page = 100, anon = FALSE) |>
     httr2::req_headers(
       Accept = "application/vnd.github+json",
       Authorization = paste("Bearer", token),
       `X-GitHub-Api-Version` = "2026-03-10"
     ) |>
-    httr2::req_perform() |>
-    httr2::resp_body_json()
+    httr2::req_perform_iterative(
+      next_req = httr2::iterate_with_link_url("next"),
+      max_reqs = 10
+    )
 
-  purrr::map(response, tibble::as_tibble) |>
+  purrr::map(responses, httr2::resp_body_json) |>
+    purrr::list_c() |>
+    purrr::map(tibble::as_tibble) |>
     purrr::list_rbind() |>
     dplyr::distinct() |>
     dplyr::mutate(repository = repo)
+}
+
+#' Fetch user details for a vector of GitHub logins in parallel.
+#' @param logins Character vector of GitHub usernames
+get_user_details <- function(logins, token = Sys.getenv("GITHUB_PAT")) {
+  requests <- purrr::map(logins, \(login) {
+    httr2::request("https://api.github.com") |>
+      httr2::req_url_path_append("users", login) |>
+      httr2::req_headers(
+        Accept = "application/vnd.github+json",
+        Authorization = paste("Bearer", token),
+        `X-GitHub-Api-Version` = "2026-03-10"
+      )
+  })
+
+  httr2::req_perform_parallel(requests, on_error = "continue") |>
+    purrr::map(\(resp) {
+      if (inherits(resp, "httr2_error")) return(NULL)
+      body <- httr2::resp_body_json(resp)
+      tibble::tibble(
+        login      = purrr::pluck(body, "login",      .default = NA_character_),
+        name       = purrr::pluck(body, "name",       .default = NA_character_),
+        avatar_url = purrr::pluck(body, "avatar_url", .default = NA_character_)
+      )
+    }) |>
+    purrr::list_rbind()
 }
 
 contributors <- purrr::imap(packages$repo, function(repo, idx) {
@@ -60,12 +90,10 @@ contributors <- purrr::imap(packages$repo, function(repo, idx) {
   )
 }) |>
   dplyr::bind_rows() |>
-  dplyr::filter(!is.na(login)) |> 
+  dplyr::filter(!is.na(login)) |>
   dplyr::distinct(repository, login)
 
-github_users <- create_gitstats() |>
-  set_github_host(repos = packages$repo, token = Sys.getenv("GITHUB_PAT")) |> 
-  get_users(unique(contributors$login), verbose = TRUE)
+github_users <- get_user_details(unique(contributors$login))
 
 # Create dataset with people info that can be fed to visNetwork
 people <- contributors %>%
@@ -93,8 +121,9 @@ nodes <- rbind(
   mutate(image = ifelse(is.na(image), glue::glue("https://github.com/identicons/{id}.png"), image))
 
 # Define the edges (connections between contributors and packages)
-edges <-  select(people, id, repo_list) |>
-  rename(from = repo_list, to = id)
+edges <- select(people, id, repo_list) |>
+  dplyr::mutate(from = sub(".*/", "", repo_list)) |>
+  dplyr::select(from, to = id)
 
 # Define drop-down selection
 dd_list <- packages$id
