@@ -19,7 +19,7 @@ Our website team will then either action the request (if no concerns from our co
 {{</ faq >}}
 
 {{< faq "How can I get involved?" >}}
-Firstly, join our community on Slack using this [link](https://join.slack.com/t/pharmaverse/shared_invite/zt-yv5atkr4-Np2ytJ6W_QKz_4Olo7Jo9A). We are always looking for new collaborators to join us in helping achieve our vision - visit our [Contribute](https://pharmaverse.org/contribute/ic/) section of the site for all options.
+Firstly, join our community on Slack using this [link](https://pharmaverse.slack.com). We are always looking for new collaborators to join us in helping achieve our vision - visit our [Contribute](https://pharmaverse.org/contribute/ic/) section of the site for all options.
 {{</ faq >}}
 
 {{< faq "How can I get access to these packages?" >}}

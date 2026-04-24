@@ -2,7 +2,7 @@ name: eudract
 repo: shug0131/eudract_pkg
 repo_source: github.com
 docs: https://shug0131.github.io/eudraCT/
-hex: /images/emptyhex.png
+hex: https://raw.githubusercontent.com/shug0131/eudract_pkg/master/man/figures/logo.png
 task: tlg
 details: Creates Safety Results Summary in XML to Upload to EudraCT or ClinicalTrials.gov
-hexwall: no
+hexwall: yes
