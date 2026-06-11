@@ -1,8 +1,8 @@
 name: risk.assessr
-repo: sanofi-public/risk.assessr
+repo: pharmaverse/risk.assessr
 repo_source: github.com
-docs: https://sanofi-public.github.io/risk.assessr/
-hex: https://raw.githubusercontent.com/sanofi-public/risk.assessr/master/man/figures/logo.png
+docs: https://pharmaverse.github.io/risk.assessr/
+hex: https://raw.githubusercontent.com/pharmaverse/risk.assessr/main/man/figures/logo.png
 task: validation
 details: Tools for assessing R packages against a number of metrics to  help validate their trustworthiness and reliability
 hexwall: yes
