@@ -8,3 +8,5 @@ draft: false
 {{< pharmaverse pkg="metacore" >}}
 
 {{< pharmaverse pkg="metatools" >}}
+
+{{< pharmaverse pkg="meddra.read" >}}
