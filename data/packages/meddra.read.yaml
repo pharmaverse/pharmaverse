@@ -2,7 +2,7 @@ name: meddra.read
 repo: humanpred/meddra.read
 repo_source: github.com
 docs: https://humanpred.github.io/meddra.read/
-hex: https://github.com/humanpred/meddra.read/raw/main/man/figures/logo.png
+hex: https://github.com/humanpred/meddra.read/raw/main/man/figures/logo.svg
 task: metadata
 details: Load and use 'MedDRA' data for clinical trials - reads and combines MedDRA
   source distribution files into data.frames usable in R
