@@ -1,8 +1,9 @@
 name: autoslider
-repo: insightsengineering/autoslider.core
+repo: pharmaverse/autoslider.core
 repo_source: github.com
-docs: https://insightsengineering.github.io/autoslider.core
-hex: https://github.com/insightsengineering/autoslider.core/raw/main/man/figures/autoslider_logo.png
+docs: https://pharmaverse.github.io/autoslider.core
+hex: https://github.com/pharmaverse/autoslider.core/raw/main/man/figures/autoslider_logo.png
+splash: include
 task: tlg
 details: Slide Automation for Tables, Listings and Figures
 hexwall: yes
