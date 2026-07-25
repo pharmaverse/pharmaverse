@@ -1,8 +1,8 @@
 name: tern
-repo: insightsengineering/tern
+repo: pharmaverse/tern
 repo_source: github.com
-docs: https://insightsengineering.github.io/tern/
-hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/tern.png
+docs: https://pharmaverse.github.io/tern/
+hex: https://github.com/pharmaverse/hex-stickers/raw/main/PNG/tern.png
 task: tlg
 details: Layers analytics from descriptive summaries to more complex statistics on
   top of the foundational table layouts, analytic and content controls

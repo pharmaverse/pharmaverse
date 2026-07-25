@@ -1,8 +1,8 @@
 name: rtables
-repo: insightsengineering/rtables
+repo: pharmaverse/rtables
 repo_source: github.com
-docs: https://insightsengineering.github.io/rtables/
-hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/rtables.png
+docs: https://pharmaverse.github.io/rtables/
+hex: https://github.com/pharmaverse/hex-stickers/raw/main/PNG/rtables.png
 task: tlg
 details: A framework for declaring complex multi-level tabulations and then applying
   them to data
