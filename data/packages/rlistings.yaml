@@ -2,7 +2,7 @@ name: rlistings
 repo: pharmaverse/rlistings
 repo_source: github.com
 docs: https://pharmaverse.github.io/rlistings/
-hex: https://github.com/pharmaverse/hex-stickers/raw/main/PNG/rlistings.png
+hex: https://github.com/insightsengineering/hex-stickers/raw/main/PNG/rlistings.png
 task: tlg
 details: A framework for creating data listings
 splash: include
