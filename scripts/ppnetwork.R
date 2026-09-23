@@ -120,10 +120,14 @@ nodes <- rbind(
 ) |>
   mutate(image = ifelse(is.na(image), glue::glue("https://github.com/identicons/{id}.png"), image))
 
-# Define the edges (connections between contributors and packages)
-edges <- select(people, id, repo_list) |>
-  dplyr::mutate(from = sub(".*/", "", repo_list)) |>
-  dplyr::select(from, to = id)
+# Define the edges (connections between contributors and packages).
+# Join on the full repo ("org/name") so the package end of each edge is the
+# package node id (the YAML `name`), not the repo's last path segment.
+edges <- people |>
+  dplyr::select(login = id, repo = repo_list) |>
+  dplyr::left_join(dplyr::select(packages, id, repo), by = "repo") |>
+  dplyr::select(from = id, to = login) |>
+  dplyr::filter(!is.na(from))
 
 # Define drop-down selection
 dd_list <- packages$id
