@@ -3,7 +3,7 @@ repo: r-lib/lintr
 repo_source: github.com
 docs: https://lintr.r-lib.org/
 hex: /images/emptyhex.png
-task: utility
+task: utilities
 details: Static code analysis for R that checks adherence to a given style, syntax errors and possible semantic issues
 
 
