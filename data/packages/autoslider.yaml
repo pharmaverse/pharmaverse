@@ -1,7 +1,7 @@
 name: autoslider
 repo: pharmaverse/autoslider.core
 repo_source: github.com
-docs: https://pharmaverse.github.io/autoslider.core
+docs: https://pharmaverse.github.io/autoslider.core/
 hex: https://github.com/pharmaverse/autoslider.core/raw/main/man/figures/autoslider_logo.png
 splash: include
 task: tlg

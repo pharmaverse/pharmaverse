@@ -1,7 +1,7 @@
 name: gtsummary
 repo: ddsjoberg/gtsummary
 repo_source: github.com
-docs: http://www.danieldsjoberg.com/gtsummary/
+docs: https://www.danieldsjoberg.com/gtsummary/
 hex: https://github.com/ddsjoberg/gtsummary/raw/main/man/figures/logo.png
 task: tlg
 details: Creates tables from either an Analysis Results Dataset (ARD) or a data frame
