@@ -33,6 +33,8 @@ read to compare examples from several of the below packages.
 
 {{< pharmaverse pkg="tidytlg" >}}
 
+{{< pharmaverse pkg="cardinal" >}}
+
 {{< pharmaverse pkg="eudract" >}}
 
 ### ARD / ARS
@@ -91,9 +93,3 @@ Tables, Listings, and Graphs Catalogs with many examples are available here:
 
 There are publicly available example Shiny applications created using these:
 - [Teal Gallery](https://insightsengineering.github.io/teal.gallery/)
-
-#### Upcoming packages for consideration
-
-The following is being worked up towards CRAN submission to be considered for later inclusion into the pharmaverse - we felt important to share here in case others are working in a similar space and would be interested to collaborate with the respective developers.
-
-{{< pharmaverse pkg="cardinal" >}}
