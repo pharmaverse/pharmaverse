@@ -12,6 +12,8 @@ There is no requirement to use these badges, and we reserve the right to
 stop hosting the the badge if the package is deemed to no longer be 
 relevant to the pharmaverse.
 
+These shields only show that a package is part of pharmaverse. They are not the lifecycle tags or quality badges of the [package governance model](/contribute/governance/).
+
 To use, just copy and paste the markdown code in the column 'Markdown' for the
 package you are a maintainer of. Note - we provide svg & png badges. The 
 example in the tables is the SVG badge, but you can swap `.svg` for `.png`.
