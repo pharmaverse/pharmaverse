@@ -81,6 +81,8 @@ The pharmaverse recommendation is for the control of the main branch of any pack
 
 If you imagine the case of a codebase (as opposed to a single package), then a similar model to Wikipedia could be imagined, where numerous representatives from across companies each take responsibility to “garden” a domain and ensure any user contributions are appropriate to be accepted into the codebase.
 
+How the council endorses, reviews and retires pharmaverse packages is described in the [package governance model](/contribute/governance/).
+
 ### Communications 
 
 Each development team will agree a cadence for their own releases and specific targeted communications. The council should then supplement this with an aligned method of regularly communicating iterations of the pharmaverse environment out to the industry, as well as the wider community of Open Pharma aligned projects.
